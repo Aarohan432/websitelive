@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Uttarakhand Trips - Responsive Navbar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Work Sans', sans-serif;
+            background: #f5f5f5;
+        }
+
+        /* ===== NAVBAR STYLES ===== */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo img {
+            height: 55px;
+            width: auto;
+        }
+
+        /* Desktop Navigation */
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 28px;
+        }
+
+        .nav-links li a {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #1a1a2e;
+            letter-spacing: 0.3px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links li a:hover,
+        .nav-links li a.active {
+            color: #FF4A52;
+        }
+
+        /* Dropdown */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #fff;
+            min-width: 230px;
+            padding: 12px 0;
+            border-radius: 16px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.25s ease;
+            z-index: 100;
+            list-style: none;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(5px);
+        }
+
+        .dropdown-menu li a {
+            display: block;
+            padding: 8px 24px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #1a1a2e;
+        }
+
+        .dropdown-menu li a:hover {
+            color: #FF4A52;
+            background: #f8f9fa;
+        }
+
+        /* Nested Dropdown */
+        .dropdown-menu .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu .dropdown-menu {
+            left: 100%;
+            top: -10px;
+        }
+
+        /* Hamburger Menu Button */
+        .hamburger {
+            display: none;
+            background: #FF4A52;
+            border: none;
+            border-radius: 12px;
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            z-index: 1001;
+        }
+
+        .hamburger i {
+            font-size: 26px;
+            color: #fff;
+        }
+
+        /* Mobile Navigation */
+        .mobile-nav {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #fff;
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 0 0 24px 24px;
+            padding: 20px;
+            z-index: 999;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .mobile-nav.active {
+            display: block;
+        }
+
+        .mobile-nav-links {
+            list-style: none;
+        }
+
+        .mobile-nav-links > li {
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .mobile-nav-links > li > a {
+            display: block;
+            padding: 14px 0;
+            font-size: 16px;
+            font-weight: 500;
+            color: #1a1a2e;
+            text-decoration: none;
+        }
+
+        .mobile-nav-links > li > a:hover {
+            color: #FF4A52;
+            padding-left: 8px;
+        }
+
+        /* Mobile Dropdown Submenu */
+        .mobile-dropdown {
+            position: relative;
+        }
+
+        .mobile-dropdown-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 14px 0;
+        }
+
+        .mobile-dropdown-header span {
+            font-size: 16px;
+            font-weight: 500;
+            color: #1a1a2e;
+        }
+
+        .mobile-dropdown-header i {
+            transition: transform 0.3s;
+            color: #FF4A52;
+        }
+
+        .mobile-dropdown.active .mobile-dropdown-header i {
+            transform: rotate(180deg);
+        }
+
+        .mobile-submenu {
+            display: none;
+            padding-left: 20px;
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        .mobile-dropdown.active .mobile-submenu {
+            display: block;
+        }
+
+        .mobile-submenu li a {
+            display: block;
+            padding: 10px 0;
+            font-size: 14px;
+            font-weight: 400;
+            color: #555;
+            text-decoration: none;
+        }
+
+        .mobile-submenu li a:hover {
+            color: #FF4A52;
+            padding-left: 8px;
+        }
+
+        .btn-contact {
+            display: inline-block;
+            background: #FF4A52;
+            color: #fff;
+            padding: 10px 24px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-contact:hover {
+            background: #1EC6B6;
+            transform: translateY(-2px);
+            color: #fff;
+        }
+
+        .mobile-btn {
+            margin-top: 15px;
+            text-align: center;
+            display: block;
+            background: #FF4A52;
+            color: #fff;
+            padding: 12px;
+            border-radius: 40px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .mobile-btn:hover {
+            background: #1EC6B6;
+            color: #fff;
+        }
+
+        /* Demo Content */
+        .demo-content {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .demo-content h1 {
+            color: white;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .demo-content p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .nav-menu {
+                display: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .demo-content h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== NAVBAR ONLY - CORRECTED VERSION ===== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#">
+                    <img src="https://uttarakhandtrips.com/wp-content/uploads/2024/06/Uttarakhand-Trips-final-Logo-1.png" alt="Uttarakhand Trips">
+                </a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#">Destinations <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Char Dham</a></li>
+                            <li><a href="#">Kedarnath</a></li>
+                            <li><a href="#">Badrinath</a></li>
+                            <li><a href="#">Rishikesh</a></li>
+                            <li><a href="#">Mussoorie</a></li>
+                            <li><a href="#">Nainital</a></li>
+                            <li><a href="#">Jim Corbett</a></li>
+                            <li class="dropdown">
+                                <a href="#">More <i class="fas fa-chevron-right"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Chopta</a></li>
+                                    <li><a href="#">Auli</a></li>
+                                    <li><a href="#">Harsil Valley</a></li>
+                                    <li><a href="#">Haridwar</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Travel By Theme <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Group Tours</a></li>
+                            <li><a href="#">Family Trips</a></li>
+                            <li><a href="#">Pilgrimage</a></li>
+                            <li><a href="#">Romantic</a></li>
+                            <li><a href="#">Wildlife</a></li>
+                            <li><a href="#">Leisure</a></li>
+                            <li><a href="#">Adventure</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+                <a href="#" class="btn-contact">Contact Us</a>
+            </div>
+
+            <!-- Hamburger Button (Mobile Only) -->
+            <button class="hamburger" id="hamburgerBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav" id="mobileNav">
+            <ul class="mobile-nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                
+                <!-- Destinations Dropdown Mobile -->
+                <li class="mobile-dropdown" id="destinationsDropdown">
+                    <div class="mobile-dropdown-header">
+                        <span>Destinations</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">Char Dham</a></li>
+                        <li><a href="#">Kedarnath</a></li>
+                        <li><a href="#">Badrinath</a></li>
+                        <li><a href="#">Rishikesh</a></li>
+                        <li><a href="#">Mussoorie</a></li>
+                        <li><a href="#">Nainital</a></li>
+                        <li><a href="#">Jim Corbett</a></li>
+                        <li class="mobile-dropdown" id="moreDropdown">
+                            <div class="mobile-dropdown-header">
+                                <span>More</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <ul class="mobile-submenu">
+                                <li><a href="#">Chopta</a></li>
+                                <li><a href="#">Auli</a></li>
+                                <li><a href="#">Harsil Valley</a></li>
+                                <li><a href="#">Haridwar</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Travel By Theme Dropdown Mobile -->
+                <li class="mobile-dropdown" id="themeDropdown">
+                    <div class="mobile-dropdown-header">
+                        <span>Travel By Theme</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">Group Tours</a></li>
+                        <li><a href="#">Family Trips</a></li>
+                        <li><a href="#">Pilgrimage</a></li>
+                        <li><a href="#">Romantic</a></li>
+                        <li><a href="#">Wildlife</a></li>
+                        <li><a href="#">Leisure</a></li>
+                        <li><a href="#">Adventure</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#" class="mobile-btn">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Demo Content -->
+    <div class="demo-content">
+        <h1>Responsive Navbar - Fixed Version</h1>
+        <p>Screen resize karke dekho — phone view mein hamburger menu dikhega! 🍔</p>
+        <p>Phone pe click karne par dropdown bhi open hoga.</p>
+        <p style="margin-top: 20px;">👇 Navbar me "Destinations" ya "Travel By Theme" pe hover karo — dropdown open hoga</p>
+    </div>
+
+    <script>
+        // ===== HAMBURGER MENU TOGGLE =====
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileNav = document.getElementById('mobileNav');
+
+        if (hamburgerBtn && mobileNav) {
+            hamburgerBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                mobileNav.classList.toggle('active');
+                const icon = this.querySelector('i');
+                if (icon) {
+                    icon.classList.toggle('fa-bars');
+                    icon.classList.toggle('fa-times');
+                }
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!hamburgerBtn.contains(e.target) && !mobileNav.contains(e.target)) {
+                    mobileNav.classList.remove('active');
+                    const icon = hamburgerBtn.querySelector('i');
+                    if (icon) {
+                        icon.classList.add('fa-bars');
+                        icon.classList.remove('fa-times');
+                    }
+                }
+            });
+        }
+
+        // ===== MOBILE DROPDOWN TOGGLE (Destinations) =====
+        const destinationsDropdown = document.getElementById('destinationsDropdown');
+        if (destinationsDropdown) {
+            const header = destinationsDropdown.querySelector('.mobile-dropdown-header');
+            header.addEventListener('click', function(e) {
+                e.stopPropagation();
+                destinationsDropdown.classList.toggle('active');
+            });
+        }
+
+        // ===== MOBILE DROPDOWN TOGGLE (More inside Destinations) =====
+        const moreDropdown = document.getElementById('moreDropdown');
+        if (moreDropdown) {
+            const header = moreDropdown.querySelector('.mobile-dropdown-header');
+            header.addEventListener('click', function(e) {
+                e.stopPropagation();
+                moreDropdown.classList.toggle('active');
+            });
+        }
+
+        // ===== MOBILE DROPDOWN TOGGLE (Travel By Theme) =====
+        const themeDropdown = document.getElementById('themeDropdown');
+        if (themeDropdown) {
+            const header = themeDropdown.querySelector('.mobile-dropdown-header');
+            header.addEventListener('click', function(e) {
+                e.stopPropagation();
+                themeDropdown.classList.toggle('active');
+            });
+        }
+
+        // Close mobile menu when clicking on any link
+        document.querySelectorAll('.mobile-submenu a, .mobile-nav-links > li > a').forEach(link => {
+            link.addEventListener('click', function() {
+                mobileNav.classList.remove('active');
+                const icon = hamburgerBtn.querySelector('i');
+                if (icon) {
+                    icon.classList.add('fa-bars');
+                    icon.classList.remove('fa-times');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+<!---title>Uttarakhand Trips - Tales &amp; Trails of Uttarakhand</title>
+<meta name="description" content="Uttarakhand Trips &amp; Hospitality is your top-rated guide for scenic tours to Uttarakhand. Recognized by TripAdvisor and approved by UTDB">
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+<link rel="canonical" href="index.htm">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Uttarakhand Trips - Tales &amp; Trails of Uttarakhand">
+<meta property="og:description" content="Uttarakhand Trips &amp; Hospitality is your top-rated guide for scenic tours to Uttarakhand. Recognized by TripAdvisor and approved by UTDB">
+<meta property="og:url" content="https://uttarakhandtrips.com/">
+<meta property="og:site_name" content="Uttarakhand Trips">
+
+<link rel='dns-prefetch' href='//www.googletagmanager.com'>
+<link href='https://fonts.gstatic.com' crossorigin="" rel='preconnect'>
+<link rel='stylesheet' id='elementor-frontend-css' href='wp-content/plugins/elementor/assets/css/frontend.min.css' type='text/css' media='all'>
+<link rel='stylesheet' id='grandtour-screen-css' href='wp-content/themes/grandtour/css/screen.css' type='text/css' media='all'>
+
+<style id='global-styles-inline-css' type='text/css'>
+
+:root{--wp--preset--color--black: #000000;--wp--preset--color--white: #ffffff;--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}
+.elementor-element-44f0a2d { min-height: 550px !important; background-size: cover !important; background-position: center center !important; padding: 80px 20px !important;}
+@media (max-width: 1024px) { .elementor-element-44f0a2d { min-height: 480px !important; padding: 60px 20px !important; } }
+
+@media (max-width: 1024px) {
+  
+    .elementor-nav-menu--main { display: none !important; }
+
+   
+    .elementor-menu-toggle {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        background: #FF4A52 !important;
+        border-radius: 8px;
+        width: 46px;
+        height: 46px;
+        cursor: pointer;
+        z-index: 100000 !important;
+        position: relative;
+    }
+
+  
+    .elementor-nav-menu--dropdown {
+        display: none !important;
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        right: 0 !important;
+        background: #ffffff !important;
+        z-index: 99999 !important;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        margin-top: 10px;
+        padding: 10px 0;
+    }
+
+  
+    .elementor-nav-menu--dropdown.elementor-nav-menu--open {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    .elementor-nav-menu--dropdown a {
+        display: block;
+        padding: 12px 20px;
+        color: #333 !important;
+        border-bottom: 1px solid #eee;
+        text-decoration: none;
+    }
+}
+</style>
+</head>
+
+<body class="home wp-singular page-template-elementor_header_footer elementor-default elementor-template-full-width">
+
+		<header data-elementor-type="header" class="elementor elementor-location-header">
+			<div class="elementor-element e-flex e-con-boxed e-con e-parent">
+					<div class="e-con-inner" style="display: flex; justify-content: space-between; align-items: center;">
+		<div class="elementor-element e-con-full e-flex e-con e-child">
+				<div class="elementor-element elementor-widget-image">
+				<div class="elementor-widget-container">
+                    <a href="index.htm">
+                        <img width="200" src="https://uttarakhandtrips.com/wp-content/uploads/2024/08/Uttarakhand-Trips-final-Logo-1.png" alt="Uttarakhand Trips">
+                    </a>
+				</div>
+				</div>
+				</div>
+
+		<div class="elementor-element e-con-full e-flex e-con e-child">
+				<div class="elementor-element elementor-nav-menu--toggle elementor-widget-nav-menu">
+				<div class="elementor-widget-container">
+                    <!-- Desktop Menu Area -->
+                    <nav class="elementor-nav-menu--main elementor-nav-menu__container">
+                        <ul class="elementor-nav-menu">
+                            <li><a href="index.htm">Home</a></li>
+                            <li><a href="../about-us/about_us.html">About Us</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- THE HAMBURGER BUTTON -->
+					<div class="elementor-menu-toggle" role="button" id="master-menu-toggle" aria-expanded="false">
+			            <svg viewbox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" style="fill:white; width:24px;"><path d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z"></path></svg>
+                	</div>
+
+                    <!-- THE DROPDOWN MENU CONTENT -->
+					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" id="master-dropdown-menu">
+				        <ul class="elementor-nav-menu">
+                            <li class="menu-item"><a href="index.htm">Home</a></li>
+                            <li class="menu-item"><a href="../about-us/about_us.html">About Us</a></li>
+                            <li class="menu-item"><a href="best-places-to-see-in-uttarakhand/index.htm">Destinations</a></li>
+                            <li class="menu-item"><a href="package/index.htm">Travel By Theme</a></li>
+                            <li class="menu-item"><a href="blogs/index.htm">Blogs</a></li>
+                            <li class="menu-item"><a href="contact-us/index.htm">Contact Us</a></li>
+                        </ul>
+                    </nav>
+				</div>
+				</div>
+				</div>
+                <div class="elementor-element elementor-hidden-mobile elementor-widget-button">
+                    <a class="elementor-button" href="contact-us/index.htm" style="background:#FF4A52; color:white; border-radius:5px; padding:10px 20px; text-decoration:none;">Contact Us</a>
+                </div>
+			</div>
+		</div>
+		</header>
+
+<div class="elementor elementor-4492">
+ 
+    <div class="elementor-element elementor-element-44f0a2d e-con-full e-flex e-con e-parent" id="top">
+        <h1 class="elementor-heading-title">Uttarakhand Trips</h1>
+        <p>A Top Rated Travel Company By Tripadvisor In Uttarakhand</p>
+        <a class="elementor-button" href="package/index.htm" style="background:#FF4A52; color:white; padding:12px 30px; border-radius:30px; text-decoration:none;">View Trips ></a>
+    </div>
+
+  
+    <div class="elementor-element e-flex e-con-boxed e-con e-parent" style="padding: 50px 0;">
+        <div class="e-con-inner" style="text-align: center; max-width: 900px; margin: 0 auto;">
+            <h2>Our Passion, Your Adventure</h2>
+            <p><strong>Uttarakhand Trips</strong> & Hospitality is your top-rated guide for scenic tours to Uttarakhand. Recognized by TripAdvisor and approved by UTDB, we’re passionate about sharing the beauty of this Himalayan gem.</p>
+        </div>
+    </div>
+
+    
+    <div class="elementor-element e-flex e-con-boxed e-con e-parent">
+        <div class="e-con-inner" style="text-align: center; max-width: 1000px; margin: 0 auto;">
+            <h2>Top Places In Uttarakhand</h2>
+            <p>Uttarakhand is home to famous temples like Kedarnath and Badrinath, peaceful towns like Rishikesh and scenic hill stations like Mussoorie and Auli. From spiritual yatras to nature holidays, there are many places to visit.</p>
+            
+            <div style="padding: 20px; text-align: left; background: #f9f9f9; border-radius: 10px;">
+                <p><strong>Haridwar:</strong> Famous for the evening Ganga Aarti.</p>
+                <p><strong>Rishikesh:</strong> The Yoga Capital of the world.</p>
+                <p><strong>Kedarnath & Badrinath:</strong> Part of the holy Char Dham circuit.</p>
+                <p><strong>Auli & Chopta:</strong> Best for snow and nature lovers.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- LUXURY ESCAPES SECTION -->
+    <div class="elementor-element e-flex e-con-boxed e-con e-parent" style="margin-top: 40px;">
+        <div class="e-con-inner" style="text-align: center; max-width: 1000px; margin: 0 auto;">
+            <h2>Luxury Escapes In Uttarakhand</h2>
+            <p>Places purely made for slowing down. From Taj Rishikesh to JW Marriott Mussoorie, enjoy mountain views and quiet mornings in comfort.</p>
+        </div>
+    </div>
+
+    <!-- GET IN TOUCH SECTION -->
+    <div class="elementor-element e-flex e-con-boxed e-con e-parent" style="padding: 50px 0; background: #f0f0f0;">
+        <div class="e-con-inner" style="text-align: center;">
+            <p style="font-size: 24px; font-weight: bold;">Get In Touch With Us</p>
+            <p>Submit your details, and we’ll reach out soon</p>
+            <form style="max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 10px;">
+                <input type="text" placeholder="Your Name" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                <input type="tel" placeholder="Phone Number" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                <button type="submit" style="background:#FF4A52; color:white; padding: 10px; border:none; border-radius:5px; cursor:pointer;">Submit Request</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer class="elementor elementor-location-footer" style="background: #2c2e3e; color: white; padding: 40px 20px; text-align: center;">
+    <h2>Uttarakhand Trips & Hospitality</h2>
+    <p>© 2024 — Uttarakhand Trips & Hospitality</p>
+</footer>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleBtn = document.getElementById('master-menu-toggle');
+    const menuContent = document.getElementById('master-dropdown-menu');
+    
+    if (toggleBtn && menuContent) {
+        toggleBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            Toggle the 'open' class
+            const isOpen = menuContent.classList.toggle('elementor-nav-menu--open');
+            
+            Update the button icon area
+            this.setAttribute('aria-expanded', isOpen);
+            
+            console.log('Mobile menu toggled:', isOpen);
+        });
+
+        // Close menu if clicking anywhere else
+        document.addEventListener('click', function(event) {
+            if (!toggleBtn.contains(event.target) && !menuContent.contains(event.target)) {
+                menuContent.classList.remove('elementor-nav-menu--open');
+                toggleBtn.setAttribute('aria-expanded', 'false');
+            }
+        });
+    }
+});
+</script>
+</body>
+</html> --><script src="https://cdn.jsdelivr.net/gh/uttarakhandtrips/mobile-navbar/loader.js"></script> 
+<style>@media (max-width:768px){.elementor-element-336558a,header[data-elementor-type="header"]{display:none!important;}</style> 

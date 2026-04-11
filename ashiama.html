@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Get In Touch - Uttarakhand Trips</title>
+    <style>
+        /* ============================================ */
+        /* GET IN TOUCH SECTION - FULLY RESPONSIVE     */
+        /* Mobile, Tablet, Desktop - All Devices       */
+        /* ============================================ */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'Poppins', system-ui, -apple-system, sans-serif;
+            background: #f5f7fa;
+            min-height: 100vh;
+        }
+        
+        /* Main Container */
+        .uts-contact-wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        
+        /* Inner Container */
+        .uts-contact-container {
+            background: linear-gradient(135deg, #ffffff 0%, #fef9f0 100%);
+            border-radius: 30px;
+            padding: 50px 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        
+        /* Divider */
+        .uts-divider {
+            width: 80px;
+            height: 3px;
+            background: #FF4A52;
+            margin: 0 auto 30px auto;
+            border-radius: 3px;
+        }
+        
+        /* Heading */
+        .uts-contact-heading {
+            font-size: 38px;
+            font-weight: 700;
+            text-align: center;
+            color: #1a1a2e;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+        
+        /* Description */
+        .uts-contact-description {
+            font-size: 17px;
+            line-height: 1.8;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+            color: #555;
+        }
+        
+        /* ===== FORM STYLES ===== */
+        .uts-form {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .uts-form-row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .uts-form-group {
+            flex: 1;
+            min-width: 200px;
+            text-align: left;
+        }
+        
+        .uts-form-group.full-width {
+            width: 100%;
+            flex: 100%;
+        }
+        
+        .uts-form-label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        
+        .uts-form-label .required {
+            color: #FF4A52;
+        }
+        
+        .uts-form-input,
+        .uts-form-textarea {
+            width: 100%;
+            padding: 14px 18px;
+            font-size: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            background: #fff;
+            transition: all 0.3s;
+            font-family: inherit;
+        }
+        
+        .uts-form-input:focus,
+        .uts-form-textarea:focus {
+            outline: none;
+            border-color: #FF4A52;
+            box-shadow: 0 0 0 3px rgba(255,74,82,0.1);
+        }
+        
+        .uts-form-textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        /* Submit Button */
+        .uts-submit-btn {
+            background: #FF4A52;
+            color: white;
+            border: none;
+            padding: 14px 40px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 40px;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        
+        .uts-submit-btn:hover {
+            background: #e03e46;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255,74,82,0.3);
+        }
+        
+        /* ===== RECAPTCHA NOTE ===== */
+        .uts-recaptcha-note {
+            font-size: 12px;
+            color: #999;
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        /* ===== RESPONSIVE DESIGN ===== */
+        
+        /* Tablet (768px to 1024px) */
+        @media (max-width: 1024px) {
+            .uts-contact-wrapper {
+                padding: 40px 20px;
+            }
+            
+            .uts-contact-container {
+                padding: 40px 30px;
+            }
+            
+            .uts-contact-heading {
+                font-size: 32px;
+            }
+            
+            .uts-contact-description {
+                font-size: 16px;
+                padding: 0 20px;
+            }
+            
+            .uts-form-row {
+                gap: 15px;
+            }
+        }
+        
+        /* Mobile (481px to 767px) */
+        @media (max-width: 767px) {
+            .uts-contact-wrapper {
+                padding: 30px 15px;
+            }
+            
+            .uts-contact-container {
+                padding: 30px 20px;
+                border-radius: 24px;
+            }
+            
+            .uts-contact-heading {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+            
+            .uts-contact-description {
+                font-size: 14px;
+                line-height: 1.6;
+                padding: 0 10px;
+                margin-bottom: 30px;
+            }
+            
+            .uts-divider {
+                width: 60px;
+                margin-bottom: 20px;
+            }
+            
+            /* Stack form fields vertically on mobile */
+            .uts-form-row {
+                flex-direction: column;
+                gap: 15px;
+                margin-bottom: 15px;
+            }
+            
+            .uts-form-group {
+                width: 100%;
+            }
+            
+            .uts-form-label {
+                font-size: 13px;
+                margin-bottom: 6px;
+            }
+            
+            .uts-form-input,
+            .uts-form-textarea {
+                padding: 12px 15px;
+                font-size: 14px;
+                border-radius: 10px;
+            }
+            
+            .uts-submit-btn {
+                padding: 12px 30px;
+                font-size: 15px;
+                width: 100%;
+            }
+            
+            .uts-recaptcha-note {
+                font-size: 11px;
+                margin-top: 15px;
+            }
+        }
+        
+        /* Small Mobile (up to 480px) */
+        @media (max-width: 480px) {
+            .uts-contact-heading {
+                font-size: 22px;
+            }
+            
+            .uts-contact-description {
+                font-size: 13px;
+            }
+            
+            .uts-form-input,
+            .uts-form-textarea {
+                padding: 10px 14px;
+                font-size: 13px;
+            }
+            
+            .uts-submit-btn {
+                padding: 10px 25px;
+                font-size: 14px;
+            }
+        }
+        
+        /* Landscape mode on mobile */
+        @media (max-width: 767px) and (orientation: landscape) {
+            .uts-contact-container {
+                padding: 20px 15px;
+            }
+            
+            .uts-contact-heading {
+                font-size: 22px;
+            }
+            
+            .uts-contact-description {
+                font-size: 13px;
+                margin-bottom: 20px;
+            }
+            
+            .uts-form-row {
+                gap: 10px;
+            }
+            
+            .uts-form-input,
+            .uts-form-textarea {
+                padding: 10px 12px;
+            }
+        }
+        
+        /* ===== BACK TO TOP BUTTON ===== */
+        .uts-back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #FF4A52;
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 20px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            z-index: 100;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .uts-back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .uts-back-to-top:hover {
+            background: #e03e46;
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 767px) {
+            .uts-back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+            }
+        }
+        
+        /* ===== DEMO CONTENT (optional) ===== */
+        .demo-note {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            font-size: 14px;
+            border-bottom: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Demo Note (you can remove this) -->
+<div class="demo-note">
+    ⬇️ Scroll down to see the "Get In Touch" section ⬇️
+</div>
+
+<!-- ===== GET IN TOUCH SECTION ===== -->
+<div class="uts-contact-wrapper">
+    <div class="uts-contact-container">
+        
+        <!-- Divider -->
+        <div class="uts-divider"></div>
+        
+        <!-- Heading -->
+        <h2 class="uts-contact-heading">Get In Touch With Us</h2>
+        
+        <!-- Description -->
+        <p class="uts-contact-description">Submit your details, and we'll reach out soon</p>
+        
+        <!-- Contact Form -->
+        <form class="uts-form" id="contactForm">
+            <div class="uts-form-row">
+                <div class="uts-form-group">
+                    <label class="uts-form-label">Your Name <span class="required">*</span></label>
+                    <input type="text" class="uts-form-input" placeholder="Your Name" required>
+                </div>
+                <div class="uts-form-group">
+                    <label class="uts-form-label">Phone Number <span class="required">*</span></label>
+                    <input type="tel" class="uts-form-input" placeholder="Phone Number" required>
+                </div>
+            </div>
+            <div class="uts-form-row">
+                <div class="uts-form-group full-width">
+                    <label class="uts-form-label">Message</label>
+                    <textarea class="uts-form-textarea" placeholder="Message"></textarea>
+                </div>
+            </div>
+            <div class="uts-form-row">
+                <div class="uts-form-group full-width" style="text-align: center;">
+                    <button type="submit" class="uts-submit-btn">Submit Request</button>
+                </div>
+            </div>
+            <div class="uts-recaptcha-note">
+                This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+            </div>
+        </form>
+        
+    </div>
+</div>
+
+<!-- Back to Top Button -->
+<a href="#" class="uts-back-to-top" id="backToTop">↑</a>
+
+<script>
+    // ===== FORM SUBMIT HANDLER =====
+    const contactForm = document.getElementById('contactForm');
+    
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you! We will get back to you soon.');
+        contactForm.reset();
+    });
+    
+    // ===== BACK TO TOP BUTTON =====
+    const backToTop = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', function() {
+        if(window.scrollY > 300) {
+            backToTop.classList.add('show');
+        } else {
+            backToTop.classList.remove('show');
+        }
+    });
+    
+    backToTop.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+
+</body>
+</html><script src="https://cdn.jsdelivr.net/gh/uttarakhandtrips/mobile-navbar/loader.js"></script> 
+<style>@media (max-width:768px){.elementor-element-336558a,header[data-elementor-type="header"]{display:none!important;}</style> 

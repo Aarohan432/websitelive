@@ -1,0 +1,482 @@
+<!----DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uttarakhand Trips - All You Need To Know About Uttarakhand</title>
+    <meta name="description" content="All You Need to Know About Uttarakhand is Here">
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        
+        /* Glassmorphism */
+        .glass {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        /* Custom Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        /* Hero Parallax */
+        .hero-bg {
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.1s ease-out;
+        }
+        
+        /* Smooth Scrollbar */
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        .scrollbar-hide { scrollbar-width: none; -ms-overflow-style: none; }
+        
+        /* Custom Hover Effects */
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .card-hover:hover {
+            transform: translateY(-20px) scale(1.02);
+            box-shadow: 0 40px 80px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 min-h-screen text-white overflow-x-hidden">
+
+<nav class="fixed top-0 left-0 right-0 z-[9999] bg-white/95 backdrop-blur-2xl shadow-2xl md:hidden border-b border-gray-200">
+    <div class="flex items-center justify-between px-6 py-4">
+        <a href="/" class="flex items-center space-x-3 group">
+            <div class="w-14 h-14 bg-gradient-to-r from-red-500 to-pink-500 rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 transition-all duration-300">
+                <i class="fas fa-mountain text-2xl text-white"></i>
+            </div>
+            <div>
+                <h2 class="text-2xl font-black bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent">Uttarakhand</h2>
+                <p class="text-sm text-gray-600 font-medium">Trips</p>
+            </div>
+        </a>
+        
+        <button id="mobileToggle" class="p-3 rounded-2xl bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 shadow-xl hover:shadow-red-500/25 transition-all duration-300 w-14 h-14 flex items-center justify-center">
+            <i class="fas fa-bars text-white text-xl"></i>
+        </button>
+    </div>
+</nav>
+
+
+<div id="mobileSidebar" class="fixed inset-0 z-[10000] hidden bg-black/60 backdrop-blur-sm">
+    <div class="w-80 h-full bg-white shadow-2xl transform translate-x-full transition-transform duration-500 ease-out scrollbar-hide overflow-y-auto">
+        <div class="p-8">
+         
+            <button id="closeMobile" class="float-right p-3 rounded-2xl bg-red-500 hover:bg-red-600 text-white shadow-lg transition-all duration-300">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            
+         
+            <div class="text-center mb-12">
+                <div class="w-24 h-24 mx-auto bg-gradient-to-r from-red-500 to-pink-500 rounded-3xl flex items-center justify-center shadow-2xl mb-4">
+                    <i class="fas fa-mountain text-3xl text-white"></i>
+                </div>
+                <h1 class="text-3xl font-black bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent mb-2">Uttarakhand Trips</h1>
+            </div>
+        
+            <nav class="space-y-2 mb-12">
+                <a href="/" class="block p-6 rounded-2xl bg-gradient-to-r from-gray-50 to-gray-100 text-gray-800 font-semibold hover:from-red-50 hover:to-pink-50 hover:shadow-lg border border-gray-200 transition-all duration-300 flex items-center space-x-4">
+                    <i class="fas fa-home w-6 text-red-500"></i>
+                    <span>Home</span>
+                </a>
+                
+                <a href="/about" class="block p-6 rounded-2xl bg-gradient-to-r from-gray-50 to-gray-100 text-gray-800 font-semibold hover:from-red-50 hover:to-pink-50 hover:shadow-lg border border-gray-200 transition-all duration-300 flex items-center space-x-4">
+                    <i class="fas fa-info-circle w-6 text-red-500"></i>
+                    <span>About Us</span>
+                </a>
+                
+            
+                <div class="relative">
+                    <button id="destToggle" class="w-full p-6 rounded-2xl bg-gradient-to-r from-gray-50 to-gray-100 text-gray-800 font-semibold hover:from-red-50 hover:to-pink-50 hover:shadow-lg border border-gray-200 transition-all duration-300 flex items-center justify-between">
+                        <span class="flex items-center space-x-4">
+                            <i class="fas fa-map-marker-alt w-6 text-red-500"></i>
+                            <span>Destinations</span>
+                        </span>
+                        <i class="fas fa-chevron-down transition-transform duration-300 w-5"></i>
+                    </button>
+                    <div id="destMenu" class="hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl shadow-2xl rounded-2xl border border-gray-200 mt-2 z-10">
+                        <a href="/char-dham" class="block px-8 py-4 text-gray-700 hover:bg-red-50 hover:text-red-600 transition-all duration-300 border-b border-gray-100 last:border-b-0">Char Dham</a>
+                        <a href="/kedarnath" class="block px-8 py-4 text-gray-700 hover:bg-red-50 hover:text-red-600 transition-all duration-300 border-b border-gray-100 last:border-b-0">Kedarnath</a>
+                        <a href="/badrinath" class="block px-8 py-4 text-gray-700 hover:bg-red-50 hover:text-red-600 transition-all duration-300 border-b border-gray-100 last:border-b-0">Badrinath</a>
+                    </div>
+                </div>
+                
+                <a href="/blogs" class="block p-6 rounded-2xl bg-gradient-to-r from-red-100 to-pink-100 text-red-700 font-bold shadow-lg border-2 border-red-200 transition-all duration-300 flex items-center space-x-4 hover:from-red-200 hover:to-pink-200 hover:shadow-red-300">
+                    <i class="fas fa-blog w-6"></i>
+                    <span>Blogs</span>
+                </a>
+            </nav>
+            
+       
+            <a href="/contact" class="block w-full bg-gradient-to-r from-red-500 to-pink-500 text-white py-5 px-8 rounded-3xl text-xl font-bold text-center shadow-2xl hover:from-red-600 hover:to-pink-600 hover:shadow-red-500/50 hover:-translate-y-1 transition-all duration-400">
+                <i class="fas fa-phone mr-2"></i>
+                Contact Us
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<main class="pt-24 px-4 md:px-8 lg:px-16">
+    
+
+    <section class="relative mb-24 overflow-hidden">
+        <div id="heroSlider" class="relative h-[70vh] md:h-[85vh] rounded-4xl glass shadow-3xl border border-white/20">
+      
+            <div class="hero-slides absolute inset-0 w-full h-full">
+                <div class="slide active" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('https://uttarakhandtrips.com/blogs/wp-content/uploads/2026/02/How-to-Book-Kolkata-to-Hyderabad-Train-Tickets-Online-512x341.webp')">
+                    <div class="absolute inset-0 flex flex-col justify-end p-12 md:p-24 max-w-4xl">
+                        <div class="animate-fadeInUp animation-delay-200">
+                            <span class="inline-block px-6 py-3 bg-white/20 backdrop-blur-xl rounded-full border border-white/30 mb-8 text-sm font-bold tracking-wide">BLOG</span>
+                            <h1 class="text-5xl md:text-7xl font-black mb-8 leading-tight drop-shadow-2xl">How to Book Kolkata to Hyderabad Train Tickets Online</h1>
+                            <p class="text-xl md:text-2xl mb-12 max-w-2xl leading-relaxed drop-shadow-lg">Travel smart with our guide to seamless online train bookings...</p>
+                            <a href="#" class="inline-flex items-center space-x-4 px-10 py-5 bg-gradient-to-r from-red-500 to-pink-500 text-white font-bold rounded-3xl shadow-2xl hover:shadow-red-500/50 hover:-translate-y-2 transition-all duration-500 text-lg">
+                                <span>Read Story</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('https://uttarakhandtrips.com/blogs/wp-content/uploads/2025/12/ChatGPT-Image-Dec-27-2025-10_51_46-AM-512x341.png')">
+                    <div class="absolute inset-0 flex flex-col justify-end p-12 md:p-24 max-w-4xl">
+                        <div class="animate-fadeInUp animation-delay-200">
+                            <span class="inline-block px-6 py-3 bg-white/20 backdrop-blur-xl rounded-full border border-white/30 mb-8 text-sm font-bold tracking-wide">TRAVEL</span>
+                            <h1 class="text-5xl md:text-7xl font-black mb-8 leading-tight drop-shadow-2xl">Multi-City Travel Planning</h1>
+                            <p class="text-xl md:text-2xl mb-12 max-w-2xl leading-relaxed drop-shadow-lg">Master your itinerary with precise timing and routes...</p>
+                            <a href="#" class="inline-flex items-center space-x-4 px-10 py-5 bg-gradient-to-r from-red-500 to-pink-500 text-white font-bold rounded-3xl shadow-2xl hover:shadow-red-500/50 hover:-translate-y-2 transition-all duration-500 text-lg">
+                                <span>Read Story</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+      
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-4">
+                <button class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-all duration-300 slider-dot active:w-12"></button>
+                <button class="w-4 h-4 rounded-full bg-white/40 hover:bg-white transition-all duration-300 slider-dot"></button>
+                <button class="w-4 h-4 rounded-full bg-white/40 hover:bg-white transition-all duration-300 slider-dot"></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center mb-24">
+        <h2 class="text-5xl md:text-7xl font-black mb-16 bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent drop-shadow-2xl">
+            Latest Stories
+        </h2>
+        <div class="flex flex-wrap gap-4 justify-center max-w-4xl mx-auto mb-20">
+            <button class="filter-btn active px-10 py-5 rounded-3xl font-bold text-lg shadow-xl bg-gradient-to-r from-red-500 to-pink-500 text-white hover:shadow-red-500/50 hover:-translate-y-2 transition-all duration-400 border-2 border-red-500/50">All</button>
+            <button class="filter-btn px-10 py-5 rounded-3xl font-bold text-lg shadow-lg glass hover:bg-white/20 hover:shadow-red-500/25 hover:-translate-y-2 transition-all duration-400 border border-white/30">Blog</button>
+            <button class="filter-btn px-10 py-5 rounded-3xl font-bold text-lg shadow-lg glass hover:bg-white/20 hover:shadow-red-500/25 hover:-translate-y-2 transition-all duration-400 border border-white/30">Travel</button>
+            <button class="filter-btn px-10 py-5 rounded-3xl font-bold text-lg shadow-lg glass hover:bg-white/20 hover:shadow-red-500/25 hover:-translate-y-2 transition-all duration-400 border border-white/30">Pilgrim</button>
+        </div>
+    </section>
+
+  
+    <section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mb-32">
+   
+        <article class="card-hover group h-full glass shadow-2xl rounded-4xl overflow-hidden border border-white/20 hover:border-red-500/50 transition-all duration-500">
+            <div class="h-80 bg-gradient-to-br from-gray-800 to-gray-900 bg-cover bg-center group-hover:scale-110 transition-transform duration-1000" 
+                 style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Top-10-Must-See-Places-in-Char-Dham-Yatra-512x384.png')">
+            </div>
+            <div class="p-10">
+                <span class="inline-block px-6 py-3 bg-gradient-to-r from-red-500/20 to-pink-500/20 border border-red-500/40 rounded-full text-red-300 font-bold mb-8 text-sm tracking-wide">BLOG • PILGRIM</span>
+                <h3 class="text-3xl font-black mb-6 leading-tight group-hover:text-red-400 transition-all duration-500 line-clamp-2 h-20">Top 10 Must See Places in Char Dham Yatra</h3>
+                <p class="text-gray-400 mb-10 line-clamp-3 leading-relaxed">Discover the hidden gems and must-visit spots along the sacred Char Dham Yatra route...</p>
+                <div class="flex items-center justify-between text-sm text-gray-500 mb-10">
+                    <span>Uttarakhand Trips</span>
+                    <span>Jan 2024</span>
+                </div>
+                <a href="#" class="block w-full p-6 bg-gradient-to-r from-red-500 to-pink-500 text-white font-bold rounded-3xl text-center shadow-xl hover:shadow-red-500/50 hover:-translate-y-2 transition-all duration-400 group-hover:scale-105">
+                    Read Full Story <i class="fas fa-arrow-right ml-3"></i>
+                </a>
+            </div>
+        </article>
+
+      
+        <article class="card-hover group h-full glass shadow-2xl rounded-4xl overflow-hidden border border-white/20 hover:border-red-500/50 transition-all duration-500">
+            <div class="h-80 bg-gradient-to-br from-gray-800 to-gray-900 bg-cover bg-center group-hover:scale-110 transition-transform duration-1000" 
+                 style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://uttarakhandtrips.com/blogs/wp-content/uploads/2023/12/Char-dham-yatra-2024-1-512x384.jpg')">
+            </div>
+            <div class="p-10">
+                <span class="inline-block px-6 py-3 bg-gradient-to-r from-red-500/20 to-pink-500/20 border border-red-500/40 rounded-full text-red-300 font-bold mb-8 text-sm tracking-wide">BLOG • PILGRIM</span>
+                <h3 class="text-3xl font-black mb-6 leading-tight group-hover:text-red-400 transition-all duration-500 line-clamp-2 h-20">How to Register for Char Dham Yatra 2025</h3>
+                <p class="text-gray-400 mb-10 line-clamp-3 leading-relaxed">Complete step-by-step guide for online registration...</p>
+                <div class="flex items-center justify-between text-sm text-gray-500 mb-10">
+                    <span>Uttarakhand Trips</span>
+                    <span>Dec 2023</span>
+                </div>
+                                <a href="#" class="block w-full p-6 bg-gradient-to-r from-red-500 to-pink-500 text-white font-bold rounded-3xl text-center shadow-xl hover:shadow-red-500/50 hover:-translate-y-2 transition-all duration-400 group-hover:scale-105">
+                    Read Full Story <i class="fas fa-arrow-right ml-3"></i>
+                </a>
+            </div>
+        </article>
+
+    </section>
+
+    
+    <section class="text-center py-32 glass rounded-4xl shadow-3xl border border-white/20 max-w-6xl mx-auto mb-32 mx-8">
+        <div class="animate-fadeInUp animation-delay-100">
+            <h2 class="text-6xl md:text-8xl font-black mb-8 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent drop-shadow-4xl">Ready to Explore?</h2>
+            <p class="text-2xl md:text-3xl text-gray-300 mb-16 max-w-4xl mx-auto leading-relaxed drop-shadow-xl">Your gateway to authentic Uttarakhand adventures starts here</p>
+            <div class="flex flex-col lg:flex-row gap-8 justify-center items-center">
+                <a href="/contact" class="px-16 py-8 bg-gradient-to-r from-red-500 to-pink-500 text-white font-black text-2xl rounded-4xl shadow-3xl hover:shadow-red-500/50 hover:-translate-y-4 transition-all duration-700 border-4 border-red-500/30 w-full lg:w-auto text-center">
+                    <i class="fas fa-bolt mr-4"></i>Book Your Trip
+                </a>
+                <a href="https://wa.me/919990383938" class="px-16 py-8 glass backdrop-blur-xl text-white font-bold text-2xl rounded-4xl shadow-2xl hover:bg-white/20 hover:border-white/50 border-2 border-white/30 w-full lg:w-auto text-center hover:-translate-y-2 transition-all duration-500">
+                    <i class="fab fa-whatsapp mr-4 text-2xl"></i>WhatsApp Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pb-16 pt-32 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-12 mb-16">
+          
+                <div class="lg:col-span-2">
+                    <a href="/" class="flex items-center space-x-4 mb-8 group">
+                        <div class="w-20 h-20 bg-gradient-to-r from-red-500 to-pink-500 rounded-3xl flex items-center justify-center shadow-2xl group-hover:scale-110 transition-all duration-500">
+                            <i class="fas fa-mountain text-2xl text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-black bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent">Uttarakhand Trips</h3>
+                            <p class="text-gray-500 font-medium">Your Himalayan Guide</p>
+                        </div>
+                    </a>
+                    <p class="text-gray-400 leading-relaxed max-w-lg mb-8">Crafting unforgettable journeys through Uttarakhand's sacred valleys and majestic peaks.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="w-14 h-14 glass rounded-2xl flex items-center justify-center hover:bg-white/20 transition-all duration-300 shadow-lg">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="w-14 h-14 glass rounded-2xl flex items-center justify-center hover:bg-white/20 transition-all duration-300 shadow-lg">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="w-14 h-14 glass rounded-2xl flex items-center justify-center hover:bg-white/20 transition-all duration-300 shadow-lg">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            
+                <div>
+                    <h4 class="text-2xl font-bold mb-8 text-white">Quick Links</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a href="#" class="hover:text-red-400 transition-colors group flex items-center space-x-3">
+                            <span class="w-2 h-2 bg-red-500 rounded-full group-hover:scale-150 transition-all"></span>
+                            <span>Home</span>
+                        </a></li>
+                        <li><a href="#" class="hover:text-red-400 transition-colors group flex items-center space-x-3">
+                            <span class="w-2 h-2 bg-red-500 rounded-full group-hover:scale-150 transition-all"></span>
+                            <span>About</span>
+                        </a></li>
+                        <li><a href="#" class="hover:text-red-400 transition-colors group flex items-center space-x-3">
+                            <span class="w-2 h-2 bg-red-500 rounded-full group-hover:scale-150 transition-all"></span>
+                            <span>Destinations</span>
+                        </a></li>
+                        <li><a href="#" class="hover:text-red-400 transition-colors group flex items-center space-x-3">
+                            <span class="w-2 h-2 bg-red-500 rounded-full group-hover:scale-150 transition-all"></span>
+                            <span>Blogs</span>
+                        </a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-2xl font-bold mb-8 text-white">Contact</h4>
+                    <div class="space-y-6 text-gray-400">
+                        <div class="flex items-center space-x-4 hover:text-red-400 transition-colors">
+                            <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-lg">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                            <span>+91-9990-383-938</span>
+                        </div>
+                        <div class="flex items-center space-x-4 hover:text-red-400 transition-colors">
+                            <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center shadow-lg">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <span>info@uttarakhandtrips.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 pt-12 text-center text-gray-500 text-sm">
+                <p>&copy; 2026 Uttarakhand Trips. All Rights Reserved. | Made with ❤️ for the Himalayas</p>
+            </div>
+        </div>
+    </footer>
+</main>
+
+<!-- 🔥 SCROLL TO TOP -->
+<button id="scrollTop" class="fixed bottom-8 right-8 w-20 h-20 bg-gradient-to-r from-red-500 to-pink-500 rounded-3xl shadow-2xl border-4 border-white/20 hover:shadow-red-500/50 hover:scale-110 transition-all duration-400 z-[999] opacity-0 translate-y-10 invisible group">
+    <i class="fas fa-chevron-up w-6 h-6 mx-auto text-white"></i>
+</button>
+
+<!-- 🔥 WHATSAPP FLOATING BUTTON -->
+<a href="https://wa.me/919990383938?text=Hi%20Uttarakhand%20Trips!%20I%20want%20to%20book..." class="fixed bottom-32 right-8 z-[9999] w-20 h-20 bg-green-500 hover:bg-green-600 rounded-3xl shadow-2xl border-4 border-white/20 flex items-center justify-center transition-all duration-400 hover:shadow-green-500/50 hover:scale-110 hover:-translate-y-2 group">
+    <i class="fab fa-whatsapp text-white text-xl"></i>
+    <span class="absolute -top-12 -right-12 bg-white text-green-600 px-4 py-2 rounded-xl text-xs font-bold shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap">Chat Now</span>
+</a>
+
+<script>
+    // 🔥 ADVANCED JS (3-Year Dev Level)
+    
+    // 1. Mobile Menu Toggle
+    const mobileToggle = document.getElementById('mobileToggle');
+    const mobileSidebar = document.getElementById('mobileSidebar');
+    const closeMobile = document.getElementById('closeMobile');
+    const destToggle = document.getElementById('destToggle');
+    const destMenu = document.getElementById('destMenu');
+    
+    mobileToggle?.addEventListener('click', () => {
+        mobileSidebar.classList.remove('hidden');
+        setTimeout(() => mobileSidebar.classList.add('translate-x-0'), 50);
+    });
+    
+    closeMobile?.addEventListener('click', () => {
+        mobileSidebar.classList.remove('translate-x-0');
+        setTimeout(() => mobileSidebar.classList.add('hidden'), 400);
+    });
+    
+    destToggle?.addEventListener('click', () => {
+        destMenu.classList.toggle('hidden');
+        const icon = destToggle.querySelector('i:last-child');
+        icon.style.transform = destMenu.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+    });
+    
+    // 2. Hero Slider (Advanced)
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.slider-dot');
+    let currentSlide = 0;
+    let slideInterval;
+    
+    function nextSlide() {
+        slides[currentSlide].classList.remove('active');
+        dots[currentSlide].classList.remove('active');
+        
+        currentSlide = (currentSlide + 1) % slides.length;
+        
+        slides[currentSlide].classList.add('active');
+        dots[currentSlide].classList.add('active');
+    }
+    
+    function startSlider() {
+        slideInterval = setInterval(nextSlide, 5000);
+    }
+    
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            clearInterval(slideInterval);
+            slides[currentSlide].classList.remove('active');
+            dots[currentSlide].classList.remove('active');
+            
+            currentSlide = index;
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+            
+            startSlider();
+        });
+    });
+    
+    startSlider();
+    
+    // 3. Scroll Animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.animationPlayState = 'running';
+                entry.target.classList.add('animate-fadeInUp');
+            }
+        });
+    }, observerOptions);
+    
+    document.querySelectorAll('.animate-fadeInUp').forEach(el => {
+        el.style.animationPlayState = 'paused';
+        observer.observe(el);
+    });
+    
+    // 4. Scroll to Top
+    const scrollTop = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 500) {
+            scrollTop.classList.remove('opacity-0', 'translate-y-10', 'invisible');
+            scrollTop.classList.add('opacity-100', 'translate-y-0', 'visible');
+        } else {
+            scrollTop.classList.add('opacity-0', 'translate-y-10', 'invisible');
+            scrollTop.classList.remove('opacity-100', 'translate-y-0', 'visible');
+        }
+    });
+    
+    scrollTop?.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    
+    // 5. Parallax Hero
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const hero = document.querySelector('.hero-slides');
+        if (hero) {
+            hero.style.transform = `translateY(${scrolled * 0.3}px)`;
+        }
+    });
+    
+    // 6. Filter Functionality
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.querySelector('.filter-btn.active').classList.remove('active');
+            this.classList.add('active');
+            
+            // Filter logic here (add class-based filtering)
+            const filter = this.textContent.toLowerCase();
+            document.querySelectorAll('.card-hover').forEach(card => {
+                if (filter === 'all' || card.dataset.category === filter) {
+                    card.style.display = 'block';
+                    card.style.animation = 'none';
+                    setTimeout(() => card.classList.add('animate-fadeInUp'), 100);
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+    
+    // 7. Smooth Animations on Load
+    window.addEventListener('load', () => {
+        document.body.classList.add('loaded');
+    });
+    
+    // 8. Preload Critical Resources
+    const preloadImages = [
+        'https://uttarakhandtrips.com/blogs/wp-content/uploads/2026/02/How-to-Book-Kolkata-to-Hyderabad-Train-Tickets-Online-512x341.webp',
+        'logo.png'
+    ];
+    
+    preloadImages.forEach(src => {
+        const img = new Image();
+        img.src = src;
+    });
+</script>
+
+</body>
+</html>

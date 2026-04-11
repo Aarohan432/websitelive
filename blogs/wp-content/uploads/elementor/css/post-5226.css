@@ -1,0 +1,8 @@
+.elementor-5226 .elementor-element.elementor-element-427b9eb{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--padding-top:30px;--padding-bottom:30px;--padding-left:0px;--padding-right:0px;}.elementor-5226 .elementor-element.elementor-element-dda2ca3{--e-image-carousel-slides-to-show:3;}@media(max-width:767px){.elementor-5226 .elementor-element.elementor-element-427b9eb{--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-5226 .elementor-element.elementor-element-dda2ca3{--e-image-carousel-slides-to-show:2;}}/* Start custom CSS for image-carousel, class: .elementor-element-dda2ca3 */.elementor-5226 .elementor-element.elementor-element-dda2ca3 .swiper-wrapper{
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important; 
+}/* End custom CSS */
+/* Start custom CSS for container, class: .elementor-element-427b9eb */.elementor-5226 .elementor-element.elementor-element-427b9eb .swiper-wrapper{
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important; 
+}/* End custom CSS */

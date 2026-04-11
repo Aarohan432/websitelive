@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar - Uttarakhand Trips</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Work Sans', sans-serif;
+            background: #f5f5f5;
+        }
+
+        /* ===== NAVBAR STYLES ===== */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo img {
+            height: 55px;
+            width: auto;
+        }
+
+        /* Desktop Navigation */
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 28px;
+        }
+
+        .nav-links li a {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #1a1a2e;
+            letter-spacing: 0.3px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links li a:hover,
+        .nav-links li a.active {
+            color: #FF4A52;
+        }
+
+        /* Dropdown */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #fff;
+            min-width: 230px;
+            padding: 12px 0;
+            border-radius: 16px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.25s ease;
+            z-index: 100;
+            list-style: none;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(5px);
+        }
+
+        .dropdown-menu li a {
+            display: block;
+            padding: 8px 24px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #1a1a2e;
+        }
+
+        .dropdown-menu li a:hover {
+            color: #FF4A52;
+            background: #f8f9fa;
+        }
+
+        /* Nested Dropdown */
+        .dropdown-menu .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu .dropdown-menu {
+            left: 100%;
+            top: -10px;
+        }
+
+        /* Hamburger Menu Button */
+        .hamburger {
+            display: none;
+            background: #FF4A52;
+            border: none;
+            border-radius: 12px;
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            z-index: 1001;
+        }
+
+        .hamburger i {
+            font-size: 26px;
+            color: #fff;
+        }
+
+        /* Mobile Navigation */
+        .mobile-nav {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #fff;
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 0 0 24px 24px;
+            padding: 20px;
+            z-index: 999;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .mobile-nav.active {
+            display: block;
+        }
+
+        .mobile-nav-links {
+            list-style: none;
+        }
+
+        .mobile-nav-links > li {
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .mobile-nav-links > li > a {
+            display: block;
+            padding: 14px 0;
+            font-size: 16px;
+            font-weight: 500;
+            color: #1a1a2e;
+            text-decoration: none;
+        }
+
+        .mobile-nav-links > li > a:hover {
+            color: #FF4A52;
+            padding-left: 8px;
+        }
+
+        /* Mobile Dropdown Submenu */
+        .mobile-dropdown {
+            position: relative;
+        }
+
+        .mobile-dropdown-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 14px 0;
+        }
+
+        .mobile-dropdown-header span {
+            font-size: 16px;
+            font-weight: 500;
+            color: #1a1a2e;
+        }
+
+        .mobile-dropdown-header i {
+            transition: transform 0.3s;
+            color: #FF4A52;
+        }
+
+        .mobile-dropdown.active .mobile-dropdown-header i {
+            transform: rotate(180deg);
+        }
+
+        .mobile-submenu {
+            display: none;
+            padding-left: 20px;
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        .mobile-dropdown.active .mobile-submenu {
+            display: block;
+        }
+
+        .mobile-submenu li a {
+            display: block;
+            padding: 10px 0;
+            font-size: 14px;
+            font-weight: 400;
+            color: #555;
+            text-decoration: none;
+        }
+
+        .mobile-submenu li a:hover {
+            color: #FF4A52;
+            padding-left: 8px;
+        }
+
+        .mobile-submenu .mobile-dropdown .mobile-submenu {
+            padding-left: 20px;
+        }
+
+        .btn-contact {
+            display: inline-block;
+            background: #FF4A52;
+            color: #fff;
+            padding: 10px 24px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-contact:hover {
+            background: #1EC6B6;
+            transform: translateY(-2px);
+            color: #fff;
+        }
+
+        .mobile-btn {
+            margin-top: 15px;
+            text-align: center;
+            display: block;
+            background: #FF4A52;
+            color: #fff;
+            padding: 12px;
+            border-radius: 40px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .mobile-btn:hover {
+            background: #1EC6B6;
+            color: #fff;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .nav-menu {
+                display: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR ONLY -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#">
+                    <img src="https://uttarakhandtrips.com/wp-content/uploads/2024/06/Uttarakhand-Trips-final-Logo-1.png" alt="Uttarakhand Trips">
+                </a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#">Destinations <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Char Dham</a></li>
+                            <li><a href="#">Kedarnath</a></li>
+                            <li><a href="#">Badrinath</a></li>
+                            <li><a href="#">Rishikesh</a></li>
+                            <li><a href="#">Mussoorie</a></li>
+                            <li><a href="#">Nainital</a></li>
+                            <li><a href="#">Jim Corbett</a></li>
+                            <li class="dropdown">
+                                <a href="#">More <i class="fas fa-chevron-right"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Chopta</a></li>
+                                    <li><a href="#">Auli</a></li>
+                                    <li><a href="#">Harsil Valley</a></li>
+                                    <li><a href="#">Haridwar</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Travel By Theme <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Group Tours</a></li>
+                            <li><a href="#">Family Trips</a></li>
+                            <li><a href="#">Pilgrimage</a></li>
+                            <li><a href="#">Romantic</a></li>
+                            <li><a href="#">Wildlife</a></li>
+                            <li><a href="#">Leisure</a></li>
+                            <li><a href="#">Adventure</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+                <a href="#" class="btn-contact">Contact Us</a>
+            </div>
+
+            <!-- Hamburger Button (Mobile Only) -->
+            <button class="hamburger" id="hamburgerBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu (Hidden by default, shows on hamburger click) -->
+        <div class="mobile-nav" id="mobileNav">
+            <ul class="mobile-nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                
+                <!-- Destinations Dropdown Mobile -->
+                <li class="mobile-dropdown" id="destinationsDropdown">
+                    <div class="mobile-dropdown-header">
+                        <span>Destinations</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">Char Dham</a></li>
+                        <li><a href="#">Kedarnath</a></li>
+                        <li><a href="#">Badrinath</a></li>
+                        <li><a href="#">Rishikesh</a></li>
+                        <li><a href="#">Mussoorie</a></li>
+                        <li><a href="#">Nainital</a></li>
+                        <li><a href="#">Jim Corbett</a></li>
+                        <li class="mobile-dropdown" id="moreDropdown">
+                            <div class="mobile-dropdown-header">
+                                <span>More</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <ul class="mobile-submenu">
+                                <li><a href="#">Chopta</a></li>
+                                <li><a href="#">Auli</a></li>
+                                <li><a href="#">Harsil Valley</a></li>
+                                <li><a href="#">Haridwar</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Travel By Theme Dropdown Mobile -->
+                <li class="mobile-dropdown" id="themeDropdown">
+                    <div class="mobile-dropdown-header">
+                        <span>Travel By Theme</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">Group Tours</a></li>
+                        <li><a href="#">Family Trips</a></li>
+                        <li><a href="#">Pilgrimage</a></li>
+                        <li><a href="#">Romantic</a></li>
+                        <li><a href="#">Wildlife</a></li>
+                        <li><a href="#">Leisure</a></li>
+                        <li><a href="#">Adventure</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#" class="mobile-btn">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Just to show some content below navbar -->
+    <div style="text-align: center; padding: 100px 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+        <h1 style="color: white;">Responsive Navbar Demo</h1>
+        <p style="font-size: 18px; margin-top: 20px;">Screen resize karke dekho — phone view mein hamburger menu dikhega! 🍔</p>
+        <p style="margin-top: 10px;">Phone pe click karne par dropdown bhi open hoga.</p>
+    </div>
+
+    <script>
+        // ===== HAMBURGER MENU TOGGLE =====
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileNav = document.getElementById('mobileNav');
+
+        if (hamburgerBtn && mobileNav) {
+            hamburgerBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                mobileNav.classList.toggle('active');
+                const icon = this.querySelector('i');
+                if (icon) {
+                    icon.classList.toggle('fa-bars');
+                    icon.classList.toggle('fa-times');
+                }
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!hamburgerBtn.contains(e.target) && !mobileNav.contains(e.target)) {
+                    mobileNav.classList.remove('active');
+                    const icon = hamburgerBtn.querySelector('i');
+                    if (icon) {
+                        icon.classList.add('fa-bars');
+                        icon.classList.remove('fa-times');
+                    }
+                }
+            });
+        }
+
+        // ===== MOBILE DROPDOWN TOGGLE (Destinations) =====
+        const destinationsDropdown = document.getElementById('destinationsDropdown');
+        if (destinationsDropdown) {
+            const header = destinationsDropdown.querySelector('.mobile-dropdown-header');
+            header.addEventListener('click', function(e) {
+                e.stopPropagation();
+                destinationsDropdown.classList.toggle('active');
+            });
+        }
+
+        // ===== MOBILE DROPDOWN TOGGLE (More inside Destinations) =====
+        const moreDropdown = document.getElementById('moreDropdown');
+        if (moreDropdown) {
+            const header = moreDropdown.querySelector('.mobile-dropdown-header');
+            header.addEventListener('click', function(e) {
+                e.stopPropagation();
+                moreDropdown.classList.toggle('active');
+            });
+        }
+
+        // ===== MOBILE DROPDOWN TOGGLE (Travel By Theme) =====
+        const themeDropdown = document.getElementById('themeDropdown');
+        if (themeDropdown) {
+            const header = themeDropdown.querySelector('.mobile-dropdown-header');
+            header.addEventListener('click', function(e) {
+                e.stopPropagation();
+                themeDropdown.classList.toggle('active');
+            });
+        }
+
+        // Close mobile dropdowns when clicking on a link (optional)
+        document.querySelectorAll('.mobile-submenu a').forEach(link => {
+            link.addEventListener('click', function() {
+                mobileNav.classList.remove('active');
+                const icon = hamburgerBtn.querySelector('i');
+                if (icon) {
+                    icon.classList.add('fa-bars');
+                    icon.classList.remove('fa-times');
+                }
+            });
+        });
+    </script>
+</body>
+</html><script src="https://cdn.jsdelivr.net/gh/uttarakhandtrips/mobile-navbar/loader.js"></script> 
+<style>@media (max-width:768px){.elementor-element-336558a,header[data-elementor-type="header"]{display:none!important;}</style> 

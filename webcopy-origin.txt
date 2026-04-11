@@ -1,0 +1,1916 @@
+Uri: https://cdn.trustindex.io/loader.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\loader.js
+Content Type: text/javascript
+
+Uri: https://code.jquery.com/jquery-3.6.0.min.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\jquery-3.6.0.min.js
+Content Type: application/javascript
+
+Uri: https://fonts.bunny.net/css?family=Poppins
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\css
+Content Type: text/css
+
+Uri: https://fonts.bunny.net/poppins/files/poppins-latin-400-normal.woff
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\poppins\files\poppins-latin-400-normal.woff
+Content Type: font/woff
+
+Uri: https://fonts.bunny.net/poppins/files/poppins-latin-400-normal.woff2
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\poppins\files\poppins-latin-400-normal.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.bunny.net/poppins/files/poppins-latin-ext-400-normal.woff
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\poppins\files\poppins-latin-ext-400-normal.woff
+Content Type: font/woff
+
+Uri: https://fonts.bunny.net/poppins/files/poppins-latin-ext-400-normal.woff2
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\poppins\files\poppins-latin-ext-400-normal.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.googleapis.com/css?family=Inter:400%2C500%2C700%2C600&subset=latin%2Clatin-ext%2Ccyrillic%2Ccyrillic-ext%2Cvietnamese&display=swap&ver=1.0.2
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\css-1
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\s\inter\v20\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\s\inter\v20\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\s\inter\v20\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\s\inter\v20\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://secure.gravatar.com/avatar/2a7f270afc9722f7600c279c5a239c13c0e9d4319c505a5991dc16a2c6ff6439?s=36&r=g
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\avatar\2a7f270afc9722f7600c279c5a239c13c0e9d4319c505a5991dc16a2c6ff6439.png
+Content Type: image/png
+
+Uri: https://secure.gravatar.com/avatar/2a7f270afc9722f7600c279c5a239c13c0e9d4319c505a5991dc16a2c6ff6439?s=72&r=g
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\avatar\2a7f270afc9722f7600c279c5a239c13c0e9d4319c505a5991dc16a2c6ff6439-1.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/about-us/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\about-us\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/best-places-to-see-in-uttarakhand/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\best-places-to-see-in-uttarakhand\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/best-places-to-see-in-uttarakhand/page/2/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\best-places-to-see-in-uttarakhand\page\2\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/10-must-see-places-in-char-dham-yatra/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\10-must-see-places-in-char-dham-yatra\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/badrinath-temple-history/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\badrinath-temple-history\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/badrinath-temple/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\badrinath-temple\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/best-kedarnath-trip-plan-with-4-days/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\best-kedarnath-trip-plan-with-4-days\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/best-time-to-visit-harsil-for-photography/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\best-time-to-visit-harsil-for-photography\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/can-heart-patients-go-to-kedarnath/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\can-heart-patients-go-to-kedarnath\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/can-we-stay-overnight-at-kedarnath-temple/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\can-we-stay-overnight-at-kedarnath-temple\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/category/blog/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\category\blog\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/category/travel/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\category\travel\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/category/travel/pilgrim/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\category\travel\pilgrim\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/char-dham-by-helicopter-yatra/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\char-dham-by-helicopter-yatra\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/char-dham-yatra-by-helicopter-packages-2024/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\char-dham-yatra-by-helicopter-packages-2024\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/char-dham-yatra-by-helicopter-packages-2024/feed/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\char-dham-yatra-by-helicopter-packages-2024\feed\index.htm
+Content Type: application/rss+xml
+
+Uri: https://uttarakhandtrips.com/blogs/char-dham-yatra-route-map-with-distance/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\char-dham-yatra-route-map-with-distance\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/chardham-yatra-by-helicopter-from-bengaluru/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\chardham-yatra-by-helicopter-from-bengaluru\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/chopta-valley-and-chandrashila-peak/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\chopta-valley-and-chandrashila-peak\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/delhi-to-kedarnath-distance/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\delhi-to-kedarnath-distance\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/gangotri-national-park/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\gangotri-national-park\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/gangotri-temple/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\gangotri-temple\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/harsil-valley/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\harsil-valley\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/harsil-village-tour-how-to-explore-without-breaking-the-bank/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\harsil-village-tour-how-to-explore-without-breaking-the-bank\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/history-and-culture-of-harsil-valley-5-interesting-facts/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\history-and-culture-of-harsil-valley-5-interesting-facts\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/how-to-book-kedarnath-helicopter-services/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\how-to-book-kedarnath-helicopter-services\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/how-to-book-kolkata-to-hyderabad-train-tickets-online/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\how-to-book-kolkata-to-hyderabad-train-tickets-online\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/how-to-plan-for-char-dham-yatra-2025/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\how-to-plan-for-char-dham-yatra-2025\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/how-to-prepare-for-kedarnath-trek/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\how-to-prepare-for-kedarnath-trek\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/how-to-register-for-char-dham-yatra/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\how-to-register-for-char-dham-yatra\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/is-medical-checkup-required-for-kedarnath/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\is-medical-checkup-required-for-kedarnath\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/is-there-lack-of-oxygen-in-kedarnath/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\is-there-lack-of-oxygen-in-kedarnath\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/kedarnath-mandir-know-before-you-go/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\kedarnath-mandir-know-before-you-go\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/kedarnath-yatra-from-chennai-best-6-days-plan/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\kedarnath-yatra-from-chennai-best-6-days-plan\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/packing-list-for-char-dham-yatra-by-helicopter/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\packing-list-for-char-dham-yatra-by-helicopter\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/panch-kedar-trek-a-complete-guide/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\panch-kedar-trek-a-complete-guide\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/plan-your-kedarnath-itinerary/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\plan-your-kedarnath-itinerary\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/tag/char-dham-yatra-by-helicopter/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\tag\char-dham-yatra-by-helicopter\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/tag/how-to-reach-badrinath-temple/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\tag\how-to-reach-badrinath-temple\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/tag/rudranath/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\tag\rudranath\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/top-5-places-to-stay-in-harsil/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\top-5-places-to-stay-in-harsil\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/top-7-reasons-why-harsil-valley-should-be-your-next-mountain-getaway/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\top-7-reasons-why-harsil-valley-should-be-your-next-mountain-getaway\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/triyuginarayan-temple/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\triyuginarayan-temple\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/weather-conditions-at-char-dham-yatra/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\weather-conditions-at-char-dham-yatra\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/why-every-season-is-special-in-harsil-valley-uttarakhand/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\why-every-season-is-special-in-harsil-valley-uttarakhand\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/why-is-auli-so-famous/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\why-is-auli-so-famous\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/why-is-lakhamandal-temple-famous/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\why-is-lakhamandal-temple-famous\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/plugins/astra-sites/inc/lib/onboarding/assets/dist/template-preview/main.js?ver=09382f635556bec359b3
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\plugins\astra-sites\inc\lib\onboarding\assets\dist\template-preview\main.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/plugins/creame-whatsapp-me/public/css/joinchat.min.css?ver=6.0.10
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\plugins\creame-whatsapp-me\public\css\joinchat.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/plugins/creame-whatsapp-me/public/js/joinchat.min.js?ver=6.0.10
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\plugins\creame-whatsapp-me\public\js\joinchat.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/plugins/elementor-pro/assets/css/conditionals/popup.min.css?ver=3.34.0
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\plugins\elementor-pro\assets\css\conditionals\popup.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/plugins/elementor-pro/assets/css/widget-form.min.css?ver=3.34.0
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\plugins\elementor-pro\assets\css\widget-form.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/plugins/elementor-pro/assets/css/widget-nested-carousel.min.css?ver=3.34.0
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\plugins\elementor-pro\assets\css\widget-nested-carousel.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.34.0
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\plugins\elementor-pro\assets\js\elements-handlers.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.34.0
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\plugins\elementor-pro\assets\js\frontend.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.34.0
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\plugins\elementor-pro\assets\js\webpack-pro.runtime.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.35.8
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\plugins\elementor\assets\css\frontend.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.35.8
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\plugins\elementor\assets\css\widget-heading.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/plugins/elementor/assets/css/widget-image-carousel.min.css?ver=3.35.8
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\plugins\elementor\assets\css\widget-image-carousel.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.35.8
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\plugins\elementor\assets\js\frontend-modules.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.35.8
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\plugins\elementor\assets\js\frontend.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.35.8
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\plugins\elementor\assets\js\webpack.runtime.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-shrink.min.css?ver=3.35.8
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\plugins\elementor\assets\lib\animations\styles\e-animation-shrink.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.35.8
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\plugins\elementor\assets\lib\font-awesome\css\all.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.35.8
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\plugins\elementor\assets\lib\font-awesome\css\v4-shims.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.35.8
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\plugins\elementor\assets\lib\font-awesome\js\v4-shims.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/plugins/ml-slider/assets/metaslider/public.css?ver=3.107.0
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\plugins\ml-slider\assets\metaslider\public.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/plugins/ml-slider/assets/metaslider/script.min.js?ver=3.107.0
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\plugins\ml-slider\assets\metaslider\script.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/plugins/ml-slider/assets/sliders/flexslider/flexslider.css?ver=3.107.0
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\plugins\ml-slider\assets\sliders\flexslider\flexslider.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/plugins/ml-slider/assets/sliders/flexslider/jquery.flexslider.min.js?ver=3.107.0
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\plugins\ml-slider\assets\sliders\flexslider\jquery.flexslider.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/plugins/schema-and-structured-data-for-wp/admin_section/css/saswp-style.min.css?ver=1.58
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\plugins\schema-and-structured-data-for-wp\admin_section\css\saswp-style.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/themes/swyft/assets/js/scripts.js?ver=1.0.2
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\themes\swyft\assets\js\scripts.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/themes/swyft/assets/static/icon-fonts/icons.ttf
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\themes\swyft\assets\static\icon-fonts\icons.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/themes/swyft/style.css?ver=1.0.2
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\themes\swyft\style.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2023/12/1-1-1024x402.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2023\12\1-1-1024x402.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2023/12/2-2-1024x402.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2023\12\2-2-1024x402.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2023/12/5-3-1024x402.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2023\12\5-3-1024x402.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2023/12/7-3-1024x402.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2023\12\7-3-1024x402.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2023/12/91-9990-383938-2-1024x1024.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2023\12\91-9990-383938-2-1024x1024.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2023/12/char-dham-weather-guide-1-512x384.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2023\12\char-dham-weather-guide-1-512x384.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2023/12/Char-dham-yatra-2024-1-512x384.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2023\12\Char-dham-yatra-2024-1-512x384.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2023/12/chardham-by-helicopter-2025.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2023\12\chardham-by-helicopter-2025.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2023/12/company-promo.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2023\12\company-promo.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2023/12/demo-icon-facebook-0001@2x.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2023\12\demo-icon-facebook-0001@2x.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2023/12/demo-icon-instagram-0001@2x.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2023\12\demo-icon-instagram-0001@2x.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2023/12/demo-icon-twitter-new-0001@2x.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2023\12\demo-icon-twitter-new-0001@2x.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2023/12/How-to-book-Kedarnath-helicopter-services-512x384.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2023\12\How-to-book-Kedarnath-helicopter-services-512x384.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2023/12/how-to-plan-for-char-dham-yatra-in-2024-1-512x384.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2023\12\how-to-plan-for-char-dham-yatra-in-2024-1-512x384.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2023/12/logo.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2023\12\logo.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2023/12/travel-vaidya-ta.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2023\12\travel-vaidya-ta.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/harsil-valley-1-512x384.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\harsil-valley-1-512x384.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Heart-Patient-and-Kedarnath-512x384.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Heart-Patient-and-Kedarnath-512x384.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/image-3-150x93.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\image-3-150x93.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/image-3-300x187.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\image-3-300x187.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/image-3-512x319.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\image-3-512x319.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/image-3-768x478.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\image-3-768x478.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/image-3.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\image-3.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/lakhamandal-Temple-2-512x384.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\lakhamandal-Temple-2-512x384.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Panch-kedar-3-512x384.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Panch-kedar-3-512x384.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Top-10-Must-See-Places-in-Char-Dham-Yatra-1-1024x538.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Top-10-Must-See-Places-in-Char-Dham-Yatra-1-1024x538.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Top-10-Must-See-Places-in-Char-Dham-Yatra-1024x538.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Top-10-Must-See-Places-in-Char-Dham-Yatra-1024x538.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Top-10-Must-See-Places-in-Char-Dham-Yatra-2-1024x538.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Top-10-Must-See-Places-in-Char-Dham-Yatra-2-1024x538.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Top-10-Must-See-Places-in-Char-Dham-Yatra-3-1024x538.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Top-10-Must-See-Places-in-Char-Dham-Yatra-3-1024x538.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Top-10-Must-See-Places-in-Char-Dham-Yatra-4-1024x538.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Top-10-Must-See-Places-in-Char-Dham-Yatra-4-1024x538.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Top-10-Must-See-Places-in-Char-Dham-Yatra-5-1024x538.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Top-10-Must-See-Places-in-Char-Dham-Yatra-5-1024x538.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Top-10-Must-See-Places-in-Char-Dham-Yatra-5-150x79.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Top-10-Must-See-Places-in-Char-Dham-Yatra-5-150x79.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Top-10-Must-See-Places-in-Char-Dham-Yatra-5-300x158.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Top-10-Must-See-Places-in-Char-Dham-Yatra-5-300x158.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Top-10-Must-See-Places-in-Char-Dham-Yatra-5-512x269.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Top-10-Must-See-Places-in-Char-Dham-Yatra-5-512x269.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Top-10-Must-See-Places-in-Char-Dham-Yatra-5-768x403.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Top-10-Must-See-Places-in-Char-Dham-Yatra-5-768x403.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Top-10-Must-See-Places-in-Char-Dham-Yatra-5-920x483.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Top-10-Must-See-Places-in-Char-Dham-Yatra-5-920x483.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Top-10-Must-See-Places-in-Char-Dham-Yatra-5.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Top-10-Must-See-Places-in-Char-Dham-Yatra-5.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Top-10-Must-See-Places-in-Char-Dham-Yatra-512x384.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Top-10-Must-See-Places-in-Char-Dham-Yatra-512x384.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Untitled-design-1-2-1024x576.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Untitled-design-1-2-1024x576.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Untitled-design-1-2-150x84.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Untitled-design-1-2-150x84.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Untitled-design-1-2-1536x864.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Untitled-design-1-2-1536x864.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Untitled-design-1-2-1600x900.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Untitled-design-1-2-1600x900.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Untitled-design-1-2-300x169.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Untitled-design-1-2-300x169.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Untitled-design-1-2-512x288.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Untitled-design-1-2-512x288.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Untitled-design-1-2-768x432.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Untitled-design-1-2-768x432.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Untitled-design-1-2-920x518.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Untitled-design-1-2-920x518.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Untitled-design-1-2.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Untitled-design-1-2.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Untitled-design-44-1024x538.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Untitled-design-44-1024x538.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Untitled-design-44-150x79.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Untitled-design-44-150x79.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Untitled-design-44-300x158.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Untitled-design-44-300x158.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Untitled-design-44-512x269.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Untitled-design-44-512x269.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Untitled-design-44-768x403.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Untitled-design-44-768x403.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Untitled-design-44-920x483.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Untitled-design-44-920x483.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Untitled-design-44.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Untitled-design-44.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Untitled-design-46-1024x538.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Untitled-design-46-1024x538.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Untitled-design-47-1024x538.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Untitled-design-47-1024x538.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Untitled-design-48-1024x538.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\Untitled-design-48-1024x538.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-24-at-1.43.23-PM-1024x564.jpeg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\01\WhatsApp-Image-2024-01-24-at-1.43.23-PM-1024x564.jpeg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/02/chopta-16-512x384.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\02\chopta-16-512x384.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/02/Untitled-design-51-512x384.jpg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\02\Untitled-design-51-512x384.jpg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/03/Book-from-a-Top-Rated-agency-7-1024x256.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\03\Book-from-a-Top-Rated-agency-7-1024x256.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/03/Char-Dham-Yatra-by-Heli-3.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\03\Char-Dham-Yatra-by-Heli-3.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/03/Char-Dham-Yatra-by-Heli-4.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\03\Char-Dham-Yatra-by-Heli-4.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/05/3-1.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\05\3-1.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/05/4-1.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\05\4-1.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/05/5-1.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\05\5-1.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/05/6-1.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\05\6-1.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/08/favicon.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\08\favicon.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/09/image.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\09\image.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/09/Old-Badrinath-temple-edited-148x148.jpeg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\09\Old-Badrinath-temple-edited-148x148.jpeg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/09/Old-Badrinath-temple-edited-150x150.jpeg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\09\Old-Badrinath-temple-edited-150x150.jpeg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/09/Old-Badrinath-temple-edited-296x296.jpeg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\09\Old-Badrinath-temple-edited-296x296.jpeg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/09/Old-Badrinath-temple-edited-300x300.jpeg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\09\Old-Badrinath-temple-edited-300x300.jpeg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/09/Old-Badrinath-temple-edited-512x512.jpeg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\09\Old-Badrinath-temple-edited-512x512.jpeg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/09/Old-Badrinath-temple-edited-96x96.jpeg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\09\Old-Badrinath-temple-edited-96x96.jpeg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/09/Old-Badrinath-temple-edited.jpeg
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\09\Old-Badrinath-temple-edited.jpeg
+Content Type: image/jpeg
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/10/Book-From-The-Best-1-1024x1024.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\10\Book-From-The-Best-1-1024x1024.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/10/Book-From-The-Best-1-148x148.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\10\Book-From-The-Best-1-148x148.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/10/Book-From-The-Best-1-150x150.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\10\Book-From-The-Best-1-150x150.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/10/Book-From-The-Best-1-296x296.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\10\Book-From-The-Best-1-296x296.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/10/Book-From-The-Best-1-300x300.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\10\Book-From-The-Best-1-300x300.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/10/Book-From-The-Best-1-512x512.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\10\Book-From-The-Best-1-512x512.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/10/Book-From-The-Best-1-768x768.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\10\Book-From-The-Best-1-768x768.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2024/10/Book-From-The-Best-1-920x920.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2024\10\Book-From-The-Best-1-920x920.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2025/01/CD2025-2-512x384.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2025\01\CD2025-2-512x384.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2025/02/1-2.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2025\02\1-2.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2025/02/1-4.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2025\02\1-4.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2025/02/2-2.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2025\02\2-2.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2025/02/2-3.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2025\02\2-3.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2025/02/2-5.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2025\02\2-5.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2025/02/3-2.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2025\02\3-2.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2025/02/3-3.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2025\02\3-3.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2025/02/3-5.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2025\02\3-5.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2025/02/4-1-1.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2025\02\4-1-1.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2025/02/4-2.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2025\02\4-2.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2025/02/4-4.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2025\02\4-4.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2025/02/5.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2025\02\5.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2025/02/6.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2025\02\6.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2025/02/Adobe-Express-file.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2025\02\Adobe-Express-file.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/2025/02/Experience-Himalayan-Pilgrimage-2.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\2025\02\Experience-Himalayan-Pilgrimage-2.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/elementor/css/post-2662.css?ver=1774343878
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\elementor\css\post-2662.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/elementor/css/post-5226.css?ver=1774344981
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\elementor\css\post-5226.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/elementor/css/post-5278.css?ver=1774344981
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\elementor\css\post-5278.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/elementor/css/post-5304.css?ver=1774344981
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\elementor\css\post-5304.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/elementor/css/post-5328.css?ver=1774344981
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\elementor\css\post-5328.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/elementor/css/post-5404.css?ver=1774344982
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\elementor\css\post-5404.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/elementor/css/post-5421.css?ver=1774344980
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\elementor\css\post-5421.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/elementor/css/post-5440.css?ver=1774344981
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\elementor\css\post-5440.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/elementor/css/post-5453.css?ver=1774344981
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\elementor\css\post-5453.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/elementor/css/post-5465.css?ver=1774344982
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\elementor\css\post-5465.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/elementor/css/post-5570.css?ver=1774344083
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\elementor\css\post-5570.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/elementor/google-fonts/css/poppins.css?ver=1742246365
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\elementor\google-fonts\css\poppins.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1742246358
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\elementor\google-fonts\css\roboto.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/elementor/google-fonts/css/robotoslab.css?ver=1742246362
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\elementor\google-fonts\css\robotoslab.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/elementor/google-fonts/fonts/poppins-pxibyp8kv8jhgfvrlcz7z1xlfq.woff2
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\elementor\google-fonts\fonts\poppins-pxibyp8kv8jhgfvrlcz7z1xlfq.woff2
+Content Type: font/woff2
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/elementor/google-fonts/fonts/poppins-pxibyp8kv8jhgfvrlgt9z1xlfq.woff2
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\elementor\google-fonts\fonts\poppins-pxibyp8kv8jhgfvrlgt9z1xlfq.woff2
+Content Type: font/woff2
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/elementor/google-fonts/fonts/poppins-pxieyp8kv8jhgfvrjjfecg.woff2
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\elementor\google-fonts\fonts\poppins-pxieyp8kv8jhgfvrjjfecg.woff2
+Content Type: font/woff2
+
+Uri: https://uttarakhandtrips.com/blogs/wp-content/uploads/elementor/google-fonts/fonts/roboto-kfo7cnqeu92fr1me7ksn66agldtyluama3yuba.woff2
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-content\uploads\elementor\google-fonts\fonts\roboto-kfo7cnqeu92fr1me7ksn66agldtyluama3yuba.woff2
+Content Type: font/woff2
+
+Uri: https://uttarakhandtrips.com/blogs/wp-includes/css/dist/block-library/style.min.css?ver=6.9.4
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-includes\css\dist\block-library\style.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/blogs/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-includes\js\dist\dom-ready.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/blogs/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-includes\js\dist\hooks.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/blogs/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-includes\js\dist\i18n.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/blogs/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-includes\js\jquery\jquery-migrate.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/blogs/wp-includes/js/jquery/jquery.min.js?ver=3.7.1
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-includes\js\jquery\jquery.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/blogs/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-includes\js\jquery\ui\core.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/blogs/wp-json/oembed/1.0/embed?url=https:%2F%2Futtarakhandtrips.com%2Fblogs%2Fchar-dham-yatra-by-helicopter-packages-2024%2F
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-json\oembed\1.0\embed-1
+Content Type: application/json
+
+Uri: https://uttarakhandtrips.com/blogs/wp-json/oembed/1.0/embed?url=https:%2F%2Futtarakhandtrips.com%2Fblogs%2Fchar-dham-yatra-by-helicopter-packages-2024%2F&format=xml
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-json\oembed\1.0\embed-2
+Content Type: text/xml
+
+Uri: https://uttarakhandtrips.com/blogs/wp-json/oembed/1.0/embed?url=https:%2F%2Futtarakhandtrips.com%2Fblogs%2Fkedarnath-mandir-know-before-you-go%2F
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-json\oembed\1.0\embed
+Content Type: application/json
+
+Uri: https://uttarakhandtrips.com/blogs/wp-json/wp/v2/posts/2497
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\wp-json\wp\v2\posts\2497
+Content Type: application/json
+
+Uri: https://uttarakhandtrips.com/blogs/yamunotri-temple/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\blogs\yamunotri-temple\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/char-dham-yatra-packages/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\char-dham-yatra-packages\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/comments/feed/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\comments\feed\index.htm
+Content Type: application/rss+xml
+
+Uri: https://uttarakhandtrips.com/contact-us/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\contact-us\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/destination/auli/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\destination\auli\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/destination/badrinath/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\destination\badrinath\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/destination/chopta/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\destination\chopta\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/destination/gangotri/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\destination\gangotri\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/destination/haridwar/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\destination\haridwar\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/destination/harsil/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\destination\harsil\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/destination/jim-corbett/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\destination\jim-corbett\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/destination/kedarnath/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\destination\kedarnath\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/destination/mussoorie/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\destination\mussoorie\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/destination/nainital/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\destination\nainital\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/destination/rishikesh/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\destination\rishikesh\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/destination/yamunotri/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\destination\yamunotri\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/destinationcat/explore-more/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\destinationcat\explore-more\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/feed/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\feed\index.htm
+Content Type: application/rss+xml
+
+Uri: https://uttarakhandtrips.com/package/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\package\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/badrinath-trip-from-dehradun/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\badrinath-trip-from-dehradun\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/badrinath-yatra-from-haridwar/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\badrinath-yatra-from-haridwar\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/badrinath-yatra-from-new-delhi/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\badrinath-yatra-from-new-delhi\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/badrinath-yatra-from-rishikesh/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\badrinath-yatra-from-rishikesh\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/char-dham-by-helicopter/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\char-dham-by-helicopter\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/char-dham-yatra-from-dehradun/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\char-dham-yatra-from-dehradun\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/char-dham-yatra-from-delhi/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\char-dham-yatra-from-delhi\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/char-dham-yatra-from-haridwar/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\char-dham-yatra-from-haridwar\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/char-dham-yatra-from-rishikesh/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\char-dham-yatra-from-rishikesh\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/chopta-tour-package-from-delhi/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\chopta-tour-package-from-delhi\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/chopta-tour-package-from-haridwar/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\chopta-tour-package-from-haridwar\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/haridwar-rishikesh-tour/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\haridwar-rishikesh-tour\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/haridwar-tour-package/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\haridwar-tour-package\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/harsil-valley-getaway/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\harsil-valley-getaway\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/harsil-village-tour/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\harsil-village-tour\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/jim-corbett-weekend-tour/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\jim-corbett-weekend-tour\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/kedarnath-badrinath-same-day-tour-by-helicopter/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\kedarnath-badrinath-same-day-tour-by-helicopter\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/kedarnath-badrinath-tour-by-helicopter/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\kedarnath-badrinath-tour-by-helicopter\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/kedarnath-badrinath-yatra-from-dehradun/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\kedarnath-badrinath-yatra-from-dehradun\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/kedarnath-badrinath-yatra-from-delhi/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\kedarnath-badrinath-yatra-from-delhi\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/kedarnath-badrinath-yatra-from-haridwar/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\kedarnath-badrinath-yatra-from-haridwar\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/kedarnath-badrinath-yatra-from-rishikesh/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\kedarnath-badrinath-yatra-from-rishikesh\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/kedarnath-yatra-from-dehradun/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\kedarnath-yatra-from-dehradun\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/kedarnath-yatra-from-haridwar/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\kedarnath-yatra-from-haridwar\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/kedarnath-yatra-from-new-delhi/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\kedarnath-yatra-from-new-delhi\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/kedarnath-yatra-from-rishikesh/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\kedarnath-yatra-from-rishikesh\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/nainital-jim-corbett-tour-packages/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\nainital-jim-corbett-tour-packages\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/Package/nainital-tour-package-from-delhi/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\Package\nainital-tour-package-from-delhi\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/package/page/3/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\package\page\3\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/privacy-policy/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\privacy-policy\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/refund-policy/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\refund-policy\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/taxi-service-in-uttarakhand/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\taxi-service-in-uttarakhand\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/terms-conditions/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\terms-conditions\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/tourcat/adventure/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\tourcat\adventure\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/tourcat/family/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\tourcat\family\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/tourcat/family/page/2/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\tourcat\family\page\2\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/tourcat/group/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\tourcat\group\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/tourcat/leisure/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\tourcat\leisure\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/tourcat/pilgrimage/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\tourcat\pilgrimage\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/tourcat/romantic/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\tourcat\romantic\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/tourcat/wildlife/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\tourcat\wildlife\index.htm
+Content Type: text/html
+
+Uri: https://uttarakhandtrips.com/wp-content/fonts/poppins/pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\fonts\poppins\pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2
+Content Type: font/woff2
+
+Uri: https://uttarakhandtrips.com/wp-content/fonts/poppins/pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\fonts\poppins\pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2
+Content Type: font/woff2
+
+Uri: https://uttarakhandtrips.com/wp-content/fonts/poppins/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\fonts\poppins\pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2
+Content Type: font/woff2
+
+Uri: https://uttarakhandtrips.com/wp-content/fonts/poppins/pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\fonts\poppins\pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2
+Content Type: font/woff2
+
+Uri: https://uttarakhandtrips.com/wp-content/fonts/poppins/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\fonts\poppins\pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2
+Content Type: font/woff2
+
+Uri: https://uttarakhandtrips.com/wp-content/fonts/poppins/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\fonts\poppins\pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2
+Content Type: font/woff2
+
+Uri: https://uttarakhandtrips.com/wp-content/fonts/poppins/pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\fonts\poppins\pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2
+Content Type: font/woff2
+
+Uri: https://uttarakhandtrips.com/wp-content/fonts/poppins/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\fonts\poppins\pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2
+Content Type: font/woff2
+
+Uri: https://uttarakhandtrips.com/wp-content/fonts/poppins/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\fonts\poppins\pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2
+Content Type: font/woff2
+
+Uri: https://uttarakhandtrips.com/wp-content/fonts/work-sans/QGYsz_wNahGAdqQ43Rh_c6Dpp_k.woff2
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\fonts\work-sans\QGYsz_wNahGAdqQ43Rh_c6Dpp_k.woff2
+Content Type: font/woff2
+
+Uri: https://uttarakhandtrips.com/wp-content/fonts/work-sans/QGYsz_wNahGAdqQ43Rh_cqDpp_k.woff2
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\fonts\work-sans\QGYsz_wNahGAdqQ43Rh_cqDpp_k.woff2
+Content Type: font/woff2
+
+Uri: https://uttarakhandtrips.com/wp-content/fonts/work-sans/QGYsz_wNahGAdqQ43Rh_fKDp.woff2
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\fonts\work-sans\QGYsz_wNahGAdqQ43Rh_fKDp.woff2
+Content Type: font/woff2
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/contact-form-7/includes/css/styles.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\contact-form-7\includes\css\styles.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/contact-form-7/includes/js/index.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\contact-form-7\includes\js\index.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\contact-form-7\includes\swv\js\index.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor-pro/assets/css/conditionals/popup.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor-pro\assets\css\conditionals\popup.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor-pro/assets/css/modules/sticky.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor-pro\assets\css\modules\sticky.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor-pro/assets/css/widget-carousel-module-base.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor-pro\assets\css\widget-carousel-module-base.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor-pro/assets/css/widget-form.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor-pro\assets\css\widget-form.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor-pro/assets/css/widget-media-carousel.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor-pro\assets\css\widget-media-carousel.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor-pro\assets\css\widget-nav-menu.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor-pro/assets/css/widget-posts.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor-pro\assets\css\widget-posts.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor-pro\assets\js\elements-handlers.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor-pro\assets\js\frontend.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor-pro\assets\js\webpack-pro.runtime.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor-pro\assets\lib\smartmenus\jquery.smartmenus.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor-pro\assets\lib\sticky\jquery.sticky.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor\assets\css\conditionals\apple-webkit.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor\assets\css\conditionals\e-swiper.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor/assets/css/frontend.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor\assets\css\frontend.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor/assets/css/widget-divider.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor\assets\css\widget-divider.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor/assets/css/widget-heading.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor\assets\css\widget-heading.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor\assets\css\widget-icon-box.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor\assets\css\widget-icon-list.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor/assets/css/widget-image-carousel.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor\assets\css\widget-image-carousel.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor/assets/css/widget-image.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor\assets\css\widget-image.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor/assets/css/widget-nested-accordion.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor\assets\css\widget-nested-accordion.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor\assets\css\widget-social-icons.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor\assets\js\frontend-modules.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor/assets/js/frontend.min.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor\assets\js\frontend.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor\assets\js\webpack.runtime.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-bob.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor\assets\lib\animations\styles\e-animation-bob.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-shrink.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor\assets\lib\animations\styles\e-animation-shrink.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-sink.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor\assets\lib\animations\styles\e-animation-sink.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor/assets/lib/animations/styles/fadeIn.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor\assets\lib\animations\styles\fadeIn.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor\assets\lib\font-awesome\css\all.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor\assets\lib\font-awesome\css\v4-shims.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor\assets\lib\font-awesome\js\v4-shims.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\elementor\assets\lib\swiper\v8\css\swiper.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/grandtour-custom-post/css/fontawesome-stars-o.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\grandtour-custom-post\css\fontawesome-stars-o.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/grandtour-elementor/assets/css/animatedheadline.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\grandtour-elementor\assets\css\animatedheadline.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/grandtour-elementor/assets/css/flickity.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\grandtour-elementor\assets\css\flickity.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/grandtour-elementor/assets/css/grandtour-elementor-responsive.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\grandtour-elementor\assets\css\grandtour-elementor-responsive.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/grandtour-elementor/assets/css/grandtour-elementor.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\grandtour-elementor\assets\css\grandtour-elementor.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/grandtour-elementor/assets/css/justifiedGallery.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\grandtour-elementor\assets\css\justifiedGallery.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/grandtour-elementor/assets/css/owl.theme.default.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\grandtour-elementor\assets\css\owl.theme.default.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/grandtour-elementor/assets/css/switchery.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\grandtour-elementor\assets\css\switchery.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/grandtour-elementor/assets/js/grandtour-elementor.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\grandtour-elementor\assets\js\grandtour-elementor.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/grandtour-elementor/assets/js/jarallax.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\grandtour-elementor\assets\js\jarallax.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/grandtour-elementor/assets/js/jquery.blast.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\grandtour-elementor\assets\js\jquery.blast.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/grandtour-elementor/assets/js/jquery.lazy.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\grandtour-elementor\assets\js\jquery.lazy.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/grandtour-elementor/assets/js/jquery.parallax-scroll.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\grandtour-elementor\assets\js\jquery.parallax-scroll.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/grandtour-elementor/assets/js/jquery.smoove.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\grandtour-elementor\assets\js\jquery.smoove.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/grandtour-elementor/assets/js/jquery.sticky-sidebar.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\grandtour-elementor\assets\js\jquery.sticky-sidebar.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/grandtour-elementor/assets/js/parallax.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\grandtour-elementor\assets\js\parallax.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/rocket-lazy-load/assets/img/youtube.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\rocket-lazy-load\assets\img\youtube.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/wp-content/plugins/rocket-lazy-load/assets/js/16.1/lazyload.min.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\plugins\rocket-lazy-load\assets\js\16.1\lazyload.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/css/animation.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\css\animation.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/css/dark-skin/skin.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\css\dark-skin\skin.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/css/font-awesome.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\css\font-awesome.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/css/grid.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\css\grid.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/css/ilightbox/ilightbox.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\css\ilightbox\ilightbox.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/css/jqueryui/custom.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\css\jqueryui\custom.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/css/light-skin/skin.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\css\light-skin\skin.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/css/mac-skin/skin.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\css\mac-skin\skin.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/css/menus/leftalignmenu.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\css\menus\leftalignmenu.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/css/metro-black-skin/skin.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\css\metro-black-skin\skin.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/css/metro-white-skin/skin.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\css\metro-white-skin\skin.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/css/odometer-theme-minimal.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\css\odometer-theme-minimal.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/css/parade-skin/skin.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\css\parade-skin\skin.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/css/reset.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\css\reset.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/css/screen.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\css\screen.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/css/smooth-skin/skin.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\css\smooth-skin\skin.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/css/themify-icons.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\css\themify-icons.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/css/tooltipster.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\css\tooltipster.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/css/wordpress.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\css\wordpress.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/fonts/themify.woff
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\fonts\themify.woff
+Content Type: application/font-woff
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/js/custom.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\js\custom.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/js/custom_plugins.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\js\custom_plugins.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/js/flexslider/flexslider.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\js\flexslider\flexslider.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/js/ilightbox.packed.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\js\ilightbox.packed.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/js/jquery.cookie.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\js\jquery.cookie.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/js/jquery.easing.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\js\jquery.easing.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/js/jquery.isotope.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\js\jquery.isotope.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/js/jquery.masory.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\js\jquery.masory.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/js/jquery.requestAnimationFrame.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\js\jquery.requestAnimationFrame.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/js/jquery.stellar.min.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\js\jquery.stellar.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/js/jquery.sticky-kit.min.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\js\jquery.sticky-kit.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/js/jquery.tooltipster.min.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\js\jquery.tooltipster.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/themes/grandtour/js/waypoints.min.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\themes\grandtour\js\waypoints.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/06/Untitled-design-81-1.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\06\Untitled-design-81-1.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/06/Untitled-design-84.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\06\Untitled-design-84.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/06/Untitled-design-85.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\06\Untitled-design-85.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/07/kedarnath-tour-pics-7-300x171.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\07\kedarnath-tour-pics-7-300x171.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/08/10-300x171.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\08\10-300x171.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/08/11-300x171.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\08\11-300x171.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/08/12-300x171.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\08\12-300x171.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/08/13-2.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\08\13-2.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/08/15.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\08\15.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/08/16-1.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\08\16-1.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/08/2-2-1.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\08\2-2-1.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/08/3-2-1.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\08\3-2-1.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/08/4-2-1.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\08\4-2-1.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/08/5-2-1.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\08\5-2-1.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/08/boot.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\08\boot.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/08/cloudy-150x150.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\08\cloudy-150x150.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/08/cropped-512-180x180.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\08\cropped-512-180x180.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/08/cropped-512-192x192.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\08\cropped-512-192x192.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/08/cropped-512-32x32.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\08\cropped-512-32x32.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/08/first-aid-kit.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\08\first-aid-kit.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/08/jacket.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\08\jacket.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/08/raincoat.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\08\raincoat.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/08/rupee.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\08\rupee.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/08/snow-150x150.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\08\snow-150x150.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/08/storm-1-150x150.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\08\storm-1-150x150.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/08/Uttarakhand-Trips-final-Logo-1.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\08\Uttarakhand-Trips-final-Logo-1.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2024/09/diya-2-300x300.png
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2024\09\diya-2-300x300.png
+Content Type: image/png
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2025/06/10-5-1.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2025\06\10-5-1.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2025/06/12-7-1.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2025\06\12-7-1.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2025/06/13-6-1.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2025\06\13-6-1.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2025/06/14-4-1.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2025\06\14-4-1.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2025/06/15-4-1.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2025\06\15-4-1.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2025/06/16-4-1.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2025\06\16-4-1.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2025/06/17-4.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2025\06\17-4.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2025/06/2-19.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2025\06\2-19.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2025/06/3-18.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2025\06\3-18.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2025/06/3-38.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2025\06\3-38.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2025/06/4-17-1.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2025\06\4-17-1.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2025/06/4-38.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2025\06\4-38.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2025/06/5-13-1.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2025\06\5-13-1.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2025/06/5-32.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2025\06\5-32.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2025/06/6-10.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2025\06\6-10.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2025/06/6-24.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2025\06\6-24.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2025/06/7-21.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2025\06\7-21.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2025/06/7-8-1.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2025\06\7-8-1.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2025/06/8-18.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2025\06\8-18.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2025/06/8-6-1.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2025\06\8-6-1.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2025/06/9-20.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2025\06\9-20.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/2025/06/9-6-1.webp
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\2025\06\9-6-1.webp
+Content Type: image/webp
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/elementor/css/post-10.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\elementor\css\post-10.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/elementor/css/post-10199.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\elementor\css\post-10199.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/elementor/css/post-10311.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\elementor\css\post-10311.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/elementor/css/post-12201.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\elementor\css\post-12201.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/elementor/css/post-13216.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\elementor\css\post-13216.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/elementor/css/post-15478.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\elementor\css\post-15478.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/elementor/css/post-15775.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\elementor\css\post-15775.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/elementor/css/post-4492.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\elementor\css\post-4492.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/elementor/css/post-6032.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\elementor\css\post-6032.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/elementor/css/post-9511.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\elementor\css\post-9511.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/elementor/css/post-9611.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\elementor\css\post-9611.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/elementor/css/post-9620.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\elementor\css\post-9620.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/elementor/css/post-9630.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\elementor\css\post-9630.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/elementor/google-fonts/css/poppins.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\elementor\google-fonts\css\poppins.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/elementor/google-fonts/css/roboto.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\elementor\google-fonts\css\roboto.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/elementor/google-fonts/css/robotoslab.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\elementor\google-fonts\css\robotoslab.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/elementor/google-fonts/fonts/poppins-pxieyp8kv8jhgfvrjjfecg.woff2
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\elementor\google-fonts\fonts\poppins-pxieyp8kv8jhgfvrjjfecg.woff2
+Content Type: font/woff2
+
+Uri: https://uttarakhandtrips.com/wp-content/uploads/grandtour/custom-css.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-content\uploads\grandtour\custom-css.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-includes/js/dist/hooks.min.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-includes\js\dist\hooks.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-includes/js/dist/i18n.min.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-includes\js\dist\i18n.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-includes/js/imagesloaded.min.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-includes\js\imagesloaded.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-includes/js/jquery/jquery-migrate.min.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-includes\js\jquery\jquery-migrate.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-includes/js/jquery/jquery.min.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-includes\js\jquery\jquery.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-includes/js/jquery/ui/core.min.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-includes\js\jquery\ui\core.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-includes/js/jquery/ui/effect.min.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-includes\js\jquery\ui\effect.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-includes/js/masonry.min.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-includes\js\masonry.min.js
+Content Type: application/x-javascript
+
+Uri: https://uttarakhandtrips.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-includes\js\mediaelement\mediaelementplayer-legacy.min.css
+Content Type: text/css
+
+Uri: https://uttarakhandtrips.com/wp-json/
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-json\index.htm
+Content Type: application/json
+
+Uri: https://uttarakhandtrips.com/wp-json/oembed/1.0/embed?url=https:%2F%2Futtarakhandtrips.com%2F
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-json\oembed\1.0\embed
+Content Type: application/json
+
+Uri: https://uttarakhandtrips.com/wp-json/oembed/1.0/embed?url=https:%2F%2Futtarakhandtrips.com%2F&format=xml
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-json\oembed\1.0\embed-1
+Content Type: text/xml
+
+Uri: https://uttarakhandtrips.com/wp-json/oembed/1.0/embed?url=https:%2F%2Futtarakhandtrips.com%2FPackage%2Fchar-dham-yatra-from-dehradun%2F
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-json\oembed\1.0\embed-2
+Content Type: application/json
+
+Uri: https://uttarakhandtrips.com/wp-json/oembed/1.0/embed?url=https:%2F%2Futtarakhandtrips.com%2FPackage%2Fchar-dham-yatra-from-dehradun%2F&format=xml
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-json\oembed\1.0\embed-3
+Content Type: text/xml
+
+Uri: https://uttarakhandtrips.com/wp-json/oembed/1.0/embed?url=https:%2F%2Futtarakhandtrips.com%2FPackage%2Fchar-dham-yatra-from-rishikesh%2F
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-json\oembed\1.0\embed-4
+Content Type: application/json
+
+Uri: https://uttarakhandtrips.com/wp-json/oembed/1.0/embed?url=https:%2F%2Futtarakhandtrips.com%2FPackage%2Fchar-dham-yatra-from-rishikesh%2F&format=xml
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-json\oembed\1.0\embed-5
+Content Type: text/xml
+
+Uri: https://uttarakhandtrips.com/wp-json/oembed/1.0/embed?url=https:%2F%2Futtarakhandtrips.com%2FPackage%2Fchopta-tour-package-from-haridwar%2F
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-json\oembed\1.0\embed-14
+Content Type: application/json
+
+Uri: https://uttarakhandtrips.com/wp-json/oembed/1.0/embed?url=https:%2F%2Futtarakhandtrips.com%2FPackage%2Fkedarnath-yatra-from-dehradun%2F
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-json\oembed\1.0\embed-10
+Content Type: application/json
+
+Uri: https://uttarakhandtrips.com/wp-json/oembed/1.0/embed?url=https:%2F%2Futtarakhandtrips.com%2FPackage%2Fkedarnath-yatra-from-dehradun%2F&format=xml
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-json\oembed\1.0\embed-11
+Content Type: text/xml
+
+Uri: https://uttarakhandtrips.com/wp-json/oembed/1.0/embed?url=https:%2F%2Futtarakhandtrips.com%2FPackage%2Fkedarnath-yatra-from-haridwar%2F
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-json\oembed\1.0\embed-6
+Content Type: application/json
+
+Uri: https://uttarakhandtrips.com/wp-json/oembed/1.0/embed?url=https:%2F%2Futtarakhandtrips.com%2FPackage%2Fkedarnath-yatra-from-haridwar%2F&format=xml
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-json\oembed\1.0\embed-7
+Content Type: text/xml
+
+Uri: https://uttarakhandtrips.com/wp-json/oembed/1.0/embed?url=https:%2F%2Futtarakhandtrips.com%2FPackage%2Fkedarnath-yatra-from-new-delhi%2F
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-json\oembed\1.0\embed-8
+Content Type: application/json
+
+Uri: https://uttarakhandtrips.com/wp-json/oembed/1.0/embed?url=https:%2F%2Futtarakhandtrips.com%2FPackage%2Fkedarnath-yatra-from-new-delhi%2F&format=xml
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-json\oembed\1.0\embed-9
+Content Type: text/xml
+
+Uri: https://uttarakhandtrips.com/wp-json/oembed/1.0/embed?url=https:%2F%2Futtarakhandtrips.com%2FPackage%2Fkedarnath-yatra-from-rishikesh%2F
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-json\oembed\1.0\embed-12
+Content Type: application/json
+
+Uri: https://uttarakhandtrips.com/wp-json/oembed/1.0/embed?url=https:%2F%2Futtarakhandtrips.com%2FPackage%2Fkedarnath-yatra-from-rishikesh%2F&format=xml
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-json\oembed\1.0\embed-13
+Content Type: text/xml
+
+Uri: https://uttarakhandtrips.com/wp-json/wp/v2/pages/4492
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\wp-json\wp\v2\pages\4492
+Content Type: application/json
+
+Uri: https://uttarakhandtrips.com/xmlrpc.php?rsd
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\xmlrpc.php
+Content Type: text/xml
+
+Uri: https://www.google.com/recaptcha/api.js?hl=en_US&onload=forminator_render_captcha&render=explicit
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\recaptcha\api-1.js
+Content Type: text/javascript
+
+Uri: https://www.google.com/recaptcha/api.js?render=explicit
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\recaptcha\api.js
+Content Type: text/javascript
+
+Uri: https://www.google.com/recaptcha/api.js?render=explicit&ver=3.34.0
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\recaptcha\api-2.js
+Content Type: text/javascript
+
+Uri: https://www.googletagmanager.com/gtag/js?id=GT-MR254ZG
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\gtag\js-1
+Content Type: application/javascript
+
+Uri: https://www.googletagmanager.com/gtag/js?id=GT-WK27ZCWJ
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\gtag\js
+Content Type: application/javascript
+
+Uri: https://www.instagram.com/embed.js
+File Name: C:\Users\aaroh\OneDrive\Desktop\mong\uttarakhandtrips.com\embed.js
+Content Type: application/x-javascript
+

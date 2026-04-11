@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Narayan Holidays | Uttarakhand Travel Experts</title>
+    <meta name="description" content="Narayan Holidays is a leading Destination Management Company in Uttarakhand, specializing in Char Dham Yatra, pilgrimage tours, and luxury helicopter services.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ============================================ */
+        /* COMPLETE CSS - FULL RESPONSIVE NAVBAR       */
+        /* Desktop pe full menu, Mobile pe hamburger   */
+        /* ============================================ */
+        
+        :root {
+            --primary: #FF4A52;
+            --primary-dark: #e03e46;
+            --primary-light: #ffe5e6;
+            --dark: #1a1a2e;
+            --dark-light: #16213e;
+            --text: #333;
+            --text-light: #666;
+            --white: #fff;
+            --gray-100: #f8f9fa;
+            --whatsapp: #25D366;
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow-sm: 0 2px 10px rgba(0,0,0,0.08);
+            --shadow-md: 0 10px 40px rgba(0,0,0,0.12);
+            --shadow-lg: 0 20px 60px rgba(0,0,0,0.15);
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.7;
+            color: var(--text);
+            background: var(--white);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Scroll Progress */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), #ff8a8e);
+            z-index: 10000;
+            transition: width 0.1s linear;
+        }
+
+        /* Custom Cursor */
+        .cursor {
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--primary);
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            transition: transform 0.15s ease, opacity 0.15s ease;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+        }
+        .cursor.visible { opacity: 1; }
+        .cursor.hover { transform: translate(-50%, -50%) scale(1.5); background: rgba(255, 74, 82, 0.1); }
+
+        /* Reveal Animations */
+        .reveal { opacity: 0; transform: translateY(60px); transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .reveal-left { opacity: 0; transform: translateX(-60px); transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+        .reveal-left.active { opacity: 1; transform: translateX(0); }
+        .reveal-right { opacity: 0; transform: translateX(60px); transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+        .reveal-right.active { opacity: 1; transform: translateX(0); }
+        .reveal-scale { opacity: 0; transform: scale(0.8); transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+        .reveal-scale.active { opacity: 1; transform: scale(1); }
+        .delay-1 { transition-delay: 0.1s; }
+        .delay-2 { transition-delay: 0.2s; }
+        .delay-3 { transition-delay: 0.3s; }
+        .delay-4 { transition-delay: 0.4s; }
+
+        /* ============================================ */
+        /* FULL RESPONSIVE NAVBAR                      */
+        /* Desktop: full menu | Mobile: hamburger     */
+        /* ============================================ */
+        .main-navbar {
+            background: #ffffff;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 99999;
+            padding: 12px 20px;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Logo */
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+        .nav-logo-icon {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, #FF4A52, #e03e46);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 16px;
+        }
+        .nav-logo-text {
+            font-size: 18px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #FF4A52, #e03e46);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Desktop Menu */
+        .nav-desktop-menu {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+        .nav-desktop-menu li a {
+            font-weight: 500;
+            color: #333;
+            padding: 8px 0;
+            position: relative;
+            font-size: 15px;
+        }
+        .nav-desktop-menu li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #FF4A52;
+            transition: width 0.3s ease;
+        }
+        .nav-desktop-menu li a:hover::after,
+        .nav-desktop-menu li a.active::after {
+            width: 100%;
+        }
+        .nav-desktop-menu li a:hover,
+        .nav-desktop-menu li a.active {
+            color: #FF4A52;
+        }
+
+        /* Desktop CTA Button */
+        .nav-desktop-cta {
+            background: linear-gradient(135deg, #FF4A52, #e03e46);
+            color: white;
+            padding: 10px 24px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: var(--transition);
+        }
+        .nav-desktop-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 74, 82, 0.4);
+            color: white;
+        }
+
+        /* Mobile Hamburger (hidden on desktop) */
+        .nav-hamburger {
+            background: #FF4A52;
+            border: none;
+            width: 44px;
+            height: 44px;
+            border-radius: 8px;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav-hamburger span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: white;
+            position: relative;
+        }
+        .nav-hamburger span::before,
+        .nav-hamburger span::after {
+            content: '';
+            position: absolute;
+            width: 22px;
+            height: 2px;
+            background: white;
+        }
+        .nav-hamburger span::before { top: -7px; }
+        .nav-hamburger span::after { bottom: -7px; }
+        .nav-hamburger.active span { background: transparent; }
+        .nav-hamburger.active span::before { transform: rotate(45deg); top: 0; }
+        .nav-hamburger.active span::after { transform: rotate(-45deg); bottom: 0; }
+
+        /* Mobile Menu Panel */
+        .nav-menu-panel {
+            position: fixed;
+            top: 70px;
+            left: -100%;
+            width: 100%;
+            height: calc(100% - 70px);
+            background: #ffffff;
+            z-index: 99998;
+            transition: left 0.3s ease;
+            overflow-y: auto;
+            padding: 20px;
+        }
+        .nav-menu-panel.open { left: 0; }
+
+        .nav-mobile-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-mobile-item { border-bottom: 1px solid #eee; }
+        .nav-mobile-link {
+            display: block;
+            padding: 14px 0;
+            font-size: 16px;
+            font-weight: 500;
+            color: #333;
+            text-decoration: none;
+        }
+        .nav-mobile-link.active { color: #FF4A52; }
+        .nav-mobile-cta {
+            display: block;
+            background: #FF4A52;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 25px;
+        }
+
+        /* Responsive Breakpoint */
+        @media (max-width: 768px) {
+            .nav-desktop-menu,
+            .nav-desktop-cta {
+                display: none !important;
+            }
+            .nav-hamburger {
+                display: flex !important;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .nav-menu-panel {
+                display: none !important;
+            }
+        }
+
+        body.menu-open { overflow: hidden; }
+
+        /* ============================================ */
+        /* HERO SECTION                                */
+        /* ============================================ */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(26, 26, 46, 0.85), rgba(15, 52, 96, 0.75));
+        }
+        .hero-particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        .particle {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            animation: float-particle 15s infinite;
+        }
+        @keyframes float-particle {
+            0%, 100% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-10vh) rotate(720deg); opacity: 0; }
+        }
+        .hero-content { position: relative; z-index: 1; max-width: 900px; padding: 0 20px; }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 10px 20px;
+            border-radius: 50px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .hero-badge span { color: var(--white); font-size: 14px; font-weight: 500; }
+        .hero-badge .pulse { width: 8px; height: 8px; background: #4ade80; border-radius: 50%; animation: pulse 2s infinite; }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.5); opacity: 0.5; }
+        }
+        .hero h1 {
+            font-size: clamp(36px, 6vw, 64px);
+            color: var(--white);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .hero h1 .highlight {
+            background: linear-gradient(135deg, var(--primary), #ff8a8e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .tagline {
+            font-size: clamp(16px, 2.5vw, 22px);
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            padding: 16px 36px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 16px;
+            box-shadow: 0 10px 30px rgba(255, 74, 82, 0.4);
+            transition: var(--transition);
+        }
+        .hero-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 74, 82, 0.5);
+            color: var(--white);
+        }
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 12px;
+            cursor: pointer;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+        .scroll-indicator .mouse {
+            width: 24px;
+            height: 40px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 12px;
+            position: relative;
+        }
+        .scroll-indicator .mouse::before {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 2px;
+            animation: scroll-wheel 1.5s infinite;
+        }
+        @keyframes scroll-wheel {
+            0% { opacity: 1; transform: translateX(-50%) translateY(0); }
+            100% { opacity: 0; transform: translateX(-50%) translateY(12px); }
+        }
+
+        /* ABOUT SECTION */
+        .about-section { background: var(--primary-light); padding: 100px 20px; }
+        .about-container { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .about-image { position: relative; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-lg); }
+        .about-image img { width: 100%; height: 500px; object-fit: cover; transition: transform 0.6s ease; }
+        .about-image:hover img { transform: scale(1.05); }
+        .about-image::before { content: ''; position: absolute; top: -20px; left: -20px; width: 100px; height: 100px; border: 4px solid var(--primary); border-radius: 20px; z-index: -1; }
+        .about-image::after { content: ''; position: absolute; bottom: -20px; right: -20px; width: 100px; height: 100px; background: var(--primary); border-radius: 20px; z-index: -1; }
+        .about-content h2 { font-size: clamp(28px, 4vw, 38px); color: var(--dark); margin-bottom: 25px; }
+        .about-content h2 .highlight { color: var(--primary); }
+        .about-content p { color: var(--text); font-size: 16px; line-height: 1.9; margin-bottom: 20px; }
+        .about-features { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 30px; }
+        .about-feature { display: flex; align-items: center; gap: 10px; font-weight: 500; color: var(--dark); }
+        .about-feature svg { color: var(--primary); flex-shrink: 0; }
+
+        /* STATS SECTION */
+        .stats-section { background: var(--white); padding: 80px 20px; }
+        .stats-container { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; }
+        .stat-item { text-align: center; padding: 30px 20px; border-radius: 20px; background: var(--gray-100); transition: var(--transition); }
+        .stat-item:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+        .stat-icon { width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary), #ff8a8e); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: var(--white); }
+        .stat-number { font-family: 'Poppins', sans-serif; font-size: 42px; font-weight: 700; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1; }
+        .stat-label { font-size: 15px; color: var(--text-light); margin-top: 8px; font-weight: 500; }
+
+        /* MOTIVE SECTION */
+        .motive-section { background: linear-gradient(135deg, var(--dark) 0%, var(--dark-light) 100%); padding: 100px 20px; position: relative; overflow: hidden; }
+        .motive-container { max-width: 900px; margin: 0 auto; position: relative; z-index: 1; }
+        .motive-section h2 { font-size: clamp(28px, 4vw, 36px); color: var(--white); text-align: center; margin-bottom: 40px; }
+        .motive-content { display: grid; gap: 30px; }
+        .motive-text { color: rgba(255, 255, 255, 0.85); font-size: 17px; line-height: 2; text-align: center; }
+        .motive-quote { font-size: clamp(18px, 3vw, 24px); color: var(--white); font-style: italic; line-height: 1.8; text-align: center; position: relative; padding: 40px; background: rgba(255, 255, 255, 0.05); border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.1); }
+        .motive-quote::before { content: '"'; position: absolute; top: 10px; left: 20px; font-size: 80px; color: var(--primary); opacity: 0.3; font-family: Georgia, serif; line-height: 1; }
+
+        /* VALUES SECTION */
+        .values-section { background: var(--gray-100); padding: 100px 20px; }
+        .values-container { max-width: 1200px; margin: 0 auto; }
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-header h2 { font-size: clamp(28px, 4vw, 40px); color: var(--dark); margin-bottom: 15px; }
+        .section-header p { color: var(--text-light); font-size: 17px; max-width: 600px; margin: 0 auto; }
+        .values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .value-card { background: var(--white); padding: 40px 30px; border-radius: 24px; box-shadow: var(--shadow-sm); transition: var(--transition); position: relative; overflow: hidden; }
+        .value-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--primary), #ff8a8e); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease; }
+        .value-card:hover::before { transform: scaleX(1); }
+        .value-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-lg); }
+        .value-icon { width: 70px; height: 70px; background: linear-gradient(135deg, var(--primary-light), #fff5f5); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; transition: var(--transition); }
+        .value-card:hover .value-icon { background: linear-gradient(135deg, var(--primary), #ff8a8e); }
+        .value-card:hover .value-icon svg { stroke: var(--white); }
+        .value-icon svg { stroke: var(--primary); transition: var(--transition); }
+        .value-card h3 { font-size: 20px; color: var(--dark); margin-bottom: 15px; }
+        .value-card p { color: var(--text-light); font-size: 15px; line-height: 1.8; }
+
+        /* CONTACT SECTION */
+        .contact-section { background: var(--white); padding: 100px 20px; }
+        .contact-container { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .contact-info h2 { font-size: clamp(28px, 4vw, 38px); color: var(--dark); margin-bottom: 20px; }
+        .contact-info > p { color: var(--text-light); font-size: 16px; line-height: 1.8; margin-bottom: 35px; }
+        .contact-details { display: flex; flex-direction: column; gap: 20px; }
+        .contact-item { display: flex; align-items: flex-start; gap: 15px; }
+        .contact-icon { width: 50px; height: 50px; background: var(--primary-light); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .contact-icon svg { color: var(--primary); }
+        .contact-text h4 { font-size: 16px; color: var(--dark); margin-bottom: 4px; }
+        .contact-text p, .contact-text a { color: var(--text-light); font-size: 15px; }
+        .contact-text a:hover { color: var(--primary); }
+        .contact-card { background: linear-gradient(135deg, var(--dark) 0%, var(--dark-light) 100%); padding: 50px 40px; border-radius: 30px; text-align: center; position: relative; overflow: hidden; }
+        .contact-card::before { content: ''; position: absolute; top: -50%; right: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255, 74, 82, 0.15) 0%, transparent 50%); }
+        .contact-card-content { position: relative; z-index: 1; }
+        .contact-card h3 { font-size: 26px; color: var(--white); margin-bottom: 15px; }
+        .contact-card p { color: rgba(255, 255, 255, 0.8); margin-bottom: 30px; font-size: 16px; }
+        .whatsapp-btn { display: inline-flex; align-items: center; gap: 12px; background: var(--whatsapp); color: var(--white); padding: 16px 32px; border-radius: 50px; font-weight: 600; font-size: 16px; box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4); transition: var(--transition); }
+        .whatsapp-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(37, 211, 102, 0.5); color: var(--white); }
+
+        /* FOOTER */
+        .footer { background: var(--dark); color: var(--white); padding: 80px 20px 30px; }
+        .footer-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 50px; }
+        .footer-col h3 { font-size: 18px; margin-bottom: 25px; color: var(--white); }
+        .footer-about p { color: rgba(255,255,255,0.7); font-size: 15px; line-height: 1.8; margin-bottom: 25px; }
+        .social-links { display: flex; gap: 12px; }
+        .social-links a { width: 40px; height: 40px; background: rgba(255, 255, 255, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--white); transition: var(--transition); }
+        .social-links a:hover { background: var(--primary); transform: translateY(-3px); }
+        .footer-links { list-style: none; }
+        .footer-links li { margin-bottom: 12px; }
+        .footer-links a { color: rgba(255,255,255,0.7); font-size: 15px; display: flex; align-items: center; gap: 8px; }
+        .footer-links a::before { content: ''; width: 6px; height: 6px; background: var(--primary); border-radius: 50%; transition: var(--transition); }
+        .footer-links a:hover { color: var(--primary); padding-left: 5px; }
+        .footer-contact-item { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 15px; color: rgba(255,255,255,0.7); font-size: 14px; }
+        .footer-contact-item svg { color: var(--primary); flex-shrink: 0; margin-top: 3px; }
+        .footer-bottom { max-width: 1200px; margin: 50px auto 0; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; color: rgba(255,255,255,0.5); font-size: 14px; }
+        .footer-bottom a { color: var(--primary); }
+
+        /* BACK TO TOP */
+        .back-to-top { position: fixed; bottom: 30px; right: 30px; width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); border: none; border-radius: 14px; color: var(--white); cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 20px rgba(255, 74, 82, 0.4); opacity: 0; visibility: hidden; transform: translateY(20px); transition: var(--transition); z-index: 9990; }
+        .back-to-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+        .back-to-top:hover { transform: translateY(-5px); }
+
+        /* RESPONSIVE */
+        @media screen and (max-width: 1024px) {
+            .about-container, .contact-container { grid-template-columns: 1fr; gap: 40px; }
+            .about-image { order: -1; }
+            .about-image img { height: 400px; }
+            .stats-container { grid-template-columns: repeat(2, 1fr); }
+            .footer-container { grid-template-columns: 1fr 1fr; }
+        }
+        @media screen and (max-width: 768px) {
+            .hero { min-height: 100vh; }
+            .hero-bg { background-attachment: scroll; }
+            .about-section, .values-section, .contact-section { padding: 70px 20px; }
+            .about-features { grid-template-columns: 1fr; }
+            .stats-container { grid-template-columns: 1fr 1fr; gap: 20px; }
+            .stat-item { padding: 20px 15px; }
+            .stat-number { font-size: 32px; }
+            .motive-quote { padding: 30px 20px; }
+            .values-grid { grid-template-columns: 1fr; }
+            .contact-card { padding: 40px 25px; }
+            .footer-container { grid-template-columns: 1fr; gap: 35px; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+            .cursor { display: none; }
+            .back-to-top { bottom: 20px; right: 20px; width: 45px; height: 45px; }
+        }
+        @media screen and (max-width: 480px) {
+            .stat-number { font-size: 28px; }
+            .value-card { padding: 30px 20px; }
+        }
+    </style>
+
+    <style>
+/* Compact Premium Privacy Policy Section */
+.privacy-mini-section {
+    padding: 60px 20px;
+    background: linear-gradient(180deg, #fff7f7 0%, #ffffff 100%);
+}
+
+.privacy-mini-container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.privacy-mini-card {
+    background: #fff;
+    border-radius: 22px;
+    padding: 32px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 74, 82, 0.10);
+}
+
+.privacy-mini-top {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.privacy-mini-badge {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(255, 74, 82, 0.1);
+    color: #FF4A52;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.privacy-mini-top h2 {
+    margin: 0 0 10px;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #222;
+}
+
+.privacy-mini-top h2 span {
+    color: #FF4A52;
+}
+
+.privacy-mini-top p {
+    margin: 0 auto;
+    max-width: 760px;
+    color: #666;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.privacy-mini-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.privacy-mini-item {
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-left: 4px solid #FF4A52;
+    border-radius: 14px;
+    padding: 18px;
+}
+
+.privacy-mini-item h3 {
+    margin: 0 0 8px;
+    font-size: 17px;
+    color: #222;
+}
+
+.privacy-mini-item p,
+.privacy-mini-item ul {
+    margin: 0;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.privacy-mini-item ul {
+    padding-left: 18px;
+    margin-top: 8px;
+}
+
+.privacy-mini-bottom {
+    margin-top: 24px;
+    padding: 18px 20px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #FF4A52, #e03e46);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.privacy-mini-bottom p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.95);
+}
+
+.privacy-mini-btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #fff;
+    color: #FF4A52;
+    font-weight: 700;
+    padding: 12px 18px;
+    border-radius: 999px;
+    transition: 0.3s ease;
+    white-space: nowrap;
+}
+
+.privacy-mini-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 768px) {
+    .privacy-mini-card {
+        padding: 22px;
+    }
+
+    .privacy-mini-top h2 {
+        font-size: 26px;
+    }
+
+    .privacy-mini-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .privacy-mini-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+</style>
+    
+</head>
+
+<body>
+<!-- ============================================ -->
+<!-- COMPLETE NAVBAR - ORIGINAL STRUCTURE + HAMBURGER -->
+<!-- ============================================ -->
+
+<style>
+/* ============================================ */
+/* RESPONSIVE NAVBAR CSS                        */
+/* ============================================ */
+
+:root {
+    --primary: #FF4A52;
+    --primary-dark: #e03e46;
+}
+
+/* Main Navbar */
+.original-navbar {
+    background: #ffffff;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+    padding: 12px 20px;
+}
+
+.original-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo */
+.original-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.original-logo-icon {
+    width: 42px;
+    height: 42px;
+    background: linear-gradient(135deg, #FF4A52, #e03e46);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.original-logo-text {
+    font-size: 18px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #FF4A52, #e03e46);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Desktop Menu - ORIGINAL STRUCTURE */
+.original-desktop-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.original-desktop-menu li {
+    position: relative;
+}
+
+.original-desktop-menu li a {
+    font-weight: 500;
+    color: #333;
+    padding: 8px 0;
+    font-size: 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.original-desktop-menu li a:hover {
+    color: #FF4A52;
+}
+
+.original-desktop-menu li a.active {
+    color: #FF4A52;
+}
+
+/* Dropdown Menu */
+.original-desktop-menu .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    min-width: 200px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 100;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.original-desktop-menu li:hover > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.original-desktop-menu .dropdown-menu li {
+    width: 100%;
+}
+
+.original-desktop-menu .dropdown-menu li a {
+    padding: 10px 20px;
+    display: block;
+    font-size: 14px;
+    color: #555;
+}
+
+.original-desktop-menu .dropdown-menu li a:hover {
+    background: #f5f5f5;
+    color: #FF4A52;
+}
+
+/* Nested Dropdown */
+.original-desktop-menu .dropdown-menu .dropdown-menu {
+    left: 100%;
+    top: 0;
+}
+
+/* Desktop CTA */
+.original-desktop-cta {
+    background: linear-gradient(135deg, #FF4A52, #e03e46);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.original-desktop-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 74, 82, 0.4);
+    color: white;
+}
+
+/* Mobile Hamburger */
+.original-hamburger {
+    background: #FF4A52;
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.original-hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: white;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.original-hamburger span::before,
+.original-hamburger span::after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.original-hamburger span::before { top: -7px; }
+.original-hamburger span::after { bottom: -7px; }
+.original-hamburger.active span { background: transparent; }
+.original-hamburger.active span::before { transform: rotate(45deg); top: 0; }
+.original-hamburger.active span::after { transform: rotate(-45deg); bottom: 0; }
+
+/* Mobile Menu Panel */
+.original-mobile-panel {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: calc(100% - 70px);
+    background: #ffffff;
+    z-index: 99998;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.original-mobile-panel.open {
+    left: 0;
+}
+
+/* Mobile Menu Items */
+.original-mobile-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.original-mobile-item {
+    border-bottom: 1px solid #eee;
+}
+
+.original-mobile-link {
+    display: block;
+    padding: 14px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+}
+
+.original-mobile-link.active {
+    color: #FF4A52;
+}
+
+.original-mobile-dropdown-toggle {
+    cursor: pointer;
+}
+
+.original-mobile-dropdown-toggle .arrow {
+    float: right;
+    transition: transform 0.3s;
+}
+
+.original-mobile-dropdown-toggle.open .arrow {
+    transform: rotate(180deg);
+}
+
+.original-mobile-submenu {
+    list-style: none;
+    padding-left: 20px;
+    display: none;
+    background: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.original-mobile-submenu.show {
+    display: block;
+}
+
+.original-mobile-submenu li a {
+    display: block;
+    padding: 10px 0 10px 15px;
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+}
+
+.original-mobile-nested {
+    padding-left: 20px;
+}
+
+.original-mobile-cta {
+    display: block;
+    background: #FF4A52;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+    .original-desktop-menu,
+    .original-desktop-cta {
+        display: none !important;
+    }
+    .original-hamburger {
+        display: flex !important;
+    }
+}
+
+@media (min-width: 1025px) {
+    .original-mobile-panel {
+        display: none !important;
+    }
+}
+
+body.menu-open {
+    overflow: hidden;
+}
+</style>
+
+<!-- ============================================ -->
+<!-- NAVBAR HTML - WITH DROPDOWNS                 -->
+<!-- ============================================ -->
+
+<div class="original-navbar">
+    <div class="original-nav-container">
+        <!-- Logo -->
+        <!--a href="#" class="original-logo">
+            <div class="original-logo-icon">NH</div>
+            <span class="original-logo-text">Narayan Holidays</span>
+        </a-->
+
+        <!-- Logo Code - Copy and paste this into your slider header section -->
+
+<div class="blogs-logo-icon">
+    <img src="logo.png" alt="Uttarakhand Trips Logo">
+</div>
+
+<style>
+    /* Logo styling - works with your existing design */
+    .blogs-logo-icon {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 12px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        transition: transform 0.2s ease;
+    }
+    
+    .blogs-logo-icon img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+    }
+    
+    .blogs-logo-icon:hover {
+        transform: scale(1.02);
+    }
+    
+    /* Responsive for mobile */
+    @media (max-width: 760px) {
+        .blogs-logo-icon {
+            width: 55px;
+            height: 55px;
+        }
+    }
+</style>
+        
+        <!-- Desktop Menu with Dropdowns -->
+        <ul class="original-desktop-menu">
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="#about" class="active">About Us</a></li>
+            
+            <!-- Destinations Dropdown -->
+            <li>
+                <a href="#">Destinations ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Char Dham</a></li>
+                    <li><a href="#">Kedarnath</a></li>
+                    <li><a href="#">Badrinath</a></li>
+                    <li><a href="#">Rishikesh</a></li>
+                    <li><a href="#">Mussoorie</a></li>
+                    <li><a href="#">Nainital</a></li>
+                    <li><a href="#">Jim Corbett</a></li>
+                    <li>
+                        <a href="#">More ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Chopta</a></li>
+                            <li><a href="#">Auli</a></li>
+                            <li><a href="#">Harsil Valley</a></li>
+                            <li><a href="#">Haridwar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            
+            <!-- Travel By Theme Dropdown -->
+            <li>
+                <a href="#">Travel By Theme ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Group</a></li>
+                    <li><a href="#">Family</a></li>
+                    <li><a href="#">Pilgrimage</a></li>
+                    <li><a href="#">Romantic</a></li>
+                    <li><a href="#">Wildlife</a></li>
+                    <li><a href="#">Leisure</a></li>
+                    <li><a href="#">Adventure</a></li>
+                </ul>
+            </li>
+            
+            <li><!--a  href="http://127.0.0.1:5501/blogs/index.html">Blogs</a-->
+              <a href="../blogs/index.html">Blogs  </a>  
+            </li>
+        </ul>
+        
+        <!-- Desktop CTA -->
+        <a href="#contact" class="original-desktop-cta">Contact Us</a>
+        
+        <!-- Mobile Hamburger -->
+        <button class="original-hamburger" id="originalHamburger">
+            <span></span>
+        </button>
+    </div>
+</div>
+
+<!-- Mobile Menu Panel -->
+<div class="original-mobile-panel" id="originalMobilePanel">
+    <ul class="original-mobile-list">
+        <li class="original-mobile-item"><a href="#" class="original-mobile-link">Home</a></li>
+        <li class="original-mobile-item"><a href="#about" class="original-mobile-link active">About Us</a></li>
+        
+        <!-- Destinations Mobile Dropdown -->
+        <li class="original-mobile-item">
+            <div class="original-mobile-link original-mobile-dropdown-toggle">
+                Destinations <span class="arrow">▼</span>
+            </div>
+            <ul class="original-mobile-submenu">
+                <li><a href="#">Char Dham</a></li>
+                <li><a href="#">Kedarnath</a></li>
+                <li><a href="#">Badrinath</a></li>
+                <li><a href="#">Rishikesh</a></li>
+                <li><a href="#">Mussoorie</a></li>
+                <li><a href="#">Nainital</a></li>
+                <li><a href="#">Jim Corbett</a></li>
+                <li>
+                    <div class="original-mobile-link original-mobile-dropdown-toggle" style="padding-left: 0;">
+                        More <span class="arrow">▼</span>
+                    </div>
+                    <ul class="original-mobile-submenu original-mobile-nested">
+                        <li><a href="#">Chopta</a></li>
+                        <li><a href="#">Auli</a></li>
+                        <li><a href="#">Harsil Valley</a></li>
+                        <li><a href="#">Haridwar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        
+        <!-- Travel By Theme Mobile Dropdown -->
+        <li class="original-mobile-item">
+            <div class="original-mobile-link original-mobile-dropdown-toggle">
+                Travel By Theme <span class="arrow">▼</span>
+            </div>
+            <ul class="original-mobile-submenu">
+                <li><a href="#">Group</a></li>
+                <li><a href="#">Family</a></li>
+                <li><a href="#">Pilgrimage</a></li>
+                <li><a href="#">Romantic</a></li>
+                <li><a href="#">Wildlife</a></li>
+                <li><a href="#">Leisure</a></li>
+                <li><a href="#">Adventure</a></li>
+            </ul>
+        </li>
+        
+        <li class="original-mobile-item"><a href="./blogs/index.html" class="original-mobile-link">Blogs</a></li>
+    </ul>
+    <a href="#contact" class="original-mobile-cta">Contact Us</a>
+</div>
+
+<!-- ============================================ -->
+<!-- NAVBAR JAVASCRIPT                            -->
+<!-- ============================================ -->
+
+<script>
+(function() {
+    const hamburger = document.getElementById('originalHamburger');
+    const panel = document.getElementById('originalMobilePanel');
+    
+    if (hamburger && panel) {
+        // Toggle mobile menu
+        hamburger.addEventListener('click', function(e) {
+            e.preventDefault();
+            this.classList.toggle('active');
+            panel.classList.toggle('open');
+            document.body.style.overflow = panel.classList.contains('open') ? 'hidden' : '';
+        });
+        
+        // Handle mobile dropdown toggles
+        const dropdownToggles = document.querySelectorAll('.original-mobile-dropdown-toggle');
+        dropdownToggles.forEach(function(toggle) {
+            toggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                this.classList.toggle('open');
+                const submenu = this.nextElementSibling;
+                if (submenu && submenu.classList.contains('original-mobile-submenu')) {
+                    submenu.classList.toggle('show');
+                }
+            });
+        });
+        
+        // Close menu on link click
+        const allLinks = panel.querySelectorAll('a');
+        allLinks.forEach(function(link) {
+            link.addEventListener('click', function() {
+                if (this.classList && this.classList.contains('original-mobile-dropdown-toggle')) return;
+                hamburger.classList.remove('active');
+                panel.classList.remove('open');
+                document.body.style.overflow = '';
+            });
+        });
+        
+        // Close on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && panel.classList.contains('open')) {
+                hamburger.classList.remove('active');
+                panel.classList.remove('open');
+                document.body.style.overflow = '';
+            }
+        });
+    }
+})();
+</script>
+    
+    
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="cursor" id="cursor"></div>
+
+    <section class="hero" id="hero">
+        <div class="hero-bg" id="heroBg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge reveal-scale"><div class="pulse"></div><span>Trusted Since 5+ Years</span></div>
+            <h1 class="reveal">Welcome to <span class="highlight">Narayan Holidays</span></h1>
+            <p class="tagline reveal delay-1">Your Trusted Travel Partner for Char Dham Yatra &amp; Uttarakhand Adventures</p>
+            <a href="#about" class="hero-cta reveal delay-2">Discover Our Story<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+        </div>
+        <div class="scroll-indicator" id="scrollIndicator"><div class="mouse"></div><span>Scroll Down</span></div>
+    </section>
+    <section class="privacy-mini-section" id="privacy-policy">
+    <div class="privacy-mini-container">
+        <div class="privacy-mini-card">
+            
+            <div class="privacy-mini-top">
+                <div class="privacy-mini-badge">Privacy Policy</div>
+                <h2>Privacy Policy – <span>Narayan Holidays</span></h2>
+                <p>
+                    At Narayan Holidays, we respect your privacy and are committed to protecting your personal information.
+                    This policy explains how we collect, use, store, and protect your data when you interact with our website,
+                    services, and ads on Google, Facebook, Instagram, and YouTube.
+                </p>
+            </div>
+
+            <div class="privacy-mini-grid">
+                <div class="privacy-mini-item">
+                    <h3>Information We Collect</h3>
+                    <ul>
+                        <li>Full Name</li>
+                        <li>Phone / WhatsApp Number</li>
+                        <li>Email Address</li>
+                        <li>Travel preferences or enquiry details</li>
+                    </ul>
+                </div>
+
+                <div class="privacy-mini-item">
+                    <h3>How We Use It</h3>
+                    <ul>
+                        <li>Respond to enquiries</li>
+                        <li>Process bookings & support</li>
+                        <li>Send offers with consent</li>
+                        <li>Improve ad performance</li>
+                    </ul>
+                </div>
+
+                <div class="privacy-mini-item">
+                    <h3>Advertising Platforms</h3>
+                    <p>
+                        We may use Google Ads, Facebook, Instagram, YouTube, cookies, pixels,
+                        and analytics tools to show relevant ads and improve campaigns.
+                    </p>
+                </div>
+
+                <div class="privacy-mini-item">
+                    <h3>Your Rights</h3>
+                    <ul>
+                        <li>Access your data</li>
+                        <li>Correct or delete information</li>
+                        <li>Opt out of promotions anytime</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="privacy-mini-bottom">
+                <p>
+                    We do not sell, rent, or trade your personal data.  
+                    For privacy-related requests, contact us anytime.
+                </p>
+                <a href="mailto:narayanholidays11@gmail.com" class="privacy-mini-btn">
+                    Contact Us
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-image reveal-left"><img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&q=80" alt="Kedarnath Temple" loading="lazy"></div>
+            <div class="about-content">
+                <h2 class="reveal-right">Who We Are, <span class="highlight">What We Love?</span></h2>
+                <p class="reveal-right delay-1">Narayan Holidays is a leading and well-established Destination Management Company (DMC) in Uttarakhand, proudly headquartered in Haridwar. With over five successful years of experience, we have been consistently serving our valued guests with a strong foundation of trust, reliability, and service excellence.</p>
+                <p class="reveal-right delay-2">Over the years, Narayan Holidays has grown steadily with a clear and unwavering objective - complete customer satisfaction. We strongly believe that travel is not just about destinations, but about experiences. Therefore, we focus on crafting unforgettable journeys rather than simply selling tour packages.</p>
+                <div class="about-features reveal-right delay-3">
+                    <div class="about-feature"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Government Approved</span></div>
+                    <div class="about-feature"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg><span>24/7 Support</span></div>
+                    <div class="about-feature"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Helicopter Services</span></div>
+                    <div class="about-feature"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Personalized Tours</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section"><div class="stats-container">
+        <div class="stat-item reveal delay-1"><div class="stat-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div><div class="stat-number" data-target="5">0</div><div class="stat-label">Years Experience</div></div>
+        <div class="stat-item reveal delay-2"><div class="stat-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div><div class="stat-number" data-target="10000">0</div><div class="stat-label">Happy Travelers</div></div>
+        <div class="stat-item reveal delay-3"><div class="stat-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg></div><div class="stat-number" data-target="50">0</div><div class="stat-label">Tour Packages</div></div>
+        <div class="stat-item reveal delay-4"><div class="stat-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg></div><div class="stat-number" data-target="100">0</div><div class="stat-label">Customer Satisfaction</div></div>
+    </div></section>
+
+    <section class="motive-section"><div class="motive-container"><h2 class="reveal">Our Motive</h2><div class="motive-content"><p class="motive-text reveal delay-1">The motive of Narayan Holidays is to go beyond conventional travel services and provide every guest with meaningful, comfortable, and memorable travel experiences. Our aim is not merely to sell tour packages, but to create journeys that leave lasting impressions and heartfelt memories.</p><p class="motive-text reveal delay-2">We are driven by a strong commitment to guest satisfaction, service quality, transparency, and ethical business practices. Our goal is to present the true spirit of Uttarakhand - its spirituality, natural beauty, rich culture, and heritage.</p><blockquote class="motive-quote reveal delay-3">To ensure that every guest returns not just as a traveler, but with beautiful memories, peace of mind, and complete satisfaction.</blockquote></div></div></section>
+
+    <section class="values-section"><div class="values-container"><div class="section-header"><h2 class="reveal">Why Choose Narayan Holidays?</h2><p class="reveal delay-1">We are committed to providing exceptional travel experiences with our unique approach</p></div><div class="values-grid"><div class="value-card reveal delay-1"><div class="value-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Trust &amp; Reliability</h3><p>Our guest-first philosophy, sincerity, and professional commitment distinguish us.</p></div><div class="value-card reveal delay-2"><div class="value-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div><h3>Guest-First Philosophy</h3><p>Every traveller is treated as family. Each itinerary is thoughtfully designed.</p></div><div class="value-card reveal delay-3"><div class="value-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="7.5 4.21 12 6.81 16.5 4.21"/><polyline points="7.5 19.79 7.5 14.6 3 12"/><polyline points="21 12 16.5 14.6 16.5 19.79"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div><h3>Helicopter Services</h3><p>We offer luxury Char Dham Yatra helicopter services including exclusive Kedarnath bookings.</p></div><div class="value-card reveal delay-4"><div class="value-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><h3>Local Expertise</h3><p>With deep-rooted local expertise and a passion for excellence, backed by one of the largest networks.</p></div></div></div></section>
+
+    <section class="contact-section" id="contact"><div class="contact-container"><div class="contact-info"><h2 class="reveal">Get In Touch</h2><p class="reveal delay-1">Ready to embark on your spiritual journey? Contact us today and let us help you plan an unforgettable Char Dham Yatra experience.</p><div class="contact-details"><div class="contact-item reveal delay-2"><div class="contact-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div><div class="contact-text"><h4>Our Office</h4><p>Nai Basti, Bheemgoda Road, Valmiki Mandir, Kharkhari, Haridwar - 249401</p></div></div><div class="contact-item reveal delay-3"><div class="contact-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div class="contact-text"><h4>Phone / WhatsApp</h4><a href="tel:+919045169168">+91 90451 69168</a></div></div><div class="contact-item reveal delay-4"><div class="contact-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div class="contact-text"><h4>Email</h4><a href="mailto:narayanholidays11@gmail.com">narayanholidays11@gmail.com</a></div></div></div></div><div class="contact-card reveal-scale"><div class="contact-card-content"><h3>Ready to Start Your Journey?</h3><p>Chat with us on WhatsApp for instant booking assistance and personalized tour planning.</p><a href="https://wa.me/919045169168?text=Hello%20Narayan%20Holidays!%20I%20am%20interested%20in%20booking%20a%20tour." class="whatsapp-btn" target="_blank" rel="noopener"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Chat on WhatsApp</a></div></div></div></section>
+
+    <footer class="footer"><div class="footer-container"><div class="footer-col footer-about"><h3>Narayan Holidays</h3><p>Your trusted travel partner for Char Dham Yatra, pilgrimage tours, and exploring the divine beauty of Uttarakhand with comfort, care, and complete peace of mind.</p><div class="social-links"><a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg></a><a href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a><a href="https://wa.me/919045169168" aria-label="WhatsApp" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884z"/></svg></a></div></div><div class="footer-col"><h3>Quick Links</h3><ul class="footer-links"><li><a href="#">Home</a></li><li><a href="#about">About Us</a></li><li><a href="#">Char Dham Yatra</a></li><li><a href="#">Tour Packages</a></li><li><a href="#">Helicopter Booking</a></li></ul></div><div class="footer-col"><h3>Destinations</h3><ul class="footer-links"><li><a href="#">Kedarnath</a></li><li><a href="#">Badrinath</a></li><li><a href="#">Gangotri</a></li><li><a href="#">Yamunotri</a></li><li><a href="#">Haridwar</a></li></ul></div><div class="footer-col"><h3>Contact Info</h3><div class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>Nai Basti, Bheemgoda Road, Valmiki Mandir, Kharkhari, Haridwar - 249401</span></div><div class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>+91 90451 69168</span></div><div class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>narayanholidays11@gmail.com</span></div><div class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span>www.narayanholidays.in</span></div></div></div><div class="footer-bottom"><p>Owner: <strong>Vineet Bauhare</strong> | &copy; 2024 Narayan Holidays. All Rights Reserved.</p><p>Designed with care for travelers seeking spiritual journeys.</p></div></footer>
+
+    <button class="back-to-top" id="backToTop"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg></button>
+
+    <script>
+        (function() {
+            const hamburger = document.getElementById('mainHamburger');
+            const panel = document.getElementById('mainMenuPanel');
+            const backToTop = document.getElementById('backToTop');
+            const scrollProgress = document.getElementById('scrollProgress');
+            
+            // Mobile Hamburger Toggle
+            if (hamburger && panel) {
+                hamburger.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    this.classList.toggle('active');
+                    panel.classList.toggle('open');
+                    document.body.style.overflow = panel.classList.contains('open') ? 'hidden' : '';
+                });
+                
+                panel.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        hamburger.classList.remove('active');
+                        panel.classList.remove('open');
+                        document.body.style.overflow = '';
+                    });
+                });
+                
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape' && panel.classList.contains('open')) {
+                        hamburger.classList.remove('active');
+                        panel.classList.remove('open');
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
+            
+            // Scroll Progress & Back to Top
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 500) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+                if (scrollProgress) {
+                    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                    const progress = (window.scrollY / docHeight) * 100;
+                    scrollProgress.style.width = `${progress}%`;
+                }
+            });
+            
+            backToTop?.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            
+            // Reveal Animations
+            const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) entry.target.classList.add('active');
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+            revealElements.forEach(el => observer.observe(el));
+            
+            // Counter Animation
+            const counters = document.querySelectorAll('.stat-number[data-target]');
+            let counted = false;
+            const counterObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !counted) {
+                        counted = true;
+                        counters.forEach(counter => {
+                            const target = parseInt(counter.dataset.target);
+                            let current = 0;
+                            const duration = 2000;
+                            const step = Math.ceil(target / (duration / 16));
+                            const timer = setInterval(() => {
+                                current += step;
+                                if (current >= target) {
+                                    current = target;
+                                    clearInterval(timer);
+                                }
+                                if (target >= 10000) counter.textContent = current >= 10000 ? '10K+' : current.toLocaleString();
+                                else if (target === 100) counter.textContent = `${current}%`;
+                                else counter.textContent = `${current}+`;
+                            }, 16);
+                        });
+                    }
+                });
+            }, { threshold: 0.5 });
+            const statsSection = document.querySelector('.stats-section');
+            if (statsSection) counterObserver.observe(statsSection);
+        })();
+    </script>
+</body>
+</html>

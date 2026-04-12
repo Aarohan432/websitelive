@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en-US" prefix="og: https://ogp.me/ns#">
 <head>
 	<meta charset="UTF-8">
@@ -1178,6 +1179,81 @@ body.menu-open {
 .hamburger.active span { background: transparent !important; }
 .hamburger.active span::before { transform: rotate(45deg) !important; top: 0 !important; }
 .hamburger.active span::after { transform: rotate(-45deg) !important; bottom: 0 !important; }
+/* ===== READ MORE / READ LESS ACCORDION - WORKING ===== */
+
+.accordion-item {
+    background: #f9f9f9;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.accordion-title {
+    padding: 16px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FF4A52;
+    background: #ffffff;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.accordion-title::-webkit-details-marker {
+    display: none;
+}
+
+.accordion-title:hover {
+    background: #fff0f0;
+}
+
+details[open] .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.accordion-icon {
+    transition: transform 0.3s ease;
+    font-size: 14px;
+}
+
+.accordion-content {
+    padding: 0 20px 20px 20px;
+    background: #f9f9f9;
+    border-radius: 0 0 12px 12px;
+}
+
+.accordion-content p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: #444;
+    font-size: 14px;
+}
+
+.accordion-content strong {
+    color: #FF4A52;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.read-less {
+    display: none;
+}
+
+details[open] .read-more {
+    display: none;
+}
+
+details[open] .read-less {
+    display: inline;
+}
 </style>
 
 
@@ -1193,7 +1269,7 @@ body.menu-open {
 		<div class="elementor-element elementor-element-908c8b7 e-con-full e-flex e-con e-child" data-id="908c8b7" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;grandtour_ext_is_background_parallax&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_backdrop&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_on_scroll&quot;:&quot;false&quot;,&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}">
 				<div class="elementor-element elementor-element-b2de6e2 elementor-widget elementor-widget-image" data-id="b2de6e2" data-element_type="widget" data-e-type="widget" data-settings="{&quot;grandtour_image_is_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-																<a href="index.htm">
+																<a href="index.html">
 							<!--img width="259" height="184" src="logo.png" class="attachment-medium size-medium wp-image-9941" alt="Uttarakhand Trips" data-lazy-src=""><noscript><img width="259" height="184" src="logo.png" class="attachment-medium size-medium wp-image-9941" alt="Uttarakhand Trips"-->
                             <!-- Logo Code - Copy and paste this into your slider header section -->
 
@@ -1235,6 +1311,82 @@ body.menu-open {
             height: 55px;
         }
     }
+/* ===== READ MORE / READ LESS ACCORDION - WORKING ===== */
+
+.accordion-item {
+    background: #f9f9f9;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.accordion-title {
+    padding: 16px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FF4A52;
+    background: #ffffff;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.accordion-title::-webkit-details-marker {
+    display: none;
+}
+
+.accordion-title:hover {
+    background: #fff0f0;
+}
+
+details[open] .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.accordion-icon {
+    transition: transform 0.3s ease;
+    font-size: 14px;
+}
+
+.accordion-content {
+    padding: 0 20px 20px 20px;
+    background: #f9f9f9;
+    border-radius: 0 0 12px 12px;
+}
+
+.accordion-content p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: #444;
+    font-size: 14px;
+}
+
+.accordion-content strong {
+    color: #FF4A52;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.read-less {
+    display: none;
+}
+
+details[open] .read-more {
+    display: none;
+}
+
+details[open] .read-less {
+    display: inline;
+}
+    
 </style>
                             </noscript>								</a>
 															</div>
@@ -1244,7 +1396,7 @@ body.menu-open {
 				<div class="elementor-element elementor-element-3100a3a elementor-nav-menu__align-end elementor-nav-menu--stretch elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="3100a3a" data-element_type="widget" data-e-type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg aria-hidden=\&quot;true\&quot; class=\&quot;e-font-icon-svg e-fas-caret-down\&quot; viewBox=\&quot;0 0 320 512\&quot; xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot;&gt;&lt;path d=\&quot;M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z\&quot;&gt;&lt;\/path&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;,&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}" data-widget_type="nav-menu.default">
 				<div class="elementor-widget-container">
 								<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-slide">
-				<ul id="menu-1-3100a3a" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-4492 current_page_item menu-item-7170"><a href="index.htm" aria-current="page" class="elementor-item elementor-item-active">Home</a></li>
+				<ul id="menu-1-3100a3a" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-4492 current_page_item menu-item-7170"><a href="index.html" aria-current="page" class="elementor-item elementor-item-active">Home</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2468"><a href="/about-us/about_us.html" class="elementor-item">About Us</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3885"><a href="best-places-to-see-in-uttarakhand/index.htm" class="elementor-item">Destinations</a>
 <ul class="sub-menu elementor-nav-menu--dropdown">
@@ -1276,13 +1428,13 @@ body.menu-open {
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-tourcat menu-item-3913"><a href="tourcat/adventure/index.htm" class="elementor-sub-item">Adventure</a></li>
 </ul>
 </li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8378"><a href="blogs/index.htm" class="elementor-item">Blogs</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8378"><a href="/blogs/index.html" class="elementor-item">Blogs</a></li>
 </ul>			</nav>
 					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
 			<svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar" viewbox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z"></path></svg><!--svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close" viewbox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z"></path></svg--->		</div>
 					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
 				<ul id="menu-2-3100a3a" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-4492 current_page_item menu-item-7170"><a href="index.htm" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2468"><a href="/about-us/about_us.html" class="elementor-item" tabindex="-1">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2468"><a href="../about-us/about_us.html" class="elementor-item" tabindex="-1">About Us</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3885"><a href="best-places-to-see-in-uttarakhand/index.htm" class="elementor-item" tabindex="-1">Destinations</a>
 <ul class="sub-menu elementor-nav-menu--dropdown">
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7889"><a href="char-dham-yatra-packages/index.htm" class="elementor-sub-item" tabindex="-1">Char Dham</a></li>
@@ -1313,251 +1465,14 @@ body.menu-open {
 	<li class="menu-item menu-item-type-taxonomy menu-item-object-tourcat menu-item-3913"><a href="tourcat/adventure/index.htm" class="elementor-sub-item" tabindex="-1">Adventure</a></li>
 </ul>
 </li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8378"><a href="127.0.0.1:5501//blogs/index.htm" class="elementor-item" tabindex="-1">Blogs</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8378"><a href="/blogs/index.htm" class="elementor-item" tabindex="-1">Blogs</a></li>
 </ul>			</nav>
 						</div>
 
 
 	
 				</div>
-				<!---script>
-					// If there are no pairs, nothing to do
-if (toggles.length === 0 || dropdowns.length === 0) return;
-
-// Initialize each toggle/dropdown pair by index
-toggles.forEach(function(toggle, idx) {
-  var dropdown = dropdowns[idx];
-  if (!dropdown) return;
-
-  function closeMenu() {
-    dropdown.style.display = 'none';
-    dropdown.classList.remove('elementor-nav-menu--open');
-    toggle.setAttribute('aria-expanded', 'false');
-  }
-
-  // Start closed
-  closeMenu();
-
-  // Toggle on click
-  toggle.addEventListener('click', function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-
-    var isOpen = dropdown.classList.contains('elementor-nav-menu--open');
-    if (isOpen) {
-      closeMenu();
-    } else {
-      dropdown.style.display = 'block';
-      dropdown.classList.add('elementor-nav-menu--open');
-      toggle.setAttribute('aria-expanded', 'true');
-    }
-  });
-
-  // Close when clicking outside
-  document.addEventListener('click', function(ev) {
-    if (!toggle.contains(ev.target) && !dropdown.contains(ev.target)) {
-      closeMenu();
-    }
-  });
-});
-					
-				</script-->
-				<!-- <script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Find the menu toggle button
-    const menuToggle = document.querySelector('.elementor-menu-toggle');
-    const menuDropdown = document.querySelector('.elementor-nav-menu--dropdown');
-    
-    if (menuToggle && menuDropdown) {
-        menuToggle.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            
-            // Toggle the class
-            menuDropdown.classList.toggle('elementor-nav-menu--open');
-            
-            // Update aria-expanded
-            const isOpen = menuDropdown.classList.contains('elementor-nav-menu--open');
-            this.setAttribute('aria-expanded', isOpen);
-        });
-        
-        // Close when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!menuToggle.contains(e.target) && !menuDropdown.contains(e.target)) {
-                menuDropdown.classList.remove('elementor-nav-menu--open');
-                menuToggle.setAttribute('aria-expanded', 'false');
-            }
-        });
-    }
-});
-</script> -->
-				<!--script>
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.elementor-menu-toggle');
-    const menuContainer = document.querySelector('.elementor-nav-menu--dropdown');
-    
-    if (menuToggle && menuContainer) {
-        menuToggle.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            
-            // Toggle active class on menu container
-            menuContainer.classList.toggle('elementor-nav-menu--open');
-            
-            // Update aria-expanded attribute
-            const isExpanded = menuContainer.classList.contains('elementor-nav-menu--open');
-            menuToggle.setAttribute('aria-expanded', isExpanded);
-        });
-        
-        // Close menu when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!menuToggle.contains(e.target) && !menuContainer.contains(e.target)) {
-                menuContainer.classList.remove('elementor-nav-menu--open');
-                menuToggle.setAttribute('aria-expanded', 'false');
-            }
-        });
-    }
-});
-</script--->
-<!--script>
-setTimeout(function() {
-    var toggle = document.querySelector('.elementor-menu-toggle');
-    var menu = document.querySelector('.elementor-nav-menu--dropdown');
-    console.log('Menu toggle found:', toggle);
-    console.log('Menu container found:', menu);
-    
-    if (toggle && menu) {
-        console.log('Both elements exist - menu should work');
-    } else {
-        console.log('Missing elements!');
-    }
-}, 1000);
-</script-->
-<!--script>
-(function() {
-    // Wait for DOM to be fully loaded
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initMobileMenu);
-    } else {
-        initMobileMenu();
-    }
-    
-    function initMobileMenu() {
-        const menuToggle = document.querySelector('.elementor-menu-toggle');
-        const menuContainer = document.querySelector('.elementor-nav-menu--dropdown');
-        
-        if (!menuToggle || !menuContainer) {
-            console.log('Menu elements not found');
-            return;
-        }
-        
-        // Remove any existing event listeners by cloning and replacing
-        const newToggle = menuToggle.cloneNode(true);
-        menuToggle.parentNode.replaceChild(newToggle, menuToggle);
-        
-        // Get fresh reference
-        const finalToggle = document.querySelector('.elementor-menu-toggle');
-        
-        finalToggle.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            
-            if (menuContainer.classList.contains('elementor-nav-menu--open')) {
-                menuContainer.classList.remove('elementor-nav-menu--open');
-                this.setAttribute('aria-expanded', 'false');
-            } else {
-                menuContainer.classList.add('elementor-nav-menu--open');
-                this.setAttribute('aria-expanded', 'true');
-            }
-        });
-        
-        // Close when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!finalToggle.contains(e.target) && !menuContainer.contains(e.target)) {
-                menuContainer.classList.remove('elementor-nav-menu--open');
-                finalToggle.setAttribute('aria-expanded', 'false');
-            }
-        });
-    }
-})();
-</script-->
-
-<!--script>
-const menuBtn = document.querySelector('.elementor-menu-toggle');
-const menu = document.querySelector('.elementor-nav-menu__container');
-
-menuBtn.addEventListener('click', () => {
-  menu.classList.toggle('active');
-
-  // accessibility update
-  const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
-  menuBtn.setAttribute('aria-expanded', !expanded);
-});
-</script--->
-
-<!--script>
-    const toggle = document.getElementById("elementor-menu-toggle");
-    const nav = document.getElementById("elementor-nav-menu--dropdown elementor-nav-menu__container");
-
-    toggle.addEventListener("click", () => {
-      nav.classList.toggle("active");
-    });
-
-console.log(toggle);
-console.log(nav);
-</script-->
-				<!--script>
-jQuery(document).ready(function($) {
-    // Fix for mobile menu toggle
-    $('.elementor-menu-toggle').on('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        
-        var $this = $(this);
-        var $menu = $this.next('.elementor-nav-menu--dropdown');
-        
-        if ($menu.length === 0) {
-            $menu = $('.elementor-nav-menu--dropdown');
-        }
-        
-        $menu.toggleClass('elementor-nav-menu--open');
-        $this.attr('aria-expanded', function(i, attr) {
-            return attr === 'true' ? 'false' : 'true';
-        });
-    });
-});
-
-jQuery(document).ready(function($) {
-    // Fix mobile menu toggle
-    $('.elementor-menu-toggle').off('click').on('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        
-        var $toggle = $(this);
-        var $menu = $('.elementor-nav-menu--dropdown');
-        
-        // Toggle open class
-        if ($menu.hasClass('elementor-nav-menu--open')) {
-            $menu.removeClass('elementor-nav-menu--open');
-            $toggle.attr('aria-expanded', 'false');
-        } else {
-            $menu.addClass('elementor-nav-menu--open');
-            $toggle.attr('aria-expanded', 'true');
-        }
-        
-        return false;
-    });
-    
-    // Close menu when clicking outside
-    $(document).on('click', function(e) {
-        if (!$(e.target).closest('.elementor-menu-toggle').length && 
-            !$(e.target).closest('.elementor-nav-menu--dropdown').length) {
-            $('.elementor-nav-menu--dropdown').removeClass('elementor-nav-menu--open');
-            $('.elementor-menu-toggle').attr('aria-expanded', 'false');
-        }
-    });
-});
-</script--->
+			
 <script>
 
 
@@ -1566,40 +1481,6 @@ jQuery(document).ready(function($) {
 	
 </script>
 
-<!--script>
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.getElementById('hamburgerBtn');
-    const mobilePanel = document.getElementById('mobileMenuPanel');
-
-    if (hamburger && mobilePanel) {
-        hamburger.addEventListener('click', function() {
-            this.classList.toggle('active');
-            mobilePanel.classList.toggle('open');
-            document.body.style.overflow = mobilePanel.classList.contains('open') ? 'hidden' : '';
-        });
-
-        document.querySelectorAll('.mobile-dropdown-toggle').forEach(function(toggle) {
-            toggle.addEventListener('click', function(e) {
-                e.preventDefault();
-                this.classList.toggle('open');
-                var submenu = this.nextElementSibling;
-                if (submenu && submenu.classList.contains('mobile-submenu')) {
-                    submenu.classList.toggle('show');
-                }
-            });
-        });
-
-        document.querySelectorAll('.mobile-nav-link, .mobile-submenu a').forEach(function(link) {
-            link.addEventListener('click', function() {
-                if (this.classList && this.classList.contains('mobile-dropdown-toggle')) return;
-                hamburger.classList.remove('active');
-                mobilePanel.classList.remove('open');
-                document.body.style.overflow = '';
-            });
-        });
-    }
-});
-</script--->
 				<div class="elementor-element elementor-element-49572e5 elementor-hidden-mobile elementor-widget elementor-widget-button" data-id="49572e5" data-element_type="widget" data-e-type="widget" data-settings="{&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 									<div class="elementor-button-wrapper">
@@ -1623,16 +1504,21 @@ document.addEventListener('DOMContentLoaded', function() {
                 <img src="logo.png" alt="Uttarakhand Trips" style="max-height: 50px;">
             </a>
         </div>
-        <button class="hamburger" id="hamburgerBtn">
+        <!--button class="hamburger" id="hamburgerBtn">
             <span></span>
-        </button>
+        </button--->
+        <button class="hamburger" id="hamburgerBtn">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
     </div>
 </div>
 
 <!-- Mobile Menu Panel -->
 <div class="mobile-menu-panel" id="mobileMenuPanel">
     <ul class="mobile-nav-menu">
-        <li class="mobile-nav-item"><a href="index.htm" class="mobile-nav-link active">Home</a></li>
+        <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link active">Home</a></li>
         <li class="mobile-nav-item"><a href="./about-us/about_us.html" class="mobile-nav-link">About Us</a></li>
         
         <li class="mobile-nav-item">
@@ -1676,7 +1562,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </ul>
         </li>
 
-        <li class="mobile-nav-item"><a href="blogs/index.htm" class="mobile-nav-link">Blogs</a></li>
+        <li class="mobile-nav-item"><a href="/blogs/index.html" class="mobile-nav-link">Blogs</a></li>
     </ul>
     <a href="contact-us/index.htm" class="mobile-contact-btn">Contact Us</a>
 </div>
@@ -1723,7 +1609,7 @@ if (hamburger && mobilePanel) {
 				</div>
 				<div class="elementor-element elementor-element-a0f0118 elementor-widget elementor-widget-text-editor" data-id="a0f0118" data-element_type="widget" data-e-type="widget" data-settings="{&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>A Top Rated Travel Company By Tripadvisor In Uttarakhand </p>								</div>
+									<p>A Top Rated Travel Company By Tripadvisor In Uttarakhand </p>								</div>
 				</div>
 				<div class="elementor-element elementor-element-fe8c836 elementor-widget elementor-widget-button" data-id="fe8c836" data-element_type="widget" data-e-type="widget" data-settings="{&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}" data-widget_type="button.default">
 				<div class="elementor-widget-container">
@@ -1763,175 +1649,86 @@ if (hamburger && mobilePanel) {
 				</div>
 					</div>
 				</div>
-		<!--div class="elementor-element elementor-element-2d5a1a6 e-flex e-con-boxed e-con e-parent" data-id="2d5a1a6" data-element_type="container" data-e-type="container" data-settings="{&quot;grandtour_ext_is_background_parallax&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_backdrop&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_on_scroll&quot;:&quot;false&quot;,&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}">
-					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-b07395f e-flex e-con-boxed e-con e-child" data-id="b07395f" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;grandtour_ext_is_background_parallax&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_backdrop&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_on_scroll&quot;:&quot;false&quot;,&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-d908b68 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading" data-id="d908b68" data-element_type="widget" data-e-type="widget" data-settings="{&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Top Places In Uttarakhand</h2>				</div>
-				</div>
-				<div class="elementor-element elementor-element-0c642d1 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="0c642d1" data-element_type="widget" data-e-type="widget" data-settings="{&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									<p data-start="414" data-end="776">Uttarakhand is one of the top travel states in North India. It’s home to famous temples like Kedarnath and Badrinath, peaceful towns like Rishikesh and Gangotri, and scenic hill stations like Mussoorie and Auli. From spiritual yatras to nature holidays, there are many places to visit in Uttarakhand that offer a good mix of faith, beauty, and local experiences.</p>								</div>
-				</div>
-				<div class="elementor-element elementor-element-9437676 text-expander elementor-widget elementor-widget-n-accordion" data-id="9437676" data-element_type="widget" data-e-type="widget" data-settings="{&quot;default_state&quot;:&quot;all_collapsed&quot;,&quot;max_items_expended&quot;:&quot;one&quot;,&quot;n_accordion_animation_duration&quot;:{&quot;unit&quot;:&quot;ms&quot;,&quot;size&quot;:400,&quot;sizes&quot;:[]},&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}" data-widget_type="nested-accordion.default">
-				<div class="elementor-widget-container">
-							<div class="e-n-accordion" aria-label="Accordion. Open links with Enter or Space, close with Escape, and navigate with Arrow Keys">
-						<details id="e-n-accordion-item-1550" class="e-n-accordion-item">
-				<summary class="e-n-accordion-item-title" data-accordion-index="1" tabindex="0" aria-expanded="false" aria-controls="e-n-accordion-item-1550">
-					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> Read <span class="read-more">More</span><span class="read-less">Less</span> </div></span>
-							<span class='e-n-accordion-item-title-icon'>
-			<span class='e-opened'><svg aria-hidden="true" class="e-font-icon-svg e-fas-long-arrow-alt-down" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M168 345.941V44c0-6.627-5.373-12-12-12h-56c-6.627 0-12 5.373-12 12v301.941H41.941c-21.382 0-32.09 25.851-16.971 40.971l86.059 86.059c9.373 9.373 24.569 9.373 33.941 0l86.059-86.059c15.119-15.119 4.411-40.971-16.971-40.971H168z"></path></svg></span>
-			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-long-arrow-alt-right" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"></path></svg></span>
-		</span>
 
-						</summary>
-				<div role="region" aria-labelledby="e-n-accordion-item-1550" class="elementor-element elementor-element-7df9f60 e-con-full e-flex e-con e-child" data-id="7df9f60" data-element_type="container" data-e-type="container" data-settings="{&quot;grandtour_ext_is_background_parallax&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_backdrop&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_on_scroll&quot;:&quot;false&quot;,&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}">
-				<div class="elementor-element elementor-element-db327a6 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="db327a6" data-element_type="widget" data-e-type="widget" data-settings="{&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									<p><strong>Haridwar</strong></p><p>Haridwar is one of the holiest cities in India and a popular starting point for spiritual journeys in Uttarakhand. The city sits on the banks of the Ganges River and is best known for the evening Ganga Aarti at Har Ki Pauri. Many travelers come here for blessings and to begin their Char Dham Yatra. It is also one of the most senior-friendly places to see in Uttarakhand.</p><p><strong>Rishikesh</strong></p><p>Rishikesh is a peaceful town known for yoga, meditation, and river adventure. Located just 20 km from Haridwar, it is often called the Yoga Capital of the World. Travelers visit for spiritual learning, Ganga Aarti, and white-water rafting. Rishikesh is a great destination for both young backpackers and those looking for spiritual places to see in Uttarakhand near the holy river.</p><p><strong>Char Dham Yatra</strong></p><p>The Char Dham Yatra is a sacred journey to four important temples: Yamunotri, Gangotri, Kedarnath, and Badrinath. It is one of the most meaningful spiritual experiences in India. The route takes you through high Himalayan roads, beautiful valleys, and ancient pilgrimage spots. If you’re looking for religious places to see in Uttarakhand, this yatra is a life-changing journey for many.</p><p><strong>Yamunotri</strong></p><p>Yamunotri is the starting point of the Char Dham Yatra and the origin of the Yamuna River. It involves a short trek from Janki Chatti, and offers hot water springs and beautiful mountain views. Surrounded by peaceful nature, this temple is visited by devotees and adventure lovers alike. Yamunotri is one of the lesser-crowded spiritual places to see in Uttarakhand.</p><p><strong>Gangotri</strong></p><p>Gangotri is a quiet temple town located on the banks of the Bhagirathi River. It marks the origin of the holy Ganga and is a key stop on the Char Dham route. The journey to Gangotri offers breathtaking views of snow-capped mountains and pine forests. It’s a great choice for travelers looking for high-altitude religious places to see in Uttarakhand.</p><p><strong>Kedarnath</strong></p><p>Kedarnath is one of the most important Shiva temples in India, located high in the Himalayas at over 11,000 feet. The 16 km trek from Gaurikund is both challenging and rewarding. With snowy peaks all around, it is one of the most visited sacred places to see in Uttarakhand. Helicopter services and pony rides make it accessible for older travelers as well.</p><p><strong>Badrinath</strong></p><p>Badrinath is a peaceful temple town located between the Nar and Narayan mountains. It is dedicated to Lord Vishnu and is the last stop in the Char Dham Yatra. The town is easily reachable by road and is known for its natural hot springs and scenic beauty. For a relaxed and spiritual break, Badrinath is among the top places to see in Uttarakhand.</p><p><strong>Harsil</strong></p><p>Harsil is a hidden gem near Gangotri, ideal for those who love quiet mountain villages. Surrounded by pine trees and apple orchards, this place is perfect for slow travel and peace seekers. It offers clean air, simple homestays, and the real feel of the Himalayas. If you&#8217;re searching for offbeat places to see in Uttarakhand, Harsil is a wonderful option.</p><p><strong>Mussoorie</strong></p><p>Mussoorie is one of the most famous hill stations in Uttarakhand, known for its British-era charm and beautiful views of the Doon Valley. From Mall Road walks to Kempty Falls and Gun Hill viewpoints, Mussoorie has something for everyone. Families, couples, and honeymooners often choose Mussoorie for a relaxing vacation in the hills. It remains one of the easiest places to see in Uttarakhand near Dehradun.</p><p><strong>Auli</strong></p><p>Auli is a snow-covered mountain town known for skiing and panoramic Himalayan views. In winter, it becomes a ski paradise, and in summer, it offers green meadows and peaceful forests. The ropeway from Joshimath to Auli is one of the longest in Asia. If you love snow places to see in Uttarakhand, Auli should be high on your list.</p><p><strong>Chopta</strong></p><p>Chopta is a quiet place surrounded by forests and meadows, often called the Mini Switzerland of Uttarakhand. It is the base for the famous Tungnath Temple trek and the Chandrashila summit. This region is perfect for people who enjoy nature walks and simple mountain life. For short Himalayan treks and scenic sunrises, Chopta is one of the best places to see in Uttarakhand.</p><p><strong>Nainital</strong></p><p>Nainital is a beautiful lake town set in a valley, with Naini Lake at its center. Visitors can enjoy boating, visit nearby viewpoints, and walk around the lively Mall Road. It’s well-connected by road and rail, making it a popular weekend getaway. Among all the places to see in Uttarakhand, Nainital is one of the easiest and most family-friendly destinations.</p><p><strong>Jim Corbett National Park</strong></p><p>Jim Corbett National Park is India’s first tiger reserve and a great spot for wildlife lovers. Visitors come here for jeep safaris, birdwatching, and forest stays. The park is rich in flora and fauna, including tigers, elephants, and deer. If you&#8217;re looking for nature-based places to see in Uttarakhand, Corbett offers a wild and exciting experience in the jungle.</p><p><strong>Kausani</strong></p><p>Kausani is a peaceful hill town with wide views of Himalayan peaks like Nanda Devi and Trishul. Known for its slow pace and fresh air, it’s great for relaxing with family or older travelers. The town is also home to the Anasakti Ashram, where Mahatma Gandhi once stayed. For panoramic views and quiet holidays, Kausani is among the best scenic places to see in Uttarakhand.</p>								</div>
-				</div>
-				</div>
-					</details>
-					</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-6667032 elementor-widget-mobile__width-inherit elementor-skin-carousel elementor-arrows-yes elementor-pagination-type-bullets elementor-pagination-position-outside elementor-widget elementor-widget-media-carousel" data-id="6667032" data-element_type="widget" data-e-type="widget" data-settings="{&quot;slides_per_view&quot;:&quot;4&quot;,&quot;slides_per_view_mobile&quot;:&quot;2&quot;,&quot;slides_to_scroll&quot;:&quot;1&quot;,&quot;slides_to_scroll_mobile&quot;:&quot;1&quot;,&quot;space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:25,&quot;sizes&quot;:[]},&quot;skin&quot;:&quot;carousel&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;show_arrows&quot;:&quot;yes&quot;,&quot;pagination&quot;:&quot;bullets&quot;,&quot;speed&quot;:500,&quot;loop&quot;:&quot;yes&quot;,&quot;space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}" data-widget_type="media-carousel.default">
-				<div class="elementor-widget-container">
-									<div class="elementor-swiper">
-					<div class="elementor-main-swiper swiper" role="region" aria-roledescription="carousel" aria-label="Slides">
-				<div class="swiper-wrapper">
-											<div class="swiper-slide" role="group" aria-roledescription="slide">
-							<a href="destination/rishikesh/index.htm" target="_blank">		<div data-bg="https://uttarakhandtrips.com/wp-content/uploads/2024/08/10-1.webp" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="10" style="">
+                <!-- ACCORDION 1 - TOP PLACES -->
+<details class="accordion-item">
+    <summary class="accordion-title">
+        <span>Read <span class="read-more">More</span><span class="read-less">Less</span></span>
+        <span class="accordion-icon">▼</span>
+    </summary>
+    <div class="accordion-content">
+        <p><strong>Haridwar</strong><br>Haridwar is one of the holiest cities in India and a popular starting point for spiritual journeys in Uttarakhand. The city sits on the banks of the Ganges River and is best known for the evening Ganga Aarti at Har Ki Pauri.</p>
+        <p><strong>Rishikesh</strong><br>Rishikesh is a peaceful town known for yoga, meditation, and river adventure. Located just 20 km from Haridwar, it is often called the Yoga Capital of the World.</p>
+        <p><strong>Kedarnath</strong><br>Kedarnath is one of the most important Shiva temples in India, located high in the Himalayas at over 11,000 feet.</p>
+        <p><strong>Badrinath</strong><br>Badrinath is a peaceful temple town located between the Nar and Narayan mountains, dedicated to Lord Vishnu.</p>
+        <p><strong>Nainital</strong><br>Nainital is a beautiful lake town set in a valley, with Naini Lake at its center. Visitors can enjoy boating and walk around Mall Road.</p>
+        <p><strong>Jim Corbett National Park</strong><br>Jim Corbett National Park is India's first tiger reserve and a great spot for wildlife lovers. Visitors come here for jeep safaris and birdwatching.</p>
+    </div>
+</details>
 
-			
-					</div>
-		</a>						</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide">
-							<a href="destination/jim-corbett/index.htm" target="_blank">		<div data-bg="https://uttarakhandtrips.com/wp-content/uploads/2024/08/5.webp" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="5" style="">
-
-			
-					</div>
-		</a>						</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide">
-							<a href="destination/mussoorie/index.htm" target="_blank">		<div data-bg="https://uttarakhandtrips.com/wp-content/uploads/2024/08/7.webp" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="7" style="">
-
-			
-					</div>
-		</a>						</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide">
-							<a href="destination/kedarnath/index.htm" target="_blank">		<div data-bg="https://uttarakhandtrips.com/wp-content/uploads/2024/08/1-1.webp" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="1" style="">
-
-			
-					</div>
-		</a>						</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide">
-							<a href="destination/badrinath/index.htm" target="_blank">		<div data-bg="https://uttarakhandtrips.com/wp-content/uploads/2024/08/2.webp" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="2" style="">
-
-			
-					</div>
-		</a>						</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide">
-							<a href="char-dham-yatra-packages/index.htm" target="_blank">		<div data-bg="https://uttarakhandtrips.com/wp-content/uploads/2024/08/13.webp" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="13" style="">
-
-			
-					</div>
-		</a>						</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide">
-							<a href="destination/nainital/index.htm" target="_blank">		<div data-bg="https://uttarakhandtrips.com/wp-content/uploads/2024/08/6.webp" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="6" style="">
-
-			
-					</div>
-		</a>						</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide">
-							<a href="destination/chopta/index.htm" target="_blank">		<div data-bg="https://uttarakhandtrips.com/wp-content/uploads/2024/08/8.webp" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="8" style="">
-
-			
-					</div>
-		</a>						</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide">
-							<a href="destination/auli/index.htm" target="_blank">		<div data-bg="https://uttarakhandtrips.com/wp-content/uploads/2024/08/9.webp" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="9" style="">
-
-			
-					</div>
-		</a>						</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide">
-							<a href="destination/haridwar/index.htm" target="_blank">		<div data-bg="https://uttarakhandtrips.com/wp-content/uploads/2024/08/11-1.webp" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="11" style="">
-
-			
-					</div>
-		</a>						</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide">
-							<a href="destination/yamunotri/index.htm" target="_blank">		<div data-bg="https://uttarakhandtrips.com/wp-content/uploads/2024/08/4.webp" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="4" style="">
-
-			
-					</div>
-		</a>						</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide">
-							<a href="destination/gangotri/index.htm" target="_blank">		<div data-bg="https://uttarakhandtrips.com/wp-content/uploads/2024/08/3.webp" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="3" style="">
-
-			
-					</div>
-		</a>						</div>
-									</div>
-															<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0" aria-label="Previous">
-							<svg aria-hidden="true" class="e-font-icon-svg e-eicon-chevron-left" viewbox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M646 125C629 125 613 133 604 142L308 442C296 454 292 471 292 487 292 504 296 521 308 533L604 854C617 867 629 875 646 875 663 875 679 871 692 858 704 846 713 829 713 812 713 796 708 779 692 767L438 487 692 225C700 217 708 204 708 187 708 171 704 154 692 142 675 129 663 125 646 125Z"></path></svg>						</div>
-						<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0" aria-label="Next">
-							<svg aria-hidden="true" class="e-font-icon-svg e-eicon-chevron-right" viewbox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M696 533C708 521 713 504 713 487 713 471 708 454 696 446L400 146C388 133 375 125 354 125 338 125 325 129 313 142 300 154 292 171 292 187 292 204 296 221 308 233L563 492 304 771C292 783 288 800 288 817 288 833 296 850 308 863 321 871 338 875 354 875 371 875 388 867 400 854L696 533Z"></path></svg>						</div>
-																<div class="swiper-pagination"></div>
-												</div>
-				</div>
-								</div>
-				</div>
-					</div>
-				</div>
-					</div>
-				</div--->
+<!-- ACCORDION 2 - YOUR PERFECT EXPERIENCES -->
+<details class="accordion-item">
+    <summary class="accordion-title">
+        <span>Read <span class="read-more">More</span><span class="read-less">Less</span></span>
+        <span class="accordion-icon">▼</span>
+    </summary>
+    <div class="accordion-content">
+        <p><strong>Spiritual Experiences in Uttarakhand</strong><br>Uttarakhand is known as Dev Bhoomi, the land of gods. Thousands of pilgrims visit every year to complete the Char Dham Yatra — Kedarnath, Badrinath, Gangotri, and Yamunotri.</p>
+        <p><strong>Leisure Holidays in Uttarakhand</strong><br>If your idea of a holiday means fresh air, mountain views, and doing absolutely nothing — Uttarakhand has you covered. Popular hill stations like Nainital, Mussoorie, Bhimtal, and Lansdowne are perfect for relaxed getaways.</p>
+        <p><strong>Adventure Activities in Uttarakhand</strong><br>From white-water rafting in Rishikesh to snow skiing in Auli, there's plenty to do. Try trekking in Chopta, Tungnath, or Valley of Flowers.</p>
+        <p><strong>Road Trip Routes in Uttarakhand</strong><br>There's nothing like a road trip through the hills of Uttarakhand. The drives from Rishikesh to Auli or Delhi to Nainital are full of turns, views, and roadside chai spots.</p>
+        <p><strong>Wildlife Safaris in Uttarakhand</strong><br>Jim Corbett National Park is India's oldest and one of the most exciting wildlife reserves. Go on a safari to spot tigers, elephants, deer, and rare birds.</p>
+        <p><strong>Family-Friendly Places in Uttarakhand</strong><br>Planning a trip with kids or elders? Uttarakhand has many easy and comfortable options. Nainital, Mussoorie, Bhimtal, and Jim Corbett are all well-connected.</p>
+        <p><strong>Romantic Getaways in Uttarakhand</strong><br>Couples looking for peace, views, and quiet time together will love Uttarakhand. Auli, Mukteshwar, Kanatal, and Bhimtal are some of the top romantic destinations.</p>
+        <p><strong>Homestay Experiences in Uttarakhand</strong><br>If you want to skip touristy hotels and feel the real vibe of the hills, stay in a homestay. Uttarakhand has many local-run stays in villages near Almora, Tehri, Mukteshwar, and Chopta.</p>
+    </div>
+</details>
+	
 				<!-- ===== TOP PLACES IN UTTARAKHAND - RESPONSIVE SECTION ===== -->
-<div class="uts-top-places-section">
+<!----div class="uts-top-places-section">
     <div class="uts-top-places-container">
         <div class="uts-top-places-inner">
             
-            <!-- Heading -->
+        
             <h2 class="uts-top-places-heading">Top Places In Uttarakhand</h2>
             
-            <!-- Description -->
+         
             <p class="uts-top-places-description">Uttarakhand is one of the top travel states in North India. It's home to famous temples like Kedarnath and Badrinath, peaceful towns like Rishikesh and Gangotri, and scenic hill stations like Mussoorie and Auli. From spiritual yatras to nature holidays, there are many places to visit in Uttarakhand that offer a good mix of faith, beauty, and local experiences.</p>
             
-            <!-- Accordion (Read More) -->
-            <div class="uts-accordion-container">
-                <details class="uts-accordion-item">
-                    <summary class="uts-accordion-item-title">
-                        <span class="uts-accordion-item-title-text">Read <span class="read-more">More</span><span class="read-less">Less</span></span>
-                        <span class="uts-accordion-item-title-icon">▼</span>
-                    </summary>
-                    <div class="uts-accordion-content">
-                        <p><strong>Haridwar</strong></p>
-                        <p>Haridwar is one of the holiest cities in India and a popular starting point for spiritual journeys in Uttarakhand. The city sits on the banks of the Ganges River and is best known for the evening Ganga Aarti at Har Ki Pauri. Many travelers come here for blessings and to begin their Char Dham Yatra. It is also one of the most senior-friendly places to see in Uttarakhand.</p>
-                        
-                        <p><strong>Rishikesh</strong></p>
-                        <p>Rishikesh is a peaceful town known for yoga, meditation, and river adventure. Located just 20 km from Haridwar, it is often called the Yoga Capital of the World. Travelers visit for spiritual learning, Ganga Aarti, and white-water rafting. Rishikesh is a great destination for both young backpackers and those looking for spiritual places to see in Uttarakhand near the holy river.</p>
-                        
-                        <p><strong>Char Dham Yatra</strong></p>
-                        <p>The Char Dham Yatra is a sacred journey to four important temples: Yamunotri, Gangotri, Kedarnath, and Badrinath. It is one of the most meaningful spiritual experiences in India. The route takes you through high Himalayan roads, beautiful valleys, and ancient pilgrimage spots.</p>
-                        
-                        <p><strong>Kedarnath</strong></p>
-                        <p>Kedarnath is one of the most important Shiva temples in India, located high in the Himalayas at over 11,000 feet. The 16 km trek from Gaurikund is both challenging and rewarding. With snowy peaks all around, it is one of the most visited sacred places to see in Uttarakhand.</p>
-                        
-                        <p><strong>Badrinath</strong></p>
-                        <p>Badrinath is a peaceful temple town located between the Nar and Narayan mountains. It is dedicated to Lord Vishnu and is the last stop in the Char Dham Yatra. The town is easily reachable by road and is known for its natural hot springs and scenic beauty.</p>
-                        
-                        <p><strong>Nainital</strong></p>
-                        <p>Nainital is a beautiful lake town set in a valley, with Naini Lake at its center. Visitors can enjoy boating, visit nearby viewpoints, and walk around the lively Mall Road. It's well-connected by road and rail, making it a popular weekend getaway.</p>
-                        
-                        <p><strong>Jim Corbett National Park</strong></p>
-                        <p>Jim Corbett National Park is India's first tiger reserve and a great spot for wildlife lovers. Visitors come here for jeep safaris, birdwatching, and forest stays. The park is rich in flora and fauna, including tigers, elephants, and deer.</p>
-                    </div>
-                </details>
-            </div>
+           
+           
+          
+<details class="accordion-item">
+    <summary class="accordion-title">
+        <span>Read <span class="read-more">More</span><span class="read-less">Less</span></span>
+        <span class="accordion-icon">▼</span>
+    </summary>
+    <div class="accordion-content">
+        <p><strong>Haridwar</strong><br>Haridwar is one of the holiest cities in India...</p>
+        <p><strong>Rishikesh</strong><br>Rishikesh is a peaceful town known for yoga...</p>
+        <p><strong>Kedarnath</strong><br>Kedarnath is one of the most important Shiva temples...</p>
+        <p><strong>Badrinath</strong><br>Badrinath is a peaceful temple town...</p>
+        <p><strong>Nainital</strong><br>Nainital is a beautiful lake town...</p>
+    </div>
+</details>
+
+<details class="accordion-item">
+    <summary class="accordion-title">
+        <span>Read <span class="read-more">More</span><span class="read-less">Less</span></span>
+        <span class="accordion-icon">▼</span>
+    </summary>
+    <div class="accordion-content">
+        <p><strong>Spiritual Experiences in Uttarakhand</strong><br>Uttarakhand is known as Dev Bhoomi, the land of gods...</p>
+        <p><strong>Leisure Holidays in Uttarakhand</strong><br>If your idea of a holiday means fresh air, mountain views...</p>
+        <p><strong>Adventure Activities in Uttarakhand</strong><br>From white-water rafting in Rishikesh to snow skiing in Auli...</p>
+        <p><strong>Road Trip Routes in Uttarakhand</strong><br>There's nothing like a road trip through the hills...</p>
+        <p><strong>Wildlife Safaris in Uttarakhand</strong><br>Jim Corbett National Park is India's oldest wildlife reserve...</p>
+        <p><strong>Family-Friendly Places in Uttarakhand</strong><br>Planning a trip with kids or elders? Uttarakhand has many options...</p>
+        <p><strong>Romantic Getaways in Uttarakhand</strong><br>Couples looking for peace, views, and quiet time together...</p>
+        <p><strong>Homestay Experiences in Uttarakhand</strong><br>If you want to skip touristy hotels and feel the real vibe...</p>
+    </div>
+</details>
             
-            <!-- Carousel / Slider -->
             <div class="uts-top-places-carousel">
                 <div class="uts-carousel-wrapper">
                     <div class="uts-carousel-slide">
@@ -1961,126 +1758,15 @@ if (hamburger && mobilePanel) {
 
 
     
-		<!--div class="elementor-element elementor-element-9bb03a9 e-flex e-con-boxed e-con e-parent" data-id="9bb03a9" data-element_type="container" data-e-type="container" data-settings="{&quot;grandtour_ext_is_background_parallax&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_backdrop&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_on_scroll&quot;:&quot;false&quot;,&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}">
-					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-ca127ad e-flex e-con-boxed e-con e-child" data-id="ca127ad" data-element_type="container" data-e-type="container" data-settings="{&quot;grandtour_ext_is_background_parallax&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_backdrop&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_on_scroll&quot;:&quot;false&quot;,&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-79189e5 elementor-widget elementor-widget-heading" data-id="79189e5" data-element_type="widget" data-e-type="widget" data-settings="{&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Your Perfect Uttarakhand Experiences</h2>				</div>
-				</div>
-				<div class="elementor-element elementor-element-822f43a elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="822f43a" data-element_type="widget" data-e-type="widget" data-settings="{&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									<p>Uttarakhand isn’t just one kind of trip. It’s many. Some people come here for darshan at Kedarnath or Badrinath, some want to camp under the stars in Chopta, while others just want to sip tea in Mussoorie with the clouds rolling by. No matter what kind of traveller you are, there’s a part of Uttarakhand that feels just right for you.</p>								</div>
-				</div>
-				<div class="elementor-element elementor-element-b3f7e80 text-expander elementor-widget elementor-widget-n-accordion" data-id="b3f7e80" data-element_type="widget" data-e-type="widget" data-settings="{&quot;default_state&quot;:&quot;all_collapsed&quot;,&quot;max_items_expended&quot;:&quot;one&quot;,&quot;n_accordion_animation_duration&quot;:{&quot;unit&quot;:&quot;ms&quot;,&quot;size&quot;:400,&quot;sizes&quot;:[]},&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}" data-widget_type="nested-accordion.default">
-				<div class="elementor-widget-container">
-							<div class="e-n-accordion" aria-label="Accordion. Open links with Enter or Space, close with Escape, and navigate with Arrow Keys">
-						<details id="e-n-accordion-item-1880" class="e-n-accordion-item">
-				<summary class="e-n-accordion-item-title" data-accordion-index="1" tabindex="0" aria-expanded="false" aria-controls="e-n-accordion-item-1880">
-					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> Read <span class="read-more">More</span><span class="read-less">Less</span> </div></span>
-							<span class='e-n-accordion-item-title-icon'>
-			<span class='e-opened'><svg aria-hidden="true" class="e-font-icon-svg e-fas-long-arrow-alt-down" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M168 345.941V44c0-6.627-5.373-12-12-12h-56c-6.627 0-12 5.373-12 12v301.941H41.941c-21.382 0-32.09 25.851-16.971 40.971l86.059 86.059c9.373 9.373 24.569 9.373 33.941 0l86.059-86.059c15.119-15.119 4.411-40.971-16.971-40.971H168z"></path></svg></span>
-			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-long-arrow-alt-right" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"></path></svg></span>
-		</span>
-
-						</summary>
-				<div role="region" aria-labelledby="e-n-accordion-item-1880" class="elementor-element elementor-element-06e2970 e-con-full e-flex e-con e-child" data-id="06e2970" data-element_type="container" data-e-type="container" data-settings="{&quot;grandtour_ext_is_background_parallax&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_backdrop&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_on_scroll&quot;:&quot;false&quot;,&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}">
-				<div class="elementor-element elementor-element-654c5ba elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="654c5ba" data-element_type="widget" data-e-type="widget" data-settings="{&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									<p data-start="297" data-end="347"><strong data-start="305" data-end="345">Spiritual Experiences in Uttarakhand</strong></p><p data-start="348" data-end="802">Uttarakhand is known as <em data-start="372" data-end="384">Dev Bhoomi</em>, the land of gods. Thousands of pilgrims visit every year to complete the Char Dham Yatra — Kedarnath, Badrinath, Gangotri, and Yamunotri. If you’re not doing the full circuit, you can still visit places like Haridwar and Rishikesh for Ganga Aarti, temple visits, and peaceful river walks. Whether you seek blessings or a quiet spiritual retreat in the hills, Uttarakhand has something deeply soulful waiting for you.</p><p data-start="809" data-end="853"><strong data-start="816" data-end="851">Leisure Holidays in Uttarakhand</strong></p><p data-start="854" data-end="1312">If your idea of a holiday means fresh air, mountain views, and doing absolutely nothing — Uttarakhand has you covered. Popular hill stations like Nainital, Mussoorie, Bhimtal, and Lansdowne are perfect for relaxed getaways. You can enjoy peaceful lake walks, local food, and cosy stays with valley views. These are ideal for weekend trips, long breaks, or work-from-the-hills plans. Leisure travellers love Uttarakhand for its simplicity, charm, and comfort.</p><p data-start="1319" data-end="1367"><strong data-start="1326" data-end="1365">Adventure Activities in Uttarakhand</strong></p><p data-start="1368" data-end="1830">If you&#8217;re someone who prefers action over rest, Uttarakhand offers real adventure. From white-water rafting in Rishikesh to snow skiing in Auli, there&#8217;s plenty to do. Try trekking in Chopta, Tungnath, or Valley of Flowers, or go rock climbing, ziplining, or even bungee jumping. Whether you&#8217;re a solo explorer or in a group, these adventure activities in Uttarakhand give you the right mix of thrill and nature. It’s the perfect state for active mountain lovers.</p><p data-start="1837" data-end="1881"><strong data-start="1844" data-end="1879">Road Trip Routes in Uttarakhand</strong></p><p data-start="1882" data-end="2321">There’s nothing like a road trip through the hills of Uttarakhand. The drives from Rishikesh to Auli or Delhi to Nainital are full of turns, views, and roadside chai spots. You can take the Char Dham route or create your own path across lesser-known hill towns. These road trips offer a deeper, slower way to explore the mountains — no fixed plan, just the open road and stunning views. Great for bikers, car drives, and weekend wanderers.</p><p data-start="2328" data-end="2372"><strong data-start="2335" data-end="2370">Wildlife Safaris in Uttarakhand</strong></p><p data-start="2373" data-end="2815">Jim Corbett National Park is India’s oldest and one of the most exciting wildlife reserves. Go on a safari to spot tigers, elephants, deer, and rare birds. You can also explore Rajaji Tiger Reserve or the quieter forests around Almora and Champawat. Wildlife lovers and photographers will enjoy the raw, wild side of Uttarakhand. Choose from forest lodges, riverside resorts, or jungle-style camps for an immersive experience close to nature.</p><p data-start="2822" data-end="2878"><strong data-start="2835" data-end="2876">Family-Friendly Places in Uttarakhand</strong></p><p data-start="2879" data-end="3304">Planning a trip with kids or elders? Uttarakhand has many easy and comfortable options. Nainital, Mussoorie, Bhimtal, and Jim Corbett are all well-connected and offer good hotels, activities for children, and smooth travel experiences. You can go boating, take a cable car ride, visit zoos, or relax at a riverside resort. These places are safe, scenic, and full of simple joys — just right for family vacations in the hills.</p><p data-start="3311" data-end="3356"><strong data-start="3318" data-end="3354">Romantic Getaways in Uttarakhand</strong></p><p data-start="3357" data-end="3765">Couples looking for peace, views, and quiet time together will love Uttarakhand. Auli, Mukteshwar, Kanatal, and Bhimtal are some of the top romantic destinations. These places offer cosy cottages, sunset spots, forest walks, and beautiful weather — everything you need for a honeymoon or a quiet couple&#8217;s trip. You don’t need luxury to feel special here — just a mountain view and time to slow down together.</p><p data-start="3772" data-end="3820"><strong data-start="3779" data-end="3818">Homestay Experiences in Uttarakhand</strong></p><p data-start="3821" data-end="4241">If you want to skip touristy hotels and feel the real vibe of the hills, stay in a homestay. Uttarakhand has many local-run stays in villages near Almora, Tehri, Mukteshwar, and Chopta. You’ll eat local food, learn mountain stories, and see life beyond the usual spots. Homestays are great for solo travellers, couples, or families who want something warm, personal, and rooted. It’s a slower, more honest way to travel.</p>								</div>
-				</div>
-				</div>
-					</details>
-					</div>
-						</div>
-				</div>
-		<div class="elementor-element elementor-element-c6739b3 e-con-full e-flex e-con e-child" data-id="c6739b3" data-element_type="container" data-e-type="container" data-settings="{&quot;grandtour_ext_is_background_parallax&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_backdrop&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_on_scroll&quot;:&quot;false&quot;,&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}">
-				<div class="elementor-element elementor-element-ba4cbf3 elementor-skin-carousel elementor-arrows-yes elementor-pagination-type-bullets elementor-pagination-position-outside elementor-widget elementor-widget-media-carousel" data-id="ba4cbf3" data-element_type="widget" data-e-type="widget" data-settings="{&quot;slides_per_view&quot;:&quot;4&quot;,&quot;slides_per_view_mobile&quot;:&quot;2&quot;,&quot;slides_to_scroll&quot;:&quot;1&quot;,&quot;slides_to_scroll_mobile&quot;:&quot;1&quot;,&quot;space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:25,&quot;sizes&quot;:[]},&quot;space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;skin&quot;:&quot;carousel&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;show_arrows&quot;:&quot;yes&quot;,&quot;pagination&quot;:&quot;bullets&quot;,&quot;speed&quot;:500,&quot;loop&quot;:&quot;yes&quot;,&quot;space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}" data-widget_type="media-carousel.default">
-				<div class="elementor-widget-container">
-									<div class="elementor-swiper">
-					<div class="elementor-main-swiper swiper" role="region" aria-roledescription="carousel" aria-label="Slides">
-				<div class="swiper-wrapper">
-											<div class="swiper-slide" role="group" aria-roledescription="slide">
-							<a href="tourcat/pilgrimage/index.htm" target="_blank">		<div data-bg="https://uttarakhandtrips.com/wp-content/uploads/2024/08/1-4.webp" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="1" style="">
-
-			
-					</div>
-		</a>						</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide">
-							<a href="tourcat/leisure/index.htm" target="_blank">		<div data-bg="https://uttarakhandtrips.com/wp-content/uploads/2024/08/2-3.webp" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="2" style="">
-
-			
-					</div>
-		</a>						</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide">
-									<div data-bg="https://uttarakhandtrips.com/wp-content/uploads/2024/08/3-3.webp" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="3" style="">
-
-			
-					</div>
-								</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide">
-							<a href="tourcat/adventure/index.htm" target="_blank">		<div data-bg="https://uttarakhandtrips.com/wp-content/uploads/2024/08/4-3.webp" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="4" style="">
-
-			
-					</div>
-		</a>						</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide">
-							<a href="tourcat/group/index.htm" target="_blank">		<div data-bg="https://uttarakhandtrips.com/wp-content/uploads/2024/08/5-1.webp" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="5" style="">
-
-			
-					</div>
-		</a>						</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide">
-							<a href="tourcat/wildlife/index.htm" target="_blank">		<div data-bg="https://uttarakhandtrips.com/wp-content/uploads/2024/08/6-1.webp" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="6" style="">
-
-			
-					</div>
-		</a>						</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide">
-							<a href="tourcat/family/index.htm" target="_blank">		<div data-bg="https://uttarakhandtrips.com/wp-content/uploads/2024/08/8-1.webp" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="8" style="">
-
-			
-					</div>
-		</a>						</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide">
-							<a href="tourcat/romantic/index.htm" target="_blank">		<div data-bg="https://uttarakhandtrips.com/wp-content/uploads/2024/08/9-1.webp" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="9" style="">
-
-			
-					</div>
-		</a>						</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide">
-									<div data-bg="https://uttarakhandtrips.com/wp-content/uploads/2024/08/7-1.webp" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="7" style="">
-
-			
-					</div>
-								</div>
-									</div>
-															<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0" aria-label="Previous">
-							<svg aria-hidden="true" class="e-font-icon-svg e-eicon-chevron-left" viewbox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M646 125C629 125 613 133 604 142L308 442C296 454 292 471 292 487 292 504 296 521 308 533L604 854C617 867 629 875 646 875 663 875 679 871 692 858 704 846 713 829 713 812 713 796 708 779 692 767L438 487 692 225C700 217 708 204 708 187 708 171 704 154 692 142 675 129 663 125 646 125Z"></path></svg>						</div>
-						<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0" aria-label="Next">
-							<svg aria-hidden="true" class="e-font-icon-svg e-eicon-chevron-right" viewbox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M696 533C708 521 713 504 713 487 713 471 708 454 696 446L400 146C388 133 375 125 354 125 338 125 325 129 313 142 300 154 292 171 292 187 292 204 296 221 308 233L563 492 304 771C292 783 288 800 288 817 288 833 296 850 308 863 321 871 338 875 354 875 371 875 388 867 400 854L696 533Z"></path></svg>						</div>
-																<div class="swiper-pagination"></div>
-												</div>
-				</div>
-								</div>
-				</div>
-				</div>
-					</div>
-				</div>
-					</div>
-				</div--->
 
 				<div class="uts-experiences-wrapper">
     <div class="uts-experiences-container">
         
-        <!-- Heading -->
+       
         <h2 class="uts-experiences-heading">Your Perfect Uttarakhand Experiences</h2>
-        
-        <!-- Description -->
+     
         <p class="uts-experiences-description">Uttarakhand isn't just one kind of trip. It's many. Some people come here for darshan at Kedarnath or Badrinath, some want to camp under the stars in Chopta, while others just want to sip tea in Mussoorie with the clouds rolling by. No matter what kind of traveller you are, there's a part of Uttarakhand that feels just right for you.</p>
-        
-        <!-- ===== ACCORDION SECTION ===== -->
+  
         <div class="uts-accordion-main">
             <details class="uts-accordion-item" open="">
                 <summary class="uts-accordion-item-title">
@@ -2115,7 +1801,7 @@ if (hamburger && mobilePanel) {
             </details>
         </div>
         
-        <!-- ===== CAROUSEL / SLIDER SECTION ===== -->
+       
         <div class="uts-carousel-wrapper">
             <button class="uts-carousel-prev" id="carouselPrev">❮</button>
             <div class="uts-carousel-container" id="carouselContainer">
@@ -2152,11 +1838,11 @@ if (hamburger && mobilePanel) {
             <button class="uts-carousel-next" id="carouselNext">❯</button>
         </div>
         
-        <!-- Pagination Dots -->
+      
         <div class="uts-carousel-dots" id="carouselDots"><div class="uts-carousel-dot"></div><div class="uts-carousel-dot"></div><div class="uts-carousel-dot"></div><div class="uts-carousel-dot"></div><div class="uts-carousel-dot"></div><div class="uts-carousel-dot"></div><div class="uts-carousel-dot active"></div><div class="uts-carousel-dot"></div><div class="uts-carousel-dot"></div></div>
         
     </div>
-</div>
+</div--->
 		<div class="elementor-element elementor-element-f80249e e-flex e-con-boxed e-con e-parent" data-id="f80249e" data-element_type="container" data-e-type="container" data-settings="{&quot;grandtour_ext_is_background_parallax&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_backdrop&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_on_scroll&quot;:&quot;false&quot;,&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}">
 					<div class="e-con-inner">
 		<div class="elementor-element elementor-element-5c3f0d2 e-con-full e-flex e-con e-child" data-id="5c3f0d2" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;grandtour_ext_is_background_parallax&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_backdrop&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_on_scroll&quot;:&quot;false&quot;,&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}">
@@ -2360,7 +2046,7 @@ if (hamburger && mobilePanel) {
 				<div role="region" aria-labelledby="e-n-accordion-item-2370" class="elementor-element elementor-element-79e5b14 e-con-full e-flex e-con e-child" data-id="79e5b14" data-element_type="container" data-e-type="container" data-settings="{&quot;grandtour_ext_is_background_parallax&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_backdrop&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_on_scroll&quot;:&quot;false&quot;,&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}">
 				<div class="elementor-element elementor-element-526aa19 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="526aa19" data-element_type="widget" data-e-type="widget" data-settings="{&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<h4 data-start="625" data-end="936">Taj Rishikesh Resort &amp; Spa </h4><p data-start="625" data-end="936"><em data-start="658" data-end="684">Singthali, near Shivpuri</em><br data-start="684" data-end="687">This luxury resort is located about 30 km from Rishikesh town, away from the crowd, right next to the Ganga river. Rooms have forest or river views, and it’s a great pick for wellness getaways—there’s a full spa, yoga pavilion, and riverside deck.</p><p data-start="939" data-end="997"><strong data-start="939" data-end="951">Best for</strong>: Couples, wellness travelers, peace seekers<br><strong data-start="1000" data-end="1016">Approx Price</strong>: ₹20,000–₹35,000/night<br><strong data-start="1044" data-end="1060">Good to Know</strong>: Limited phone network; ideal for digital detox</p><h4 data-start="1117" data-end="1411">The Naini Retreat, Nainital </h4><p data-start="1117" data-end="1411"><em data-start="1151" data-end="1178">Ayarpata Slopes, Nainital</em><br data-start="1178" data-end="1181">Originally a royal residence, now a heritage-style hotel with modern upgrades. Just a 10-minute drive from Mall Road but feels private and calm. Rooms have wooden interiors, and there’s a great view of Naini Lake from the lawns.</p><p data-start="1414" data-end="1470"><strong data-start="1414" data-end="1426">Best for</strong>: Couples, small families, heritage lovers<br><strong data-start="1473" data-end="1489">Approx Price</strong>: ₹10,000–₹18,000/night<br><strong data-start="1517" data-end="1533">Good to Know</strong>: Gets sold out on weekends and holidays; book early</p><h4 data-start="1594" data-end="1894">JW Marriott Mussoorie Walnut Grove Resort &amp; Spa</h4><p data-start="1594" data-end="1894"><em data-start="1648" data-end="1671">Barlowganj, Mussoorie</em><br data-start="1671" data-end="1674">One of Mussoorie’s most premium stays, about 5 km from Mall Road. The resort offers big valley views, indoor pool, multiple restaurants, and lots of space for kids. Rooms are modern with all comforts and large windows.</p><p data-start="1897" data-end="1954"><strong data-start="1897" data-end="1909">Best for</strong>: Families, honeymooners, special occasions<br><strong data-start="1957" data-end="1973">Approx Price</strong>: ₹18,000–₹30,000/night<br><strong data-start="2001" data-end="2017">Good to Know</strong>: Great for longer stays (2–3 nights); check for meal packages</p><h4 data-start="1897" data-end="1954">Namah Resort, Jim Corbett</h4><p data-start="1897" data-end="1954"><em data-start="2120" data-end="2148">Dhikuli, near Bijrani Zone</em><br data-start="2148" data-end="2151">Located just 8 km from Ramnagar, this is a comfortable, full-service resort near Corbett National Park. It has lawns, a pool, spa, and large rooms—some with river views. Ideal if you want luxury near safari zones.</p><p data-start="2369" data-end="2427"><strong data-start="2369" data-end="2381">Best for</strong>: Wildlife lovers, seniors, relaxed holidays<br><strong data-start="2430" data-end="2446">Approx Price</strong>: ₹9,000–₹16,000/night<br><strong data-start="2473" data-end="2489">Good to Know</strong>: Safaris need to be pre-booked; resort can help with that</p>								</div>
+									<h4 data-start="625" data-end="936">Taj Rishikesh Resort &amp; Spa </h4><p data-start="625" data-end="936"><em data-start="658" data-end="684">Singthali, near Shivpuri</em><br data-start="684" data-end="687">This luxury resort is located about 30 km from Rishikesh town, away from the crowd, right next to the Ganga river. Rooms have forest or river views, and it’s a great pick for wellness getaways—there’s a full spa, yoga pavilion, and riverside deck.</p><p data-start="939" data-end="997"><strong data-start="939" data-end="951">Best for</strong>: Couples, wellness travelers, peace seekers<br><strong data-start="1000" data-end="1016">Approx Price</strong>: ₹20,000–₹35,000/night<br><strong data-start="1044" data-end="1060">Good to Know</strong>: Limited phone network; ideal for digital detox</p><h4 data-start="1117" data-end="1411">The Naini Retreat, Nainital </h4><p data-start="1117" data-end="1411"><em data-start="1151" data-end="1178">Ayarpata Slopes, Nainital</em><br data-start="1178" data-end="1181">Originally a royal residence, now a heritage-style hotel with modern upgrades. Just a 10-minute drive from Mall Road but feels private and calm. Rooms have wooden interiors, and there’s a great view of Naini Lake from the lawns.</p><p data-start="1414" data-end="1470"><strong data-start="1414" data-end="1426">Best for</strong>: Couples, small families, heritage lovers<br><strong data-start="1473" data-end="1489">Approx Price</strong>: ₹10,000–₹18,000/night<br><strong data-start="1517" data-end="1533">Good to Know</strong>: Gets sold out on weekends and holidays; book early</p><h4 data-start="1594" data-end="1894">JW Marriott Mussoorie Walnut Grove Resort &amp; Spa</h4><p data-start="1594" data-end="1894"><em data-start="1648" data-end="1671">Barlowganj, Mussoorie</em><br data-start="1671" data-end="1674">One of Mussoorie’s most premium stays, about 5 km from Mall Road. The resort offers big valley views, indoor pool, multiple restaurants, and lots of space for kids. Rooms are modern with all comforts and large windows.</p><p data-start="1897" data-end="1954"><strong data-start="1897" data-end="1909">Best for</strong>: Families, honeymooners, special occasions<br><strong data-start="1957" data-end="1973">Approx Price</strong>: ₹18,000–₹30,000/night<br><strong data-start="2001" data-end="2017">Good to Know</strong>: Great for longer stays (2–3 nights); check for meal packages</p><h4 data-start="1897" data-end="1954">Namah Resort, Jim Corbett</h4><p data-start="1897" data-end="1954"><em data-start="2120" data-end="2148">Dhikuli, near Bijrani Zone</em><br data-start="2148" data-end="2151">Located just 8 km from Ramnagar, this is a comfortable, full-service resort near Corbett National Park. It has lawns, a pool, spa, and large rooms—some with river views. Ideal if you want luxury near safari zones.</p><p data-start="2369" data-end="2427"><strong data-start="2369" data-end="2381">Best for</strong>: Wildlife lovers, seniors, relaxed holidays<br><strong data-start="2430" data-end="2446">Approx Price</strong>: ₹9,000–₹16,000/night<br><strong data-start="2473" data-end="2489">Good to Know</strong>: Safaris need to be pre-booked; resort can help with that</p>								</div>
 				</div>
 				</div>
 					</details>
@@ -3801,12 +3487,17 @@ The aviation staff's assistance and guidance l ensured a smooth and safe journey
 							<li class="elementor-icon-list-item">
 											<span class="elementor-icon-list-icon">
 							<svg aria-hidden="true" class="e-font-icon-svg e-fas-mobile-alt" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z"></path></svg>						</span>
-										<span class="elementor-icon-list-text">(+91) 9990383938 - 9990696688</span>
+										<span class="elementor-icon-list-text">+91 90451 69168
+</span>
 									</li>
 								<li class="elementor-icon-list-item">
 											<span class="elementor-icon-list-icon">
 							<svg aria-hidden="true" class="e-font-icon-svg e-fas-map-marker-alt" viewbox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>						</span>
-										<span class="elementor-icon-list-text">Sahastradhara Road, Dehradun, Uttarakhand 248001</span>
+										<span class="elementor-icon-list-text">Nai Basti, Bheemgoda Road,
+Valmiki Mandir, Kharkhari,
+Haridwar – 249401,
+Uttarakhand, India
+</span>
 									</li>
 								<li class="elementor-icon-list-item">
 											<span class="elementor-icon-list-icon">
@@ -3984,11 +3675,16 @@ The aviation staff's assistance and guidance l ensured a smooth and safe journey
                 <h3>Get In Touch</h3>
                 <div class="uts-footer-contact-item">
                     <span class="uts-footer-contact-icon">📞</span>
-                    <span>(+91) 9990383938 - 9990696688</span>
+                    <span>+91 90451 69168
+</span>
                 </div>
                 <div class="uts-footer-contact-item">
                     <span class="uts-footer-contact-icon">📍</span>
-                    <span>Sahastradhara Road, Dehradun, Uttarakhand 248001</span>
+                    <span>Nai Basti, Bheemgoda Road,
+Valmiki Mandir, Kharkhari,
+Haridwar – 249401,
+Uttarakhand, India
+</span>
                 </div>
                 <div class="uts-footer-contact-item">
                     <span class="uts-footer-contact-icon">🕐</span>

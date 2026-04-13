@@ -1,0 +1,1266 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Narayan Holidays</title>
+	<!-- Stylesheets -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+	<link rel="icon" href="img/logo.png" type="image/x-icon">
+
+	<!-- Responsive -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <style>
+
+        <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #f0f0f0;
+        font-family: 'Poppins', system-ui, sans-serif;
+    }
+
+    /* ========== MAIN FOOTER - BLACK BACKGROUND, LESS SPACE ========== */
+    .main-footer {
+        background: #0a0a0a;
+        color: #aaa;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    /* Widgets Section - Kam padding */
+    .widgets-section {
+        padding: 40px 0 20px 0;
+    }
+
+    .auto-container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    /* Row and Columns */
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .footer-widget {
+        flex: 1;
+        min-width: 200px;
+    }
+
+    /* Titles */
+    .widget-title {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        letter-spacing: 0.5px;
+    }
+
+    /* About text */
+    .text-white {
+        color: #aaa;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    /* Links list */
+    .user-links {
+        list-style: none;
+    }
+
+    .user-links li {
+        margin-bottom: 10px;
+    }
+
+    .user-links li a {
+        color: #aaa;
+        text-decoration: none;
+        font-size: 13px;
+        transition: color 0.3s;
+    }
+
+    .user-links li a:hover {
+        color: #FF4A52;
+    }
+
+    /* Contact Info */
+    .cntct-info p {
+        color: #aaa;
+        font-size: 13px;
+        margin-bottom: 12px;
+        line-height: 1.6;
+    }
+
+    .cntct-info i {
+        color: #FF4A52;
+        margin-right: 10px;
+        width: 20px;
+    }
+
+    /* Social Icons */
+    .social-icon-two {
+        display: flex;
+        gap: 12px;
+        list-style: none;
+        margin-top: 20px;
+    }
+
+    .social-icon-two li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        background: rgba(255,255,255,0.1);
+        border-radius: 50%;
+        color: white;
+        font-size: 16px;
+        transition: all 0.3s;
+        text-decoration: none;
+    }
+
+    .social-icon-two li a:hover {
+        background: #FF4A52;
+        transform: translateY(-3px);
+    }
+
+    /* Footer Bottom - Kam padding */
+    .footer-bottom {
+        background: #050505;
+        padding: 15px 0;
+        text-align: center;
+        border-top: 1px solid #1a1a1a;
+    }
+
+    .copyright-text {
+        color: #777;
+        font-size: 12px;
+    }
+
+    .copyright-text a {
+        color: #FF4A52;
+        text-decoration: none;
+    }
+
+    .copyright-text a:hover {
+        text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .row {
+            flex-direction: column;
+            gap: 25px;
+        }
+        
+        .footer-widget {
+            text-align: center;
+        }
+        
+        .cntct-info p {
+            text-align: center;
+        }
+        
+        .social-icon-two {
+            justify-content: center;
+        }
+        
+        .widgets-section {
+            padding: 30px 0 15px 0;
+        }
+    }
+</style>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Poppins', system-ui, sans-serif;
+        background: #f5f5f5;
+    }
+
+    /* ========== DESKTOP NAVBAR ========== */
+    .navbar {
+        background: #ffffff;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+        padding: 12px 40px;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo img {
+        height: 55px;
+        width: auto;
+    }
+
+    .nav-menu {
+        display: flex;
+        list-style: none;
+        gap: 32px;
+    }
+
+    .nav-menu li a {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 15px;
+        color: #1e2a3e;
+        transition: color 0.2s;
+    }
+
+    .nav-menu li a:hover,
+    .nav-menu li.active a {
+        color: #FF4A52;
+    }
+
+    /* Dropdown */
+    .dropdown { position: relative; }
+    
+    .dropdown-menu {
+        position: absolute;
+        top: 120%;
+        left: 0;
+        background: #fff;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+        border-radius: 16px;
+        padding: 12px 0;
+        min-width: 220px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.2s;
+        list-style: none;
+        z-index: 1000;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        top: 100%;
+    }
+
+    .dropdown-menu li a {
+        display: block;
+        padding: 8px 24px;
+        color: #2c3e50;
+        font-size: 14px;
+    }
+
+    .dropdown-menu li a:hover {
+        background: #FFF0F0;
+        color: #FF4A52;
+        padding-left: 28px;
+    }
+
+    /* Nested dropdown */
+    .has-nested { position: relative; }
+    
+    .nested-dropdown {
+        position: absolute;
+        left: 100%;
+        top: 0;
+        background: #fff;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+        border-radius: 16px;
+        padding: 12px 0;
+        min-width: 180px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.2s;
+        list-style: none;
+    }
+
+    .has-nested:hover .nested-dropdown {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .contact-btn {
+        background: #FF4A52;
+        color: white;
+        padding: 10px 28px;
+        border-radius: 40px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        transition: 0.2s;
+    }
+
+    .contact-btn:hover {
+        background: #e03e46;
+        transform: translateY(-2px);
+    }
+
+    /* ========== MOBILE HEADER ========== */
+    .mobile-header {
+        display: none;
+        background: #fff;
+        padding: 12px 20px;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mobile-logo img { height: 48px; width: auto; }
+
+    /* ===== HAMBURGER BUTTON - 3 LINES (BEAUTIFUL) ===== */
+    .hamburger {
+        background: #FF4A52;
+        border: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(255, 74, 82, 0.3);
+    }
+
+    .hamburger span {
+        display: block;
+        width: 26px;
+        height: 3px;
+        background: white;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+    }
+
+    /* Jab menu open ho tab X mein change */
+    .hamburger.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .hamburger:hover {
+        transform: scale(1.05);
+        background: #e03e46;
+    }
+
+    /* Mobile Menu Panel */
+    .mobile-panel {
+        position: fixed;
+        top: 72px;
+        left: -100%;
+        width: 100%;
+        height: calc(100% - 72px);
+        background: #fff;
+        z-index: 998;
+        transition: left 0.35s;
+        overflow-y: auto;
+        padding: 20px;
+    }
+
+    .mobile-panel.open { left: 0; }
+    body.menu-open { overflow: hidden; }
+
+    .mobile-nav-menu { list-style: none; }
+    .mobile-nav-item { border-bottom: 1px solid #f0f0f0; }
+    
+    .mobile-nav-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+        font-size: 17px;
+        font-weight: 500;
+        color: #1e2a3e;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .mobile-nav-link.active { color: #FF4A52; }
+    
+    .arrow {
+        font-size: 12px;
+        transition: transform 0.2s;
+        color: #FF4A52;
+    }
+    figcaption{
+
+    }
+    .mobile-dropdown-toggle.open .arrow { transform: rotate(180deg); }
+
+    .mobile-submenu {
+        list-style: none;
+        padding-left: 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s;
+        background: #fafafa;
+        border-radius: 12px;
+    }
+
+    .mobile-submenu.show {
+        max-height: 600px;
+        padding: 10px 0;
+    }
+
+    .mobile-submenu li a {
+        display: block;
+        padding: 12px 0;
+        text-decoration: none;
+        color: #4a5568;
+        font-size: 14px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .mobile-contact-btn {
+        display: block;
+        background: #FF4A52;
+        text-align: center;
+        padding: 14px;
+        border-radius: 50px;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 1024px) {
+        .navbar { display: none !important; }
+        .mobile-header { display: flex !important; }
+    }
+
+    @media (min-width: 1025px) {
+        .mobile-header, .mobile-panel { display: none !important; }
+    }
+
+    /* Demo content */
+    .demo {
+        text-align: center;
+        padding: 100px 20px;
+        background: linear-gradient(135deg, #1e2a3e, #0f172a);
+        color: white;
+    }
+    .demo h1 { font-size: 48px; margin-bottom: 20px; }
+    .demo p { font-size: 18px; max-width: 600px; margin: 0 auto; }
+    figure{
+        width:50%;
+    }
+</style>
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f4f7fc;
+            color: #1e2a3e;
+            line-height: 1.5;
+        }
+
+        /* Unique container ID - #carRentalsUnique */
+        #carRentalsUnique {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 80px 24px 100px;
+            background: #ffffff;
+            border-radius: 48px 48px 32px 32px;
+            box-shadow: 0 25px 45px -12px rgba(0,0,0,0.08);
+        }
+
+        /* Section Title Styling */
+        .sec-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .sec-title h2 {
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            background: linear-gradient(135deg, #1F2B3C, #2C3E50);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .sec-title h2 .color3 {
+            background: linear-gradient(120deg, #E76F2D, #FF9A5A);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 800;
+            position: relative;
+        }
+
+        .sec-title p {
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 1.05rem;
+            color: #2c3e4e;
+            background: #F9FBFD;
+            padding: 24px 28px;
+            border-radius: 48px;
+            line-height: 1.6;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+            border: 1px solid rgba(231,111,45,0.15);
+        }
+
+        /* Grid layout */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        /* Team block (car card) */
+        .team-block {
+            flex: 0 0 calc(33.333% - 30px);
+            max-width: calc(33.333% - 30px);
+            margin: 0 15px;
+            transition: all 0.3s ease;
+        }
+
+        .inner-box {
+            background: #fff;
+            border-radius: 32px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+            transition: all 0.35s cubic-bezier(0.2, 0, 0, 1);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(0,0,0,0.04);
+        }
+
+        .inner-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 45px -20px rgba(231,111,45,0.25);
+            border-color: rgba(231,111,45,0.3);
+        }
+
+        /* image box - images from same folder (no directory) */
+        .image-box {
+            position: relative;
+            overflow: hidden;
+            background: #f0f2f5;
+            border-radius: 28px 28px 0 0;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+
+        .image img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .inner-box:hover .image img {
+            transform: scale(1.03);
+        }
+
+        /* info-box */
+        .info-box {
+            padding: 24px 22px 28px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .name {
+            font-size: 1.65rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: -0.3px;
+        }
+
+        .name a {
+            text-decoration: none;
+            background: linear-gradient(135deg, #1e2a3a, #2c3e50);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            transition: all 0.2s;
+        }
+
+        .name a:hover {
+            background: linear-gradient(135deg, #E76F2D, #FF8C42);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        .info-box ul {
+            list-style: none;
+            margin-bottom: 24px;
+            flex: 1;
+        }
+
+        .info-box ul li {
+            font-size: 0.9rem;
+            padding: 8px 0 8px 28px;
+            position: relative;
+            color: #2c3e50;
+            font-weight: 500;
+            border-bottom: 1px dashed #edf2f7;
+        }
+
+        .info-box ul li:last-child {
+            border-bottom: none;
+        }
+
+        .info-box ul li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #E76F2D;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        /* button style */
+        .theme-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: linear-gradient(95deg, #1F2B3C 0%, #2C3E50 100%);
+            color: white;
+            padding: 12px 22px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.3px;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            border: none;
+            cursor: pointer;
+            width: fit-content;
+            margin-top: 8px;
+            box-shadow: 0 8px 14px -8px rgba(0,0,0,0.2);
+        }
+
+        .theme-btn i {
+            transition: transform 0.2s;
+        }
+
+        .theme-btn:hover {
+            background: linear-gradient(95deg, #E76F2D, #FF8C42);
+            transform: scale(1.02);
+            box-shadow: 0 12px 18px -8px rgba(231,111,45,0.4);
+        }
+
+        .theme-btn:hover i {
+            transform: translateX(5px);
+        }
+
+        /* responsive */
+        @media (max-width: 1100px) {
+            .team-block {
+                flex: 0 0 calc(50% - 30px);
+                max-width: calc(50% - 30px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            #carRentalsUnique {
+                padding: 50px 20px;
+            }
+            .team-block {
+                flex: 0 0 100%;
+                max-width: 100%;
+                margin: 0 0 20px;
+            }
+            .sec-title h2 {
+                font-size: 2.3rem;
+            }
+            .info-box ul li {
+                font-size: 0.85rem;
+            }
+        }
+
+        /* additional cool glow effect */
+        .inner-box {
+            position: relative;
+        }
+        .inner-box::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 32px;
+            padding: 2px;
+            background: radial-gradient(circle at 30% 20%, rgba(231,111,45,0.2), transparent 80%);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+        .inner-box:hover::after {
+            opacity: 1;
+        }
+        
+        /* decorative note */
+        .price-note {
+            font-size: 0.75rem;
+            background: #FEF5E8;
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 50px;
+            margin-top: 8px;
+            color: #B85C1A;
+            font-weight: 500;
+        }
+        .info-box ul li:last-child {
+            font-style: normal;
+        }
+        .contact-mail {
+            font-weight: 600;
+            color: #E76F2D;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="page-wrapper">
+<nav class="navbar">
+    <div class="logo">
+        <img src='logo.png' width='100' height='100'%3E%3Crect width='100' height='100' fill='%23FF4A52'/%3E%3Ctext x='50' y='68' text-anchor='middle' fill='white' font-size='40' font-weight='bold'%3ENH%3C/text%3E%3C/svg%3E" alt="Logo">
+    </div>
+    <ul class="nav-menu">
+        <!--li><a href="index.html">Home</a></li-->
+        <li><a href="/index.html">Home</a></li>
+        <!---li class="active"><a href="./Our_Story/Our_Story.html">Our Story</a></li-->
+        <li class="active"><a href="../Our_Story/Our_Story.html">Our Story</a></li>
+        <li><a href="Car/car.html">Car Rentals</a></li>
+        <li class="dropdown">
+            <a href="#">Destinations ▼</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Char Dham</a></li>
+                <li><a href="#">Kedarnath</a></li>
+                <li><a href="#">Badrinath</a></li>
+                <li><a href="#">Rishikesh</a></li>
+                <li><a href="#">Mussoorie</a></li>
+                <li><a href="#">Nainital</a></li>
+                <li><a href="#">Jim Corbett</a></li>
+                <li class="has-nested">
+                    <a href="#">More ▼</a>
+                    <ul class="nested-dropdown">
+                        <li><a href="#">Chopta</a></li>
+                        <li><a href="#">Auli</a></li>
+                        <li><a href="#">Harsil Valley</a></li>
+                        <li><a href="#">Haridwar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#">Travel By Theme ▼</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Group</a></li>
+                <li><a href="#">Family</a></li>
+                <li><a href="#">Pilgrimage</a></li>
+                <li><a href="#">Romantic</a></li>
+                <li><a href="#">Wildlife</a></li>
+                <li><a href="#">Leisure</a></li>
+                <li><a href="#">Adventure</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Blogs</a></li>
+    </ul>
+    <a href="#" class="contact-btn">Contact Us</a>
+</nav>
+
+<!-- ========== MOBILE HEADER ========== -->
+<div class="mobile-header">
+    <div class="mobile-logo">
+        <img src='logo.png' width='50' height='50'%3E%3Crect width='50' height='50' fill='%23FF4A52'/%3E%3Ctext x='25' y='35' text-anchor='middle' fill='white' font-size='20'%3ENH%3C/text%3E%3C/svg%3E" alt="Logo">
+    </div>
+    <button class="hamburger" id="hamburgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</div>
+
+<!-- ========== MOBILE MENU PANEL ========== -->
+<div class="mobile-panel" id="mobilePanel">
+    <ul class="mobile-nav-menu">
+        <li class="mobile-nav-item"><a href="127.0.0.1:5501/index.html" class="mobile-nav-link">Home</a></li>
+        <li class="mobile-nav-item"><a href="#" class="mobile-nav-link active">Our Story</a></li>
+        <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">Car Rentals</a></li>
+        
+        <li class="mobile-nav-item">
+            <div class="mobile-nav-link mobile-dropdown-toggle">
+                Destinations <span class="arrow">▼</span>
+            </div>
+            <ul class="mobile-submenu">
+                <li><a href="#">Char Dham</a></li>
+                <li><a href="#">Kedarnath</a></li>
+                <li><a href="#">Badrinath</a></li>
+                <li><a href="#">Rishikesh</a></li>
+                <li><a href="#">Mussoorie</a></li>
+                <li><a href="#">Nainital</a></li>
+                <li><a href="#">Jim Corbett</a></li>
+                <li>
+                    <div class="mobile-nav-link mobile-dropdown-toggle" style="padding-left: 0;">
+                        More <span class="arrow">▼</span>
+                    </div>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">Chopta</a></li>
+                        <li><a href="#">Auli</a></li>
+                        <li><a href="#">Harsil Valley</a></li>
+                        <li><a href="#">Haridwar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <li class="mobile-nav-item">
+            <div class="mobile-nav-link mobile-dropdown-toggle">
+                Travel By Theme <span class="arrow">▼</span>
+            </div>
+            <ul class="mobile-submenu">
+                <li><a href="#">Group</a></li>
+                <li><a href="#">Family</a></li>
+                <li><a href="#">Pilgrimage</a></li>
+                <li><a href="#">Romantic</a></li>
+                <li><a href="#">Wildlife</a></li>
+                <li><a href="#">Leisure</a></li>
+                <li><a href="#">Adventure</a></li>
+            </ul>
+        </li>
+
+        <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">Blogs</a></li>
+    </ul>
+    <a href="#" class="mobile-contact-btn">📞 Contact Us</a>
+</div>
+
+<!-- Demo content -->
+
+
+<script>
+    (function() {
+        const hamburger = document.getElementById('hamburgerBtn');
+        const panel = document.getElementById('mobilePanel');
+        const body = document.body;
+
+        if (hamburger && panel) {
+            hamburger.addEventListener('click', function() {
+                this.classList.toggle('active');
+                panel.classList.toggle('open');
+                body.classList.toggle('menu-open');
+            });
+        }
+
+        // Mobile dropdown toggles
+        document.querySelectorAll('.mobile-dropdown-toggle').forEach(toggle => {
+            toggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                this.classList.toggle('open');
+                let submenu = this.nextElementSibling;
+                while (submenu && submenu.tagName !== 'UL') {
+                    submenu = submenu.nextElementSibling;
+                }
+                if (submenu) submenu.classList.toggle('show');
+            });
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('.mobile-nav-link, .mobile-submenu a').forEach(link => {
+            link.addEventListener('click', function() {
+                if (this.classList?.contains('mobile-dropdown-toggle')) return;
+                hamburger.classList.remove('active');
+                panel.classList.remove('open');
+                body.classList.remove('menu-open');
+            });
+        });
+    })();
+</script>
+	
+
+
+	<!-- Start main-content -->
+	<!-- ===== CAR RENTALS SECTION – UNIQUE ID & ALL IMAGES FROM SAME DIRECTORY ===== -->
+<div id="carRentalsUnique">
+    <div class="auto-container">
+        <div class="sec-title text-center">
+            <h2>Car <span class="color3">Rentals</span></h2>
+            <p>Divine Destinations Khajuraho Tour And Travel arrange car rentals in all over India. We also keep at priority the models requested by our valuable clients. We ensure a stress-free car rental experience by providing superior services that cater to our customer's individual needs. We has become the top brand in Car Rental and Car hire services. Our main aim to satisfied our client by providing economic as well as luxury vehicles and world class Car Rental with in nominal charges.</p>
+        </div>
+
+        <div class="row">
+            <!-- Car 1 : Swift Dzire (image from same folder: "2.jpg") -->
+            <div class="team-block wow fadeInUp">
+                <div class="inner-box">
+                    <div class="image-box">
+                        <figure class="image"><a href="#"><img src="2.jpg" alt="Swift Dzire"></a></figure>
+                    </div>
+                    <div class="info-box">
+                        <h4 class="name"><a href="#">Swift Dzire</a></h4>
+                        <ul>
+                            <li>Seating Capacity: 4 Persons + 1 Driver</li>
+                            <li>Horse Power: 1248 cc</li>
+                            <li>for latest price contact <span class="contact-mail">narayaholidays11@gmail.com</span></li>
+                        </ul>
+                        <a href="#" class="theme-btn step">Send Enquiry <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 2 : Toyota Etios (3.jpg) -->
+            <div class="team-block wow fadeInUp">
+                <div class="inner-box">
+                    <div class="image-box">
+                        <figure class="image"><a href="#"><img src="3.jpg" alt="Toyota Etios"></a></figure>
+                    </div>
+                    <div class="info-box">
+                        <h4 class="name"><a href="#">Toyota Etios</a></h4>
+                        <ul>
+                            <li>Seating Capacity: 4 Persons + 1 Driver</li>
+                            <li>Horse Power: 1496 cc</li>
+                            <li>for latest price contact <span class="contact-mail">narayaholidays11@gmail.com</span></li>
+                        </ul>
+                        <a href="#" class="theme-btn step">Send Enquiry <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 3 : Toyota Innova (5.jpg) -->
+            <div class="team-block wow fadeInUp">
+                <div class="inner-box">
+                    <div class="image-box">
+                        <figure class="image"><a href="#"><img src="5.jpg" alt="Toyota Innova"></a></figure>
+                    </div>
+                    <div class="info-box">
+                        <h4 class="name"><a href="#">Toyota Innova</a></h4>
+                        <ul>
+                            <li>Seating Capacity: 6 Persons + 1 Driver</li>
+                            <li>Horse Power: 2600 cc</li>
+                            <li>for latest price contact <span class="contact-mail">narayaholidays11@gmail.com</span></li>
+                        </ul>
+                        <a href="#" class="theme-btn step">Send Enquiry <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 4 : Toyota Innova Crysta (4.jpg) -->
+            <div class="team-block wow fadeInUp">
+                <div class="inner-box">
+                    <div class="image-box">
+                        <figure class="image"><a href="#"><img src="4.jpg" alt="Toyota Innova Crysta"></a></figure>
+                    </div>
+                    <div class="info-box">
+                        <h4 class="name"><a href="#">Toyota Innova Crysta</a></h4>
+                        <ul>
+                            <li>Seating Capacity: 6 Passengers + 1 Driver</li>
+                            <li>Horse Power: 2494 cc</li>
+                            <li>for latest price contact <span class="contact-mail">narayaholidays11@gmail.com</span></li>
+                        </ul>
+                        <a href="#" class="theme-btn step">Send Enquiry <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 5 : Tempo Traveller (9+1) (7.jpg) -->
+            <div class="team-block wow fadeInUp">
+                <div class="inner-box">
+                    <div class="image-box">
+                        <figure class="image"><a href="#"><img src="7.jpg" alt="Tempo Traveller 9+1"></a></figure>
+                    </div>
+                    <div class="info-box">
+                        <h4 class="name"><a href="#">Tempo Traveller (9 + 1)</a></h4>
+                        <ul>
+                            <li>Seating Capacity: 9 Passengers + 1 Driver</li>
+                            <li>Ample Luggage Space</li>
+                            <li>Music System / Microphone / Ice Box / First Aid Box</li>
+                            <li>for latest price contact <span class="contact-mail">narayaholidays11@gmail.com</span></li>
+                        </ul>
+                        <a href="#" class="theme-btn step">Send Enquiry <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 6 : Tempo Traveller (11+1) (8.jpg) -->
+            <div class="team-block wow fadeInUp">
+                <div class="inner-box">
+                    <div class="image-box">
+                        <figure class="image"><a href="#"><img src="8.jpg" alt="Tempo Traveller 11+1"></a></figure>
+                    </div>
+                    <div class="info-box">
+                        <h4 class="name"><a href="#">Tempo Traveller (11+1)</a></h4>
+                        <ul>
+                            <li>Seating Capacity: 11 Passengers + 1 Driver</li>
+                            <li>Ample Luggage Space</li>
+                            <li>Music System/Microphone/ Ice Box/First Aid Box</li>
+                            <li>for latest price contact <span class="contact-mail">narayaholidays11@gmail.com</span></li>
+                        </ul>
+                        <a href="#" class="theme-btn step">Send Enquiry <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 7 : Tempo Traveller (15+1) (9.jpg) -->
+            <div class="team-block wow fadeInUp">
+                <div class="inner-box">
+                    <div class="image-box">
+                        <figure class="image"><a href="#"><img src="9.jpg" alt="Tempo Traveller 15+1"></a></figure>
+                    </div>
+                    <div class="info-box">
+                        <h4 class="name"><a href="#">Tempo Traveller (15+1)</a></h4>
+                        <ul>
+                            <li>Seating Capacity: 15 Passengers + 1 Driver</li>
+                            <li>Ample Luggage Space</li>
+                            <li>Music System/Microphone/ Ice Box/First Aid Box</li>
+                            <li>for latest price contact <span class="contact-mail">narayaholidays11@gmail.com</span></li>
+                        </ul>
+                        <a href="#" class="theme-btn step">Send Enquiry <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 8 : 2*2 Coach 35 Seaters (10.jpg) -->
+            <div class="team-block wow fadeInUp">
+                <div class="inner-box">
+                    <div class="image-box">
+                        <figure class="image"><a href="#"><img src="10.jpg" alt="2x2 Coach 35 Seaters"></a></figure>
+                    </div>
+                    <div class="info-box">
+                        <h4 class="name"><a href="#">2*2 Coach 35 Seaters</a></h4>
+                        <ul>
+                            <li>Seating Capacity: 35 Passengers</li>
+                            <li>Ample Luggage Space</li>
+                            <li>Music System/Microphone/ Ice Box/First Aid Box</li>
+                            <li>for latest price contact <span class="contact-mail">narayaholidays11@gmail.com</span></li>
+                        </ul>
+                        <a href="#" class="theme-btn step">Send Enquiry <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 9 : 2*2 Coach 41 Seaters (11.jpg) -->
+            <div class="team-block wow fadeInUp">
+                <div class="inner-box">
+                    <div class="image-box">
+                        <figure class="image"><a href="#"><img src="11.jpg" alt="2x2 Coach 41 Seaters"></a></figure>
+                    </div>
+                    <div class="info-box">
+                        <h4 class="name"><a href="#">2*2 Coach 41 Seaters</a></h4>
+                        <ul>
+                            <li>Spacious luxury coach</li>
+                            <li>Perfect for large groups</li>
+                            <li>for latest price contact <span class="contact-mail">narayaholidays11@gmail.com</span></li>
+                        </ul>
+                        <a href="#" class="theme-btn step">Send Enquiry <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 10 : Volvo Bus (12.jpg) -->
+            <div class="team-block wow fadeInUp">
+                <div class="inner-box">
+                    <div class="image-box">
+                        <figure class="image"><a href="#"><img src="12.jpg" alt="Volvo Bus"></a></figure>
+                    </div>
+                    <div class="info-box">
+                        <h4 class="name"><a href="#">Volvo Bus</a></h4>
+                        <ul>
+                            <li>Premium Volvo Coach</li>
+                            <li>Reclining seats, AC, entertainment</li>
+                            <li>for latest price contact <span class="contact-mail">narayaholidays11@gmail.com</span></li>
+                        </ul>
+                        <a href="#" class="theme-btn step">Send Enquiry <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	<!-- end main-content -->
+
+	<!-- Main Footer -->
+	
+
+ <script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+919045169168", // WhatsApp number
+            call: "+919045169168", // Call phone number
+            call_to_action: "", // Call to action
+            button_color: "#FF6550", // Color of button
+            position: "left", // Position may be 'right' or 'left'
+            order: "whatsapp,call", // Order of buttons
+            pre_filled_message: "Hi, Thanks for contacting Narayan Holidays how can We Help you", // WhatsApp pre-filled message
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script> 
+
+
+
+
+
+ <!--Footer Bottom-->
+ <!-- ========== FOOTER (BLACK, LESS SPACE) ========== -->
+<footer class="main-footer">
+    <!--Widgets Section-->
+    <div class="widgets-section">
+        <div class="auto-container">
+            <div class="row">
+                <div class="footer-column">
+                    <div class="row">
+                        <!-- About Us -->
+                        <div class="footer-widget">
+                            <h6 class="widget-title">About Us</h6>
+                            <p class="text-white">We are dedicated to providing comfortable, affordable, and well-planned travel packages that allow travelers to explore the natural beauty, spiritual destinations, and adventure spots of Uttarakhand with ease.</p>
+                        </div>
+                        
+                        <!-- Quick Links -->
+                        <div class="footer-widget">
+                            <h6 class="widget-title">Quick Links</h6>
+                            <ul class="user-links">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Car Rental</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Other Links -->
+                        <div class="footer-widget">
+                            <h6 class="widget-title">Other Links</h6>
+                            <ul class="user-links">
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms &amp; Conditions</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Contact Info -->
+                        <div class="footer-widget">
+                            <h6 class="widget-title">Contact Info</h6>
+                            <div class="cntct-info">
+                                <p><i class="fa fa-map-marker"></i> Nai Basti Bheemgoda Road, Near Valmiki Mandir, Kharkhari Haridwar 01</p>
+                                <p><i class="fa fa-phone"></i> +91-9045169168 / 9997472783</p>
+                                <p><i class="fa fa-envelope-open"></i> narayanholidays11@gmail.com</p>
+
+                                <ul class="social-icon-two">
+                                    <li><a href="#"><i class="fab fa-twitter">🐦</i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook">📘</i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest">📌</i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram">📸</i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Footer Bottom-->
+    <div class="footer-bottom">
+        <div class="auto-container">
+            <div class="copyright-text">© Copyright 2026 Narayan Holidays Designed by <a href="https://techeor.in/" target="_blank">Techeor Technology</a></div>
+        </div>
+    </div>
+</footer>
+
+
+	<!--End Main Footer -->
+
+</div><!-- End Page Wrapper -->
+
+
+<!-- Scroll To Top -->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/script.js"></script>
+
+<!-- form submit -->
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.form.min.js"></script>
+<script>
+	(function($) {
+		$("#contact_form").validate({
+			submitHandler: function(form) {
+				var form_btn = $(form).find('button[type="submit"]');
+				var form_result_div = '#form-result';
+				$(form_result_div).remove();
+				form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
+				var form_btn_old_msg = form_btn.html();
+				form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
+				$(form).ajaxSubmit({
+					dataType:  'json',
+					success: function(data) {
+						if( data.status == 'true' ) {
+							$(form).find('.form-control').val('');
+						}
+						form_btn.prop('disabled', false).html(form_btn_old_msg);
+						$(form_result_div).html(data.message).fadeIn('slow');
+						setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);
+					}
+				});
+			}
+		});
+	})(jQuery);
+</script>
+</body>
+
+</html>

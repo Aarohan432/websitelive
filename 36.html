@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Senior JavaScript Developer Form</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 700px;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+    }
+
+    .form-header {
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+
+    .form-header h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .form-header p {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    form {
+      padding: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #1e293b;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      font-size: 15px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #2563eb;
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .checkbox-group label {
+      font-weight: normal;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #f8fafc;
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      cursor: pointer;
+    }
+
+    .checkbox-group input {
+      width: auto;
+    }
+
+    .btn-submit {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(37, 99, 235, 0.25);
+    }
+
+    .message {
+      margin-top: 20px;
+      padding: 12px;
+      border-radius: 10px;
+      display: none;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .success {
+      background: #dcfce7;
+      color: #166534;
+      border: 1px solid #86efac;
+    }
+
+    .error {
+      background: #fee2e2;
+      color: #991b1b;
+      border: 1px solid #fca5a5;
+    }
+
+    @media (max-width: 600px) {
+      .row {
+        grid-template-columns: 1fr;
+      }
+
+      .form-header h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-header">
+      <h1>Senior JavaScript Developer Form</h1>
+      <p>Profile form for a JavaScript developer with 3 years of experience</p>
+    </div>
+
+    <form id="developerForm">
+      <div class="row">
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" placeholder="Enter full name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="jobTitle">Job Title</label>
+          <input type="text" id="jobTitle" value="Senior JavaScript Developer" required />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Enter email address" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="Enter phone number" required />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group">
+          <label for="experience">Years of Experience</label>
+          <input type="number" id="experience" value="3" min="0" max="20" required />
+        </div>
+
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" id="location" placeholder="Enter location" required />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="portfolio">Portfolio / GitHub / LinkedIn</label>
+        <input type="url" id="portfolio" placeholder="https://yourportfolio.com" />
+      </div>
+
+      <div class="form-group">
+        <label>Technical Skills</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" value="JavaScript" /> JavaScript</label>
+          <label><input type="checkbox" value="ES6+" /> ES6+</label>
+          <label><input type="checkbox" value="HTML5" /> HTML5</label>
+          <label><input type="checkbox" value="CSS3" /> CSS3</label>
+          <label><input type="checkbox" value="React" /> React</label>
+          <label><input type="checkbox" value="Node.js" /> Node.js</label>
+          <label><input type="checkbox" value="TypeScript" /> TypeScript</label>
+          <label><input type="checkbox" value="MongoDB" /> MongoDB</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="projects">Project Summary</label>
+        <textarea id="projects" placeholder="Describe major JavaScript projects..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="about">Professional Summary</label>
+        <textarea id="about" placeholder="Write a short summary about the developer..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Submit Form</button>
+
+      <div id="messageBox" class="message"></div>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById("developerForm");
+    const messageBox = document.getElementById("messageBox");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const fullName = document.getElementById("fullName").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const experience = document.getElementById("experience").value.trim();
+      const location = document.getElementById("location").value.trim();
+
+      if (!fullName || !email || !phone || !experience || !location) {
+        showMessage("Please fill in all required fields.", "error");
+        return;
+      }
+
+      if (experience < 3) {
+        showMessage("Experience should be at least 3 years for this role.", "error");
+        return;
+      }
+
+      showMessage("Form submitted successfully!", "success");
+      form.reset();
+      document.getElementById("jobTitle").value = "Senior JavaScript Developer";
+      document.getElementById("experience").value = "3";
+    });
+
+    function showMessage(message, type) {
+      messageBox.style.display = "block";
+      messageBox.className = "message " + type;
+      messageBox.textContent = message;
+    }
+  </script>
+</body>
+</html>
+
+
+<!--html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Senior Frontend Developer — Advanced Query Form</title>
+  <style>
+    :root {
+      --bg: #0f0f23;
+      --card: #1a1a3e;
+      --text: #e0e0ff;
+      --muted: #a7a7d6;
+      --accent: #64ffda;
+      --danger: #ff6b6b;
+      --border: rgba(255,255,255,012);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 32px;
+    }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      color: var(--accent);
+    }
+    p.subtitle {
+      margin: 0 0 24px;
+      color: var(--muted);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    label {
+      font-size: 14px;
+      color: var(--muted);
+    }
+    input, select, textarea {
+      background: #11112a;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-size: 14px;
+      outline: none;
+      transition: border 0.2s, box-shadow 0.2s;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(100,255,218,0.15);
+    }
+    input.invalid, textarea.invalid, select.invalid {
+      border-color: var(--danger);
+      box-shadow: 0 0 0 3px rgba(255,107,107,0.15);
+    }
+    textarea { min-height: 120px; resize: vertical; }
+    .full { grid-column: span 2; }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .chip {
+      background: #11112a;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 12px;
+      color: var(--muted);
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.2s ease;
+    }
+    .chip.active {
+      background: var(--accent);
+      color: #0b0b1a;
+      border-color: transparent;
+      font-weight: 700;
+    }
+    .actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .btn {
+      border: none;
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: transform 0.05s ease;
+    }
+    .btn:active { transform: scale(0.98); }
+    .btn-primary {
+      background: var(--accent);
+      color: #0b0b1a;
+      font-weight: 700;
+    }
+    .btn-ghost {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .section-title {
+      margin: 22px 0 12px;
+      font-size: 16px;
+      color: var(--text);
+    }
+    .helper, ., .status {
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .counter {
+      text-align: right;
+    }
+    .progress-wrap {
+      margin: 14px 0 22px;
+      background: #11112a;
+      border-radius: 999px;
+      height: 8px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: var(--accent);
+      transition: width 0.2s ease;
+    }
+    .status.success { color: #7dffb3; }
+    .status.error { color: var(--danger); }
+    .inline {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    @media (max-width: 760px) {
+      .grid { grid-template-columns: 1fr; }
+      .full { grid-column: span 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Senior Frontend Developer — Advanced Query Form</h1>
+      <p class="subtitle">Capture architectural details, constraints, and expectations with smart validation and autosave.</p>
+
+      <div class="inline">
+        <div class="status" id="draftStatus">Draft not saved yet</div>
+        <div class="status" id="submitStatus"></div>
+      </div>
+      <div class="progress-wrap"><div class="progress-bar" id="progressBar"></div></div>
+
+      <form id="queryForm" novalidate>
+        <div class="grid">
+          <div class="field">
+            <label for="name">Full Name *</label>
+            <input id="name" type="text" placeholder="Jane Doe" required />
+          </div>
+          <div class="field">
+            <label for="email">Work Email *</label>
+            <input id="email" type="email" placeholder="jane@company.com" required />
+          </div>
+
+          <div class="field">
+            <label for="role">Current Role *</label>
+            <input id="role" type="text" placeholder="Senior Frontend Engineer" required />
+          </div>
+          <div class="field">
+            <label for="company">Company</label>
+            <input id="company" type="text" placeholder="TechLabs Inc." />
+          </div>
+
+          <div class="field">
+            <label for="stack">Primary Frontend Stack *</label>
+            <select id="stack" required>
+              <option value="">Select</option>
+              <option>React + TypeScript</option>
+              <option>Vue + TypeScript</option>
+              <option>Angular</option>
+              <option>Svelte / SvelteKit</option>
+              <option>Other / Mixed</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="seniority">Seniority Level *</label>
+            <select id="seniority" required>
+              <option value="">Select</option>
+              <option>Senior (5-8 years)</option>
+              <option>Staff (8-12 years)</option>
+              <option>Principal (12+ years)</option>
+            </select>
+          </div>
+
+          <div class="field full">
+            <label>Key Focus Areas (pick any)</label>
+            <div class="chips" id="chipGroup">
+              <div class="chip" data-value="Performance Optimization">Performance Optimization</div>
+              <div class="chip" data-value="Design Systems">Design Systems</div>
+              <div class="chip" data-value="Accessibility (WCAG)">Accessibility (WCAG)</div>
+              <div class="chip" data-value="Micro-Frontends">Micro-Frontends</div>
+              <div class="chip" data-value="SSR / SSG">SSR / SSG</div>
+              <div class="chip" data-value="State Management">State Management</div>
+              <div class="chip" data-value="Testing Strategy">Testing Strategy</div>
+            </div>
+            <div class="helper">Selected: <span id="selectedChips">None</span></div>
+          </div>
+
+          <div class="field full">
+            <label for="query">Technical Query / Challenge *</label>
+            <textarea id="query" placeholder="Describe the architectural problem, constraints, and desired outcomes..." required maxlength="600"></textarea>
+            <div class="counter" id="queryCounter">0 / 600</div>
+          </div>
+
+          <div class="field full">
+            <label for="constraints">Constraints / Non-Functional Requirements</label>
+            <textarea id="constraints" placeholder="Example: must pass Lighthouse 95+, bundle size limits..." maxlength="400"></textarea>
+            <div class="counter" id="constraintsCounter">0 / 400</div>
+          </div>
+
+          <div class="field">
+            <label for="deadline">Desired Timeline</label>
+            <input id="deadline" type="text" placeholder="e.g., 2-3 weeks" />
+          </div>
+          <div class="field">
+            <label for="budget">Budget Range</label>
+            <input id="budget" type="text" placeholder="$5,000 - $15,000" />
+          </div>
+        </div>
+
+        <div class="section-title">Output Expectations</div>
+        <div class="grid">
+          <div class="field">
+            <label for="deliverable">Preferred Deliverable</label>
+            <select id="deliverable">
+              <option>Architecture Review</option>
+              <option>Implementation Guidance</option>
+              <option>Prototype / POC</option>
+              <option>Refactor Plan</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="format">Response Format</label>
+            <select id="format">
+              <option>Written Report</option>
+              <option>Code + Docs</option>
+              <option>Call + Summary</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="reset" class="btn btn-ghost">Clear</button>
+          <button type="submit" class="btn btn-primary">Submit Query</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Utility
+    const $ = (id) => document.getElementById(id);
+
+    const form = $("queryForm");
+    const draftStatus = $("draftStatus");
+    const submitStatus = $("submitStatus");
+    const progressBar = $("progressBar");
+
+    const requiredFields = ["name", "email", "role", "stack", "seniority", "query"];
+    const counters = [
+      { id: "query", max: 600, counter: "queryCounter" },
+      { id: "constraints", max: 400, counter: "constraintsCounter" }
+    ];
+
+    // Dynamic chip selection
+    const chipGroup = $("chipGroup");
+    const selectedChips = $("selectedChips");
+    let chipSelections = new Set();
+
+    chipGroup.addEventListener("click", (e) => {
+      if (!e.target.classList.contains("chip")) return;
+      const value = e.target.dataset.value;
+      if (chipSelections.has(value)) {
+        chipSelections.delete(value);
+        e.target.classList.remove("active");
+      } else {
+        chipSelections.add(value);
+        e.target.classList.add("active");
+      }
+      selectedChips.textContent = chipSelections.size ? [...chipSelections].join(", ") : "None";
+      saveDraft();
+      updateProgress();
+    });
+
+    // Character counters
+    counters.forEach(({ id, max, counter }) => {
+      const el = $(id);
+      const counterEl = $(counter);
+      const update = () => {
+        counterEl.textContent = `${el.value.length} / ${max}`;
+        saveDraft();
+        updateProgress();
+      };
+      el.addEventListener("input", update);
+      update();
+    });
+
+    // Validation logic
+    const validate = () => {
+      let valid = true;
+      requiredFields.forEach((id) => {
+        const el = $(id);
+        const isValid = el.value.trim().length > 0 && (el.type !== "email" || el.validity.valid);
+        el.classList.toggle("invalid", !isValid);
+        valid = valid && isValid;
+      });
+      return valid;
+    };
+
+    // Progress indicator (based on filled required fields)
+    const updateProgress = () => {
+      let filled = 0;
+      requiredFields.forEach((id) => {
+        const el = $(id);
+        if (el.value.trim().length > 0) filled += 1;
+      });
+      // Include chips as a small boost
+      if (chipSelections.size > 0) filled += 0.5;
+      const percent = Math.min(100, Math.round((filled / (requiredFields.length + 0.5)) * 100));
+      progressBar.style.width = percent + "%";
+    };
+
+    // Auto-save to localStorage
+    const saveDraft = () => {
+      const payload = {
+        name: $("name").value,
+        email: $("email").value,
+        role: $("role").value,
+        company: $("company").value,
+        stack: $("stack").value,
+        seniority: $("seniority").value,
+        query: $("query").value,
+        constraints: $("constraints").value,
+        deadline: $("deadline").value,
+        budget: $("budget").value,
+        deliverable: $("deliverable").value,
+        format: $("format").value,
+        chips: [...chipSelections]
+      };
+      localStorage.setItem("seniorFormDraft", JSON.stringify(payload));
+      draftStatus.textContent = "Draft saved just now";
+    };
+
+    const loadDraft = () => {
+      const raw = localStorage.getItem("seniorFormDraft");
+      if (!raw) return;
+      const data = JSON.parse(raw);
+      Object.keys(data).forEach((key) => {
+        if ($(key)) $(key).value = data[key];
+      });
+
+      if (data.chips) {
+        chipSelections = new Set(data.chips);
+        [...chipGroup.querySelectorAll(".chip")].forEach((chip) => {
+          if (chipSelections.has(chip.dataset.value)) {
+            chip.classList.add("active");
+          }
+        });
+        selectedChips.textContent = chipSelections.size ? [...chipSelections].join(", ") : "None";
+      }
+      draftStatus.textContent = "Draft restored from previous session";
+    };
+
+    // Watch input changes for autosave and progress
+    form.addEventListener("input", () => {
+      updateProgress();
+      saveDraft();
+    });
+
+    // Submit handler (simulated)
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      submitStatus.textContent = "";
+      const ok = validate();
+      if (!ok) {
+        submitStatus.textContent = "Please complete the required fields correctly.";
+        submitStatus.className = "status error";
+        return;
+      }
+      submitStatus.textContent = "Query submitted successfully (simulated).";
+      submitStatus.className = "status success";
+      localStorage.removeItem("seniorFormDraft");
+      draftStatus.textContent = "Draft cleared after submit";
+      form.reset();
+      chipSelections.clear();
+      [...chipGroup.querySelectorAll(".chip")].forEach((c) => c.classList.remove("active"));
+      selectedChips.textContent = "None";
+      updateProgress();
+    });
+
+    // Reset handler
+    form.addEventListener("reset", () => {
+      localStorage.removeItem("seniorFormDraft");
+      submitStatus.textContent = "";
+      draftStatus.textContent = "Draft cleared";
+      chipSelections.clear();
+      [...chipGroup.querySelectorAll(".chip")].forEach((c) => c.classList.remove("active"));
+      selectedChips.textContent = "None";
+      updateProgress();
+    });
+
+    // Init
+    loadDraft();
+    updateProgress();
+  </script>
+</body>
+</html--->
+<!-- DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Senior Frontend Developer — Advanced Query Form</title>
+  <style>
+    :root {
+      --bg: #0f0f23;
+      --card: #1a1a3e;
+      --text: #e0e0ff;
+      --muted: #a7a7d6;
+      --accent: #64ffda;
+      --danger: #ff6b6b;
+      --border: rgba(255,255,255,0.12);
+      --shadow: rgba(0,0,0,0.25);
+    }
+    [data-theme="light"] {
+      --bg: #f3f6ff;
+      --card: #ffffff;
+      --text: #1a1a2a;
+      --muted: #5f6480;
+      --accent: #3a6df0;
+      --danger: #d64545;
+      --border: rgba(0,0,0,0.08);
+      --shadow: rgba(0,0,0,0.1);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 32px;
+    }
+    .container { max-width: 1000px; margin: 0 auto; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: 0 10px 30px var(--shadow);
+    }
+    h1 { margin: 0 0 8px; font-size: 28px; color: var(--accent); }
+    p.subtitle { margin: 0 0 20px; color: var(--muted); }
+    .toolbar {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; margin: 12px 0 20px;
+    }
+    .badge {
+      font-size: 12px; padding: 6px 10px; border-radius: 999px;
+      border: 1px solid var(--border); color: var(--muted);
+    }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .field { display: flex; flex-direction: column; gap: 8px; }
+    label { font-size: 14px; color: var(--muted); }
+    input, select, textarea {
+      background: rgba(0,0,0,0.12);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-size: 14px;
+      outline: none;
+      transition: border 0.2s, box-shadow 0.2s;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(100,255,218,0.15);
+    }
+    input.invalid, textarea.invalid, select.invalid {
+      border-color: var(--danger);
+      box-shadow: 0 0 0 3px rgba(255,107,107,0.15);
+    }
+    textarea { min-height: 120px; resize: vertical; }
+    .full { grid-column: span 2; }
+    .chips { display: flex; flex-wrap: wrap; gap: 10px; }
+    .chip {
+      background: rgba(0,0,0,0.12);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 12px;
+      color: var(--muted);
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.2s ease;
+    }
+    .chip.active { background: var(--accent); color: #0b0b1a; border-color: transparent; font-weight: 700; }
+    .actions {
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 12px; margin-top: 20px;
+    }
+    .btn {
+      border: none; border-radius: 8px; padding: 12px 16px;
+      font-size: 14px; cursor: pointer; transition: transform 0.05s ease;
+    }
+    .btn:active { transform: scale(0.98); }
+    .btn-primary { background: var(--accent); color: #0b0b1a; font-weight: 700; }
+    .btn-ghost { background: transparent; color: var(--text); border: 1px solid var(--border); }
+    .helper, .counter, .status { font-size: 12px; color: var(--muted); }
+    .counter { text-align: right; }
+    .progress-wrap {
+      margin: 14px 0 22px; background: rgba(0,0,0,0.12);
+      border-radius: 999px; height: 8px; overflow: hidden; border: 1px solid var(--border);
+    }
+    .progress-bar { height: 100%; width: 0%; background: var(--accent); transition: width 0.2s ease; }
+    .status.success { color: #7dffb3; }
+    .status.error { color: var(--danger); }
+    .inline { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+    .stepper {
+      display: flex; gap: 8px; margin-bottom: 14px;
+    }
+    .step {
+      flex: 1; height: 6px; border-radius: 999px;
+      background: rgba(0,0,0,0.12); border: 1px solid var(--border);
+    }
+    .step.active { background: var(--accent); border-color: transparent; }
+    .dropzone {
+      border: 1px dashed var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      color: var(--muted);
+      background: rgba(0,0,0,0.08);
+    }
+    .dropzone.drag { border-color: var(--accent); color: var(--text); }
+    .file-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+    .file-pill {
+      border: 1px solid var(--border);
+      padding: 6px 10px; border-radius: 999px; font-size: 12px;
+    }
+    .tooltip { border-bottom: 1px dotted var(--muted); cursor: help; }
+    .hidden { display: none; }
+    @media (max-width: 760px) {
+      .grid { grid-template-columns: 1fr; }
+      .full { grid-column: span 1; }
+      .actions { flex-direction: column; align-items: stretch; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Senior Frontend Developer — Advanced Query Form</h1>
+      <p class="subtitle">Multi-step intake with validation, autosave, shortcuts, and a professional UX.</p>
+
+      <div class="toolbar">
+        <div class="badge" id="draftStatus">Draft not saved yet</div>
+        <div class="badge" id="submitStatus"></div>
+        <button class="btn btn-ghost" id="toggleTheme">Toggle Theme</button>
+      </div>
+
+      <div class="inline">
+        <div class="status" id="analyticsStatus">Analytics: idle</div>
+        <div class="status" id="stepStatus">Step 1 of 3</div>
+      </div>
+
+      <div class="stepper">
+        <div class="step active" data-step="1"></div>
+        <div class="step" data-step="2"></div>
+        <div class="step" data-step="3"></div>
+      </div>
+
+      <div class="progress-wrap"><div class="progress-bar" id="progressBar"></div></div>
+
+      <form id="queryForm" novalidate>
+    
+        <section class="step-section" data-step="1">
+          <div class="grid">
+            <div class="field">
+              <label for="name">Full Name *</label>
+              <input id="name" type="text" placeholder="Jane Doe" required />
+            </div>
+            <div class="field">
+              <label for="email">Work Email * <span class="tooltip" title="Use a valid work email">?</span></label>
+              <input id="email" type="email" placeholder="jane@company.com" required />
+            </div>
+
+            <div class="field">
+              <label for="role">Current Role *</label>
+              <input id="role" type="text" placeholder="Senior Frontend Engineer" required />
+            </div>
+            <div class="field">
+              <label for="company">Company</label>
+              <input id="company" type="text" placeholder="TechLabs Inc." />
+            </div>
+
+            <div class="field">
+              <label for="stack">Primary Frontend Stack *</label>
+              <select id="stack" required>
+                <option value="">Select</option>
+                <option>React + TypeScript</option>
+                <option>Vue + TypeScript</option>
+                <option>Angular</option>
+                <option>Svelte / SvelteKit</option>
+                <option>Other / Mixed</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="seniority">Seniority Level *</label>
+              <select id="seniority" required>
+                <option value="">Select</option>
+                <option>Senior (5-8 years)</option>
+                <option>Staff (8-12 years)</option>
+                <option>Principal (12+ years)</option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <section class="step-section hidden" data-step="2">
+          <div class="grid">
+            <div class="field full">
+              <label>Key Focus Areas (pick any)</label>
+              <div class="chips" id="chipGroup">
+                <div class="chip" data-value="Performance Optimization">Performance Optimization</div>
+                <div class="chip" data-value="Design Systems">Design Systems</div>
+                <div class="chip" data-value="Accessibility (WCAG)">Accessibility (WCAG)</div>
+                <div class="chip" data-value="Micro-Frontends">Micro-Frontends</div>
+                <div class="chip" data-value="SSR / SSG">SSR / SSG</div>
+                <div class="chip" data-value="State Management">State Management</div>
+                <div class="chip" data-value="Testing Strategy">Testing Strategy</div>
+              </div>
+              <div class="helper">Selected: <span id="selectedChips">None</span></div>
+            </div>
+
+            <div class="field full">
+              <label for="query">Technical Query / Challenge *</label>
+              <textarea id="query" placeholder="Describe the architectural problem, constraints, and desired outcomes..." required maxlength="600"></textarea>
+              <div class="counter" id="queryCounter">0 / 600</div>
+            </div>
+
+            <div class="field full">
+              <label for="constraints">Constraints / Non-Functional Requirements</label>
+              <textarea id="constraints" placeholder="Example: must pass Lighthouse 95+, bundle size limits..." maxlength="400"></textarea>
+              <div class="counter" id="constraintsCounter">0 / 400</div>
+            </div>
+          </div>
+        </section>
+
+    
+        <section class="step-section hidden" data-step="3">
+          <div class="grid">
+            <div class="field">
+              <label for="deadline">Desired Timeline</label>
+              <input id="deadline" type="text" placeholder="e.g., 2-3 weeks" />
+            </div>
+            <div class="field">
+              <label for="budget">Budget Range</label>
+              <input id="budget" type="text" placeholder="$5,000 - $15,000" />
+            </div>
+          </div>
+
+          <div class="section-title">Output Expectations</div>
+          <div class="grid">
+            <div class="field">
+              <label for="deliverable">Preferred Deliverable</label>
+              <select id="deliverable">
+                <option>Architecture Review</option>
+                <option>Implementation Guidance</option>
+                <option>Prototype / POC</option>
+                <option>Refactor Plan</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="format">Response Format</label>
+              <select id="format">
+                <option>Written Report</option>
+                <option>Code + Docs</option>
+                <option>Call + Summary</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="section-title">Attachments</div>
+          <div class="dropzone" id="dropzone">
+            Drag & drop files here or click to add (PDF, PNG, TXT)
+            <input type="file" id="fileInput" class="hidden" multiple />
+            <div class="file-list" id="fileList"></div>
+          </div>
+        </section>
+
+        <div class="actions">
+          <div>
+            <button type="button" class="btn btn-ghost" id="prevStep">Previous</button>
+            <button type="button" class="btn btn-ghost" id="nextStep">Next</button>
+          </div>
+          <div>
+            <button type="reset" class="btn btn-ghost" id="resetBtn">Clear</button>
+            <button type="submit" class="btn btn-primary">Submit Query</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const $ = (id) => document.getElementById(id);
+    const form = $("queryForm");
+    const draftStatus = $("draftStatus");
+    const submitStatus = $("submitStatus");
+    const progressBar = $("progressBar");
+    const analyticsStatus = $("analyticsStatus");
+
+    const stepStatus = $("stepStatus");
+    const steps = [...document.querySelectorAll(".step-section")    const stepDots = [...document.querySelectorAll(".step")];
+    let currentStep = 1;
+
+    const requiredFields = ["name", "email", "role", "stack", "seniority", "query"];
+    const counters = [
+      { id: "query", max: 600, counter: "queryCounter" },
+      { id: "constraints", max: 400, counter: "constraintsCounter" }
+    ];
+
+    // Lightweight analytics event tracker
+    const track = (event, detail) => {
+      analyticsStatus.textContent = "Analytics: " + event;
+      analyticsStatus.title = JSON.stringify(detail || {});
+    };
+
+    // Debounce helper
+    const debounce = (fn, delay) => {
+      let t;
+      return (...args) => {
+        clearTimeout(t);
+        t = setTimeout(() => fn(...args), delay);
+      };
+    };
+
+    // Dynamic chip selection
+    const chipGroup = $("chipGroup");
+    const selectedChips = $("selectedChips");
+    let chipSelections = new Set();
+
+    chipGroup.addEventListener("click", (e) => {
+      if (!e.target.classList.contains("chip")) return;
+      const value = e.target.dataset.value;
+      if (chipSelections.has(value)) {
+        chipSelections.delete(value);
+        e.target.classList.remove("active");
+      } else {
+        chipSelections.add(value);
+        e.target.classList.add("active");
+      }
+      selectedChips.textContent = chipSelections.size ? [...chipSelections].join(", ") : "None";
+      saveDraft();
+      updateProgress();
+      track("chip_toggle", { selected: [...chipSelections] });
+    });
+
+    // Character counters
+    counters.forEach(({ id, max, counter }) => {
+      const el = $(id);
+      const counterEl = $(counter);
+      const update = () => {
+        counterEl.textContent = el.value.length + " / " + max;
+        saveDraft();
+        updateProgress();
+      };
+      el.addEventListener("input", update);
+      update();
+    });
+
+    // Validation logic (debounced)
+    const validate = () => {
+      let valid = true;
+      requiredFields.forEach((id) => {
+        const el = $(id);
+        const isValid = el.value.trim().length > 0 && (el.type !== "email" || el.validity.valid);
+        el.classList.toggle("invalid", !isValid);
+        valid = valid && isValid;
+      });
+      return valid;
+    };
+    const debouncedValidate = debounce(validate, 300);
+
+    // Progress indicator (based on filled required fields)
+    const updateProgress = () => {
+      let filled = 0;
+      requiredFields.forEach((id) => {
+        const el = $(id);
+        if (el.value.trim().length > 0) filled += 1;
+      });
+      if (chipSelections.size > 0) filled += 0.5;
+      const percent = Math.min(100, Math.round((filled / (requiredFields.length + 0.5)) * 100));
+      progressBar.style.width = percent + "%";
+    };
+
+    // Stepper logic
+    const showStep = (step) => {
+      currentStep = step;
+      steps.forEach((s) => s.classList.toggle("hidden", s.dataset.step != step));
+      stepDots.forEach((d) => d.classList.toggle("active", d.dataset.step == step));
+      stepStatus.textContent = "Step " + step + " of 3";
+      track("step_change", { step });
+    };
+
+    $("nextStep").addEventListener("click", () => {
+      if (currentStep < 3) showStep(currentStep + 1);
+    });
+    $("prevStep").addEventListener("click", () => {
+      if (currentStep > 1) showStep(currentStep - 1);
+    });
+
+    // Field dependency: If stack = "Other / Mixed", highlight
+    $("stack").addEventListener("change", () => {
+      const constraints = $("constraints");
+      if ($("stack").value === "Other / Mixed") {
+        constraints.placeholder = "Please describe your mixed stack details...";
+      } else {
+        constraints.placeholder = "Example: must pass Lighthouse 95+, bundle size limits...";
+      }
+      saveDraft();
+      updateProgress();
+    });
+
+    // Auto-save to localStorage
+    const saveDraft = () => {
+      const payload = {
+        name: $("name").value,
+        email: $("email").value,
+        role: $("role").value,
+        company: $("company").value,
+        stack: $("stack").value,
+        seniority: $("seniority").value,
+        query: $("query").value,
+        constraints: $("constraints").value,
+        deadline: $("deadline").value,
+        budget: $("budget").value,
+        deliverable: $("deliverable").value,
+        format: $("format").value,
+        chips: [...chipSelections],
+        theme: document.documentElement.dataset.theme
+      };
+      localStorage.setItem("seniorFormDraft", JSON.stringify(payload));
+      draftStatus.textContent = "Draft saved just now";
+    };
+
+    const loadDraft = () => {
+      const raw = localStorage.getItem("seniorFormDraft");
+      if (!raw) return;
+      const data = JSON.parse(raw);
+      Object.keys(data).forEach((key) => {
+        if ($(key)) $(key).value = data[key];
+      });
+      if (data.chips) {
+        chipSelections = new Set(data.chips);
+        [...chipGroup.querySelectorAll(".chip")].forEach((chip) => {
+          if (chipSelections.has(chip.dataset.value)) chip.classList.add("active");
+        });
+        selectedChips.textContent = chipSelections.size ? [...chipSelections].join(", ") : "None";
+      }
+      if (data.theme) document.documentElement.dataset.theme = data.theme;
+      draftStatus.textContent = "Draft restored from previous session";
+    };
+
+    // Input watchers
+    form.addEventListener("input", () => {
+      debouncedValidate();
+      updateProgress();
+      saveDraft();
+    });
+
+    // Keyboard shortcuts
+    document.addEventListener("keydown", (e) => {
+      if (e.ctrlKey && e.key.toLowerCase() === "s") {
+        e.preventDefault();
+        saveDraft();
+        track("shortcut_save");
+      }
+      if (e.ctrlKey && e.key.toLowerCase() === "k") {
+        e.preventDefault();
+        $("query").focus();
+        track("shortcut_focus_query");
+      }
+    });
+
+    // Theme toggle
+    $("toggleTheme").addEventListener("click", () => {
+      const theme = document.documentElement.dataset.theme;
+      document.documentElement.dataset.theme = theme === "dark" ? "light" : "dark";
+      saveDraft();
+      track("theme_toggle", { theme: document.documentElement.dataset.theme });
+    });
+
+    // Drag & drop files
+    const dropzone = $("dropzone");
+    const fileInput = $("fileInput");
+    const fileList = $("fileList");
+
+    const renderFiles = (files) => {
+      fileList.innerHTML = "";
+      [...files].forEach((f) => {
+        const pill = document.createElement("div");
+        pill.className = "file-pill";
+        pill.textContent = f.name + " (" + Math.round(f.size / 1024) + "KB)";
+        fileList.appendChild(pill);
+      });
+    };
+
+    dropzone.addEventListener("click", () => fileInput.click());
+    dropzone.addEventListener("dragover", (e) => { e.preventDefault(); dropzone.classList.add("drag"); });
+    dropzone.addEventListener("dragleave", () => dropzone.classList.remove("drag"));
+    dropzone.addEventListener("drop", (e) => {
+      e.preventDefault();
+      dropzone.classList.remove("drag");
+      const files = e.dataTransfer.files;
+      renderFiles(files);
+      track("file_drop", { count: files.length });
+    });
+    fileInput.addEventListener("change", (e) => {
+      renderFiles(e.target.files);
+      track("file_select", { count: e.target.files.length });
+    });
+
+    // Submit handler (simulated async)
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      submitStatus.textContent = "";
+      const ok = validate();
+      if (!ok) {
+        submitStatus.textContent = "Please complete the required fields correctly.";
+        submitStatus.className = "badge status error";
+        return;
+      }
+      submitStatus.textContent = "Submitting...";
+      submitStatus.className = "badge status";
+      track("submit_start");
+
+      // Simulate async request
+      await new Promise((res) => setTimeout(res, 800));
+
+      submitStatus.textContent = "Query submitted successfully (simulated).";
+      submitStatus.className = "badge status success";
+      localStorage.removeItem("seniorFormDraft");
+      draftStatus.textContent = "Draft cleared after submit";
+      form.reset();
+      chipSelections.clear();
+      [...chipGroup.querySelectorAll(".chip")].forEach((c) => c.classList.remove("active"));
+      selectedChips.textContent = "None";
+      fileList.innerHTML = "";
+      updateProgress();
+      showStep(1);
+      track("submit_success");
+    });
+
+    // Reset handler with undo
+    let lastSnapshot = null;
+    $("resetBtn").addEventListener("click", () => {
+      lastSnapshot = localStorage.getItem("seniorFormDraft");
+      localStorage.removeItem("seniorFormDraft");
+      submitStatus.textContent = "";
+      draftStatus.textContent = "Draft cleared (Press Ctrl+Z to undo)";
+      chipSelections.clear();
+      [...chipGroup.querySelectorAll(".chip")].forEach((c) => c.classList.remove("active"));
+      selectedChips.textContent = "None";
+      fileList.innerHTML = "";
+      updateProgress();
+      showStep(1);
+      track("reset");
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.ctrlKey && e.key.toLowerCase() === "z" && lastSnapshot) {
+        localStorage.setItem("seniorFormDraft", lastSnapshot);
+        loadDraft();
+        updateProgress();
+        track("undo_reset");
+        lastSnapshot = null;
+      }
+    });
+
+    // Init
+    loadDraft();
+    updateProgress();
+    showStep(1);
+  </script>
+</body>
+</html-->
+
+<!--DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Senior Frontend Developer Application</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh;
+  }
+
+  .container {
+    background: #fff;
+    padding: 30px;
+    max-width: 700px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="url"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  input[type="url"]:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  #formMessage {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: green;
+  }
+
+  /* Skills chip styling */
+  #skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .skill-chip {
+    background-color: #007bff;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+  }
+
+  .skill-chip button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    margin-left: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Frontend Developer Application</h1>
+  <form id="developerForm" novalidate>
+    <div class="form-group">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" placeholder="Your full name" required />
+    </div>
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="e.g., +1234567890" required />
+    </div>
+    <div class="form-group">
+      <label for="experience">Years of Experience</label>
+      <select id="experience" name="experience" required>
+        <option value="">Select years</option>
+        <option value="5-7">5-7 years</option>
+        <option value="8-10">8-10 years</option>
+        <option value="10+">10+ years</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="skills">Skills</label>
+      <div style="display:flex; gap:8px;">
+        <input type="text" id="skillInput" placeholder="Add a skill" />
+        <button type="button" id="addSkillBtn">Add Skill</button>
+      </div>
+      <div id="skillsContainer"></div>
+    </div>
+    <div class="form-group">
+      <label for="portfolio">Portfolio Link</label>
+      <input type="url" id="portfolio" name="portfolio" placeholder="https://yourwebsite.com" />
+    </div>
+    <div class="form-group">
+      <label for="coverLetter">Cover Letter</label>
+      <textarea id="coverLetter" name="coverLetter" rows="4" placeholder="Tell us about your experience..." required></textarea>
+    </div>
+    <button type="submit">Submit Application</button>
+  </form>
+  <div id="formMessage"></div>
+</div>
+
+<script>
+  // Advanced JavaScript for form handling
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('developerForm');
+    const formMessage = document.getElementById('formMessage');
+    const skillInput = document.getElementById('skillInput');
+    const skillsContainer = document.getElementById('skillsContainer');
+    const addSkillBtn = document.getElementById('addSkillBtn');
+
+    // Keep track of skills in an array  
+    const skills = [];
+
+    // Function to create skill chips  
+    function addSkill(skill) {
+      if (!skill || skills.includes(skill.toLowerCase())) return;
+
+      skills.push(skill.toLowerCase());
+
+      const chip = document.createElement('div');
+      chip.className = 'skill-chip';
+      chip.textContent = skill;
+
+      const removeBtn = document.createElement('button');
+      removeBtn.type = 'button';
+      removeBtn.textContent = '×';
+      removeBtn.title = 'Remove skill';
+      removeBtn.addEventListener('click', () => {
+        skills.splice(skills.indexOf(skill.toLowerCase()), 1);
+        skillsContainer.removeChild(chip);
+      });
+
+      chip.appendChild(removeBtn);
+      skillsContainer.appendChild(chip);
+    }
+
+    // Add skill on button click  
+    addSkillBtn.addEventListener('click', () => {
+      const skill = skillInput.value.trim();
+      if (skill) {
+        addSkill(skill);
+        skillInput.value = '';
+        skillInput.focus();
+      }
+    });
+
+    // Allow pressing Enter in skill input to add skill  
+    skillInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        addSkill(skillInput.value.trim());
+        skillInput.value = '';
+      }
+    });
+
+    // Custom validation function  
+    function validateForm() {
+      const formData = new FormData(form);
+      const errors = [];
+
+      // Check required fields  
+      for (const [name, value] of formData.entries()) {
+        const input = form.elements[name];
+        if (input.hasAttribute('required') && !value.trim()) {
+          errors.push(`${input.previousElementSibling.textContent} is required`);
+        }
+      }
+
+      // Additional validation for email  
+      const email = form.elements['email'].value;
+      if (email && !/\S+@\S+\.\S+/.test(email)) {
+        errors.push('Please enter a valid email address');
+      }
+
+      // Phone number validation (simple)
+      const phone = form.elements['phone'].value;
+      if (phone && !/^\+?\d{7,15}$/.test(phone)) {
+        errors.push('Please enter a valid phone number');
+      }
+
+      // Portfolio link validation if filled  
+      const portfolio = form.elements['portfolio'].value;
+      if (portfolio && !/^https?:\/\/.+\..+/.test(portfolio)) {
+        errors.push('Please enter a valid URL for Portfolio');
+      }
+
+      return errors;
+    }
+
+    // Form submission handler  
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      // Clear previous messages  
+      formMessage.textContent = '';
+      formMessage.style.color = 'green';
+
+      const errors = validateForm();
+
+      if (errors.length > 0) {
+        formMessage.style.color = 'red';
+        formMessage.innerHTML = errors.join('<br>');
+        return;
+      }
+
+      // Gather data  
+      const formData = {
+        fullName: form.elements['fullName'].value.trim(),
+        email: form.elements['email'].value.trim(),
+        phone: form.elements['phone'].value.trim(),
+        experience: form.elements['experience'].value,
+        skills: [...skills],
+        portfolio: form.elements['portfolio'].value.trim(),
+        coverLetter: form.elements['coverLetter'].value.trim(),
+        timestamp: new Date().toISOString()
+      };
+
+      // Simulate sending data (e.g., to a server)
+      console.log('Form Data Submitted:', formData);
+
+      // Show success message  
+      formMessage.textContent = 'Thank you for submitting your application!';
+
+      // Reset form and skills  
+      form.reset();
+      skills.length = 0;
+      skillsContainer.innerHTML = '';
+    });
+  });
+</script>
+</body>
+</html> -->

@@ -322,16 +322,813 @@ gtag("config", "GT-WK27ZCWJ");
   font-display: swap;
   src: url(../../wp-content/fonts/poppins/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}</style><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+}</style>
+<style>
+
+	/* ===== FIX: Hide original navbar on mobile, show hamburger ===== */
+@media (max-width: 1024px) {
+    /* Force hide original navbar */
+    .elementor-element-336558a,
+    header[data-elementor-type="header"] {
+        display: none !important;
+    }
+    
+    /* Force show mobile header */
+    .mobile-header {
+        display: block !important;
+        position: sticky !important;
+        top: 0 !important;
+        z-index: 999999 !important;
+        background: #ffffff !important;
+    }
+}
+
+@media (min-width: 1025px) {
+    .mobile-header {
+        display: none !important;
+    }
+    .elementor-element-336558a {
+        display: flex !important;
+    }
+}
+
+/* Fix mobile menu panel position */
+.mobile-menu-panel {
+    position: fixed;
+    top: 70px;
+    left: -111%;
+    width: 100%;
+    height: calc(100% - 70px);
+    background: #ffffff;
+    z-index: 99999;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.mobile-menu-panel.open {
+    left: 0;
+}
+
+/* Fix body scroll when menu open */
+body.menu-open {
+    overflow: hidden;
+}
+
+
+
+
+
+
+/* Reset any broken styles */
+.mobile-header * {
+    box-sizing: border-box;
+}
+
+.mobile-header-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+}
+
+.mobile-logo img {
+    max-height: 50px !important;
+    width: auto !important;
+}
+
+.hamburger {
+    background: #FF4A52 !important;
+    border: none !important;
+    width: 46px !important;
+    height: 46px !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+
+.hamburger span {
+    display: block !important;
+    width: 24px !important;
+    height: 2px !important;
+    background: #ffffff !important;
+    margin: 5px 0 !important;  /* spacing between lines */
+    /* ::before/::after wala code DELETE karo */
+}
+
+/* DELETE yeh sab agar teen span hain */
+/* .hamburger span::before, .hamburger span::after { ... } */
+/* .hamburger.active span wala code bhi change karna padega */
+
+.accordion-item {
+    background: #f9f9f9;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.accordion-title {
+    padding: 16px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FF4A52;
+    background: #ffffff;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.accordion-title::-webkit-details-marker {
+    display: none;
+}
+
+.accordion-title:hover {
+    background: #fff0f0;
+}
+
+details[open] .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.accordion-icon {
+    transition: transform 0.3s ease;
+    font-size: 14px;
+}
+
+.accordion-content {
+    padding: 0 20px 20px 20px;
+    background: #f9f9f9;
+    border-radius: 0 0 12px 12px;
+}
+
+.accordion-content p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: #444;
+    font-size: 14px;
+}
+
+.accordion-content strong {
+    color: #FF4A52;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.read-less {
+    display: none;
+}
+
+details[open] .read-more {
+    display: none;
+}
+
+details[open] .read-less {
+    display: inline;
+}
+</style>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Poppins', system-ui, sans-serif;
+        background: #fff;
+    }
+
+    /* ========== DESKTOP NAVBAR (SINGLE) ========== */
+    .navbar {
+        background: #fff;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+        padding: 12px 40px;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo img { height: 55px; width: auto; }
+
+    .nav-menu {
+        display: flex;
+        list-style: none;
+        gap: 32px;
+    }
+
+    .nav-menu li a {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 15px;
+        color: #1e2a3e;
+        transition: color 0.2s;
+    }
+
+    .nav-menu li a:hover,
+    .nav-menu li.active a {
+        color: #FF4A52;
+    }
+
+    /* Dropdown */
+    .dropdown { position: relative; }
+    
+    .dropdown-menu {
+        position: absolute;
+        top: 120%;
+        left: 0;
+        background: #fff;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+        border-radius: 16px;
+        padding: 12px 0;
+        min-width: 220px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.2s;
+        list-style: none;
+        z-index: 1000;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        top: 100%;
+    }
+
+    .dropdown-menu li a {
+        display: block;
+        padding: 8px 24px;
+        color: #2c3e50;
+        font-size: 14px;
+    }
+
+    .dropdown-menu li a:hover {
+        background: #FFF0F0;
+        color: #FF4A52;
+        padding-left: 28px;
+    }
+
+    /* Nested dropdown */
+    .has-nested { position: relative; }
+    
+    .nested-dropdown {
+        position: absolute;
+        left: 100%;
+        top: 0;
+        background: #fff;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+        border-radius: 16px;
+        padding: 12px 0;
+        min-width: 180px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.2s;
+        list-style: none;
+    }
+
+    .has-nested:hover .nested-dropdown {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .contact-btn {
+        background: #FF4A52;
+        color: white;
+        padding: 10px 28px;
+        border-radius: 40px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        transition: 0.2s;
+    }
+
+    .contact-btn:hover {
+        background: #e03e46;
+        transform: translateY(-2px);
+    }
+
+    /* ========== MOBILE HEADER (SINGLE) ========== */
+    .mobile-header {
+        display: none;
+        background: #fff;
+        padding: 12px 20px;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mobile-logo img { height: 48px; width: auto; }
+
+    .hamburger {
+        background: #FF4A52;
+        border: none;
+        width: 46px;
+        height: 46px;
+        border-radius: 12px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    /* .hamburger span {
+        display: block;
+        width: 24px;
+        height: 2.5px;
+        background: white;
+        border-radius: 4px;
+        transition: 0.25s;
+    } */
+
+    /* .hamburger.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    } */
+
+    /* Mobile Menu Panel (SINGLE) */
+    .mobile-panel {
+        position: fixed;
+        top: 72px;
+        left: -100%;
+        width: 100%;
+        height: calc(100% - 72px);
+        background: #fff;
+        z-index: 998;
+        transition: left 0.35s;
+        overflow-y: auto;
+        padding: 20px;
+    }
+
+    .mobile-panel.open { left: 0; }
+    body.menu-open { overflow: hidden; }
+
+    .mobile-nav-menu { list-style: none; }
+    .mobile-nav-item { border-bottom: 1px solid #f0f0f0; }
+    
+    .mobile-nav-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+        font-size: 17px;
+        font-weight: 500;
+        color: #1e2a3e;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .mobile-nav-link.active { color: #FF4A52; }
+    .arrow {
+        font-size: 12px;
+        transition: transform 0.2s;
+        color: #FF4A52;
+    }
+    .mobile-dropdown-toggle.open .arrow { transform: rotate(180deg); }
+
+    .mobile-submenu {
+        list-style: none;
+        padding-left: 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s;
+        background: #fafafa;
+        border-radius: 12px;
+    }
+
+    .mobile-submenu.show {
+        max-height: 600px;
+        padding: 10px 0;
+    }
+
+    .mobile-submenu li a {
+        display: block;
+        padding: 12px 0;
+        text-decoration: none;
+        color: #4a5568;
+        font-size: 14px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .mobile-contact-btn {
+        display: block;
+        background: #FF4A52;
+        text-align: center;
+        padding: 14px;
+        border-radius: 50px;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 1024px) {
+        .navbar { display: none !important; }
+        .mobile-header { display: flex !important; }
+    }
+
+    @media (min-width: 1025px) {
+        .mobile-header, .mobile-panel { display: none !important; }
+    }
+
+    /* Demo content */
+    .demo {
+        text-align: center;
+        padding: 100px 20px;
+        background: linear-gradient(135deg, #1e2a3e, #0f172a);
+        color: white;
+    }
+    .demo h1 { font-size: 48px; margin-bottom: 20px; }
+    .demo p { font-size: 18px; max-width: 600px; margin: 0 auto; }
+
+    .hamburger {
+    background: #FF4A52 !important;
+    border: none !important;
+    width: 46px !important;
+    height: 46px !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    display: flex !important;
+    flex-direction: column !important;  /* vertical stack */
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0px !important;  /* space between lines */
+}
+
+.hamburger span {
+    display: block !important;
+    width: 24px !important;
+    height: 2px !important;
+    background: #ffffff !important;
+    /* NO ::before, NO ::after */
+}
+
+/* Animation for 3 spans */
+.hamburger.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+</style>
+<style>
+/* ===== HIDE ORIGINAL NAVBAR ON PHONE ===== */
+@media screen and (max-width: 768px) {
+    .elementor-element-336558a,
+    header[data-elementor-type="header"] {
+        display: none !important;
+    }
+}
+
+/* ===== SHOW ORIGINAL NAVBAR ON DESKTOP ===== */
+@media screen and (min-width: 769px) {
+    .elementor-element-336558a,
+    header[data-elementor-type="header"] {
+        display: flex !important;
+    }
+}
+
+/* ===== MOBILE NAVBAR STYLES ===== */
+.uts-home-mobile {
+    display: none;
+    background: #ffffff;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+    font-family: 'Poppins', 'Work Sans', sans-serif;
+}
+
+.uts-home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+}
+
+/* Logo */
+.uts-home-logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.uts-home-logo img {
+    height: 45px;
+    width: auto;
+}
+
+.uts-home-logo span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #FF4A52;
+    margin-left: 8px;
+}
+
+/* Hamburger Button */
+.uts-home-hamburger {
+    background: #FF4A52;
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s;
+}
+
+.uts-home-hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.uts-home-hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.uts-home-hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.uts-home-hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile Menu Panel */
+.uts-home-panel {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 85%;
+    max-width: 320px;
+    height: 100%;
+    background: #ffffff;
+    z-index: 999999;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+    padding: 80px 20px 30px 20px;
+    box-shadow: 2px 0 20px rgba(0,0,0,0.1);
+}
+
+.uts-home-panel.open {
+    left: 0;
+}
+
+/* Overlay */
+.uts-home-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999998;
+    display: none;
+}
+
+.uts-home-overlay.show {
+    display: block;
+}
+
+/* Close Button */
+.uts-home-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: #FF4A52;
+    color: white;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navigation Links */
+.uts-home-nav-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.uts-home-nav-item {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.uts-home-nav-link {
+    display: block;
+    padding: 14px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.uts-home-nav-link:hover,
+.uts-home-nav-link.active {
+    color: #FF4A52;
+}
+
+/* Dropdown */
+.uts-home-dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.uts-home-arrow {
+    font-size: 12px;
+    transition: transform 0.3s;
+}
+
+.uts-home-dropdown-toggle.open .uts-home-arrow {
+    transform: rotate(180deg);
+}
+
+.uts-home-submenu {
+    list-style: none;
+    padding-left: 20px;
+    display: none;
+    background: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.uts-home-submenu.show {
+    display: block;
+}
+
+.uts-home-submenu li a {
+    display: block;
+    padding: 10px 0 10px 15px;
+    font-size: 14px;
+    color: #444;
+    text-decoration: none;
+}
+
+.uts-home-submenu li a:hover {
+    color: #FF4A52;
+}
+
+/* Contact Button */
+.uts-home-contact {
+    display: block;
+    background: #FF4A52;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 30px;
+    transition: all 0.3s;
+}
+
+.uts-home-contact:hover {
+    background: #e03e46;
+}
+
+/* Body Scroll Lock */
+body.uts-home-menu-open {
+    overflow: hidden;
+}
+
+/* ===== SHOW ONLY ON PHONE ===== */
+@media screen and (max-width: 768px) {
+    .uts-home-mobile {
+        display: block !important;
+    }
+}
+
+/* ===== HIDE ON DESKTOP/TABLET ===== */
+@media screen and (min-width: 769px) {
+    .uts-home-mobile {
+        display: none !important;
+    }
+}
+</style>
+
+
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
 <body class="wp-singular destination-template-default single single-destination postid-4012 wp-custom-logo wp-theme-grandtour elementor-default elementor-kit-10">
 		
-	<script>
-fetch('/mobile-navbar.html')
-    .then(response => response.text())
-    .then(data => {
-        document.body.insertAdjacentHTML('afterbegin', data);
-    });
-</script>
+	<nav class="navbar">
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+    </div>
+    <ul class="nav-menu">
+        <li class="active"><a href="#">Home</a></li>
+        <!--li class="active"><a href="#">Our Story</a></li-->
+        <li class=""><a href="../Our_Story/Our_Story.html">Our Story</a></li>
+        <li><a href="car/car.html">Car Rentals</a></li>
+        <li class="dropdown">
+            <a href="#">Destinations ▼</a>
+            <ul class="dropdown-menu">
+                <li><a href="../char-dham/index.html">Char Dham</a></li>
+                <li><a href="../destination/kedarnath/index.html">Kedarnath</a></li>
+                <li><a href="../destination/badrinath/index.html">Badrinath</a></li>
+                <li><a href="../destination/rishikesh/index.html">Rishikesh</a></li>
+                <li><a href="../destination/mussorie/index.html">Mussoorie</a></li>
+                <li><a href="../destination/nanital/index.html">Nainital</a></li>
+                <li><a href="../destination/jim-corbett/index.html">Jim Corbett</a></li>
+                <li class="has-nested">
+                    <a href="#">More ▼</a>
+                    <ul class="nested-dropdown">
+                         <li><a href="../destination/chopta/index.html">Chopta</a></li>
+                        <li>
+                            
+                            <a href="../destination/auli/index.html">Auli</a>
+                        </li>
+                        <li><a href="../destination/harsil/index.html">Harsil Valley</a></li>
+                        <li><a href="../destination/haridwar/index.html">Haridwar</a></li>
+                        
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <!--li class="dropdown">
+            <a href="#">Travel By Theme ▼</a>
+           
+             <ul class="mobile-submenu">
+                        <li><a href="../destination/chopta/index.html">Chopta</a></li>
+                        <li><a href="../destination/auli/index.html"></a>>Auli</a></li>
+                        <li><a href="../destination/harsil/index.html">Harsil Valley</a></li>
+                        <li><a href="../destination/haridwar/index.html">Haridwar</a></li>
+            </ul>
+        </li-->
+        <!--li class="dropdown">
+    <a href="#">Travel By Theme ▼</a>
+    
+    <ul class="dropdown-menu">
+        <li><a href="#">Group Tours</a></li>
+        <li><a href="#">Family Trips</a></li>
+        <li><a href="#">Pilgrimage</a></li>
+        <li><a href="#">Romantic Getaways</a></li>
+        <li><a href="#">Wildlife Safari</a></li>
+        <li><a href="#">Leisure Holidays</a></li>
+        <li><a href="#">Adventure Trips</a></li>
+    </ul>
+</li-->
+
+<li class="dropdown">
+    <a href="#">Travel By Theme ▼</a>
+    <ul class="dropdown-menu">  <!-- ✅ FIXED -->
+        <!--li><a href="../destination/chopta/index.html">Chopta</a></li>
+        <li><a href="../destination/auli/index.html">Auli</a></li>
+        <li><a href="../destination/harsil/index.html">Harsil Valley</a></li>
+        <li><a href="../destination/haridwar/index.html">Haridwar</a></li--> 
+        <li><a href="#">Group Tours</a></li>
+        <li><a href="#">Family Trips</a></li>
+        <li><a href="#">Pilgrimage</a></li>
+        <li><a href="#">Romantic Getaways</a></li>
+        <li><a href="#">Wildlife Safari</a></li>
+        <li><a href="#">Leisure Holidays</a></li>
+        <li><a href="#">Adventure Trips</a></li>
+    </ul>
+</li>
+        <li><a href="./blogs/index.html">Blogs</a></li>
+    </ul>
+    <a href="#" class="contact-btn">Contact Us</a>
+</nav>
 	<!-- ============================================ -->
 <!-- MOBILE NAVBAR - SIRF PHONE PE DIKHEGA        -->
 <!-- HOMEPAGE KE LIYE DESIGN MATCH KAREGA          -->
@@ -587,7 +1384,1115 @@ body.uts-home-menu-open {
     }
 }
 </style>
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            background: #f4f7fc;
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Dummy content just for demo spacing */
+        .demo-space {
+            flex: 1;
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #eef2f5 0%, #ffffff 100%);
+        }
+        .demo-space h1 {
+            font-size: 2rem;
+            color: #0B2B26;
+            margin-bottom: 1rem;
+        }
+        .demo-space p {
+            color: #4a5568;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ============================================ */
+        /* MAIN FOOTER STYLES - Premium & Modern        */
+        /* Inspired by uttrakhandtrip.com + MSME badge  */
+        /* + 7 Days Open Badge Added                    */
+        /* ============================================ */
+        .main-footer {
+            background: linear-gradient(135deg, #0B2B26 0%, #1A3A32 100%);
+            color: #fff;
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
+            border-top: 4px solid #FF8C42;
+            width: 100%;
+            position: relative;
+            z-index: 10;
+        }
+
+        .auto-container {
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Row flex layout */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 50px 0 40px 0;
+        }
+
+        /* Footer Widget */
+        .footer-widget {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        /* Widget Title */
+        .widget-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #FFE6C7;
+            position: relative;
+            padding-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .widget-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background: #FF8C42;
+            border-radius: 3px;
+            transition: width 0.3s ease;
+        }
+
+        .footer-widget:hover .widget-title::after {
+            width: 80px;
+        }
+
+        /* Text styling */
+        .text-white {
+            color: #cbd5e1 !important;
+            line-height: 1.7;
+            font-size: 0.95rem;
+            margin-top: 10px;
+        }
+
+        /* Links styling */
+        .user-links {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .user-links li {
+            margin-bottom: 12px;
+            transition: transform 0.2s ease;
+        }
+
+        .user-links li:hover {
+            transform: translateX(5px);
+        }
+
+        .user-links li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+            line-height: 2;
+        }
+
+        .user-links li a:hover {
+            color: #FF8C42;
+        }
+
+        /* Contact info styling */
+        .cntct-info p {
+            margin-bottom: 16px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .cntct-info i {
+            color: #FF8C42;
+            font-size: 1.1rem;
+            margin-top: 3px;
+            min-width: 20px;
+        }
+
+        /* 7 Days Open Badge - New Addition */
+        .days-open-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 140, 66, 0.15);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 140, 66, 0.5);
+            border-radius: 50px;
+            padding: 8px 18px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            width: fit-content;
+            transition: all 0.3s ease;
+        }
+        .days-open-badge:hover {
+            background: rgba(255, 140, 66, 0.3);
+            transform: scale(1.02);
+            border-color: #FF8C42;
+        }
+        .days-open-badge i {
+            color: #FF8C42;
+            font-size: 1.1rem;
+        }
+        .days-open-badge span {
+            color: #FFE6C7;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+        }
+        .days-open-badge strong {
+            color: #FF8C42;
+            font-weight: 700;
+        }
+
+        /* Logo image styling */
+        .footer-logo-img {
+            width: 150px;
+            height: auto;
+            margin-top: 15px;
+            background: transparent;
+            display: block;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+        .footer-logo-img:hover {
+            transform: scale(1.02);
+        }
+
+        /* Certificate section - MSME premium card */
+        .msme-certificate {
+            margin-top: 25px;
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(4px);
+            border-radius: 20px;
+            padding: 18px 15px;
+            text-align: center;
+            transition: all 0.35s ease;
+            border: 1px solid rgba(255, 140, 66, 0.4);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .msme-certificate:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 140, 66, 0.12);
+            border-color: #FF8C42;
+            box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+        }
+
+        .cert-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #FFE6C7;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .cert-title i {
+            color: #FF8C42;
+            font-size: 1.25rem;
+        }
+
+        .cert-number {
+            font-size: 0.85rem;
+            color: #FFE6C7;
+            background: rgba(0,0,0,0.4);
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 40px;
+            font-family: 'Courier New', monospace;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+
+        .cert-badge {
+            margin-top: 12px;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .badge-icon {
+            background: #FF8C42;
+            color: #0B2B26;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 4px 14px;
+            border-radius: 30px;
+            letter-spacing: 0.5px;
+        }
+
+        .cert-footer-text {
+            font-size: 0.7rem;
+            color: #b9c3d0;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        /* Footer Bottom */
+        .footer-bottom {
+            background: #06201C;
+            padding: 20px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            margin-top: 10px;
+        }
+
+        .copyright-text {
+            color: #9CA3AF;
+            font-size: 0.85rem;
+            text-align: center;
+            letter-spacing: 0.3px;
+        }
+
+        .copyright-text a {
+            color: #FF8C42;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .copyright-text a:hover {
+            color: #FFB347;
+            text-decoration: underline;
+        }
+
+        /* ========== RESPONSIVE STYLES ========== */
+        @media (max-width: 992px) {
+            .row {
+                gap: 30px !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .row {
+                flex-direction: column;
+                gap: 35px !important;
+                padding: 35px 20px !important;
+            }
+            
+            .footer-widget {
+                min-width: 100% !important;
+                text-align: center;
+            }
+            
+            .widget-title::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .user-links li:hover {
+                transform: translateX(0) scale(1.02);
+            }
+            
+            .cntct-info p {
+                justify-content: center;
+                text-align: left;
+            }
+
+            .cntct-info {
+                text-align: left;
+                display: inline-block;
+                width: 100%;
+            }
+
+            .footer-logo-img {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .msme-certificate {
+                max-width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .cert-title {
+                justify-content: center;
+            }
+
+            /* Center the 7 days badge on mobile */
+            .days-open-badge {
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cntct-info p {
+                font-size: 0.85rem;
+                word-break: break-word;
+            }
+            .widget-title {
+                font-size: 1.2rem;
+            }
+            .msme-certificate {
+                padding: 14px 12px;
+            }
+            .cert-number {
+                font-size: 0.75rem;
+            }
+            .days-open-badge span {
+                font-size: 0.75rem;
+            }
+        }
+
+        /* Hover animations for widgets */
+        .footer-widget {
+            transition: transform 0.25s ease;
+        }
+
+        .footer-widget:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Scrollbar styling */
+        .main-footer ::-webkit-scrollbar {
+            width: 5px;
+        }
+        .main-footer ::-webkit-scrollbar-track {
+            background: #1A3A32;
+        }
+        .main-footer ::-webkit-scrollbar-thumb {
+            background: #FF8C42;
+            border-radius: 10px;
+        }
+    </style>
+	<style>
+.uts-working-slider {
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.uts-working-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    background: #1a1a2e;
+}
+
+.uts-working-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.uts-working-track img {
+    width: 100%;
+    min-width: 100%;
+    height: 520px;
+    object-fit: cover;
+    display: block;
+}
+
+.uts-working-prev,
+.uts-working-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(4px);
+    color: white;
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
+.uts-working-prev:hover,
+.uts-working-next:hover {
+    background: #FF4A52;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.uts-working-prev { left: 20px; }
+.uts-working-next { right: 20px; }
+
+.uts-working-dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0 30px 0;
+}
+
+.uts-working-dot {
+    width: 12px;
+    height: 12px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.uts-working-dot.active {
+    background: #FF4A52;
+    width: 30px;
+    border-radius: 20px;
+}
+
+.uts-working-content {
+    background: linear-gradient(135deg, #ffffff 0%, #fef9f0 100%);
+    border-radius: 24px;
+    padding: 35px 30px;
+    margin-top: 10px;
+}
+
+.uts-working-content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a1a2e;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.uts-working-content p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.uts-working-content p strong {
+    color: #FF4A52;
+}
+
+.uts-working-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.uts-working-tags span {
+    background: #FF4A52;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: transform 0.3s;
+    cursor: default;
+}
+
+.uts-working-tags span:hover {
+    transform: translateY(-3px);
+    background: #e03e46;
+}
+
+@media (max-width: 1024px) {
+    .uts-working-track img { height: 450px; }
+    .uts-working-content h2 { font-size: 28px; }
+    .uts-working-content p { font-size: 16px; }
+}
+
+@media (max-width: 768px) {
+    .uts-working-track img { height: 350px; }
+    .uts-working-prev, .uts-working-next { width: 40px; height: 40px; font-size: 22px; }
+    .uts-working-content { padding: 25px 20px; }
+    .uts-working-content h2 { font-size: 24px; }
+    .uts-working-content p { font-size: 15px; }
+    .uts-working-tags span { padding: 6px 15px; font-size: 12px; }
+}
+
+@media (max-width: 480px) {
+    .uts-working-track img { height: 250px; }
+    .uts-working-prev, .uts-working-next { width: 35px; height: 35px; font-size: 18px; }
+    .uts-working-prev { left: 10px; }
+    .uts-working-next { right: 10px; }
+    .uts-working-content { padding: 20px 15px; }
+    .uts-working-content h2 { font-size: 20px; }
+    .uts-working-content p { font-size: 14px; }
+    .uts-working-tags span { padding: 5px 12px; font-size: 11px; }
+}
+
+
+
+/* ======================================== */
+/* UTTARAKHAND SLIDER - RESPONSIVE FIXES    */
+/* Is CSS ko apni website ke style section  */
+/* mein paste karein (end mein)            */
+/* ======================================== */
+
+/* ----- Tablet (768px to 1024px) ----- */
+@media (max-width: 1024px) {
+    /* Slider images */
+    .uts-working-track img {
+        height: 450px !important;
+    }
+    
+    /* Content heading */
+    .uts-working-content h2 {
+        font-size: 28px !important;
+        line-height: 1.3 !important;
+    }
+    
+    /* Content paragraph */
+    .uts-working-content p {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+        padding: 0 10px !important;
+    }
+    
+    /* Tags / Highlights */
+    .uts-working-tags span {
+        padding: 6px 15px !important;
+        font-size: 12px !important;
+    }
+    
+    /* Slider container padding */
+    .uts-working-content {
+        padding: 25px 20px !important;
+    }
+}
+
+/* ----- Mobile (481px to 767px) ----- */
+@media (max-width: 767px) {
+    /* Slider images - smaller height */
+    .uts-working-track img {
+        height: 280px !important;
+    }
+    
+    /* Navigation buttons - smaller */
+    .uts-working-prev, 
+    .uts-working-next {
+        width: 36px !important;
+        height: 36px !important;
+        font-size: 20px !important;
+    }
+    
+    .uts-working-prev { left: 10px !important; }
+    .uts-working-next { right: 10px !important; }
+    
+    /* Content padding */
+    .uts-working-content {
+        padding: 20px 15px !important;
+    }
+    
+    /* Heading - mobile size */
+    .uts-working-content h2 {
+        font-size: 22px !important;
+        line-height: 1.4 !important;
+        margin-bottom: 15px !important;
+    }
+    
+    /* Paragraph text - easier to read on mobile */
+    .uts-working-content p {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+        text-align: left !important;
+        margin-bottom: 20px !important;
+    }
+    
+    /* Tags - wrap properly */
+    .uts-working-tags {
+        gap: 8px !important;
+    }
+    
+    .uts-working-tags span {
+        padding: 5px 12px !important;
+        font-size: 11px !important;
+    }
+    
+    /* Dots - smaller */
+    .uts-working-dot {
+        width: 8px !important;
+        height: 8px !important;
+    }
+    
+    .uts-working-dot.active {
+        width: 20px !important;
+    }
+    
+    .uts-working-dots {
+        gap: 8px !important;
+        margin: 15px 0 20px 0 !important;
+    }
+}
+
+/* ----- Small Mobile (up to 480px) ----- */
+@media (max-width: 480px) {
+    /* Images - even smaller for very small phones */
+    .uts-working-track img {
+        height: 220px !important;
+    }
+    
+    /* Heading */
+    .uts-working-content h2 {
+        font-size: 18px !important;
+        line-height: 1.3 !important;
+    }
+    
+    /* Paragraph */
+    .uts-working-content p {
+        font-size: 13px !important;
+        line-height: 1.5 !important;
+    }
+    
+    /* Buttons */
+    .uts-working-prev, 
+    .uts-working-next {
+        width: 32px !important;
+        height: 32px !important;
+        font-size: 16px !important;
+    }
+    
+    /* Tags - more compact */
+    .uts-working-tags span {
+        padding: 4px 10px !important;
+        font-size: 10px !important;
+    }
+    
+    /* Content padding */
+    .uts-working-content {
+        padding: 15px 12px !important;
+    }
+    
+    /* Dots spacing */
+    .uts-working-dots {
+        gap: 6px !important;
+        margin: 12px 0 15px 0 !important;
+    }
+}
+
+/* ----- Fix for landscape mode on mobile ----- */
+@media (max-width: 767px) and (orientation: landscape) {
+    .uts-working-track img {
+        height: 200px !important;
+    }
+    
+    .uts-working-content {
+        padding: 12px 15px !important;
+    }
+    
+    .uts-working-content h2 {
+        font-size: 16px !important;
+        margin-bottom: 8px !important;
+    }
+    
+    .uts-working-content p {
+        font-size: 12px !important;
+        margin-bottom: 10px !important;
+    }
+    
+    .uts-working-tags {
+        gap: 6px !important;
+    }
+    
+    .uts-working-tags span {
+        padding: 3px 8px !important;
+        font-size: 9px !important;
+    }
+}
+
+/* ----- Optional: Better touch targets for mobile ----- 
+@media (max-width: 767px) {
+ 
+    .uts-working-prev, 
+    .uts-working-next {
+        background: rgba(0,0,0,0.7) !important;
+    }
+    
+  
+    .uts-working-dot {
+        min-width: 8px !important;
+        min-height: 8px !important;
+    }
+    
+    .uts-working-content p {
+        text-align: justify !important;
+    }
+}*/
+
+/* ----- Large Desktop (1400px+) - maintain good proportions ----- */
+@media (min-width: 1400px) {
+    .uts-working-track img {
+        height: 580px !important;
+    }
+    
+    .uts-working-content h2 {
+        font-size: 38px !important;
+    }
+    
+    .uts-working-content p {
+        font-size: 18px !important;
+        line-height: 1.8 !important;
+    }
+    
+    .uts-working-tags span {
+        padding: 10px 24px !important;
+        font-size: 15px !important;
+    }
+}
+
+/* ============================================= */
+/* UTTARAKHAND SLIDER - COMPLETE RESPONSIVE FIX  */
+/* Isko apne style section ke END mein paste karo */
+/* ============================================= */
+
+/* Force fix for all mobile devices */
+@media (max-width: 768px) {
+    
+    /* Slider container */
+    .uts-working-slider {
+        width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    
+    /* Slider images - proper height for mobile */
+    .uts-working-track img {
+        height: 280px !important;
+        width: 100% !important;
+        object-fit: cover !important;
+    }
+    
+    /* Slider container padding/margin reset */
+    .uts-working-container {
+        border-radius: 16px !important;
+        margin: 0 !important;
+    }
+    
+    /* Navigation buttons - properly positioned */
+    .uts-working-prev,
+    .uts-working-next {
+        width: 36px !important;
+        height: 36px !important;
+        font-size: 20px !important;
+        background: rgba(0,0,0,0.6) !important;
+    }
+    
+    .uts-working-prev { left: 10px !important; }
+    .uts-working-next { right: 10px !important; }
+    
+    /* Content box */
+    .uts-working-content {
+        padding: 20px 15px !important;
+        margin-top: 5px !important;
+        border-radius: 16px !important;
+    }
+    
+    /* Heading - mobile friendly */
+    .uts-working-content h2 {
+        font-size: 20px !important;
+        line-height: 1.4 !important;
+        margin-bottom: 12px !important;
+        text-align: center !important;
+    }
+    
+    /* Paragraph text */
+    .uts-working-content p {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+        text-align: justify !important;
+        padding: 0 !important;
+        margin-bottom: 15px !important;
+    }
+    
+    /* Tags/highlights */
+    .uts-working-tags {
+        gap: 8px !important;
+        justify-content: center !important;
+    }
+    
+    .uts-working-tags span {
+        padding: 5px 12px !important;
+        font-size: 11px !important;
+    }
+    
+    /* Dots */
+    .uts-working-dots {
+        gap: 8px !important;
+        margin: 15px 0 20px 0 !important;
+    }
+    
+    .uts-working-dot {
+        width: 8px !important;
+        height: 8px !important;
+    }
+    
+    .uts-working-dot.active {
+        width: 22px !important;
+    }
+}
+
+/* Small phones (up to 480px) */
+@media (max-width: 480px) {
+    .uts-working-track img {
+        height: 220px !important;
+    }
+    
+    .uts-working-content h2 {
+        font-size: 18px !important;
+    }
+    
+    .uts-working-content p {
+        font-size: 13px !important;
+        line-height: 1.5 !important;
+    }
+    
+    .uts-working-tags span {
+        padding: 4px 10px !important;
+        font-size: 10px !important;
+    }
+    
+    .uts-working-prev,
+    .uts-working-next {
+        width: 32px !important;
+        height: 32px !important;
+        font-size: 16px !important;
+    }
+}
+
+/* Landscape mode on mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .uts-working-track img {
+        height: 200px !important;
+    }
+    
+    .uts-working-content {
+        padding: 12px 15px !important;
+    }
+    
+    .uts-working-content h2 {
+        font-size: 16px !important;
+        margin-bottom: 8px !important;
+    }
+    
+    .uts-working-content p {
+        font-size: 12px !important;
+        margin-bottom: 10px !important;
+    }
+    
+    .uts-working-tags span {
+        padding: 3px 8px !important;
+        font-size: 9px !important;
+    }
+}
+
+/* Tablet devices (768px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .uts-working-track img {
+        height: 400px !important;
+    }
+    
+    .uts-working-content h2 {
+        font-size: 26px !important;
+    }
+    
+    .uts-working-content p {
+        font-size: 15px !important;
+        line-height: 1.6 !important;
+    }
+    
+    .uts-working-tags span {
+        padding: 6px 16px !important;
+        font-size: 13px !important;
+    }
+}
+
+
+
+
+</style>
+<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				
+/* FORCE MOBILE MENU TO WORK - PUT THIS AT THE VERY END OF YOUR STYLES */
+@media (max-width: 1024px) {
+    .elementor-nav-menu--dropdown.elementor-nav-menu--open {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        max-height: 500px !important;
+        overflow-y: auto !important;
+    }
+    
+    .elementor-menu-toggle {
+        display: flex !important;
+        z-index: 999999 !important;
+    }
+}
+@media (max-width: 1024px) {
+    .elementor-nav-menu--dropdown {
+        display: none !important;
+    }
+    .elementor-nav-menu--dropdown.elementor-nav-menu--open {
+        display: block !important;
+    }
+}
+
+
+/* Smartphones (portrait) */
+@media only screen and (max-width: 480px) {
+  header {
+  display:none;
+  }
+}
+
+
+/* Force hide original navbar on mobile */
+@media (max-width: 1024px) {
+    .elementor-element-336558a,
+    header[data-elementor-type="header"] {
+        display: none !important;
+    }
+    
+    .mobile-header {
+        display: block !important;
+        position: sticky !important;
+        top: 0 !important;
+        z-index: 999999 !important;
+        background: #ffffff !important;
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 1025px) {
+    .mobile-header {
+        display: none !important;
+    }
+    .elementor-element-336558a {
+        display: flex !important;
+    }
+}
+
+/* Fix mobile menu panel - WORKING */
+.mobile-menu-panel {
+    position: fixed !important;
+    top: 0 !important;
+    left: -105% !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: #ffffff !important;
+    z-index: 99999 !important;
+    transition: left 0.3s ease !important;
+    overflow-y: auto !important;
+    padding-top: 80px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.mobile-menu-panel.open {
+    left: 0 !important;
+}
+
+/* Mobile header container */
+
+/* Menu items */
+.mobile-nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-nav-item {
+    border-bottom: 1px solid #eee;
+}
+
+.mobile-nav-link {
+    display: block;
+    padding: 14px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+}
+
+.mobile-nav-link.active {
+    color: #FF4A52;
+}
+
+.mobile-dropdown-toggle .arrow {
+    float: right;
+    transition: transform 0.3s;
+}
+
+.mobile-dropdown-toggle.open .arrow {
+    transform: rotate(180deg);
+}
+
+.mobile-submenu {
+    list-style: none;
+    padding-left: 20px;
+    display: none;
+    background: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.mobile-submenu.show {
+    display: block;
+}
+
+.mobile-submenu li a {
+    display: block;
+    padding: 10px 0 10px 15px;
+    font-size: 14px;
+    color: #444;
+    text-decoration: none;
+}
+
+.mobile-contact-btn {
+    display: block;
+    background: #FF4A52;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+
+			</style>
 <!-- Mobile Navbar HTML -->
 <div class="uts-home-mobile">
     <div class="uts-home-container">
@@ -714,7 +2619,9 @@ body.uts-home-menu-open {
     });
 })();
 </script>
-	<header data-elementor-type="header" data-elementor-id="13216" class="elementor elementor-13216 elementor-location-header" data-elementor-post-type="elementor_library">
+
+
+	<!--header data-elementor-type="header" data-elementor-id="13216" class="elementor elementor-13216 elementor-location-header" data-elementor-post-type="elementor_library">
 			<div class="elementor-element elementor-element-336558a e-flex e-con-boxed e-con e-parent" data-id="336558a" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_effects_offset&quot;:200,&quot;grandtour_ext_is_background_parallax&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_backdrop&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_on_scroll&quot;:&quot;false&quot;,&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_anchor_link_offset&quot;:0}">
 					<div class="e-con-inner">
 		<div class="elementor-element elementor-element-908c8b7 e-con-full e-flex e-con e-child" data-id="908c8b7" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;grandtour_ext_is_background_parallax&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_backdrop&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_on_scroll&quot;:&quot;false&quot;,&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}">
@@ -816,7 +2723,7 @@ body.uts-home-menu-open {
 				</div>
 					</div>
 				</div>
-				</header>
+				</header-->
 		
 <div data-bg="https://uttarakhandtrips.com/wp-content/uploads/2024/06/6.webp" id="page_caption" class="hasbg parallax rocket-lazyload" style="">
 	
@@ -1135,7 +3042,7 @@ body.uts-home-menu-open {
     </div>
 </div>
 <br class="clear">
-		<footer data-elementor-type="footer" data-elementor-id="6032" class="elementor elementor-6032 elementor-location-footer" data-elementor-post-type="elementor_library">
+		<!--footer data-elementor-type="footer" data-elementor-id="6032" class="elementor elementor-6032 elementor-location-footer" data-elementor-post-type="elementor_library">
 			<div class="elementor-element elementor-element-1d7dfa9 e-con-full e-flex e-con e-parent" data-id="1d7dfa9" data-element_type="container" data-e-type="container" data-settings="{&quot;grandtour_ext_is_background_parallax&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_backdrop&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_on_scroll&quot;:&quot;false&quot;,&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}">
 		<div class="elementor-element elementor-element-0147f09 e-con-full e-flex e-con e-child" data-id="0147f09" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;grandtour_ext_is_background_parallax&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_backdrop&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_on_scroll&quot;:&quot;false&quot;,&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}">
 		<div class="elementor-element elementor-element-c23590f e-con-full e-flex e-con e-child" data-id="c23590f" data-element_type="container" data-e-type="container" data-settings="{&quot;grandtour_ext_is_background_parallax&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_backdrop&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_on_scroll&quot;:&quot;false&quot;,&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}">
@@ -1249,7 +3156,83 @@ body.uts-home-menu-open {
 									<p>© 2024 — Uttarakhand Trips &amp; Hospitality</p>								</div>
 				</div>
 				</div>
-				</footer>
+				</footer--->
+				<footer class="main-footer">
+        <div class="auto-container">
+            <div class="row">
+                <!-- About Us Widget with Logo -->
+                <div class="footer-widget">
+                    <h6 class="widget-title">About Us</h6>
+                    <p class="text-white">We are dedicated to providing comfortable, affordable, and well-planned travel packages that allow travelers to explore the natural beauty, spiritual destinations, and adventure spots of Uttarakhand with ease.</p>
+                    <img decoding="async" width="150" height="150" src="https://uttarakhandtrips.com/wp-content/uploads/2024/06/Untitled-design-85.png" class="footer-logo-img" alt="Narayan Holidays Logo" style="width:150px; height:auto; margin-top:15px;">
+                </div>
+
+                <!-- Quick Links Widget -->
+                <div class="footer-widget">
+                    <h6 class="widget-title">Quick Links</h6>
+                    <ul class="user-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="car/car.html" class="mobile-nav-link">Car Rentals</a></li>
+                        <li><!--a href="#our-story">Our Story</a-->
+                          <a href="../Our_Story/Our_Story.html">Our Story</a>
+                        </li>
+                       
+                       
+                    </ul>
+                </div>
+
+                <!-- Other Links Widget -->
+                <div class="footer-widget">
+                    <h6 class="widget-title">Other Links</h6>
+                    <ul class="user-links">
+                        <li><a href="privacy.php">Privacy Policy</a></li>
+                        <li><a href="terms.php">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info Widget + MSME Certificate + 7 DAYS OPEN BADGE -->
+                <div class="footer-widget">
+                    <h6 class="widget-title">Contact Info</h6>
+                    <div class="cntct-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Nai Basti Bheemgoda Road, Near Valmiki Mandir, Kharkhari Haridwar 01</p>
+                        <p><i class="fas fa-phone-alt"></i> +91-9045169168 / 9997472783</p>
+                        <p><i class="fas fa-envelope-open"></i> narayanholidays11@gmail.com</p>
+                    </div>
+                    
+                    <!-- 🆕 7 DAYS OPEN BADGE - ADDED AS REQUESTED -->
+                    <div class="days-open-badge">
+                        <i class="fas fa-calendar-week"></i>
+                        <span><strong>📞 7 Days Open</strong> | Mon - Sun (9 AM - 8 PM)</span>
+                    </div>
+
+                    <!-- MSME CERTIFICATE SECTION (Premium Design) -->
+                    <div class="msme-certificate">
+                        <div class="cert-title">
+                            <i class="fas fa-certificate"></i>
+                            <span>MSME Registered</span>
+                        </div>
+                        <div class="cert-number">
+                            UDYAM-HR-02-0012345
+                        </div>
+                        <div class="cert-badge">
+                            <span class="badge-icon">Govt. of India</span>
+                            <span class="badge-icon">MSME Certified</span>
+                        </div>
+                        <div class="cert-footer-text">
+                            <i class="fas fa-check-circle" style="font-size: 0.65rem;"></i> Certificate of Recognition
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="auto-container">
+                <div class="copyright-text">© Copyright 2026 Narayan Holidays | Designed by <a href="https://techeor.in/" target="_blank">Techeor Technology</a></div>
+            </div>
+        </div>
+    </footer>
 		
 <script type="speculationrules">
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/grandtour\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}

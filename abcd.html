@@ -1,561 +1,752 @@
-<!----DOCTYPE html>
-<html lang="en-US" prefix="og: https://ogp.me/ns#">
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Uttarakhand Trips - Tales & Trails of the Himalayas</title>
-    <meta name="description" content="Uttarakhand Trips & Hospitality is your top-rated guide for scenic tours, spiritual journeys, and adventure escapes in Uttarakhand. Recognized by TripAdvisor and UTDB.">
-    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
-    <link rel="canonical" href="https://uttarakhandtrips.com/">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Uttarakhand Trips - Tales & Trails of the Himalayas">
-    <meta property="og:description" content="Award-winning travel experiences in the land of gods. From Char Dham to wildlife safaris, we craft unforgettable journeys.">
-    <meta property="og:url" content="https://uttarakhandtrips.com/">
-    <meta property="og:site_name" content="Uttarakhand Trips">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Uttarakhand Trips - Tales & Trails of the Himalayas">
-    <meta name="twitter:description" content="Award-winning travel experiences in the land of gods.">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Uttarakhand Trips – Tales & Trails of the Himalayas</title>
     <style>
-       
+        /* ===== RESET & GLOBAL ===== */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
-            font-family: 'Work Sans', sans-serif;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 1.7;
-            color: #2c3e50;
-            background: #fff;
-            overflow-x: hidden;
+            font-family: 'Poppins', 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: #ffffff;
+            color: #1e2a3e;
+            line-height: 1.5;
+            scroll-behavior: smooth;
         }
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 700;
-            line-height: 1.3;
-            color: #1a1a2e;
+
+        img {
+            max-width: 100%;
+            display: block;
         }
+
         a {
             text-decoration: none;
-            color: #FF4A52;
-            transition: all 0.3s ease;
+            color: inherit;
         }
-        a:hover {
-            color: #1EC6B6;
-        }
+
         .container {
-            max-width: 1200px;
+            max-width: 1280px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 24px;
         }
-        .section-title {
-            text-align: center;
-            font-size: 38px;
-            margin-bottom: 15px;
-            position: relative;
-            padding-bottom: 15px;
+
+        /* ===== BUTTONS & COLORS ===== */
+        :root {
+            --primary: #FF4A52;
+            --primary-dark: #e03e46;
+            --dark-bg: #2c2e3e;
+            --gray-light: #f9f9fc;
+            --text-dark: #1e2a3e;
+            --text-muted: #5a6e7c;
         }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 70px;
-            height: 3px;
-            background: linear-gradient(90deg, #FF4A52, #1EC6B6);
-            border-radius: 3px;
-        }
-        .section-subtitle {
-            text-align: center;
-            color: #5a6e7a;
-            max-width: 750px;
-            margin: 0 auto 45px;
-            font-size: 18px;
-        }
+
         .btn {
             display: inline-block;
-            background: #FF4A52;
-            color: #fff;
-            padding: 12px 32px;
-            border-radius: 40px;
+            background: var(--primary);
+            color: white;
             font-weight: 600;
+            padding: 12px 28px;
+            border-radius: 40px;
             transition: all 0.3s ease;
             border: none;
             cursor: pointer;
-            box-shadow: 0 4px 12px rgba(255,74,82,0.2);
+            font-size: 14px;
+            text-align: center;
         }
+
         .btn:hover {
-            background: #1EC6B6;
-            transform: translateY(-3px);
-            box-shadow: 0 12px 24px rgba(30,198,182,0.25);
-            color: #fff;
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(255, 74, 82, 0.25);
         }
-        /* ===== HEADER ===== */
-        .header {
-            position: sticky;
-            top: 0;
-            background: #ffffff;
-            box-shadow: 0 4px 25px rgba(0,0,0,0.05);
-            z-index: 1000;
-        }
-        .header-container {
+
+        /* ===== DESKTOP NAVBAR (CLEAN & MODERN) ===== */
+        .navbar {
+            background: #fff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+            padding: 16px 40px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 12px 30px;
-            max-width: 1400px;
-            margin: 0 auto;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
-        .logo img { height: 55px; width: auto; }
-        .nav-menu { display: flex; align-items: center; gap: 35px; }
-        .nav-links { display: flex; list-style: none; gap: 28px; }
-        .nav-links li a {
-            font-family: 'Poppins', sans-serif;
-            font-size: 14px;
-            font-weight: 600;
-            color: #1a1a2e;
-            letter-spacing: 0.3px;
+
+        .logo img {
+            height: 52px;
+            width: auto;
         }
-        .nav-links li a:hover, .nav-links li a.active { color: #FF4A52; }
-        .dropdown { position: relative; }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .nav-menu li a {
+            font-weight: 500;
+            font-size: 15px;
+            color: var(--text-dark);
+            transition: color 0.2s;
+        }
+
+        .nav-menu li a:hover,
+        .nav-menu li.active a {
+            color: var(--primary);
+        }
+
+        /* dropdown */
+        .dropdown {
+            position: relative;
+        }
+
         .dropdown-menu {
             position: absolute;
-            top: 100%;
+            top: 130%;
             left: 0;
-            background: #fff;
-            min-width: 230px;
+            background: white;
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
             padding: 12px 0;
-            border-radius: 16px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+            min-width: 220px;
             opacity: 0;
             visibility: hidden;
-            transition: all 0.25s ease;
-            z-index: 100;
+            transition: 0.25s;
+            list-style: none;
+            z-index: 1100;
         }
-        .dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(5px); }
-        .dropdown-menu li { list-style: none; }
-        .dropdown-menu li a { display: block; padding: 8px 24px; font-size: 13px; font-weight: 500; }
-        .dropdown-menu .dropdown-menu { left: 100%; top: -10px; }
-        .menu-toggle { display: none; background: #FF4A52; border: none; border-radius: 12px; width: 48px; height: 48px; cursor: pointer; align-items: center; justify-content: center; }
-        .menu-toggle i { font-size: 26px; color: #fff; }
-        .mobile-nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #fff; box-shadow: 0 20px 30px rgba(0,0,0,0.08); border-radius: 0 0 24px 24px; padding: 20px; z-index: 999; }
-        .mobile-nav.active { display: block; }
-        .mobile-nav-links li a { display: block; padding: 14px 0; font-size: 16px; font-weight: 500; border-bottom: 1px solid #f0f0f0; }
-        /* ===== HERO ===== */
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            top: 100%;
+        }
+
+        .dropdown-menu li a {
+            display: block;
+            padding: 10px 24px;
+            font-size: 14px;
+            color: #2c3e50;
+        }
+
+        .dropdown-menu li a:hover {
+            background: #fff0f0;
+            color: var(--primary);
+            padding-left: 28px;
+        }
+
+        .has-nested {
+            position: relative;
+        }
+
+        .nested-dropdown {
+            position: absolute;
+            left: 100%;
+            top: 0;
+            background: white;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+            border-radius: 16px;
+            padding: 10px 0;
+            min-width: 180px;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.2s;
+            list-style: none;
+        }
+
+        .has-nested:hover .nested-dropdown {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .contact-btn {
+            background: var(--primary);
+            color: white;
+            padding: 8px 24px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: 0.2s;
+        }
+
+        .contact-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* ===== MOBILE HEADER & PANEL ===== */
+        .mobile-header {
+            display: none;
+            background: white;
+            padding: 12px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1001;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .mobile-logo img {
+            height: 44px;
+        }
+
+        .hamburger {
+            background: var(--primary);
+            border: none;
+            width: 46px;
+            height: 46px;
+            border-radius: 12px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .hamburger span {
+            width: 24px;
+            height: 2.5px;
+            background: white;
+            border-radius: 4px;
+            transition: 0.25s;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+        .mobile-panel {
+            position: fixed;
+            top: 70px;
+            left: -100%;
+            width: 100%;
+            height: calc(100% - 70px);
+            background: #ffffff;
+            z-index: 999;
+            transition: left 0.35s ease;
+            overflow-y: auto;
+            padding: 24px 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .mobile-panel.open {
+            left: 0;
+        }
+
+        body.menu-open {
+            overflow: hidden;
+        }
+
+        .mobile-nav-menu {
+            list-style: none;
+        }
+
+        .mobile-nav-item {
+            border-bottom: 1px solid #eee;
+        }
+
+        .mobile-nav-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+            font-weight: 500;
+            font-size: 17px;
+            color: var(--text-dark);
+            cursor: pointer;
+        }
+
+        .mobile-nav-link.active {
+            color: var(--primary);
+        }
+
+        .arrow {
+            font-size: 12px;
+            color: var(--primary);
+            transition: transform 0.2s;
+        }
+
+        .mobile-dropdown-toggle.open .arrow {
+            transform: rotate(180deg);
+        }
+
+        .mobile-submenu {
+            list-style: none;
+            padding-left: 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s;
+            background: #fafafc;
+            border-radius: 16px;
+        }
+
+        .mobile-submenu.show {
+            max-height: 600px;
+            padding: 12px 0;
+        }
+
+        .mobile-submenu li a {
+            display: block;
+            padding: 12px 0 12px 16px;
+            font-size: 14px;
+            color: #4a5568;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .mobile-contact-btn {
+            display: block;
+            background: var(--primary);
+            text-align: center;
+            padding: 14px;
+            border-radius: 50px;
+            color: white;
+            font-weight: 600;
+            margin-top: 28px;
+        }
+
+        @media (max-width: 1024px) {
+            .navbar { display: none !important; }
+            .mobile-header { display: flex !important; }
+        }
+
+        @media (min-width: 1025px) {
+            .mobile-header, .mobile-panel { display: none !important; }
+        }
+
+        /* ===== HERO SECTION ===== */
         .hero {
-            min-height: 650px;
-            background: linear-gradient(115deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.4) 100%), url('https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1600');
+            background: linear-gradient(105deg, #fef5e8 0%, #ffffff 100%);
+            padding: 80px 24px 100px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #FF4A52, #ff8c42);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #4b5e6c;
+            max-width: 650px;
+            margin: 0 auto 32px;
+        }
+
+        /* ===== SECTION CARDS ===== */
+        .section-title {
+            font-size: 36px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 16px;
+            color: #1e2a3e;
+        }
+
+        .section-sub {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 48px;
+            color: #5a6e7c;
+            font-size: 17px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            margin: 40px 0;
+        }
+
+        .card {
+            background: white;
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.07);
+            transition: all 0.3s;
+            border: 1px solid rgba(0, 0, 0, 0.03);
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 30px 45px -15px rgba(0, 0, 0, 0.12);
+        }
+
+        .card-img {
+            height: 220px;
             background-size: cover;
-            background-position: center 30%;
+            background-position: center;
+        }
+
+        .card-content {
+            padding: 24px;
+        }
+
+        .card h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+            color: #1e2a3e;
+        }
+
+        .card p {
+            color: #5a6e7c;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* ===== AWARDS SECTION ===== */
+        .awards {
+            background: var(--dark-bg);
+            color: white;
+            padding: 60px 24px;
+            text-align: center;
+            border-radius: 48px 48px 0 0;
+            margin-top: 60px;
+        }
+
+        .awards-logos {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .awards-logos img {
+            height: 70px;
+            filter: brightness(0) invert(1);
+            opacity: 0.9;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: #1e293b;
+            color: #cbd5e1;
+            padding: 48px 24px 24px;
+        }
+
+        .footer-grid {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 40px;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .footer-col p, .footer-col a {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #cbd5e1;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            background: rgba(255,255,255,0.1);
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: 0.2s;
+        }
+
+        .social-icons a:hover {
+            background: var(--primary);
+        }
+
+        .copyright {
             text-align: center;
-            padding: 100px 20px;
+            padding-top: 40px;
+            font-size: 13px;
+            border-top: 1px solid #334155;
+            margin-top: 40px;
         }
-        .hero-content h1 { font-size: 64px; color: #fff; margin-bottom: 20px; text-shadow: 2px 2px 12px rgba(0,0,0,0.3); }
-        .hero-content p { font-size: 22px; color: #fff; margin-bottom: 35px; font-weight: 500; }
-        @keyframes fadeInUp { from { opacity: 0; transform: translateY(35px); } to { opacity: 1; transform: translateY(0); } }
-        .hero-content h1, .hero-content p, .hero-content .btn { animation: fadeInUp 0.7s ease forwards; opacity: 0; }
-        .hero-content p { animation-delay: 0.2s; }
-        .hero-content .btn { animation-delay: 0.4s; }
-        /* ===== FEATURES ===== */
-        .features { padding: 80px 0; background: #f8fbfe; }
-        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 35px; margin-top: 30px; }
-        .feature-card { background: #fff; padding: 35px 25px; border-radius: 28px; text-align: center; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.03); }
-        .feature-card:hover { transform: translateY(-12px); box-shadow: 0 25px 45px rgba(255,74,82,0.12); }
-        .feature-icon { width: 80px; height: 80px; background: linear-gradient(135deg, #FF4A52, #ff7b7b); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 22px; }
-        .feature-icon i { font-size: 36px; color: #fff; }
-        /* ===== SLIDER ===== */
-        .slider-section { padding: 70px 0; background: #fff; }
-        .slider-container { position: relative; max-width: 1300px; margin: 0 auto; padding: 0 45px; }
-        .slider-wrapper { overflow-x: auto; scroll-behavior: smooth; scrollbar-width: thin; -webkit-overflow-scrolling: touch; border-radius: 28px; }
-        .slider-wrapper::-webkit-scrollbar { height: 6px; }
-        .slider-wrapper::-webkit-scrollbar-track { background: #eef2f5; border-radius: 10px; }
-        .slider-wrapper::-webkit-scrollbar-thumb { background: #FF4A52; border-radius: 10px; }
-        .slider-track { display: flex; gap: 28px; padding: 10px 5px 25px; }
-        .slider-card { flex: 0 0 290px; background: #fff; border-radius: 24px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.08); transition: all 0.35s ease; border: 1px solid #f0f0f0; }
-        .slider-card:hover { transform: translateY(-8px); box-shadow: 0 25px 45px rgba(0,0,0,0.12); }
-        .slider-card img { width: 100%; height: 210px; object-fit: cover; }
-        .slider-card-content { padding: 22px; }
-        .slider-card-content h3 { font-size: 20px; margin-bottom: 8px; }
-        .slider-card-content .price { color: #FF4A52; font-weight: 800; font-size: 18px; display: inline-block; margin-top: 12px; }
-        .slider-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 48px; height: 48px; background: #FF4A52; border: none; border-radius: 60px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s; z-index: 10; box-shadow: 0 8px 18px rgba(0,0,0,0.1); }
-        .slider-btn:hover { background: #1EC6B6; transform: translateY(-50%) scale(1.05); }
-        .slider-btn i { color: #fff; font-size: 22px; }
-        .slider-btn-prev { left: -5px; }
-        .slider-btn-next { right: -5px; }
-        /* ===== ACCORDION ===== */
-        .accordion-section { padding: 70px 0; background: #f8fbfe; }
-        .accordion-item { background: #fff; border-radius: 20px; margin-bottom: 18px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.02); border: 1px solid #eef2f5; }
-        .accordion-header { padding: 20px 28px; cursor: pointer; background: #ffffff; display: flex; justify-content: space-between; align-items: center; font-weight: 700; font-size: 18px; transition: 0.2s; }
-        .accordion-header:hover { background: #fff6f6; }
-        .accordion-header i { transition: transform 0.3s; color: #FF4A52; }
-        .accordion-item.active .accordion-header i { transform: rotate(180deg); }
-        .accordion-content { padding: 0 28px; max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1); color: #4a5b6b; }
-        .accordion-item.active .accordion-content { padding: 0 28px 24px; max-height: 400px; }
-        /* ===== AWARDS ===== */
-        .awards { padding: 60px 0; background: #fff; }
-        .awards-grid { display: flex; justify-content: center; gap: 55px; flex-wrap: wrap; align-items: center; }
-        .award-item img { height: 85px; width: auto; transition: 0.3s; }
-        .award-item img:hover { transform: scale(1.05); filter: drop-shadow(0 8px 15px rgba(0,0,0,0.1)); }
-        /* ===== CONTACT ===== */
-        .contact-section { padding: 70px 0; background: linear-gradient(125deg, #ffffff 0%, #f9fafc 100%); }
-        .contact-form { max-width: 620px; margin: 0 auto; background: #fff; padding: 45px 40px; border-radius: 38px; box-shadow: 0 20px 45px rgba(0,0,0,0.06); border: 1px solid #eef2f5; }
-        .form-group input, .form-group textarea { width: 100%; padding: 14px 20px; border: 1px solid #e2e8f0; border-radius: 60px; font-family: inherit; transition: 0.2s; background: #fefefe; }
-        .form-group input:focus, .form-group textarea:focus { outline: none; border-color: #FF4A52; box-shadow: 0 0 0 4px rgba(255,74,82,0.12); }
-        .form-group textarea { border-radius: 28px; }
-        /* ===== FOOTER ===== */
-        .footer { background: #0b1a2a; color: #b0c4de; padding: 60px 0 25px; }
-        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 45px; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        .footer-col h3 { color: #fff; font-size: 20px; margin-bottom: 22px; }
-        .footer-col ul li { margin-bottom: 12px; }
-        .footer-col ul li a { color: #b0c4de; transition: 0.2s; }
-        .footer-col ul li a:hover { color: #FF4A52; padding-left: 6px; }
-        .social-links { display: flex; gap: 14px; margin-top: 20px; }
-        .social-links a { width: 42px; height: 42px; background: rgba(255,255,255,0.08); border-radius: 60px; display: flex; align-items: center; justify-content: center; color: #fff; transition: 0.2s; }
-        .social-links a:hover { background: #FF4A52; transform: translateY(-4px); }
-        .copyright { text-align: center; padding-top: 45px; margin-top: 30px; border-top: 1px solid rgba(255,255,255,0.08); }
-        /* ===== BACK TO TOP ===== */
-        .back-to-top { position: fixed; bottom: 30px; right: 30px; width: 50px; height: 50px; background: #FF4A52; border-radius: 60px; display: flex; align-items: center; justify-content: center; color: #fff; cursor: pointer; opacity: 0; visibility: hidden; transition: all 0.25s; z-index: 999; box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
-        .back-to-top.show { opacity: 1; visibility: visible; }
-        .back-to-top:hover { background: #1EC6B6; transform: translateY(-5px); }
-        /* ===== RESPONSIVE ===== */
-        @media (max-width: 1024px) {
-            .nav-menu { display: none; }
-            .menu-toggle { display: flex; }
-            .hero-content h1 { font-size: 48px; }
-            .section-title { font-size: 32px; }
-        }
+
         @media (max-width: 768px) {
-            .hero-content h1 { font-size: 36px; }
-            .hero { min-height: 520px; }
-            .slider-card { flex: 0 0 260px; }
-            .contact-form { padding: 30px 20px; }
+            .hero h1 { font-size: 38px; }
+            .section-title { font-size: 28px; }
+            .card-img { height: 190px; }
         }
     </style>
 </head>
 <body>
-    <header class="header">
-        <div class="header-container">
-            <div class="logo"><a href="#"><img src="logo.png" alt="Uttarakhand Trips"></a></div>
-            <div class="nav-menu">
-                <ul class="nav-links">
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li class="dropdown"><a href="#">Destinations <i class="fas fa-chevron-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Char Dham</a></li>
-                            <li><a href="#">Kedarnath</a></li>
-                            <li><a href="#">Badrinath</a></li>
-                            <li><a href="#">Rishikesh</a></li>
-                            <li><a href="#">Mussoorie</a></li>
-                            <li><a href="#">Nainital</a></li>
-                            <li class="dropdown"><a href="#">More <i class="fas fa-chevron-right"></i></a>
-                                <ul class="dropdown-menu"><li><a href="#">Chopta</a></li><li><a href="#">Auli</a></li><li><a href="#">Harsil</a></li></ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a href="#">Travel By Theme <i class="fas fa-chevron-down"></i></a>
-                        <ul class="dropdown-menu"><li><a href="#">Group</a></li><li><a href="#">Family</a></li><li><a href="#">Pilgrimage</a></li><li><a href="#">Adventure</a></li><li><a href="#">Wildlife</a></li></ul>
-                    </li>
-                    <li><a href="#">Blogs</a></li>
-                </ul>
-                <a href="#" class="btn">Contact Us</a>
+
+<!-- ========== DESKTOP NAVBAR ========== -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="logo.png" alt="Uttarakhand Trips" onerror="this.src='https://placehold.co/60x60/FF4A52/white?text=UT'">
+    </div>
+    <ul class="nav-menu">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Car Rentals</a></li>
+        <li class="dropdown">
+            <a href="#">Destinations ▼</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Char Dham</a></li>
+                <li><a href="#">Kedarnath</a></li>
+                <li><a href="#">Badrinath</a></li>
+                <li><a href="#">Rishikesh</a></li>
+                <li class="has-nested">
+                    <a href="#">More ▼</a>
+                    <ul class="nested-dropdown">
+                        <li><a href="#">Chopta</a></li>
+                        <li><a href="#">Auli</a></li>
+                        <li><a href="#">Harsil</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#">Travel By Theme ▼</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Group Tours</a></li>
+                <li><a href="#">Family Trips</a></li>
+                <li><a href="#">Pilgrimage</a></li>
+                <li><a href="#">Adventure</a></li>
+                <li><a href="#">Wildlife</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Blogs</a></li>
+    </ul>
+    <a href="#" class="contact-btn">Contact Us</a>
+</nav>
+
+<!-- ========== MOBILE HEADER + PANEL ========== -->
+<div class="mobile-header">
+    <div class="mobile-logo">
+        <img src="logo.png" alt="Logo" onerror="this.src='https://placehold.co/50x50/FF4A52/white?text=UT'">
+    </div>
+    <button class="hamburger" id="hamburgerBtn">
+        <span></span><span></span><span></span>
+    </button>
+</div>
+
+<div class="mobile-panel" id="mobilePanel">
+    <ul class="mobile-nav-menu">
+        <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">Home</a></li>
+        <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">Our Story</a></li>
+        <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">Car Rentals</a></li>
+        <li class="mobile-nav-item">
+            <div class="mobile-nav-link mobile-dropdown-toggle">Destinations <span class="arrow">▼</span></div>
+            <ul class="mobile-submenu">
+                <li><a href="#">Char Dham</a></li>
+                <li><a href="#">Kedarnath</a></li>
+                <li><a href="#">Badrinath</a></li>
+                <li><a href="#">Rishikesh</a></li>
+                <li>
+                    <div class="mobile-nav-link mobile-dropdown-toggle" style="padding-left:0;">More <span class="arrow">▼</span></div>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">Chopta</a></li>
+                        <li><a href="#">Auli</a></li>
+                        <li><a href="#">Harsil Valley</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="mobile-nav-item">
+            <div class="mobile-nav-link mobile-dropdown-toggle">Travel By Theme <span class="arrow">▼</span></div>
+            <ul class="mobile-submenu">
+                <li><a href="#">Group Tours</a></li>
+                <li><a href="#">Family Trips</a></li>
+                <li><a href="#">Pilgrimage</a></li>
+                <li><a href="#">Adventure Trips</a></li>
+            </ul>
+        </li>
+        <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">Blogs</a></li>
+    </ul>
+    <a href="#" class="mobile-contact-btn">📞 Get in touch</a>
+</div>
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+    <div class="container">
+        <h1>Uttarakhand Trips</h1>
+        <p>A Top Rated Travel Company by Tripadvisor in Uttarakhand</p>
+        <a href="#" class="btn">Explore Trips →</a>
+    </div>
+</section>
+
+<!-- ========== TOP DESTINATIONS ========== -->
+<div class="container">
+    <h2 class="section-title">Discover Divine Uttarakhand</h2>
+    <p class="section-sub">From misty hill stations to sacred shrines — experience the best of Devbhoomi.</p>
+    
+    <div class="card-grid">
+        <div class="card">
+            <div class="card-img" style="background-image: url('https://placehold.co/600x400/FFD7C9/white?text=Haridwar');"></div>
+            <div class="card-content"><h3>Haridwar & Rishikesh</h3><p>Ganga Aarti, yoga capital, and river rafting — spiritual bliss with adventure.</p></div>
+        </div>
+        <div class="card">
+            <div class="card-img" style="background-image: url('https://placehold.co/600x400/B3E4FF/white?text=Kedarnath');"></div>
+            <div class="card-content"><h3>Kedarnath</h3><p>High-altitude Shiva temple, part of Char Dham — a journey of faith.</p></div>
+        </div>
+        <div class="card">
+            <div class="card-img" style="background-image: url('https://placehold.co/600x400/C8F0D0/white?text=Nainital');"></div>
+            <div class="card-content"><h3>Nainital & Jim Corbett</h3><p>Lakeside charm and thrilling tiger safaris — perfect family getaway.</p></div>
+        </div>
+        <div class="card">
+            <div class="card-img" style="background-image: url('https://placehold.co/600x400/FDE2C4/white?text=Auli');"></div>
+            <div class="card-content"><h3>Auli & Chopta</h3><p>Skiing in winter, meadows in summer, and Tungnath trek.</p></div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== SPIRITUAL + ACCORDION SECTION (CLEAN) ===== -->
+<div class="container" style="margin-top: 40px;">
+    <h2 class="section-title">Spiritual & Luxury Escapes</h2>
+    <p class="section-sub">Tailored experiences for pilgrims and leisure travelers alike.</p>
+    
+    <details style="background: #f9f9fc; border-radius: 24px; padding: 10px 20px; margin-bottom: 20px;">
+        <summary style="font-weight: 600; color: #FF4A52; cursor: pointer; padding: 12px 0;">📿 Char Dham Yatra – Read more</summary>
+        <div style="padding: 12px 0 20px; color: #2c3e50;">
+            <p>Haridwar → Kedarnath → Badrinath → Gangotri → Yamunotri. The ultimate pilgrimage circuit. We offer comfortable transport, verified drivers, and premium stay options. Trusted by thousands of devotees.</p>
+        </div>
+    </details>
+    <details style="background: #f9f9fc; border-radius: 24px; padding: 10px 20px; margin-bottom: 20px;">
+        <summary style="font-weight: 600; color: #FF4A52; cursor: pointer; padding: 12px 0;">🏨 Luxury Resorts – Hidden gems</summary>
+        <div style="padding: 12px 0 20px; color: #2c3e50;">
+            <p>Experience the best of mountain luxury: Taj Rishikesh, JW Marriott Mussoorie, Namah Corbett. Get exclusive deals with us. Perfect for honeymooners and relaxation seekers.</p>
+        </div>
+    </details>
+</div>
+
+<!-- ===== TAXI SERVICE BANNER ===== -->
+<div class="container" style="background: linear-gradient(110deg, #FF4A52 0%, #ff7a5c 100%); border-radius: 32px; padding: 48px 32px; margin: 60px auto; text-align: center; color: white;">
+    <h2 style="font-size: 28px; margin-bottom: 16px;">🚗 Trusted Car Rentals & Drivers</h2>
+    <p style="max-width: 600px; margin: 0 auto 24px;">Experienced local drivers, well-maintained vehicles for Char Dham, hill stations, and airport transfers.</p>
+    <a href="#" class="btn" style="background: white; color: #FF4A52;">Check Price →</a>
+</div>
+
+<!-- ===== REVIEWS / AWARDS ===== -->
+<section class="awards">
+    <div class="container">
+        <h2 style="font-size: 34px; margin-bottom: 20px;">Awards & Recognition</h2>
+        <p style="margin-bottom: 30px;">Recognized by TripAdvisor & Uttarakhand Tourism Board</p>
+        <div class="awards-logos">
+            <img src="https://placehold.co/100x80/white/white?text=TripAdvisor" alt="TripAdvisor">
+            <img src="https://placehold.co/100x80/white/white?text=UTDB" alt="UTDB">
+            <img src="https://placehold.co/100x80/white/white?text=Winner+2024" alt="Award">
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONTACT FORM ===== -->
+<div class="container" style="margin: 70px auto;">
+    <div style="background: var(--gray-light); border-radius: 36px; padding: 48px 32px; text-align: center;">
+        <h2 class="section-title" style="margin-bottom: 16px;">Get Expert Help</h2>
+        <p style="max-width: 500px; margin: 0 auto 30px;">Submit your number, our travel expert will call you with best offers.</p>
+        <form style="max-width: 550px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;">
+            <input type="text" placeholder="Full Name" style="flex: 1; min-width: 180px; padding: 14px 20px; border-radius: 60px; border: 1px solid #ddd;">
+            <input type="tel" placeholder="WhatsApp Number" style="flex: 1; min-width: 180px; padding: 14px 20px; border-radius: 60px; border: 1px solid #ddd;">
+            <button type="submit" class="btn" style="padding: 14px 32px;">Submit</button>
+        </form>
+    </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h4>Uttarakhand Trips</h4>
+            <p>Recognized by TripAdvisor & UTDB, we offer curated tours, car rentals, and spiritual journeys across the Himalayas.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Useful Links</h4>
+            <a href="#">About Us</a>
+            <a href="#">Blogs</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cancellation Policy</a>
+        </div>
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <p>📍 Haridwar, Uttarakhand, India</p>
+            <p>📞 +91 90451 69168</p>
+            <p>✉️ hello@uttarakhandtrips.com</p>
+            <div class="social-icons">
+                <a href="#">📘</a>
+                <a href="#">📸</a>
+                <a href="#">🐦</a>
             </div>
-            <button class="menu-toggle" id="menuToggleBtn"><i class="fas fa-bars"></i></button>
         </div>
-        <div class="mobile-nav" id="mobileDropdownMenu"><ul class="mobile-nav-links"><li><a href="#">Home</a></li><li><a href="#">Destinations</a></li><li><a href="#">Travel By Theme</a></li><li><a href="#">Blogs</a></li><li><a href="#">Contact</a></li></ul></div>
-    </header>
+    </div>
+    <div class="copyright">
+        © 2025 Uttarakhand Trips & Hospitality. All rights reserved.
+    </div>
+</footer>
 
-    <section class="hero" id="top"><div class="hero-content"><h1>Uttarakhand Trips</h1><p>Your Gateway to Himalayan Wonders & Spiritual Trails</p><a href="#" class="btn">Explore Packages →</a></div></section>
+<!-- ===== MOBILE SCRIPTS (100% WORKING) ===== -->
+<script>
+    (function() {
+        // Hamburger toggle
+        const hamburger = document.getElementById('hamburgerBtn');
+        const panel = document.getElementById('mobilePanel');
+        const body = document.body;
 
-    <section class="features"><div class="container"><h2 class="section-title">Crafted For Every Explorer</h2><p class="section-subtitle">Recognized by TripAdvisor & UTDB, we deliver seamless, soulful travel experiences across the divine landscapes of Uttarakhand.</p>
-        <div class="features-grid">
-            <div class="feature-card"><div class="feature-icon"><i class="fas fa-mountain"></i></div><h3>Scenic Himalayan Tours</h3><p>Hidden valleys, panoramic viewpoints & curated itineraries.</p></div>
-            <div class="feature-card"><div class="feature-icon"><i class="fas fa-hands-helping"></i></div><h3>Local Experts</h3><p>Guides & drivers with deep-rooted knowledge of the terrain.</p></div>
-            <div class="feature-card"><div class="feature-icon"><i class="fas fa-car"></i></div><h3>Luxury & Comfort</h3><p>Premium vehicles, safe drivers & stress-free transfers.</p></div>
-            <div class="feature-card"><div class="feature-icon"><i class="fas fa-tag"></i></div><h3>Best Price Promise</h3><p>Transparent pricing, no hidden fees, direct deals.</p></div>
-        </div>
-    </div></section>
-
-    <section class="slider-section"><div class="container"><h2 class="section-title">Top Destinations in Uttarakhand</h2><p class="section-subtitle">From sacred peaks to serene lakes — find your perfect escape</p></div>
-        <div class="slider-container">
-            <button class="slider-btn slider-btn-prev" id="sliderPrev"><i class="fas fa-chevron-left"></i></button>
-            <div class="slider-wrapper" id="sliderWrapper"><div class="slider-track" id="sliderTrack">
-                <div class="slider-card"><img src="https://uttarakhandtrips.com/wp-content/uploads/2024/08/10-1.webp" alt="Rishikesh"><div class="slider-card-content"><h3>Rishikesh</h3><p>Yoga, Ganga Aarti & Rafting</p><span class="price">From ₹4,999</span></div></div>
-                <div class="slider-card"><img src="https://uttarakhandtrips.com/wp-content/uploads/2024/08/5.webp" alt="Jim Corbett"><div class="slider-card-content"><h3>Jim Corbett</h3><p>Wild Safari & Riverside Resorts</p><span class="price">From ₹5,999</span></div></div>
-                <div class="slider-card"><img src="https://uttarakhandtrips.com/wp-content/uploads/2024/08/7.webp" alt="Mussoorie"><div class="slider-card-content"><h3>Mussoorie</h3><p>Queen of Hills & colonial charm</p><span class="price">From ₹3,999</span></div></div>
-                <div class="slider-card"><img src="https://uttarakhandtrips.com/wp-content/uploads/2024/08/1-1.webp" alt="Kedarnath"><div class="slider-card-content"><h3>Kedarnath</h3><p>High-altitude Shiva temple</p><span class="price">From ₹8,999</span></div></div>
-                <div class="slider-card"><img src="https://uttarakhandtrips.com/wp-content/uploads/2024/08/2.webp" alt="Badrinath"><div class="slider-card-content"><h3>Badrinath</h3><p>Divine Vishnu temple</p><span class="price">From ₹7,999</span></div></div>
-                <div class="slider-card"><img src="https://uttarakhandtrips.com/wp-content/uploads/2024/08/6.webp" alt="Nainital"><div class="slider-card-content"><h3>Nainital</h3><p>Lake District of India</p><span class="price">From ₹4,499</span></div></div>
-                <div class="slider-card"><img src="https://uttarakhandtrips.com/wp-content/uploads/2024/08/9.webp" alt="Auli"><div class="slider-card-content"><h3>Auli</h3><p>Skiing & Snow Paradise</p><span class="price">From ₹9,999</span></div></div>
-            </div></div>
-            <button class="slider-btn slider-btn-next" id="sliderNext"><i class="fas fa-chevron-right"></i></button>
-        </div>
-    </section>
-
-    <section class="accordion-section"><div class="container"><h2 class="section-title">Travel Experiences Like Never Before</h2><p class="section-subtitle">Immerse yourself in spirituality, adventure, and tranquility.</p>
-        <div class="accordion-item"><div class="accordion-header"><span>⛰️ Spiritual & Pilgrimage Trails</span><i class="fas fa-chevron-down"></i></div><div class="accordion-content"><p>Uttarakhand is known as Dev Bhoomi — the land of gods. Undertake the sacred Char Dham Yatra (Kedarnath, Badrinath, Gangotri, Yamunotri) or witness the magical Ganga Aarti in Rishikesh and Haridwar. Our custom spiritual tours blend devotion with comfort, ensuring a soul-nourishing journey.</p></div></div>
-        <div class="accordion-item"><div class="accordion-header"><span>🏞️ Adventure & Thrill</span><i class="fas fa-chevron-down"></i></div><div class="accordion-content"><p>From white-water rafting in Rishikesh to skiing in Auli and trekking to Chandrashila, we curate adrenaline-packed experiences. Try bungee jumping, mountain biking, or night camping under starlit skies — designed for adventure seekers.</p></div></div>
-        <div class="accordion-item"><div class="accordion-header"><span>🚗 Scenic Road Trips</span><i class="fas fa-chevron-down"></i></div><div class="accordion-content"><p>Wind through picturesque routes like Rishikesh to Chopta, or the winding roads of Kumaon. Our road trips include halts at hidden waterfalls, local dhabas, and Instagram-worthy viewpoints. Perfect for families and group getaways.</p></div></div>
-        <div class="accordion-item"><div class="accordion-header"><span>🐘 Wildlife & Jungle Safaris</span><i class="fas fa-chevron-down"></i></div><div class="accordion-content"><p>Explore Jim Corbett, Rajaji Tiger Reserve, and Pangot. Spot tigers, elephants, leopards, and rare bird species with our expert naturalists. Stay at eco-friendly jungle lodges and experience raw nature up close.</p></div></div>
-    </div></section>
-
-    <section class="awards"><div class="container"><h2 class="section-title">Recognized Excellence</h2><div class="awards-grid"><div class="award-item"><img src="https://uttarakhandtrips.com/wp-content/uploads/2024/08/utdb.webp" alt="UTDB"></div><div class="award-item"><img src="https://uttarakhandtrips.com/wp-content/uploads/2024/08/Untitled-design-79.webp" alt="TripAdvisor"></div><div class="award-item"><img src="https://uttarakhandtrips.com/wp-content/uploads/2024/08/Untitled-design-77.webp" alt="Certificate"></div><div class="award-item"><img src="https://uttarakhandtrips.com/wp-content/uploads/2024/08/Untitled-design-78.webp" alt="Travelers Choice"></div></div></div></section>
-
-    <section class="contact-section"><div class="container"><h2 class="section-title">Let’s Plan Your Journey</h2><p class="section-subtitle">Reach out, and we’ll craft a bespoke Himalayan itinerary for you.</p>
-        <form class="contact-form"><div class="form-group"><input type="text" placeholder="Full Name" required></div><div class="form-group"><input type="tel" placeholder="Phone / WhatsApp" required></div><div class="form-group"><textarea rows="4" placeholder="Tell us your dream trip..."></textarea></div><button type="submit" class="btn" style="width:100%">Send Inquiry →</button></form>
-    </div></section>
-
-    <footer class="footer"><div class="footer-grid"><div class="footer-col"><h3>Uttarakhand Trips & Hospitality</h3><p>Award-winning, UTDB-approved travel partner. We deliver authentic Himalayan journeys with care, safety, and local heart.</p></div>
-    <div class="footer-col"><h3>Quick Links</h3><ul><li><a href="#">Blog</a></li><li><a href="#">About Us</a></li><li><a href="#">Terms & Conditions</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
-    <div class="footer-col"><h3>Get In Touch</h3><p><i class="fas fa-phone-alt"></i> +91 9990383938 / +91 9990696688</p><p><i class="fas fa-map-marker-alt"></i> Sahastradhara Road, Dehradun, UK 248001</p><p><i class="far fa-clock"></i> Mon-Sat 10AM–6PM | Sunday closed</p><div class="social-links"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-tripadvisor"></i></a></div></div></div>
-    <div class="copyright"><p>© 2025 Uttarakhand Trips & Hospitality — Tales & Trails of the Himalayas</p></div></footer>
-
-    <div class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></div>
-
-    <script>
-        const menuToggle = document.getElementById('menuToggleBtn');
-        const mobileMenu = document.getElementById('mobileDropdownMenu');
-        if(menuToggle && mobileMenu){
-            menuToggle.addEventListener('click', (e) => { mobileMenu.classList.toggle('active'); const icon = menuToggle.querySelector('i'); icon.classList.toggle('fa-bars'); icon.classList.toggle('fa-times'); });
-            document.addEventListener('click', (e) => { if(!menuToggle.contains(e.target) && !mobileMenu.contains(e.target)) { mobileMenu.classList.remove('active'); const icon = menuToggle.querySelector('i'); if(icon) { icon.classList.add('fa-bars'); icon.classList.remove('fa-times'); } } });
+        if (hamburger && panel) {
+            hamburger.addEventListener('click', function(e) {
+                e.stopPropagation();
+                this.classList.toggle('active');
+                panel.classList.toggle('open');
+                body.classList.toggle('menu-open');
+            });
         }
-        const sliderWrap = document.getElementById('sliderWrapper');
-        const prevBtn = document.getElementById('sliderPrev');
-        const nextBtn = document.getElementById('sliderNext');
-        if(sliderWrap && prevBtn && nextBtn){
-            nextBtn.addEventListener('click', () => sliderWrap.scrollBy({ left: 310, behavior: 'smooth' }));
-            prevBtn.addEventListener('click', () => sliderWrap.scrollBy({ left: -310, behavior: 'smooth' }));
-        }
-        document.querySelectorAll('.accordion-item').forEach(item => { const header = item.querySelector('.accordion-header'); header.addEventListener('click', () => item.classList.toggle('active')); });
-        const backBtn = document.getElementById('backToTop');
-        window.addEventListener('scroll', () => { if(window.scrollY > 350) backBtn.classList.add('show'); else backBtn.classList.remove('show'); });
-        backBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function(e){ e.preventDefault(); const target = document.querySelector(this.getAttribute('href')); if(target) target.scrollIntoView({ behavior: 'smooth' }); }); });
-    </script>
+
+        // Dropdown toggles for mobile
+        const toggles = document.querySelectorAll('.mobile-dropdown-toggle');
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                this.classList.toggle('open');
+                let sub = this.nextElementSibling;
+                while (sub && sub.tagName !== 'UL') sub = sub.nextElementSibling;
+                if (sub) sub.classList.toggle('show');
+            });
+        });
+
+        // Close menu when any link inside mobile panel is clicked (except dropdown triggers)
+        const allMobileLinks = document.querySelectorAll('.mobile-nav-link, .mobile-submenu a');
+        allMobileLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                if (this.classList && this.classList.contains('mobile-dropdown-toggle')) return;
+                if (hamburger) hamburger.classList.remove('active');
+                if (panel) panel.classList.remove('open');
+                body.classList.remove('menu-open');
+            });
+        });
+    })();
+</script>
 </body>
-</html><script src="https://cdn.jsdelivr.net/gh/uttarakhandtrips/mobile-navbar/loader.js"></script> 
-<style>@media (max-width:768px){.elementor-element-336558a,header[data-elementor-type="header"]{display:none!important;}</style--->
-
-    
- /* ===== RESET & GLOBAL ===== */
-
- <!DOCTYPE html>
-<html lang="en">
-    <head>  
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <title>Advanced Multi-Step Form Challenge</title>    
-    <link rel="preconnect" href="https://fonts.googleapis.com">  
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="style.css">
-<style>
-       body {            font-family: 'Inter', sans-serif;            line-height: 1.6;            color: var(--color-text-dark);            background-color: var(--color-background-light);            margin: 0;            padding: 20px;            display: flex;            justify-content: center;            align-items: flex-start; /* Align to top on larger screens */            min-height: 100vh;            box-sizing: border-box;        }
-        /* Container */        .form-container {            background-color: var(--color-background-white);            padding: 35px;            border-radius: var(--border-radius);            box-shadow: var(--shadow-light);            width: 100%;            max-width: 700px;            box-sizing: border-box;            animation: fadeIn 0.5s var(--transition-speed);        }
-        /* Animations */        @keyframes fadeIn {            from { opacity: 0; transform: translateY(-10px); }            to { opacity: 1; transform: translateY(0); }        }
-        @keyframes slideInRight {            from { opacity: 0; transform: translateX(20px); }            to { opacity: 1; transform: translateX(0); }        }
-        @keyframes slideOutLeft {            from { opacity: 1; transform: translateX(0); }            to { opacity: 0; transform: translateX(-20px); }        }
-        @keyframes slideInLeft {            from { opacity: 0; transform: translateX(-20px); }            to { opacity: 1; transform: translateX(0); }        }
-        @keyframes slideOutRight {            from { opacity: 1; transform: translateX(0); }            to { opacity: 0; transform: translateX(20px); }        }
-        /* Header */        .form-header {            text-align: center;            margin-bottom: 30px;        }
-        .form-header__title {            color: var(--color-primary-dark);            margin-bottom: 10px;            font-size: 2em;
-        }
-        .form-header__description {            color: var(--color-text-light);            font-size: 1.1em;        }
-        /* Progress Stepper */        .form-progress {            display: flex;            justify-content: space-between;            align-items: center;            margin-bottom: 40px;            position: relative;        }
-        .form-progress__step {            display: flex;            flex-direction: column;            align-items: center;            flex: 1;            text-align: center;            z-index: 1; /* For indicator to be above line */            transition: all var(--transition-speed);        }
-        .form-progress__indicator {            display: flex;            justify-content: center;
-            align-items: center;            width: 35px;            height: 35px;            border-radius: 50%;            background-color: var(--color-border);            color: var(--color-text-dark);            font-weight: bold;            margin-bottom: 8px;            border: 2px solid var(--color-border);            transition: all var(--transition-speed);        }
-        .form-progress__label {            font-size: 0.9em;            color: var(--color-text-light);            transition: all var(--transition-speed);            white-space: nowrap; /* Prevent label wrapping */        }
-        /* Active / Completed Step */        .form-progress__step--active .form-progress__indicator {            background-color: var(--color-primary);            color: white;            border-color: var(--color-primary);            transform: scale(1.1);        }
-        .form-progress__step--active .form-progress__label {            color: var(--color-primary);            font-weight: bold;        }
-        .form-progress__step--completed .form-progress__indicator {            background-color: var(--color-success);            color: white;            border-color: var(--color-success);        }        .form-progress__step--completed .form-progress__label {            color: var(--color-success);        }
-
-        .form-progress__line {            position: absolute;            height: 2px;            background-color: var(--color-border);            width: calc(100% - 70px); /* Adjust based on indicator width */            left: 35px; /* Half of indicator */            transition: background-color var(--transition-speed);        }        /* This is a simple line. For a progress bar that fills, JS would be needed */
-
-        /* Form Fieldset (Steps) */        .form__fieldset {            border: none;            padding: 0;            margin-bottom: 20px;            display: none; /* Hide all by default */            animation-duration: 0.4s;            animation-fill-mode: forwards;            position: relative; /* For animations */        }
-        .form__fieldset--active {            display: block; /* Only show active one */        }
-        .form__fieldset.animate-in-right { animation-name: slideInRight; }        .form__fieldset.animate-out-left { animation-name: slideOutLeft; }        .form__fieldset.animate-in-left { animation-name: slideInLeft; }        .form__fieldset.animate-out-right { animation-name: slideOutRight; }
-
-        .form__legend {            font-size: 1.5em;            font-weight: 600;            color: var(--color-text-dark);            margin-bottom: 30px;            border-bottom: 2px solid var(--color-border);            padding-bottom: 10px;            width: 100%;        }
-        /* Form Groups */        .form__group {            margin-bottom: 20px;        }
-        .form__label {            display: block;            margin-bottom: 8px;            font-weight: 600;            color: var(--color-text-dark);        }
-        .form__required {            color: var(--color-error);            margin-left: 4px;        }
-        .form__input,        .form__select,        .form__textarea {            width: 100%;            padding: 12px 15px;            border: 1px solid var(--color-border);            border-radius: var(--border-radius);            font-size: 1em;            color: var(--color-text-dark);            box-sizing: border-box; /* Include padding and border in the element's total width and height */            transition: border-color var(--transition-speed), box-shadow var(--transition-speed);        }
-        .form__input:focus,        .form__select:focus,        .form__textarea:focus {            border-color: var(--color-primary);            outline: none;            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);        }
-        .form__input.is-invalid {            border-color: var(--color-error);        }
-        .form__input.is-invalid:focus {            box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);        }
-        .form__error-message {            color: var(--color-error);            font-size: 0.875em;            margin-top: 5px;            min-height: 1.2em; /* Reserve space to prevent layout shifts */        }
-        /* Checkbox specific styling */        .form__group--checkbox {            display: flex;
-            align-items: center;            margin-bottom: 25px;        }        .form__checkbox {            margin-right: 10px;            width: 20px;            height: 20px;            flex-shrink: 0; /* Prevent checkbox from shrinking */        }        .form__label--inline {            margin-bottom: 0;        }        .form__link {            color: var(--color-primary);            text-decoration: none;            font-weight: 600;
-        }        .form__link:hover {            text-decoration: underline;        }
-        /* Skills Tags Input */        .form__tags-container {            display: flex;            flex-wrap: wrap;            gap: 8px;            padding: 10px;            border: 1px solid var(--color-border);            border-radius: var(--border-radius);            min-height: 40px; /* Ensure visibility even with no tags */            margin-bottom: 10px;            align-items: center;        }
-        .form__tag {            display: inline-flex;            align-items: center;            background-color: var(--color-primary-light);            color: white;            padding: 6px 12px;            border-radius: 20px;            font-size: 0.9em;            cursor: default;        }
-        .form__tag-close {            background: none;            border: none;            color: white;            font-size: 1.1em;
-            margin-left: 8px;            cursor: pointer;            padding: 0;            line-height: 1; /* For better icon alignment */        }        .form__tag-close:hover {            color: #eee;        }
-        .form__input--tags {            margin-top: 0; /* Align with tags container */            border-top-left-radius: 0;            border-top-right-radius: 0;            border-top: none;        }
-        /* Form Navigation Buttons */        .form__navigation {            display: flex;            justify-content: space-between;            margin-top: 30px;            gap: 15px;        }
-        .form__navigation button {            flex: 1;        }
-        .form__button {            padding: 12px 25px;            border: none;            border-radius: var(--border-radius);            font-size: 1.1em;            font-weight: 600;            cursor: pointer;            transition: background-color var(--transition-speed), transform 0.1s ease-out;            display: inline-flex;            align-items: center;            justify-content: center;            gap: 8px;        }
-        .form__button--next,        .form__button--submit {            background-color: var(--color-primary);            color: white;        }
-        .form__button--next:hover,        .form__button--submit:hover {            background-color: var(--color-primary-dark);            transform: translateY(-2px);        }
-        .form__button--prev {            background-color: var(--color-secondary);            color: white;        }
-        .form__button--prev:hover {            background-color: #5a6268;            transform: translateY(-2px);        }
-        .form__button--submit:disabled {            background-color: #cccccc;            cursor: not-allowed;        }
-        .form__button--edit {            background-color: #e9ecef;            color: var(--color-text-dark);            padding: 8px 15px;            font-size: 0.9em;            margin-right: 10px;            margin-bottom: 15px;            border: 1px solid var(--color-border);        }        .form__button--edit:hover {            background-color: #dee2e6;            transform: translateY(-1px);        }
-
-        /* Review Section */        .form__review-section {            background-color: var(--color-background-light);            border: 1px solid var(--color-border);            border-radius: var(--border-radius);            padding: 20px;            margin-bottom: 30px;        }
-        .form__review-heading {            color: var(--color-primary-dark);            margin-top: 0;            margin-bottom: 15px;            border-bottom: 1px dashed var(--color-border);            padding-bottom: 5px;            font-size: 1.2em;        }
-        .form__review-section p {            margin-bottom: 8px;        }        .form__review-section p:last-of-type {            margin-bottom: 0;        }
-        /* Success Message */        .form__success {            background-color: var(--color-success);            color: white;            padding: 25px;            border-radius: var(--border-radius);            text-align: center;            margin-top: 30px;            font-size: 1.2em;            display: none; /* Hidden by default */            animation: fadeIn 0.5s var(--transition-speed);        }        .form__success p {            margin: 5px 0;        }        .form__success[aria-hidden="false"] {            display: block;        }
-
-        /* Responsive Design */        @media (max-width: 600px) {            body {                padding: 15px;                align-items: flex-start; /* Reset align-items to avoid centering vertically when content is tall */            }
-            .form-container {                padding: 20px;            }
-            .form-header__title {                font-size: 1.6em;            }
-            .form-header__description {
-                font-size: 0.9em;            }
-            .form-progress {                flex-wrap: wrap;                justify-content: center;                gap: 10px; /* Space between steps when wrapped */                margin-bottom: 30px;            }
-            .form-progress__step {                flex: none; /* Don't grow to full width */                width: 30%; /* Approx for 3 items, allows wrapping */            }
-            .form-progress__label {                font-size: 0.8em;            }
-            .form-progress__line {                display: none; /* Hide line on small screens */            }
-            .form__legend {                font-size: 1.3em;                margin-bottom: 20px;            }
-            .form__navigation {                flex-direction: column;            }            .form__navigation button {                width: 100%;            }            .form__button {                padding: 10px 20px;                font-size: 1em;            }            .form__review-heading {                font-size: 1.1em;            }            .form__review-section p {                font-size: 0.95em;            }            .form__button--edit {                width: auto;
-                display: block; /* Stack edit buttons */                margin-right: 0;                margin-bottom: 10px;            }        }    </style>
-                
-            
-            
-            </head>
-            <body>
-                    <div class="form-container">     
-                           <header class="form-header">      
-                                  <h1 class="form-header__title">Create Your Professional Profile</h1>     
-                                         <p class="form-header__description">Tell us about yourself to tailor your experience.</p>  
-                                              </header>
-        <section class="form-progress" aria-label="Form Progress">
-            <div class="form-progress__step form-progress__step--active" data-step="1">                <span class="form-progress__indicator">1</span>                <span class="form-progress__label">Personal</span>            </div>            <div class="form-progress__line"></div>            <div class="form-progress__step" data-step="2">                <span class="form-progress__indicator">2</span>                <span class="form-progress__label">Professional</span>            </div>            <div class="form-progress__line"></div>
-            <div class="form-progress__step" data-step="3">                <span class="form-progress__indicator">3</span>                <span class="form-progress__label">Review</span>            </div>        </section>
-        <form id="multiStepForm" class="form" aria-live="polite">
-            <!-- Step 1: Personal Information -->            <fieldset class="form__fieldset form__fieldset--active" data-step="1">                <legend class="form__legend">1. Personal Information</legend>
-                <div class="form__group">                    <label for="fullName" class="form__label">Full Name <span class="form__required">*</span></label>                    <input type="text" id="fullName" name="fullName" class="form__input" placeholder="John Doe" required autocomplete="name" aria-describedby="fullNameError">                    <p id="fullNameError" class="form__error-message" role="alert" aria-live="assertive"></p>                </div>
-                <div class="form__group">                    <label for="email" class="form__label">Email Address <span class="form__required">*</span></label>                    <input type="email" id="email" name="email" class="form__input" placeholder="john.doe@example.com" required autocomplete="email" aria-describedby="emailError">                    <p id="emailError" class="form__error-message" role="alert" aria-live="assertive"></p>                </div>
-                <div class="form__group">                    <label for="phone" class="form__label">Phone Number</label>                    <input type="tel" id="phone" name="phone" class="form__input" placeholder="(123) 456-7890" autocomplete="tel" aria-describedby="phoneError">                    <p id="phoneError" class="form__error-message" role="alert" aria-live="assertive"></p>                </div>
-                <div class="form__navigation">                    <button type="button" class="form__button form__button--next" data-action="next">Next <span aria-hidden="true">&rarr;</span></button>                </div>            </fieldset>
-            <!-- Step 2: Professional Details -->            <fieldset class="form__fieldset" data-step="2" disabled>                <legend class="form__legend">2. Professional Details</legend>
-                <div class="form__group">                    <label for="jobTitle" class="form__label">Current Job Title <span class="form__required">*</span></label>                    <input type="text" id="jobTitle" name="jobTitle" class="form__input" placeholder="Senior Frontend Developer" required autocomplete="organization-title" aria-describedby="jobTitleError">                    <p id="jobTitleError" class="form__error-message" role="alert" aria-live="assertive"></p>                </div>
-                <div class="form__group">                    <label for="yearsExperience" class="form__label">Years of Experience <span class="form__required">*</span></label>
-                    <input type="number" id="yearsExperience" name="yearsExperience" class="form__input" min="0" max="50" value="0" required aria-describedby="yearsExperienceError">                    <p id="yearsExperienceError" class="form__error-message" role="alert" aria-live="assertive"></p>                </div>
-                <div class="form__group">                    <label for="skillsInput" class="form__label">Skills (Press Enter to add)</label>                    <div id="skillsContainer" class="form__tags-container" aria-label="Selected Skills">                        <!-- Skills will be dynamically added here -->                    </div>                    <input type="text" id="skillsInput" name="skillsInput" class="form__input form__input--tags" placeholder="React, CSS, Accessibility...">                    <p id="skillsInputError" class="form__error-message" role="alert" aria-live="assertive"></p>                </div>
-                <div class="form__navigation">                    <button type="button" class="form__button form__button--prev" data-action="prev"><span aria-hidden="true">&larr;</span> Previous </button>                    <button type="button" class="form__button form__button--next" data-action="next">Next <span aria-hidden="true">&rarr;</span></button>                </div>            </fieldset>
-            <!-- Step 3: Review and Submit -->            <fieldset class="form__fieldset" data-step="3" disabled>                <legend class="form__legend">3. Review and Submit</legend>
-                <div class="form__review-section">                    <h3 class="form__review-heading">Personal Information</h3>
-                    <p><strong>Full Name:</strong> <span id="reviewFullName"></span></p>                    <p><strong>Email:</strong> <span id="reviewEmail"></span></p>                    <p><strong>Phone:</strong> <span id="reviewPhone"></span></p>
-                    <h3 class="form__review-heading">Professional Details</h3>                    <p><strong>Job Title:</strong> <span id="reviewJobTitle"></span></p>                    <p><strong>Years Experience:</strong> <span id="reviewYearsExperience"></span></p>                    <p><strong>Skills:</strong> <span id="reviewSkills"></span></p>                    <button type="button" class="form__button form__button--edit" data-edit-step="1">Edit Personal</button>                    <button type="button" class="form__button form__button--edit" data-edit-step="2">Edit Professional</button>                </div>
-                <div class="form__group form__group--checkbox">                    <input type="checkbox" id="terms" name="terms" required class="form__checkbox" aria-describedby="termsError">                    <label for="terms" class="form__label form__label--inline">I agree to the <a href="#" class="form__link">terms and conditions</a> <span class="form__required">*</span></label>                    <p id="termsError" class="form__error-message" role="alert" aria-live="assertive"></p>                </div>
-                <div class="form__navigation">                    <button type="button" class="form__button form__button--prev" data-action="prev"><span aria-hidden="true">&larr;</span> Previous</button>                    <button type="submit" class="form__button form__button--submit" data-action="submit">Submit Profile</button>                </div>            </fieldset>
-            <div id="formSuccess" class="form__success" role="status" aria-live="assertive" aria-hidden="true">                <p>🚀 Your profile has been submitted successfully!</p>                <p>We'll be in touch shortly.</p>            </div>                    </form>    </div>
-    <script>        // --- Validation Logic ---    
-    // 
-    
-    <script>
-
-
-        
-    const validationRules = {            fullName: {                required: true,                minLength: 3,                pattern: /^[a-zA-Z\s.-]+$/,                errorMessage: "Full Name is required and must contain only letters, spaces, hyphens, or periods (min 3 characters).",            },            email: {                required: true,
-                pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,                errorMessage: "Please enter a valid email address.",            },            phone: {                required: false,                pattern: /^(\+\d{1,2}\s?)?(\(\d{3}\)|\d{3})[\s.-]?\d{3}[\s.-]?\d{4}$/,                errorMessage: "Please enter a valid phone number (e.g., (123) 456-7890).",            },            jobTitle: {                required: true,                minLength: 2,                maxLength: 100,                errorMessage: "Job Title is required (min 2, max 100 characters).",            },            yearsExperience: {                required: true,                min: 0,                max: 50,                errorMessage: "Years of Experience must be between 0 and 50.",            },            skills: {                required: false, // Overall skills field can be optional                minLengthForTag: 2,                maxLengthForTag: 30,                maxTags: 10,                errorMessage: "Each skill must be between 2 and 30 characters. Max 10 skills allowed.",            },            terms: {                required: true,                errorMessage: "You must agree to the terms and conditions.",            },
-        };
-        /**         * Validates a single input field against its defined rules.         * @param {HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement} inputElement The input element to validate.         * @param {HTMLParagraphElement} errorElement The paragraph element to display errors.         * @returns {boolean} True if the input is valid, false otherwise.         */        function validateField(inputElement, errorElement) {            const fieldName = inputElement.name || inputElement.id;            const rules = validationRules[fieldName];            let isValid = true;            let errorMessage = '';
-            if (!rules) {                // If no specific rules are defined, rely on HTML5 validation and consider valid if not invalid per HTML5                isValid = inputElement.reportValidity();                if (!isValid) {                    errorMessage = inputElement.validationMessage;                }
-            } else {                const value = inputElement.value.trim();
-                if (rules.required && !value && inputElement.type !== 'checkbox') {                    isValid = false;                    errorMessage = rules.errorMessage ||  `${fieldName} is required.` ;                } else if (value && rules.minLength && value.length < rules.minLength) {                    isValid = false;                    errorMessage = rules.errorMessage ||  `${fieldName} must be at least ${rules.minLength} characters.` ;                } else if (value && rules.maxLength && value.length > rules.maxLength) {                    isValid = false;                    errorMessage = rules.errorMessage ||  `${fieldName} must be at most ${rules.maxLength} characters.` ;                } else if (value && rules.pattern && !rules.pattern.test(value)) {                    isValid = false;                    errorMessage = rules.errorMessage ||  `Please enter a valid ${fieldName}.` ;                } else if (inputElement.type === 'number' && value !== '') {                    const numValue = Number(value);                    if (rules.min !== undefined && numValue < rules.min) {                        isValid = false;                        errorMessage = rules.errorMessage ||  `${fieldName} must be at least ${rules.min}.` ;                    } else if (rules.max !== undefined && numValue > rules.max) {                        isValid = false;                        errorMessage = rules.errorMessage ||  `${fieldName} must be at most ${rules.max}.` ;                    }                } else if (inputElement.type === 'checkbox') {                    if (rules.required && !inputElement.checked) {                        isValid = false;                        errorMessage = rules.errorMessage ||  `${fieldName} must be checked.` ;                    }                }            }
-            if (isValid) {                inputElement.classList.remove('is-invalid');                errorElement.textContent = '';                errorElement.setAttribute('aria-hidden', 'true');            } else {                inputElement.classList.add('is-invalid');                errorElement.textContent = errorMessage;                errorElement.setAttribute('aria-hidden', 'false');            }
-            return isValid;        }
-        /**         * Validates all fields within a given step (fieldset).         * @param {HTMLElement} fieldsetStep The fieldset element representing the current step.         * @returns {boolean} True if all fields in the step are valid, false otherwise.         */        function validateStep(fieldsetStep) {            const inputs = fieldsetStep.querySelectorAll('input:not([type="button"]), select, textarea');            let stepIsValid = true;
-            inputs.forEach(input => {                // Skip validation for the skills input field itself, as its validation is handled differently for tags                if (input.id === 'skillsInput') return;
-                const errorElementId = input.id + 'Error';                const errorElement = document.getElementById(errorElementId);                // Ensure error element exists before trying to validate                if (errorElement) {                   if (!validateField(input, errorElement)) {                       stepIsValid = false;                   }                } else {                    // Fallback for elements without specific error messages but still needed for form validity                    // Use browser's built-in validation                    if (!input.checkValidity()) {                        stepIsValid = false;                    }                }            });
-            // Special validation for skills tags array            if (fieldsetStep.dataset.step === '2') {                const skillsContainer = document.getElementById('skillsContainer');                const skillTags = skillsContainer.querySelectorAll('.form__tag');                const rules = validationRules.skills;                const skillsInputError = document.getElementById('skillsInputError');                skillsInputError.textContent = ''; // Clear previous errors                skillsInputError.setAttribute('aria-hidden', 'true');
-
-                if (rules) {                    // If skills are required, check if any tags exist                    if (rules.required && skillTags.length === 0) {                        skillsInputError.textContent = rules.errorMessage || "At least one skill is required.";                        skillsInputError.setAttribute('aria-hidden', 'false');                        stepIsValid = false;                    } else if (rules.maxTags && skillTags.length > rules.maxTags) {                        skillsInputError.textContent =  `You can add a maximum of ${rules.maxTags} skills to the list.` ;                        skillsInputError.setAttribute('aria-hidden', 'false');                        stepIsValid = false;                    }                }            }
-            return stepIsValid;        }
-        /**         * Debounces a function call.         * @param {Function} func The function to debounce.         * @param {number} delay The delay in milliseconds.         * @returns {Function} The debounced function.         */        function debounce(func, delay) {            let timeout;            return function(...args) {                const context = this;                clearTimeout(timeout);                timeout = setTimeout(() => func.apply(context, args), delay);            };="form__required">*</span></label>                    <input type="email" id="email" name="email" class="form__input" placeholder="john.doe@example.com" required autocomplete="email" aria-describedby="emailError">                    <p id="emailError" class="form__error-message" role="alert" aria-live="assertive"></p>                </div>
-                <div class="form__group">                    <label for="phone" class="form__label">Phone Number</label>                    <input type="tel" id="phone" name="phone" class="form__input" placeholder="(123) 456-7890" autocomplete="tel" aria-describedby="phoneError">                    <p id="phoneError" class="form__error-message" role="alert" aria-live="assertive"></p>                </div>
-                <div class="form__navigation">                    <button type="button" class="form__button form__button--next" data-action="next">Next <span aria-hidden="true">&rarr;</span></button>                </div>            </fieldset>
-            <!-- Step 2: Professional Details -->            <fieldset class="form__fieldset" data-step="2" disabled>                <legend class="form__legend">2. Professional Details</legend>
-                <div class="form__group">                    <label for="jobTitle" class="form__label">Current Job Title <span class="form__required">*</span></label>                    <input type="text" id="jobTitle" name="jobTitle" class="form__input" placeholder="Senior Frontend Developer" required autocomplete="organization-title" aria-describedby="jobTitleError">                    <p id="jobTitleError" class="form__error-message" role="alert" aria-live="assertive"></p>                </div>
-                <div class="form__group">                    <label for="yearsExperience" class="form__label">Years of Experience <span class="form__required">*</span></label>
-                    <input type="number" id="yearsExperience" name="yearsExperience" class="form__input" min="0" max="50" value="0" required aria-describedby="yearsExperienceError">                    <p id="yearsExperienceError" class="form__error-message" role="alert" aria-live="assertive"></p>                </div>
-                <div class="form__group">                    <label for="skillsInput" class="form__label">Skills (Press Enter to add)</label>                    <div id="skillsContainer" class="form__tags-container" aria-label="Selected Skills">                        <!-- Skills will be dynamically added here -->                    </div>                    <input type="text" id="skillsInput" name="skillsInput" class="form__input form__input--tags" placeholder="React, CSS, Accessibility...">                    <p id="skillsInputError" class="form__error-message" role="alert" aria-live="assertive"></p>                </div>
-                <div class="form__navigation">                    <button type="button" class="form__button form__button--prev" data-action="prev"><span aria-hidden="true">&larr;</span> Previous </button>                    <button type="button" class="form__button form__button--next" data-action="next">Next <span aria-hidden="true">&rarr;</span></button>                </div>            </fieldset>
-            <!-- Step 3: Review and Submit -->            <fieldset class="form__fieldset" data-step="3" disabled>                <legend class="form__legend">3. Review and Submit</legend>
-                <div class="form__review-section">                    <h3 class="form__review-heading">Personal Information</h3>
-                    <p><strong>Full Name:</strong> <span id="reviewFullName"></span></p>                    <p><strong>Email:</strong> <span id="reviewEmail"></span></p>                    <p><strong>Phone:</strong> <span id="reviewPhone"></span></p>
-                    <h3 class="form__review-heading">Professional Details</h3>                    <p><strong>Job Title:</strong> <span id="reviewJobTitle"></span></p>                    <p><strong>Years Experience:</strong> <span id="reviewYearsExperience"></span></p>                    <p><strong>Skills:</strong> <span id="reviewSkills"></span></p>                    <button type="button" class="form__button form__button--edit" data-edit-step="1">Edit Personal</button>                    <button type="button" class="form__button form__button--edit" data-edit-step="2">Edit Professional</button>                </div>
-                <div class="form__group form__group--checkbox">                    <input type="checkbox" id="terms" name="terms" required class="form__checkbox" aria-describedby="termsError">                    <label for="terms" class="form__label form__label--inline">I agree to the <a href="#" class="form__link">terms and conditions</a> <span class="form__required">*</span></label>                    <p id="termsError" class="form__error-message" role="alert" aria-live="assertive"></p>                </div>
-                <div class="form__navigation">                    <button type="button" class="form__button form__button--prev" data-action="prev"><span aria-hidden="true">&larr;</span> Previous</button>                    <button type="submit" class="form__button form__button--submit" data-action="submit">Submit Profile</button>                </div>            </fieldset>
-            <div id="formSuccess" class="form__success" role="status" aria-live="assertive" aria-hidden="true">                <p>🚀 Your profile has been submitted successfully!</p>                <p>We'll be in touch shortly.</p>            </div>                    </form>    </div>
-    <script>        // --- Validation Logic ---        const validationRules = {            fullName: {                required: true,                minLength: 3,                pattern: /^[a-zA-Z\s.-]+$/,                errorMessage: "Full Name is required and must contain only letters, spaces, hyphens, or periods (min 3 characters).",            },            email: {                required: true,
-                pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,                errorMessage: "Please enter a valid email address.",            },            phone: {                required: false,                pattern: /^(\+\d{1,2}\s?)?(\(\d{3}\)|\d{3})[\s.-]?\d{3}[\s.-]?\d{4}$/,                errorMessage: "Please enter a valid phone number (e.g., (123) 456-7890).",            },            jobTitle: {                required: true,                minLength: 2,                maxLength: 100,                errorMessage: "Job Title is required (min 2, max 100 characters).",            },            yearsExperience: {                required: true,                min: 0,                max: 50,                errorMessage: "Years of Experience must be between 0 and 50.",            },            skills: {                required: false, // Overall skills field can be optional                minLengthForTag: 2,                maxLengthForTag: 30,                maxTags: 10,                errorMessage: "Each skill must be between 2 and 30 characters. Max 10 skills allowed.",            },            terms: {                required: true,                errorMessage: "You must agree to the terms and conditions.",            },
-        };
-        /**         * Validates a single input field against its defined rules.         * @param {HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement} inputElement The input element to validate.         * @param {HTMLParagraphElement} errorElement The paragraph element to display errors.         * @returns {boolean} True if the input is valid, false otherwise.         */        function validateField(inputElement, errorElement) {            const fieldName = inputElement.name || inputElement.id;            const rules = validationRules[fieldName];            let isValid = true;            let errorMessage = '';
-            if (!rules) {                // If no specific rules are defined, rely on HTML5 validation and consider valid if not invalid per HTML5                isValid = inputElement.reportValidity();                if (!isValid) {                    errorMessage = inputElement.validationMessage;                }
-            } else {                const value = inputElement.value.trim();
-                if (rules.required && !value && inputElement.type !== 'checkbox') {                    isValid = false;                    errorMessage = rules.errorMessage ||  `${fieldName} is required.` ;                } else if (value && rules.minLength && value.length < rules.minLength) {                    isValid = false;                    errorMessage = rules.errorMessage ||  `${fieldName} must be at least ${rules.minLength} characters.` ;                } else if (value && rules.maxLength && value.length > rules.maxLength) {                    isValid = false;                    errorMessage = rules.errorMessage ||  `${fieldName} must be at most ${rules.maxLength} characters.` ;                } else if (value && rules.pattern && !rules.pattern.test(value)) {                    isValid = false;                    errorMessage = rules.errorMessage ||  `Please enter a valid ${fieldName}.` ;                } else if (inputElement.type === 'number' && value !== '') {                    const numValue = Number(value);                    if (rules.min !== undefined && numValue < rules.min) {                        isValid = false;                        errorMessage = rules.errorMessage ||  `${fieldName} must be at least ${rules.min}.` ;                    } else if (rules.max !== undefined && numValue > rules.max) {                        isValid = false;                        errorMessage = rules.errorMessage ||  `${fieldName} must be at most ${rules.max}.` ;                    }                } else if (inputElement.type === 'checkbox') {                    if (rules.required && !inputElement.checked) {                        isValid = false;                        errorMessage = rules.errorMessage ||  `${fieldName} must be checked.` ;                    }                }            }
-            if (isValid) {                inputElement.classList.remove('is-invalid');                errorElement.textContent = '';                errorElement.setAttribute('aria-hidden', 'true');            } else {                inputElement.classList.add('is-invalid');                errorElement.textContent = errorMessage;                errorElement.setAttribute('aria-hidden', 'false');            }
-            return isValid;        }
-        /**         * Validates all fields within a given step (fieldset).         * @param {HTMLElement} fieldsetStep The fieldset element representing the current step.         * @returns {boolean} True if all fields in the step are valid, false otherwise.         */        function validateStep(fieldsetStep) {            const inputs = fieldsetStep.querySelectorAll('input:not([type="button"]), select, textarea');            let stepIsValid = true;
-            inputs.forEach(input => {                // Skip validation for the skills input field itself, as its validation is handled differently for tags                if (input.id === 'skillsInput') return;
-                const errorElementId = input.id + 'Error';                const errorElement = document.getElementById(errorElementId);                // Ensure error element exists before trying to validate                if (errorElement) {                   if (!validateField(input, errorElement)) {                       stepIsValid = false;                   }                } else {                    // Fallback for elements without specific error messages but still needed for form validity                    // Use browser's built-in validation                    if (!input.checkValidity()) {                        stepIsValid = false;                    }                }            });
-            // Special validation for skills tags array            if (fieldsetStep.dataset.step === '2') {                const skillsContainer = document.getElementById('skillsContainer');                const skillTags = skillsContainer.querySelectorAll('.form__tag');                const rules = validationRules.skills;                const skillsInputError = document.getElementById('skillsInputError');                skillsInputError.textContent = ''; // Clear previous errors                skillsInputError.setAttribute('aria-hidden', 'true');
-
-                if (rules) {                    // If skills are required, check if any tags exist                    if (rules.required && skillTags.length === 0) {                        skillsInputError.textContent = rules.errorMessage || "At least one skill is required.";                        skillsInputError.setAttribute('aria-hidden', 'false');                        stepIsValid = false;                    } else if (rules.maxTags && skillTags.length > rules.maxTags) {                        skillsInputError.textContent =  `You can add a maximum of ${rules.maxTags} skills to the list.` ;                        skillsInputError.setAttribute('aria-hidden', 'false');                        stepIsValid = false;                    }                }            }
-            return stepIsValid;        }
-        /**         * Debounces a function call.         * @param {Function} func The function to debounce.         * @param {number} delay The delay in milliseconds.         * @returns {Function} The debounced function.         */        function debounce(func, delay) {            let timeout;            return function(...args) {                const context = this;                clearTimeout(timeout);                timeout = setTimeout(() => func.apply(context, args), delay);            };   
-    </head>
-    <body>    
-        <div class="form-container">      
-              <header class="form-header">    
-                        <h1 class="form-header__title">Create Your Professional Profile</h1> 
-                        <p class="form-header__description">Tell us about yourself to tailor your experience.</p>    
-            </header>
-        <section class="form-progress" aria-label="Form Progress">      
-                  <div class="form-progress__step form-progress__step--active" data-step="1"> 
-                                   <span class="form-progress__indicator">1</span>            
-                                       <span class="form-progress__label">Personal</span>         
-                                       </div>      
-                                             <div class="form-progress__line"></div>  
-                                                       <div class="form-progress__step" data-step="2">   
-                                                                     <span class="form-progress__indicator">2</span>  
-                                                                                   <span class="form-progress__label">Professional</span>   
-                                                                                         </div>         
-                                                                                            <div class="form-progress__line">
-
-                                                                                            </div>        
-                                                                                                <div class="form-progress__step" data-step="3">                <span class="form-progress__indicator">3</span>                <span class="form-progress__label">Review</span>            </div>        </section>
-        <form id="multiStepForm" class="form" aria-live="polite">
-            <!-- Step 1: Personal Information -->            <fieldset class="form__fieldset form__fieldset--active" data-step="1">                <legend class="form__legend">1. Personal Information</legend>
-                <div class="form__group">                    <label for="fullName" class="form__label">Full Name <span class="form__required">*</span></label>                    <input type="text" id="fullName" name="fullName" class="form__input" placeholder="John Doe" required autocomplete="name" aria-describedby="fullNameError">                    <p id="fullNameError" class="form__error-message" role="alert" aria-live="assertive"></p>                </div>
-                <div class="form__group">                    <label for="email" class="form__label">Email Address <span class="form__required">*</span></label>                    <input type="email" id="email" name="email" class="form__input" placeholder="john.doe@example.com" required autocomplete="email" aria-describedby="emailError">                    <p id="emailError" class="form__error-message" role="alert" aria-live="assertive"></p>                </div>
-                <div class="form__group">                    <label for="phone" class="form__label">Phone Number</label>                    <input type="tel" id="phone" name="phone" class="form__input" placeholder="(123) 456-7890" autocomplete="tel" aria-describedby="phoneError">                    <p id="phoneError" class="form__error-message" role="alert" aria-live="assertive"></p>                </div>
-                <div class="form__navigation">                    <button type="button" class="form__button form__button--next" data-action="next">Next <span aria-hidden="true">&rarr;</span></button>                </div>            </fieldset>
-            <!-- Step 2: Professional Details -->            <fieldset class="form__fieldset" data-step="2" disabled>                <legend class="form__legend">2. Professional Details</legend>
-                <div class="form__group">                    <label for="jobTitle" class="form__label">Current Job Title <span class="form__required">*</span></label>                    <input type="text" id="jobTitle" name="jobTitle" class="form__input" placeholder="Senior Frontend Developer" required autocomplete="organization-title" aria-describedby="jobTitleError">                    <p id="jobTitleError" class="form__error-message" role="alert" aria-live="assertive"></p>                </div>
-                <div class="form__group">                    <label for="yearsExperience" class="form__label">Years of Experience <span class="form__required">*</span></label>                    <input type="number" id="yearsExperience" name="yearsExperience" class="form__input" min="0" max="50" value="0" required aria-describedby="yearsExperienceError">                    <p id="yearsExperienceError" class="form__error-message" role="alert" aria-live="assertive"></p>                </div>
-
-                <div class="form__group">                    <label for="skillsInput" class="form__label">Skills (Press Enter to add)</label>                    <div id="skillsContainer" class="form__tags-container" aria-label="Selected Skills">                        <!-- Skills will be dynamically added here -->                    </div>                    <input type="text" id="skillsInput" name="skillsInput" class="form__input form__input--tags" placeholder="React, CSS, Accessibility...">                    <p id="skillsInputError" class="form__error-message" role="alert" aria-live="assertive"></p>                </div>
-                <div class="form__navigation">                    <button type="button" class="form__button form__button--prev" data-action="prev"><span aria-hidden="true">&larr;</span> Previous </button>                    <button type="button" class="form__button form__button--next" data-action="next">Next <span aria-hidden="true">&rarr;</span></button>                </div>            </fieldset>
-            <!-- Step 3: Review and Submit -->            <fieldset class="form__fieldset" data-step="3" disabled>
-                <legend class="form__legend">3. Review and Submit</legend>
-                <div class="form__review-section">                    <h3 class="form__review-heading">Personal Information</h3>                    <p><strong>Full Name:</strong> <span id="reviewFullName"></span></p>
-                    <p><strong>Email:</strong> <span id="reviewEmail"></span></p>                    <p><strong>Phone:</strong> <span id="reviewPhone"></span></p>
-                    <h3 class="form__review-heading">Professional Details</h3>                    <p><strong>Job Title:</strong> <span id="reviewJobTitle"></span></p>                    <p><strong>Years Experience:</strong> <span id="reviewYearsExperience"></span></p>                    <p><strong>Skills:</strong> <span id="reviewSkills"></span></p>                    <button type="button" class="form__button form__button--edit" data-edit-step="1">Edit Personal</button>                    <button type="button" class="form__button form__button--edit" data-edit-step="2">Edit Professional</button>                </div>
-                <div class="form__group form__group--checkbox">                    <input type="checkbox" id="terms" name="terms" required class="form__checkbox" aria-describedby="termsError">                    <label for="terms" class="form__label form__label--inline">I agree to the <a href="#" class="form__link">terms and conditions</a> <span class="form__required">*</span></label>                    <p id="termsError" class="form__error-message" role="alert" aria-live="assertive"></p>                </div>
-                <div class="form__navigation">                    <button type="button" class="form__button form__button--prev" data-action="prev"><span aria-hidden="true">&larr;</span> Previous</button>                    <button type="submit" class="form__button form__button--submit" data-action="submit">Submit Profile</button>                </div>            </fieldset>
-            <div id="formSuccess" class="form__success" role="status" aria-live="assertive" aria-hidden="true">                <p>🚀 Your profile has been submitted successfully!</p>                <p>We'll be in touch shortly.</p>            </div>                    </form>    </div>
-    <script type="module" src="js/main.js"></script></body></html>
+</html>

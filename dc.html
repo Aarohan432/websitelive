@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Narayan Holidays - Banner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+            background: #ffffff;
+        }
+
+        /* ============================================ */
+        /* BANNER SECTION - BASE STYLES */
+        /* ============================================ */
+        
+        .banner-container {
+            position: relative;
+            width: 100%;
+            min-height: 550px;
+            background-image: url('banner-4.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        /* Dark overlay - text clear dikhne ke liye */
+        .banner-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 100%);
+            z-index: 0;
+        }
+        
+        .banner-content {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 900px;
+            padding: 20px;
+        }
+        
+        .banner-heading {
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            letter-spacing: -0.5px;
+        }
+        
+        .banner-description {
+            line-height: 1.6;
+            color: rgba(255,255,255,0.95);
+            max-width: 700px;
+            margin: 0 auto;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+        }
+        
+        /* ============================================ */
+        /* DESKTOP (1200px and above) */
+        /* ============================================ */
+        @media (min-width: 1200px) {
+            .banner-container {
+                min-height: 600px;
+            }
+            .banner-heading {
+                font-size: 56px;
+                margin-bottom: 25px;
+            }
+            .banner-description {
+                font-size: 20px;
+                line-height: 1.7;
+            }
+        }
+        
+        /* ============================================ */
+        /* LAPTOP / SMALL DESKTOP (992px to 1199px) */
+        /* ============================================ */
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .banner-container {
+                min-height: 550px;
+            }
+            .banner-heading {
+                font-size: 48px;
+                margin-bottom: 20px;
+            }
+            .banner-description {
+                font-size: 18px;
+            }
+        }
+        
+        /* ============================================ */
+        /* TABLET LANDSCAPE (768px to 991px) */
+        /* ============================================ */
+        @media (min-width: 768px) and (max-width: 991px) {
+            .banner-container {
+                min-height: 480px;
+                background-position: center 30%;
+            }
+            .banner-heading {
+                font-size: 42px;
+                margin-bottom: 18px;
+            }
+            .banner-description {
+                font-size: 17px;
+                padding: 0 30px;
+            }
+        }
+        
+        /* ============================================ */
+        /* TABLET PORTRAIT (600px to 767px) */
+        /* ============================================ */
+        @media (min-width: 600px) and (max-width: 767px) {
+            .banner-container {
+                min-height: 420px;
+                background-size: contain;
+                background-position: center top;
+                padding-top: 60%;
+                min-height: auto;
+            }
+            .banner-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 90%;
+            }
+            .banner-heading {
+                font-size: 34px;
+                margin-bottom: 15px;
+            }
+            .banner-description {
+                font-size: 16px;
+                padding: 0 20px;
+            }
+        }
+        
+        /* ============================================ */
+        /* MOBILE LARGE (480px to 599px) */
+        /* ============================================ */
+        @media (min-width: 480px) and (max-width: 599px) {
+            .banner-container {
+                background-size: contain;
+                background-position: center top;
+                padding-top: 65%;
+                min-height: auto;
+            }
+            .banner-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 92%;
+            }
+            .banner-heading {
+                font-size: 30px;
+                margin-bottom: 12px;
+            }
+            .banner-description {
+                font-size: 15px;
+                padding: 0 18px;
+                line-height: 1.5;
+            }
+        }
+        
+        /* ============================================ */
+        /* MOBILE MEDIUM (380px to 479px) */
+        /* ============================================ */
+        @media (min-width: 380px) and (max-width: 479px) {
+            .banner-container {
+                background-size: contain;
+                background-position: center top;
+                padding-top: 70%;
+                min-height: auto;
+            }
+            .banner-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 92%;
+            }
+            .banner-heading {
+                font-size: 26px;
+                margin-bottom: 10px;
+            }
+            .banner-description {
+                font-size: 14px;
+                padding: 0 15px;
+                line-height: 1.5;
+            }
+        }
+        
+        /* ============================================ */
+        /* MOBILE SMALL (320px to 379px) */
+        /* ============================================ */
+        @media (min-width: 320px) and (max-width: 379px) {
+            .banner-container {
+                background-size: contain;
+                background-position: center top;
+                padding-top: 75%;
+                min-height: auto;
+            }
+            .banner-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 94%;
+            }
+            .banner-heading {
+                font-size: 24px;
+                margin-bottom: 8px;
+            }
+            .banner-description {
+                font-size: 13px;
+                padding: 0 12px;
+                line-height: 1.45;
+            }
+        }
+        
+        /* ============================================ */
+        /* EXTRA SMALL (below 320px) */
+        /* ============================================ */
+        @media (max-width: 319px) {
+            .banner-container {
+                background-size: contain;
+                background-position: center top;
+                padding-top: 80%;
+                min-height: auto;
+            }
+            .banner-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 95%;
+            }
+            .banner-heading {
+                font-size: 22px;
+                margin-bottom: 6px;
+            }
+            .banner-description {
+                font-size: 12px;
+                padding: 0 10px;
+                line-height: 1.4;
+            }
+        }
+        
+        /* ============================================ */
+        /* LANDSCAPE MODE ON MOBILE */
+        /* ============================================ */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .banner-container {
+                padding-top: 40%;
+                background-size: contain;
+            }
+            .banner-heading {
+                font-size: 22px;
+                margin-bottom: 6px;
+            }
+            .banner-description {
+                font-size: 13px;
+                padding: 0 20px;
+            }
+        }
+        
+        /* ============================================ */
+        /* TABLET LANDSCAPE (extra) */
+        /* ============================================ */
+        @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+            .banner-container {
+                min-height: 450px;
+                background-size: cover;
+            }
+            .banner-content {
+                position: relative;
+                top: auto;
+                left: auto;
+                transform: none;
+            }
+            .banner-heading {
+                font-size: 38px;
+            }
+            .banner-description {
+                font-size: 16px;
+            }
+        }
+        
+        /* ============================================ */
+        /* LARGE DESKTOP (1400px and above) */
+        /* ============================================ */
+        @media (min-width: 1400px) {
+            .banner-container {
+                min-height: 700px;
+            }
+            .banner-heading {
+                font-size: 64px;
+            }
+            .banner-description {
+                font-size: 22px;
+                max-width: 800px;
+            }
+        }
+        
+        /* ============================================ */
+        /* 4K DISPLAYS (2000px and above) */
+        /* ============================================ */
+        @media (min-width: 2000px) {
+            .banner-container {
+                min-height: 850px;
+            }
+            .banner-heading {
+                font-size: 80px;
+            }
+            .banner-description {
+                font-size: 28px;
+                max-width: 1000px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="banner-container">
+    <div class="banner-content">
+        <h1 class="banner-heading">Narayan holidays</h1>
+        <p class="banner-description">Your Trusted Partner for Char Dham Yatra, Luxury Escapes & Himalayan Adventures</p>
+    </div>
+</div>
+
+</body>
+</html><!-- DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Narayan Holidays - Banner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+            background: #ffffff;
+        }
+
+        
+        
+        .banner-container {
+            position: relative;
+            width: 100%;
+            min-height: 550px;
+            background-image: url('banner-4.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        /* Dark overlay */
+        .banner-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.35) 100%);
+            z-index: 0;
+        }
+        
+        .banner-content {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 900px;
+            padding: 20px;
+        }
+        
+        .banner-heading {
+            font-size: 48px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        .banner-description {
+            font-size: 18px;
+            line-height: 1.7;
+            color: rgba(255,255,255,0.95);
+            max-width: 700px;
+            margin: 0 auto;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+        }
+        
+ 
+        
+        @media (max-width: 768px) {
+            .banner-container {
+                min-height: 700px;  /* DESKTOP KE 550px SE DOUBLE (approx) */
+                background-size: cover;  /* COVER hi rahega taaki image full bharay */
+                background-position: center 30%;  /* image ka upper portion show */
+            }
+            
+            .banner-heading {
+                font-size: 32px;
+                margin-bottom: 15px;
+            }
+            
+            .banner-description {
+                font-size: 16px;
+                padding: 0 20px;
+            }
+        }
+        
+  
+        @media (max-width: 480px) {
+            .banner-container {
+                min-height: 750px;  /* aur badha di height */
+                background-position: center 25%;
+            }
+            
+            .banner-heading {
+                font-size: 28px;
+            }
+            
+            .banner-description {
+                font-size: 14px;
+                padding: 0 15px;
+            }
+        }
+        
+        /* Tablet */
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .banner-container {
+                min-height: 500px;
+            }
+            
+            .banner-heading {
+                font-size: 42px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="banner-container">
+    <div class="banner-content">
+        <h1 class="banner-heading">Narayan holidays</h1>
+        <p class="banner-description">Your Trusted Partner for Char Dham Yatra, Luxury Escapes & Himalayan Adventures</p>
+    </div>
+</div>
+
+</body>
+</html-->
+<!--DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Narayan Holidays - Banner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+            background: #ffffff;
+        }
+
+       
+   
+        
+        .banner-container {
+            position: relative;
+            width: 100%;
+            min-height: 550px;
+            background-image: url('banner-4.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+      
+        .banner-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.35) 100%);
+            z-index: 0;
+        }
+        
+        .banner-content {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 900px;
+            padding: 20px;
+        }
+        
+        .banner-heading {
+            font-size: 48px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        .banner-description {
+            font-size: 18px;
+            line-height: 1.7;
+            color: rgba(255,255,255,0.95);
+            max-width: 700px;
+            margin: 0 auto;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+        }
+        
+     
+        @media (max-width: 768px) {
+            .banner-container {
+                min-height: auto;
+                background-size: contain;  /* COVER se CHANGE kiya CONTAIN mein */
+                background-position: center top;
+                padding-top: 65%;  /* image ke aspect ratio ke hisaab se height */
+            }
+            
+            .banner-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 90%;
+            }
+            
+            .banner-heading {
+                font-size: 32px;
+                margin-bottom: 15px;
+            }
+            
+            .banner-description {
+                font-size: 16px;
+                padding: 0 20px;
+            }
+        }
+        
+        /* Small mobile */
+        @media (max-width: 480px) {
+            .banner-container {
+                padding-top: 75%;
+            }
+            
+            .banner-heading {
+                font-size: 28px;
+            }
+            
+            .banner-description {
+                font-size: 14px;
+                padding: 0 15px;
+            }
+        }
+        
+        /* Landscape mode */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .banner-container {
+                padding-top: 45%;
+            }
+            
+            .banner-heading {
+                font-size: 24px;
+            }
+            
+            .banner-description {
+                font-size: 13px;
+            }
+        }
+        
+        /* Tablet */
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .banner-container {
+                min-height: 500px;
+            }
+            
+            .banner-heading {
+                font-size: 42px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="banner-container">
+    <div class="banner-content">
+        <h1 class="banner-heading">Narayan holidays</h1>
+        <p class="banner-description">Your Trusted Partner for Char Dham Yatra, Luxury Escapes & Himalayan Adventures</p>
+    </div>
+</div>
+
+</body>
+</html-->

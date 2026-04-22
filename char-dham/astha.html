@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Narayan Holidays | Tour Packages + Compact Footer</title>
+    <!-- Font Awesome 6 (Free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* ---------- RESET & GLOBAL ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f4f7fc;
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* ========== HEADER CSS - ADDED FOR MAIN NAVBAR ========== */
+        .main-navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #ffffff;
+            padding: 10px 40px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            flex-wrap: wrap;
+        }
+
+        .logo img {
+            display: block;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            gap: 28px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-menu li a {
+            text-decoration: none;
+            color: #2c3e2f;
+            font-weight: 500;
+            font-size: 15px;
+            transition: color 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .nav-menu li a:hover {
+            color: #FF4A52;
+        }
+
+        .nav-menu li.active a {
+            color: #FF4A52;
+            font-weight: 600;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #ffffff;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            min-width: 180px;
+            list-style: none;
+            padding: 10px 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .dropdown-menu li a {
+            display: block;
+            padding: 8px 20px;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .dropdown-menu li a:hover {
+            background: #FFF5F5;
+            color: #FF4A52;
+        }
+
+        .contact-btn {
+            background: #FF4A52;
+            color: #ffffff !important;
+            padding: 10px 24px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-btn:hover {
+            background: #e03e46;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive Header */
+        @media (max-width: 992px) {
+            .main-navbar {
+                padding: 10px 20px;
+                flex-direction: column;
+                gap: 15px;
+            }
+            .nav-menu {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 18px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .nav-menu {
+                gap: 12px;
+            }
+            .nav-menu li a {
+                font-size: 13px;
+            }
+            .contact-btn {
+                padding: 6px 16px;
+                font-size: 12px;
+            }
+        }
+
+        /* main content wrapper to push footer down */
+        .main-content {
+            flex: 1;
+            padding: 60px 0 40px 0;
+        }
+
+        .container-custom {
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* ============================================ */
+        /* TOUR PACKAGES GRID & SIDEBAR (No conflicts)  */
+        /* ============================================ */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+
+        .col-xl-4, .col-lg-4, .col-xl-8, .col-lg-8, .col-md-6, .col-sm-6 {
+            padding: 0 15px;
+            position: relative;
+            width: 100%;
+        }
+
+        /* Sidebar Styles */
+        .service-sidebar {
+            margin-bottom: 30px;
+        }
+
+        .sidebar-widget {
+            margin-bottom: 30px;
+        }
+
+        .service-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .service-list ul li {
+            border-bottom: 1px solid #f0f0f0;
+            transition: all 0.3s ease;
+        }
+
+        .service-list ul li:last-child {
+            border-bottom: none;
+        }
+
+        .service-list ul li a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 20px;
+            color: #2c3e2f;
+            font-weight: 500;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            background: #fff;
+        }
+
+        .service-list ul li a i {
+            color: #FF8C42;
+            font-size: 0.85rem;
+            transition: transform 0.2s ease;
+        }
+
+        .service-list ul li a span {
+            flex: 1;
+        }
+
+        .service-list ul li a:hover {
+            background: #FFF7EF;
+            color: #0B2B26;
+            padding-left: 26px;
+        }
+
+        .service-list ul li a:hover i {
+            transform: translateX(4px);
+            color: #e07c2e;
+        }
+
+        .service-list ul li a.current {
+            background: #0B2B26;
+            color: #FFE6C7;
+        }
+
+        .service-list ul li a.current i {
+            color: #FF8C42;
+        }
+
+        /* Product Grid Cards - Premium & Clean */
+        .product-grid {
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.35s ease;
+            margin-bottom: 30px;
+            border: 1px solid rgba(0, 0, 0, 0.03);
+        }
+
+        .product-grid:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-image .image {
+            display: block;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .product-grid:hover .product-image img {
+            transform: scale(1.05);
+        }
+
+        .product-content {
+            padding: 20px 18px 22px;
+            text-align: left;
+        }
+
+        .product-content .title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .product-content .title a {
+            color: #0B2B26;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .product-content .title a:hover {
+            color: #FF8C42;
+        }
+
+        .product-content .date, 
+        .product-content .product {
+            font-size: 0.85rem;
+            color: #6c757d;
+            display: inline-block;
+        }
+
+        .product-content .product a {
+            color: #FF8C42;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .theme-btn.step {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #0B2B26;
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 12px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 140, 66, 0.3);
+        }
+
+        .theme-btn.step i {
+            font-size: 0.75rem;
+            transition: transform 0.2s;
+        }
+
+        .theme-btn.step:hover {
+            background: #FF8C42;
+            color: #0B2B26;
+            gap: 12px;
+        }
+
+        .theme-btn.step:hover i {
+            transform: translateX(4px);
+        }
+
+        /* ============================================ */
+        /* COMPACT MAIN FOOTER (height reduced)        */
+        /* No CSS conflicts: all classes isolated      */
+        /* ============================================ */
+        .main-footer {
+            background: linear-gradient(135deg, #0B2B26 0%, #1A3A32 100%);
+            color: #fff;
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
+            border-top: 3px solid #FF8C42;
+            width: 100%;
+            position: relative;
+            z-index: 10;
+        }
+
+        .auto-container {
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* compact row spacing - no conflict with tour row because of specific parent */
+        .main-footer .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 28px;
+            padding: 30px 0 20px 0;
+            margin: 0;
+        }
+
+        .footer-widget {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        .widget-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #FFE6C7;
+            position: relative;
+            padding-bottom: 8px;
+            letter-spacing: 0.3px;
+        }
+
+        .widget-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 42px;
+            height: 2.5px;
+            background: #FF8C42;
+            border-radius: 2px;
+            transition: width 0.25s ease;
+        }
+
+        .footer-widget:hover .widget-title::after {
+            width: 65px;
+        }
+
+        .text-white {
+            color: #cbd5e1 !important;
+            line-height: 1.5;
+            font-size: 0.88rem;
+            margin-top: 6px;
+        }
+
+        .user-links {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .user-links li {
+            margin-bottom: 8px;
+            transition: transform 0.2s ease;
+        }
+
+        .user-links li:hover {
+            transform: translateX(4px);
+        }
+
+        .user-links li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.88rem;
+            transition: all 0.2s ease;
+            display: inline-block;
+            line-height: 1.4;
+        }
+
+        .user-links li a:hover {
+            color: #FF8C42;
+        }
+
+        .cntct-info p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            color: #cbd5e1;
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        .cntct-info i {
+            color: #FF8C42;
+            font-size: 0.95rem;
+            margin-top: 2px;
+            min-width: 18px;
+        }
+
+        .days-open-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 140, 66, 0.12);
+            backdrop-filter: blur(3px);
+            border: 1px solid rgba(255, 140, 66, 0.45);
+            border-radius: 40px;
+            padding: 5px 14px;
+            margin-top: 12px;
+            width: fit-content;
+            transition: all 0.25s ease;
+        }
+
+        .days-open-badge:hover {
+            background: rgba(255, 140, 66, 0.25);
+            transform: scale(1.01);
+            border-color: #FF8C42;
+        }
+
+        .days-open-badge i {
+            color: #FF8C42;
+            font-size: 0.95rem;
+        }
+
+        .days-open-badge span {
+            color: #FFE6C7;
+            font-weight: 600;
+            font-size: 0.78rem;
+            letter-spacing: 0.3px;
+        }
+
+        .days-open-badge strong {
+            color: #FF8C42;
+            font-weight: 700;
+        }
+
+        .footer-logo-img {
+            width: 120px;
+            height: auto;
+            margin-top: 10px;
+            background: transparent;
+            display: block;
+            border-radius: 10px;
+            transition: transform 0.2s ease;
+        }
+
+        .footer-logo-img:hover {
+            transform: scale(1.02);
+        }
+
+        .footer-bottom {
+            background: #06201C;
+            padding: 12px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            margin-top: 0;
+        }
+
+        .copyright-text {
+            color: #9CA3AF;
+            font-size: 0.75rem;
+            text-align: center;
+            letter-spacing: 0.2px;
+        }
+
+        .copyright-text a {
+            color: #FF8C42;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .copyright-text a:hover {
+            color: #FFB347;
+            text-decoration: underline;
+        }
+
+        /* ========== RESPONSIVE (Tour + Footer) ========== */
+        @media (min-width: 992px) {
+            .col-xl-4 { flex: 0 0 33.333%; max-width: 33.333%; }
+            .col-xl-8 { flex: 0 0 66.666%; max-width: 66.666%; }
+            .col-lg-4 { flex: 0 0 33.333%; max-width: 33.333%; }
+            .col-lg-8 { flex: 0 0 66.666%; max-width: 66.666%; }
+        }
+
+        @media (min-width: 768px) {
+            .col-md-6 { flex: 0 0 50%; max-width: 50%; }
+            .col-sm-6 { flex: 0 0 50%; max-width: 50%; }
+        }
+
+        @media (max-width: 991px) {
+            .col-lg-4, .col-lg-8 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            #r {
+                margin-bottom: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .main-footer .row {
+                flex-direction: column;
+                gap: 28px !important;
+                padding: 22px 20px 20px 20px !important;
+            }
+            .footer-widget {
+                min-width: 100% !important;
+                text-align: center;
+            }
+            .widget-title::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .cntct-info p {
+                justify-content: center;
+                text-align: left;
+            }
+            .cntct-info {
+                text-align: left;
+                display: inline-block;
+                width: 100%;
+            }
+            .footer-logo-img {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .days-open-badge {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .product-content .title {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-image img {
+                height: 180px;
+            }
+            .product-content {
+                padding: 15px;
+            }
+            .theme-btn.step {
+                padding: 6px 16px;
+                font-size: 0.75rem;
+            }
+            .cntct-info p {
+                font-size: 0.8rem;
+            }
+        }
+
+        /* micro interaction */
+        .footer-widget {
+            transition: transform 0.2s ease;
+        }
+        .footer-widget:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+
+</head>
+<body>
+    
+<nav class="main-navbar">
+    <div class="logo">
+        <img src="logo.png" width="100" height="100" alt="Logo">
+    </div>
+    <ul class="nav-menu">
+        <li><a href="/index.html">Home</a></li>
+        <li class="active"><a href="Our_Story/Our_Story.html">Our Story</a></li>
+        <li>
+            <a href="../car/car.html">Car Rentals</a>
+        </li>
+        <li class="dropdown">
+            <a href="#">Destinations ▼</a>
+            <ul class="dropdown-menu">
+                <!-- intentionally empty -->
+            </ul>
+        </li>
+        <li><a href="#">Blogs</a></li>
+    </ul>
+    <a href="#" class="contact-btn">Contact Us</a>
+</nav>
+
+<div class="main-content">
+    <div class="container-custom">
+        
+        <div class="row">
+        
+            <div id="r" class="col-xl-4 col-lg-4">
+                <div class="service-sidebar">
+                    <div class="sidebar-widget service-sidebar-single">
+                        <div class="service-sidebar wow fadeInUp animated">
+                            <div class="service-list">
+                                <ul>
+                                    <li><a href="#" class="current"><i class="fas fa-angle-right"></i><span>Char Dham</span></a></li>
+                                    <li><a href="#"><i class="fas fa-angle-right"></i><span>Auli</span></a></li>
+                                    <li><a href="#"><i class="fas fa-angle-right"></i><span>Harsil Valley</span></a></li>
+                                    <li><a href="#"><i class="fas fa-angle-right"></i><span>Rishikesh</span></a></li>
+                                    <li><a href="#"><i class="fas fa-angle-right"></i><span>Mussoorie</span></a></li>
+                                    <li><a href="#"><i class="fas fa-angle-right"></i><span>Nainital</span></a></li>
+                                    <li><a href="#"><i class="fas fa-angle-right"></i><span>Jim Corbett</span></a></li>
+                                    <li><a href="#"><i class="fas fa-angle-right"></i><span>Haridwar</span></a></li>
+                                    <li><a href="#"><i class="fas fa-angle-right"></i><span>Chopta</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-xl-8 col-lg-8">
+                <div class="services-details__content">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="product-grid">
+                                <div class="product-image">
+                                    <a href="#" class="image">
+                                        <img class="img-1" src="two.jpg" alt="Kedarnath">
+                                    </a>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="title"><a href="#">Kedarnath Tours</a></h3>
+                                    <span class="date"></span>
+                                    <span class="product"><a href="#">02 Night / 03 Days</a></span><br>
+                                    <a href="#" class="theme-btn step">View Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-sm-6">
+                            <div class="product-grid">
+                                <div class="product-image">
+                                    <a href="#" class="image">
+                                        <img class="img-1" src="eightytwo.jpg" alt="Badrinath">
+                                    </a>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="title"><a href="#">Badrinath Tours</a></h3>
+                                    <span class="date"></span>
+                                    <span class="product"><a href="#">02 Night / 03 Days</a></span>
+                                    <br>
+                                    <a href="#" class="theme-btn step">View Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-sm-6">
+                            <div class="product-grid">
+                                <div class="product-image">
+                                    <a class="image" href="#">
+                                        <img class="img-1" src="threx.jpg" alt="Kedar Badri">
+                                    </a>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="title"><a href="#">Kedar – Badri Tours</a></h3>
+                                    <span class="date">Rs. </span>
+                                    <span class="product"><a href="#">02 Night / 03 Days</a></span>
+                                    <br>
+                                    <a class="theme-btn step" href="#">View Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-sm-6">
+                            <div class="product-grid">
+                                <div class="product-image">
+                                    <a class="image" href="#">
+                                        <img class="img-1" src="zas.jpg" alt="Char Dham Helicopter">
+                                    </a>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="title"><a href="#">Char Dham by helicopter Packages</a></h3>
+                                    <span class="date">Rs. </span>
+                                    <span class="product"><a href="#">02 Night / 03 Days</a></span>
+                                    <br>
+                                    <a class="theme-btn step" href="#">View Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="r1" class="col-xl-4 col-lg-4" style="display: none;">
+                <div class="service-sidebar">
+                    <div class="sidebar-widget service-sidebar-single">
+                        <div class="service-sidebar wow fadeInUp animated">
+                            <div class="service-list">
+                                <ul>
+                                    <li><a href="#" class="current"><i class="fas fa-angle-right"></i><span>Golden Triangle tour packages</span></a></li>
+                                    <li><a href="#"><i class="fas fa-angle-right"></i><span>Rajasthan tour packages</span></a></li>
+                                    <li><a href="#"><i class="fas fa-angle-right"></i><span>Himachal tour packages</span></a></li>
+                                    <li><a href="#"><i class="fas fa-angle-right"></i><span>Pilgrimage tour packages</span></a></li>
+                                    <li><a href="#"><i class="fas fa-angle-right"></i><span>Kerala tour packages</span></a></li>
+                                    <li><a href="#"><i class="fas fa-angle-right"></i><span>Char Dham Package</span></a></li>
+                                    <li><a href="#"><i class="fas fa-angle-right"></i><span>Kashmir &amp; Leh ladhakh tour packages</span></a></li>
+                                    <li><a href="#"><i class="fas fa-angle-right"></i><span>Karnataka tour packages</span></a></li>
+                                    <li><a href="#"><i class="fas fa-angle-right"></i><span>Mumbai &amp; goa tour packages</span></a></li>
+                                    <li><a href="#"><i class="fas fa-angle-right"></i><span>Same day tour packages</span></a></li>
+                                    <li><a href="#"><i class="fas fa-angle-right"></i><span>Weekend tour packages</span></a></li>
+                                    <li><a href="#"><i class="fas fa-angle-right"></i><span>Special grand north india tour packages</span></a></li>
+                                    <li><a href="#"><i class="fas fa-angle-right"></i><span>Wild life tour packages</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- COMPACT FOOTER -->
+<footer class="main-footer">
+    <div class="auto-container">
+        <div class="row">
+            <div class="footer-widget">
+                <h6 class="widget-title">About Us</h6>
+                <p class="text-white">We are dedicated to providing comfortable, affordable, and well-planned travel packages that allow travelers to explore the natural beauty, spiritual destinations, and adventure spots of Uttarakhand with ease.</p>
+                <img decoding="async" width="120" height="120" src="https://uttarakhandtrips.com/wp-content/uploads/2024/06/Untitled-design-85.png" class="footer-logo-img" alt="Narayan Holidays Logo">
+            </div>
+
+            <div class="footer-widget">
+                <h6 class="widget-title">Quick Links</h6>
+                <ul class="user-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Car Rentals</a></li>
+                    <li><a href="#">Our Story</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-widget">
+                <h6 class="widget-title">Other Links</h6>
+                <ul class="user-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-widget">
+                <h6 class="widget-title">Contact Info</h6>
+                <div class="cntct-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Nai Basti Bheemgoda Road, Near Valmiki Mandir, Kharkhari Haridwar 01</p>
+                    <p><i class="fas fa-phone-alt"></i> +91-9045169168 / 9997472783</p>
+                    <p><i class="fas fa-envelope-open"></i> narayanholidays11@gmail.com</p>
+                </div>
+                
+                <div class="days-open-badge">
+                    <i class="fas fa-calendar-week"></i>
+                    <span><strong>📞 7 Days Open</strong> | Mon - Sun (9 AM - 8 PM)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="auto-container">
+            <div class="copyright-text">© Copyright 2026 Narayan Holidays | Designed by <a href="https://techeor.in/" target="_blank">Techeor Technology</a></div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

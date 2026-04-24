@@ -14,9 +14,9 @@
 	<!-- Responsive -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <style>
+    <!--style>
 
-        <style>
+       
     * {
         margin: 0;
         padding: 0;
@@ -185,7 +185,8 @@
             padding: 30px 0 15px 0;
         }
     }
-</style>
+</style--->
+
     <style>
     * {
         margin: 0;
@@ -760,7 +761,406 @@
             color: #E76F2D;
         }
     </style>
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            background: #f4f7fc;
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Dummy content just for demo spacing */
+        .demo-space {
+            flex: 1;
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #eef2f5 0%, #ffffff 100%);
+        }
+        .demo-space h1 {
+            font-size: 2rem;
+            color: #0B2B26;
+            margin-bottom: 1rem;
+        }
+        .demo-space p {
+            color: #4a5568;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ============================================ */
+        /* MAIN FOOTER STYLES - Premium & Modern        */
+        /* Inspired by uttrakhandtrip.com + MSME badge  */
+        /* + 7 Days Open Badge Added                    */
+        /* ============================================ */
+        .main-footer {
+            background: linear-gradient(135deg, #0B2B26 0%, #1A3A32 100%);
+            color: #fff;
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
+            border-top: 4px solid #FF8C42;
+            width: 100%;
+            position: relative;
+            z-index: 10;
+        }
+
+        .auto-container {
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Row flex layout */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 50px 0 40px 0;
+        }
+
+        /* Footer Widget */
+        .footer-widget {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        /* Widget Title */
+        .widget-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #FFE6C7;
+            position: relative;
+            padding-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .widget-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background: #FF8C42;
+            border-radius: 3px;
+            transition: width 0.3s ease;
+        }
+
+        .footer-widget:hover .widget-title::after {
+            width: 80px;
+        }
+
+        /* Text styling */
+        .text-white {
+            color: #cbd5e1 !important;
+            line-height: 1.7;
+            font-size: 0.95rem;
+            margin-top: 10px;
+        }
+
+        /* Links styling */
+        .user-links {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .user-links li {
+            margin-bottom: 12px;
+            transition: transform 0.2s ease;
+        }
+
+        .user-links li:hover {
+            transform: translateX(5px);
+        }
+
+        .user-links li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+            line-height: 2;
+        }
+
+        .user-links li a:hover {
+            color: #FF8C42;
+        }
+
+        /* Contact info styling */
+        .cntct-info p {
+            margin-bottom: 16px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .cntct-info i {
+            color: #FF8C42;
+            font-size: 1.1rem;
+            margin-top: 3px;
+            min-width: 20px;
+        }
+
+        /* 7 Days Open Badge - New Addition */
+        .days-open-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 140, 66, 0.15);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 140, 66, 0.5);
+            border-radius: 50px;
+            padding: 8px 18px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            width: fit-content;
+            transition: all 0.3s ease;
+        }
+        .days-open-badge:hover {
+            background: rgba(255, 140, 66, 0.3);
+            transform: scale(1.02);
+            border-color: #FF8C42;
+        }
+        .days-open-badge i {
+            color: #FF8C42;
+            font-size: 1.1rem;
+        }
+        .days-open-badge span {
+            color: #FFE6C7;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+        }
+        .days-open-badge strong {
+            color: #FF8C42;
+            font-weight: 700;
+        }
+
+        /* Logo image styling */
+        .footer-logo-img {
+            width: 150px;
+            height: auto;
+            margin-top: 15px;
+            background: transparent;
+            display: block;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+        .footer-logo-img:hover {
+            transform: scale(1.02);
+        }
+
+        /* Certificate section - MSME premium card */
+        .msme-certificate {
+            margin-top: 25px;
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(4px);
+            border-radius: 20px;
+            padding: 18px 15px;
+            text-align: center;
+            transition: all 0.35s ease;
+            border: 1px solid rgba(255, 140, 66, 0.4);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .msme-certificate:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 140, 66, 0.12);
+            border-color: #FF8C42;
+            box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+        }
+
+        .cert-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #FFE6C7;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .cert-title i {
+            color: #FF8C42;
+            font-size: 1.25rem;
+        }
+
+        .cert-number {
+            font-size: 0.85rem;
+            color: #FFE6C7;
+            background: rgba(0,0,0,0.4);
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 40px;
+            font-family: 'Courier New', monospace;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+
+        .cert-badge {
+            margin-top: 12px;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .badge-icon {
+            background: #FF8C42;
+            color: #0B2B26;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 4px 14px;
+            border-radius: 30px;
+            letter-spacing: 0.5px;
+        }
+
+        .cert-footer-text {
+            font-size: 0.7rem;
+            color: #b9c3d0;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        /* Footer Bottom */
+        .footer-bottom {
+            background: #06201C;
+            padding: 20px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            margin-top: 10px;
+        }
+
+        .copyright-text {
+            color: #9CA3AF;
+            font-size: 0.85rem;
+            text-align: center;
+            letter-spacing: 0.3px;
+        }
+
+        .copyright-text a {
+            color: #FF8C42;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .copyright-text a:hover {
+            color: #FFB347;
+            text-decoration: underline;
+        }
+
+        /* ========== RESPONSIVE STYLES ========== */
+        @media (max-width: 992px) {
+            .row {
+                gap: 30px !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .row {
+                flex-direction: column;
+                gap: 35px !important;
+                padding: 0px 20px !important;
+            }
+            
+            .footer-widget {
+                min-width: 100% !important;
+                text-align: center;
+            }
+            
+            .widget-title::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .user-links li:hover {
+                transform: translateX(0) scale(1.02);
+            }
+            
+            .cntct-info p {
+                justify-content: center;
+                text-align: left;
+            }
+
+            .cntct-info {
+                text-align: left;
+                display: inline-block;
+                width: 100%;
+            }
+
+            .footer-logo-img {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .msme-certificate {
+                max-width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .cert-title {
+                justify-content: center;
+            }
+
+            /* Center the 7 days badge on mobile */
+            .days-open-badge {
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cntct-info p {
+                font-size: 0.85rem;
+                word-break: break-word;
+            }
+            .widget-title {
+                font-size: 1.2rem;
+            }
+            .msme-certificate {
+                padding: 14px 12px;
+            }
+            .cert-number {
+                font-size: 0.75rem;
+            }
+            .days-open-badge span {
+                font-size: 0.75rem;
+            }
+        }
+
+        /* Hover animations for widgets */
+        .footer-widget {
+            transition: transform 0.25s ease;
+        }
+
+        .footer-widget:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Scrollbar styling */
+        .main-footer ::-webkit-scrollbar {
+            width: 5px;
+        }
+        .main-footer ::-webkit-scrollbar-track {
+            background: #1A3A32;
+        }
+        .main-footer ::-webkit-scrollbar-thumb {
+            background: #FF8C42;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
 
@@ -776,38 +1176,10 @@
         <li class="active"><a href="../Our_Story/Our_Story.html">Our Story</a></li>
         <li><a href="Car/car.html">Car Rentals</a></li>
         <li class="dropdown">
-            <a href="#">Destinations ▼</a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Char Dham</a></li>
-                <li><a href="#">Kedarnath</a></li>
-                <li><a href="#">Badrinath</a></li>
-                <li><a href="#">Rishikesh</a></li>
-                <li><a href="#">Mussoorie</a></li>
-                <li><a href="#">Nainital</a></li>
-                <li><a href="#">Jim Corbett</a></li>
-                <li class="has-nested">
-                    <a href="#">More ▼</a>
-                    <ul class="nested-dropdown">
-                        <li><a href="#">Chopta</a></li>
-                        <li><a href="#">Auli</a></li>
-                        <li><a href="#">Harsil Valley</a></li>
-                        <li><a href="#">Haridwar</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <a href="../char-dham/astha.html">Destinations </a>
+            
         </li>
-        <li class="dropdown">
-            <a href="#">Travel By Theme ▼</a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Group</a></li>
-                <li><a href="#">Family</a></li>
-                <li><a href="#">Pilgrimage</a></li>
-                <li><a href="#">Romantic</a></li>
-                <li><a href="#">Wildlife</a></li>
-                <li><a href="#">Leisure</a></li>
-                <li><a href="#">Adventure</a></li>
-            </ul>
-        </li>
+       
         <li><a href="../blogs/index.html">Blogs</a></li>
     </ul>
     <a href="#" class="contact-btn">Contact Us</a>
@@ -834,44 +1206,12 @@
         
         <li class="mobile-nav-item">
             <div class="mobile-nav-link mobile-dropdown-toggle">
-                Destinations <span class="arrow">▼</span>
+                Destinations 
             </div>
-            <ul class="mobile-submenu">
-                <li><a href="#">Char Dham</a></li>
-                <li><a href="#">Kedarnath</a></li>
-                <li><a href="#">Badrinath</a></li>
-                <li><a href="#">Rishikesh</a></li>
-                <li><a href="#">Mussoorie</a></li>
-                <li><a href="#">Nainital</a></li>
-                <li><a href="#">Jim Corbett</a></li>
-                <li>
-                    <div class="mobile-nav-link mobile-dropdown-toggle" style="padding-left: 0;">
-                        More <span class="arrow">▼</span>
-                    </div>
-                    <ul class="mobile-submenu">
-                        <li><a href="#">Chopta</a></li>
-                        <li><a href="#">Auli</a></li>
-                        <li><a href="#">Harsil Valley</a></li>
-                        <li><a href="#">Haridwar</a></li>
-                    </ul>
-                </li>
-            </ul>
+           
         </li>
 
-        <li class="mobile-nav-item">
-            <div class="mobile-nav-link mobile-dropdown-toggle">
-                Travel By Theme <span class="arrow">▼</span>
-            </div>
-            <ul class="mobile-submenu">
-                <li><a href="#">Group</a></li>
-                <li><a href="#">Family</a></li>
-                <li><a href="#">Pilgrimage</a></li>
-                <li><a href="#">Romantic</a></li>
-                <li><a href="#">Wildlife</a></li>
-                <li><a href="#">Leisure</a></li>
-                <li><a href="#">Adventure</a></li>
-            </ul>
-        </li>
+       
 
         <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">Blogs</a></li>
     </ul>
@@ -1145,22 +1485,21 @@
 
 
 
- <!--Footer Bottom-->
- <!-- ========== FOOTER (BLACK, LESS SPACE) ========== -->
-<footer class="main-footer">
-    <!--Widgets Section-->
+
+<!--footer class="main-footer">
+    
     <div class="widgets-section">
         <div class="auto-container">
             <div class="row">
                 <div class="footer-column">
                     <div class="row">
-                        <!-- About Us -->
+                      
                         <div class="footer-widget">
                             <h6 class="widget-title">About Us</h6>
                             <p class="text-white">We are dedicated to providing comfortable, affordable, and well-planned travel packages that allow travelers to explore the natural beauty, spiritual destinations, and adventure spots of Uttarakhand with ease.</p>
                         </div>
                         
-                        <!-- Quick Links -->
+              
                         <div class="footer-widget">
                             <h6 class="widget-title">Quick Links</h6>
                             <ul class="user-links">
@@ -1172,7 +1511,7 @@
                             </ul>
                         </div>
                         
-                        <!-- Other Links -->
+                       
                         <div class="footer-widget">
                             <h6 class="widget-title">Other Links</h6>
                             <ul class="user-links">
@@ -1181,7 +1520,7 @@
                             </ul>
                         </div>
                         
-                        <!-- Contact Info -->
+                  
                         <div class="footer-widget">
                             <h6 class="widget-title">Contact Info</h6>
                             <div class="cntct-info">
@@ -1203,13 +1542,89 @@
         </div>
     </div>
     
-    <!--Footer Bottom-->
+    
     <div class="footer-bottom">
         <div class="auto-container">
             <div class="copyright-text">© Copyright 2026 Narayan Holidays Designed by <a href="https://techeor.in/" target="_blank">Techeor Technology</a></div>
         </div>
     </div>
-</footer>
+</footer--->
+<footer class="main-footer">
+        <div class="auto-container">
+            <div class="row">
+                <!-- About Us Widget with Logo -->
+                <div class="footer-widget">
+                    <h6 class="widget-title">About Us</h6>
+                    <p class="text-white">We are dedicated to providing comfortable, affordable, and well-planned travel packages that allow travelers to explore the natural beauty, spiritual destinations, and adventure spots of Uttarakhand with ease.</p>
+                    <img decoding="async" width="150" height="150" src="https://uttarakhandtrips.com/wp-content/uploads/2024/06/Untitled-design-85.png" class="footer-logo-img" alt="Narayan Holidays Logo" style="width:150px; height:auto; margin-top:15px;">
+                </div>
+
+                <!-- Quick Links Widget -->
+                <div class="footer-widget">
+                    <h6 class="widget-title">Quick Links</h6>
+                    <ul class="user-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="car/car.html" class="mobile-nav-link">Car Rentals</a></li>
+                        <li><!--a href="#our-story">Our Story</a-->
+                          <a href="../Our_Story/Our_Story.html">Our Story</a>
+                        </li>
+                       
+                       
+                    </ul>
+                </div>
+
+                <!-- Other Links Widget -->
+                <div class="footer-widget">
+                    <h6 class="widget-title">Other Links</h6>
+                    <ul class="user-links">
+                        <li><a href="privacy.php">Privacy Policy</a></li>
+                        <li><a href="terms.php">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info Widget + MSME Certificate + 7 DAYS OPEN BADGE -->
+                <div class="footer-widget">
+                    <h6 class="widget-title">Contact Info</h6>
+                    <div class="cntct-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Nai Basti Bheemgoda Road, Near Valmiki Mandir, Kharkhari Haridwar 01</p>
+                        <p><i class="fas fa-phone-alt"></i> +91-9045169168 / 9997472783</p>
+                        <p><i class="fas fa-envelope-open"></i> narayanholidays11@gmail.com</p>
+                    </div>
+                    
+                    <!-- 🆕 7 DAYS OPEN BADGE - ADDED AS REQUESTED -->
+                    <div class="days-open-badge">
+                        <i class="fas fa-calendar-week"></i>
+                        <span><strong>📞 7 Days Open</strong> | Mon - Sun (9 AM - 8 PM)</span>
+                    </div>
+
+                    <!-- MSME CERTIFICATE SECTION (Premium Design) -->
+                    <!--div class="msme-certificate">
+                        <div class="cert-title">
+                            <i class="fas fa-certificate"></i>
+                            <span>MSME Registered</span>
+                        </div>
+                        <div class="cert-number">
+                            UDYAM-HR-02-0012345
+                        </div>
+                        <div class="cert-badge">
+                            <span class="badge-icon">Govt. of India</span>
+                            <span class="badge-icon">MSME Certified</span>
+                        </div>
+                        <div class="cert-footer-text">
+                            <i class="fas fa-check-circle" style="font-size: 0.65rem;"></i> Certificate of Recognition
+                        </div>
+                    </div-->
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="auto-container">
+                <div class="copyright-text">© Copyright 2026 Narayan Holidays | Designed by <a href="https://techeor.in/" target="_blank">Techeor Technology</a></div>
+            </div>
+        </div>
+    </footer>
 
 
 	<!--End Main Footer -->

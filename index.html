@@ -707,7 +707,7 @@ gtag("config", "GT-WK27ZCWJ");
             .row {
                 flex-direction: column;
                 gap: 35px !important;
-                padding: 35px 20px !important;
+                padding: 0px 20px !important;
             }
             
             .footer-widget {
@@ -1441,7 +1441,160 @@ details[open] .read-less {
 .hamburger.active span:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
 }
+@media (max-width: 768px) {
+    .main-footer .row {
+        flex-direction: column;
+        gap: 35px !important;
+        /* padding: 30px 20px !important; */
+    }
+}
+/* Import Google Fonts for a modern travel look */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
+.uts-working-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
+    background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+    border-radius: 48px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.1);
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.uts-working-content:hover {
+    transform: translateY(-5px);
+}
+
+/* Heading Style */
+.uts-working-content h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(135deg, #ffe6b0, #ffb347);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.uts-working-content h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #ffb347, #ffdd77);
+    margin: 15px auto 0;
+    border-radius: 4px;
+}
+
+/* Paragraph styling */
+.uts-working-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    font-weight: 400;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    padding: 25px;
+    border-radius: 32px;
+    margin: 25px 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Strong text inside paragraph */
+.uts-working-content p strong {
+    color: #ffd966;
+    font-weight: 600;
+    background: linear-gradient(120deg, rgba(255,180,71,0.2), transparent);
+    padding: 0 6px;
+    border-radius: 12px;
+}
+
+/* Emoji images */
+.uts-working-content img.emoji {
+    height: 1.2em;
+    width: 1.2em;
+    margin: 0 0.05em 0 0.1em;
+    vertical-align: -0.2em;
+    display: inline-block;
+}
+
+/* Tags container */
+.uts-working-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 35px;
+    padding-top: 15px;
+}
+
+/* Individual tag styling */
+.uts-working-tags span {
+    background: rgba(255, 215, 150, 0.15);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 200, 100, 0.6);
+    padding: 12px 24px;
+    border-radius: 60px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    cursor: default;
+    color: #fff3e0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.uts-working-tags span:hover {
+    background: #ffb347;
+    color: #1e2f3a;
+    transform: translateY(-3px) scale(1.02);
+    border-color: #fff0b5;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .uts-working-content {
+        margin: 20px;
+        padding: 25px;
+        border-radius: 32px;
+    }
+
+    .uts-working-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .uts-working-content p {
+        font-size: 1rem;
+        padding: 18px;
+    }
+
+    .uts-working-tags span {
+        padding: 8px 18px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .uts-working-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .uts-working-tags {
+        gap: 10px;
+    }
+
+    .uts-working-tags span {
+        padding: 6px 14px;
+        font-size: 0.7rem;
+    }
+}
 </style>
 
 <noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
@@ -3091,89 +3244,7 @@ if (hamburger && mobilePanel) {
         }
     })();
 </script>
-                <!-- ============================================ -->
-<!-- LUXURY ESCAPES SECTION - SINGLE IMAGE PER SLIDE -->
-<!-- EK BAAR MEIN SIRF EK IMAGE - POORA DIKHEGA -->
-<!-- ============================================ -->
-
-<!---div id="uttk-luxury-main-container" class="luxury-main-wrapper">
-    <div id="uttk-luxury-inner" class="luxury-inner-container">
-        
-      
-        <div id="uttk-hero-section" class="luxury-hero-box">
-            <div id="uttk-hero-overlay" class="hero-dark-overlay"></div>
-            <div id="uttk-hero-content" class="hero-text-content">
-                <h1 id="uttk-hero-title">Luxury Escapes In Uttarakhand</h1>
-                <p id="uttk-hero-description">Uttarakhand isn't just for yatras and treks, some places here are made purely for slowing down and staying in comfort. If you're someone who enjoys mountain views, quiet mornings, and a bit of pampering, these luxury resorts are totally worth looking into.</p>
-            </div>
-        </div>
-       
-        <div id="uttk-accordion-wrapper" class="accordion-unique-wrap">
-            <details id="uttk-accordion-details" class="luxury-accordion-item">
-                <summary id="uttk-accordion-summary" class="accordion-summary-btn">
-                    <span id="uttk-accordion-text" class="accordion-btn-text">Read <span id="uttk-read-more" class="read-more-span">More</span><span id="uttk-read-less" class="read-less-span">Less</span></span>
-                    <span id="uttk-accordion-icon" class="accordion-icon-sign">▼</span>
-                </summary>
-                <div id="uttk-accordion-content" class="accordion-content-panel">
-                    <div id="uttk-resort-taj" class="resort-card">
-                        <h4 id="uttk-taj-title" class="resort-title">🌿 Taj Rishikesh Resort &amp; Spa</h4>
-                        <p id="uttk-taj-location" class="resort-location"><em>Singthali, near Shivpuri</em></p>
-                        <p id="uttk-taj-desc" class="resort-desc">This luxury resort is located about 30 km from Rishikesh town, away from the crowd, right next to the Ganga river. Rooms have forest or river views, and it's a great pick for wellness getaways—there's a full spa, yoga pavilion, and riverside deck.</p>
-                        <p id="uttk-taj-details" class="resort-details"><strong>Best for</strong>: Couples, wellness travelers, peace seekers<br><strong>Approx Price</strong>: ₹20,000–₹35,000/night<br><strong>Good to Know</strong>: Limited phone network; ideal for digital detox</p>
-                    </div>
-                    
-                    <div id="uttk-resort-naini" class="resort-card">
-                        <h4 id="uttk-naini-title" class="resort-title">🏔️ The Naini Retreat, Nainital</h4>
-                        <p id="uttk-naini-location" class="resort-location"><em>Ayarpata Slopes, Nainital</em></p>
-                        <p id="uttk-naini-desc" class="resort-desc">Originally a royal residence, now a heritage-style hotel with modern upgrades. Just a 10-minute drive from Mall Road but feels private and calm. Rooms have wooden interiors, and there's a great view of Naini Lake from the lawns.</p>
-                        <p id="uttk-naini-details" class="resort-details"><strong>Best for</strong>: Couples, small families, heritage lovers<br><strong>Approx Price</strong>: ₹10,000–₹18,000/night<br><strong>Good to Know</strong>: Gets sold out on weekends and holidays; book early</p>
-                    </div>
-                    
-                    <div id="uttk-resort-jw" class="resort-card">
-                        <h4 id="uttk-jw-title" class="resort-title">🏨 JW Marriott Mussoorie Walnut Grove Resort &amp; Spa</h4>
-                        <p id="uttk-jw-location" class="resort-location"><em>Barlowganj, Mussoorie</em></p>
-                        <p id="uttk-jw-desc" class="resort-desc">One of Mussoorie's most premium stays, about 5 km from Mall Road. The resort offers big valley views, indoor pool, multiple restaurants, and lots of space for kids. Rooms are modern with all comforts and large windows.</p>
-                        <p id="uttk-jw-details" class="resort-details"><strong>Best for</strong>: Families, honeymooners, special occasions<br><strong>Approx Price</strong>: ₹18,000–₹30,000/night<br><strong>Good to Know</strong>: Great for longer stays (2–3 nights); check for meal packages</p>
-                    </div>
-                    
-                    <div id="uttk-resort-namah" class="resort-card">
-                        <h4 id="uttk-namah-title" class="resort-title">🐘 Namah Resort, Jim Corbett</h4>
-                        <p id="uttk-namah-location" class="resort-location"><em>Dhikuli, near Bijrani Zone</em></p>
-                        <p id="uttk-namah-desc" class="resort-desc">Located just 8 km from Ramnagar, this is a comfortable, full-service resort near Corbett National Park. It has lawns, a pool, spa, and large rooms—some with river views. Ideal if you want luxury near safari zones.</p>
-                        <p id="uttk-namah-details" class="resort-details"><strong>Best for</strong>: Wildlife lovers, seniors, relaxed holidays<br><strong>Approx Price</strong>: ₹9,000–₹16,000/night<br><strong>Good to Know</strong>: Safaris need to be pre-booked; resort can help with that</p>
-                    </div>
-                </div>
-            </details>
-        </div>
-        
-  
-        <div id="uttk-carousel-wrapper" class="carousel-unique-container">
-            <div id="uttk-carousel-main" class="swiper uttk-carousel-slider">
-                <div id="uttk-carousel-track" class="swiper-wrapper">
-                    <div id="uttk-slide-1" class="swiper-slide">
-                        <div id="uttk-img-1" class="carousel-img-box" style="background-image: url('https://uttarakhandtrips.com/wp-content/uploads/2024/08/1-6.webp');"></div>
-                    </div>
-                    <div id="uttk-slide-2" class="swiper-slide">
-                        <div id="uttk-img-2" class="carousel-img-box" style="background-image: url('https://uttarakhandtrips.com/wp-content/uploads/2024/08/3-5.webp');"></div>
-                    </div>
-                    <div id="uttk-slide-3" class="swiper-slide">
-                        <div id="uttk-img-3" class="carousel-img-box" style="background-image: url('https://uttarakhandtrips.com/wp-content/uploads/2024/08/2-5.webp');"></div>
-                    </div>
-                    <div id="uttk-slide-4" class="swiper-slide">
-                        <div id="uttk-img-4" class="carousel-img-box" style="background-image: url('https://uttarakhandtrips.com/wp-content/uploads/2024/08/4-5.webp');"></div>
-                    </div>
-                    <div id="uttk-slide-5" class="swiper-slide">
-                        <div id="uttk-img-5" class="carousel-img-box" style="background-image: url('https://uttarakhandtrips.com/wp-content/uploads/2024/08/5-3.webp');"></div>
-                    </div>
-                </div>
-                <div id="uttk-carousel-prev" class="carousel-arrow-prev">◀</div>
-                <div id="uttk-carousel-next" class="carousel-arrow-next">▶</div>
-                <div id="uttk-carousel-pagination" class="carousel-pagination-dots"></div>
-            </div>
-        </div>
-        
-    </div>
-</div-->
+    
 
 
 <!-- ============================================ -->
@@ -3660,7 +3731,7 @@ $(window).on('load scroll', function(){
 </div>
 
 
-<style>
+<!----style>
 .uts-working-slider {
     max-width: 1400px;
     margin: 0 auto;
@@ -3816,13 +3887,6 @@ $(window).on('load scroll', function(){
 
 
 
-/* ======================================== */
-/* UTTARAKHAND SLIDER - RESPONSIVE FIXES    */
-/* Is CSS ko apni website ke style section  */
-/* mein paste karein (end mein)            */
-/* ======================================== */
-
-/* ----- Tablet (768px to 1024px) ----- */
 @media (max-width: 1024px) {
     /* Slider images */
     .uts-working-track img {
@@ -3854,14 +3918,12 @@ $(window).on('load scroll', function(){
     }
 }
 
-/* ----- Mobile (481px to 767px) ----- */
 @media (max-width: 767px) {
-    /* Slider images - smaller height */
+  
     .uts-working-track img {
         height: 280px !important;
     }
     
-    /* Navigation buttons - smaller */
     .uts-working-prev, 
     .uts-working-next {
         width: 36px !important;
@@ -3872,19 +3934,19 @@ $(window).on('load scroll', function(){
     .uts-working-prev { left: 10px !important; }
     .uts-working-next { right: 10px !important; }
     
-    /* Content padding */
+
     .uts-working-content {
         padding: 20px 15px !important;
     }
     
-    /* Heading - mobile size */
+   
     .uts-working-content h2 {
         font-size: 22px !important;
         line-height: 1.4 !important;
         margin-bottom: 15px !important;
     }
     
-    /* Paragraph text - easier to read on mobile */
+    
     .uts-working-content p {
         font-size: 14px !important;
         line-height: 1.6 !important;
@@ -3892,7 +3954,7 @@ $(window).on('load scroll', function(){
         margin-bottom: 20px !important;
     }
     
-    /* Tags - wrap properly */
+    
     .uts-working-tags {
         gap: 8px !important;
     }
@@ -3902,7 +3964,7 @@ $(window).on('load scroll', function(){
         font-size: 11px !important;
     }
     
-    /* Dots - smaller */
+    
     .uts-working-dot {
         width: 8px !important;
         height: 8px !important;
@@ -3918,26 +3980,25 @@ $(window).on('load scroll', function(){
     }
 }
 
-/* ----- Small Mobile (up to 480px) ----- */
+
 @media (max-width: 480px) {
-    /* Images - even smaller for very small phones */
+    
     .uts-working-track img {
         height: 220px !important;
     }
     
-    /* Heading */
+   
     .uts-working-content h2 {
         font-size: 18px !important;
         line-height: 1.3 !important;
     }
     
-    /* Paragraph */
+   
     .uts-working-content p {
         font-size: 13px !important;
         line-height: 1.5 !important;
     }
     
-    /* Buttons */
     .uts-working-prev, 
     .uts-working-next {
         width: 32px !important;
@@ -3945,25 +4006,25 @@ $(window).on('load scroll', function(){
         font-size: 16px !important;
     }
     
-    /* Tags - more compact */
+    
     .uts-working-tags span {
         padding: 4px 10px !important;
         font-size: 10px !important;
     }
     
-    /* Content padding */
+   
     .uts-working-content {
         padding: 15px 12px !important;
     }
     
-    /* Dots spacing */
+    
     .uts-working-dots {
         gap: 6px !important;
         margin: 12px 0 15px 0 !important;
     }
 }
 
-/* ----- Fix for landscape mode on mobile ----- */
+
 @media (max-width: 767px) and (orientation: landscape) {
     .uts-working-track img {
         height: 200px !important;
@@ -3993,26 +4054,9 @@ $(window).on('load scroll', function(){
     }
 }
 
-/* ----- Optional: Better touch targets for mobile ----- 
-@media (max-width: 767px) {
- 
-    .uts-working-prev, 
-    .uts-working-next {
-        background: rgba(0,0,0,0.7) !important;
-    }
-    
-  
-    .uts-working-dot {
-        min-width: 8px !important;
-        min-height: 8px !important;
-    }
-    
-    .uts-working-content p {
-        text-align: justify !important;
-    }
-}*/
 
-/* ----- Large Desktop (1400px+) - maintain good proportions ----- */
+
+
 @media (min-width: 1400px) {
     .uts-working-track img {
         height: 580px !important;
@@ -4033,12 +4077,7 @@ $(window).on('load scroll', function(){
     }
 }
 
-/* ============================================= */
-/* UTTARAKHAND SLIDER - COMPLETE RESPONSIVE FIX  */
-/* Isko apne style section ke END mein paste karo */
-/* ============================================= */
 
-/* Force fix for all mobile devices */
 @media (max-width: 768px) {
     
     /* Slider container */
@@ -4047,20 +4086,20 @@ $(window).on('load scroll', function(){
         overflow-x: hidden !important;
     }
     
-    /* Slider images - proper height for mobile */
+   
     .uts-working-track img {
         height: 280px !important;
         width: 100% !important;
         object-fit: cover !important;
     }
     
-    /* Slider container padding/margin reset */
+
     .uts-working-container {
         border-radius: 16px !important;
         margin: 0 !important;
     }
     
-    /* Navigation buttons - properly positioned */
+
     .uts-working-prev,
     .uts-working-next {
         width: 36px !important;
@@ -4072,14 +4111,14 @@ $(window).on('load scroll', function(){
     .uts-working-prev { left: 10px !important; }
     .uts-working-next { right: 10px !important; }
     
-    /* Content box */
+    
     .uts-working-content {
         padding: 20px 15px !important;
         margin-top: 5px !important;
         border-radius: 16px !important;
     }
     
-    /* Heading - mobile friendly */
+  
     .uts-working-content h2 {
         font-size: 20px !important;
         line-height: 1.4 !important;
@@ -4087,7 +4126,7 @@ $(window).on('load scroll', function(){
         text-align: center !important;
     }
     
-    /* Paragraph text */
+    
     .uts-working-content p {
         font-size: 14px !important;
         line-height: 1.6 !important;
@@ -4096,7 +4135,7 @@ $(window).on('load scroll', function(){
         margin-bottom: 15px !important;
     }
     
-    /* Tags/highlights */
+ 
     .uts-working-tags {
         gap: 8px !important;
         justify-content: center !important;
@@ -4107,7 +4146,7 @@ $(window).on('load scroll', function(){
         font-size: 11px !important;
     }
     
-    /* Dots */
+  
     .uts-working-dots {
         gap: 8px !important;
         margin: 15px 0 20px 0 !important;
@@ -4123,7 +4162,7 @@ $(window).on('load scroll', function(){
     }
 }
 
-/* Small phones (up to 480px) */
+
 @media (max-width: 480px) {
     .uts-working-track img {
         height: 220px !important;
@@ -4151,7 +4190,7 @@ $(window).on('load scroll', function(){
     }
 }
 
-/* Landscape mode on mobile */
+
 @media (max-width: 768px) and (orientation: landscape) {
     .uts-working-track img {
         height: 200px !important;
@@ -4177,7 +4216,6 @@ $(window).on('load scroll', function(){
     }
 }
 
-/* Tablet devices (768px to 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
     .uts-working-track img {
         height: 400px !important;
@@ -4201,7 +4239,234 @@ $(window).on('load scroll', function(){
 
 
 
-</style>
+</style--->
+<style>
+    :root {
+      --uc-accent: #2563eb;
+      --uc-accent-2: #06b6d4;
+      --uc-bg: #f4f7ff;
+      --uc-card: #ffffff;
+      --uc-text: #0f172a;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: radial-gradient(circle at top right, #e0f2fe, #f8fafc 55%);
+      color: var(--uc-text);
+    }
+
+    /* UNIQUE WRAPPER ID + UNIQUE CLASSES */
+    #uc-carousel-utt-2026 {
+      max-width: 1200px;
+      margin: 36px auto;
+      padding: 0 16px;
+    }
+
+    #uc-carousel-utt-2026 .uc-headline {
+      text-align: center;
+      margin: 0 0 14px;
+      font-size: clamp(20px, 2.2vw, 32px);
+      font-weight: 800;
+      letter-spacing: 0.2px;
+      background: linear-gradient(90deg, var(--uc-accent), var(--uc-accent-2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    #uc-carousel-utt-2026 .uc-shell {
+      position: relative;
+      background: var(--uc-card);
+      border-radius: 22px;
+      padding: 14px;
+      box-shadow: 0 20px 50px rgba(2, 6, 23, 0.14);
+      overflow: hidden;
+    }
+
+    #uc-carousel-utt-2026 .uc-swiper {
+      width: 100%;
+      border-radius: 16px;
+    }
+
+    #uc-carousel-utt-2026 .swiper-slide {
+      height: 240px;
+      border-radius: 16px;
+      overflow: hidden;
+      position: relative;
+      transition: transform 0.35s ease, filter 0.35s ease;
+      filter: saturate(0.95);
+    }
+
+    #uc-carousel-utt-2026 .swiper-slide-active {
+      transform: translateY(-4px);
+      filter: saturate(1.08);
+    }
+
+    #uc-carousel-utt-2026 .swiper-slide-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transform: scale(1);
+      transition: transform 0.6s ease;
+    }
+
+    #uc-carousel-utt-2026 .swiper-slide:hover .swiper-slide-image {
+      transform: scale(1.05);
+    }
+
+    #uc-carousel-utt-2026 .uc-caption {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 10px 12px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    }
+
+    #uc-carousel-utt-2026 .uc-btn-prev,
+    #uc-carousel-utt-2026 .uc-btn-next {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.95);
+      color: #0f172a;
+      box-shadow: 0 8px 20px rgba(2, 6, 23, 0.2);
+      backdrop-filter: blur(4px);
+    }
+
+    #uc-carousel-utt-2026 .uc-btn-prev::after,
+    #uc-carousel-utt-2026 .uc-btn-next::after {
+      font-size: 16px;
+      font-weight: 900;
+    }
+
+    #uc-carousel-utt-2026 .swiper-pagination {
+      bottom: 6px !important;
+    }
+
+    #uc-carousel-utt-2026 .swiper-pagination-bullet {
+      width: 9px;
+      height: 9px;
+      background: #cbd5e1;
+      opacity: 1;
+    }
+
+    #uc-carousel-utt-2026 .swiper-pagination-bullet-active {
+      background: var(--uc-accent);
+      transform: scale(1.15);
+    }
+
+    /* MOBILE: SHORTER HEIGHT */
+    @media (max-width: 767px) {
+      #uc-carousel-utt-2026 {
+        margin: 18px auto;
+        padding: 0 10px;
+      }
+
+      #uc-carousel-utt-2026 .uc-shell {
+        border-radius: 16px;
+        padding: 10px;
+      }
+
+      #uc-carousel-utt-2026 .swiper-slide {
+        height: 140px !important;
+        border-radius: 12px;
+      }
+
+      #uc-carousel-utt-2026 .swiper-slide-image {
+        height: 140px !important;
+      }
+
+      #uc-carousel-utt-2026 .uc-caption {
+        font-size: 11px;
+        padding: 7px 9px;
+      }
+
+      #uc-carousel-utt-2026 .uc-btn-prev,
+      #uc-carousel-utt-2026 .uc-btn-next {
+        width: 34px;
+        height: 34px;
+      }
+
+      #uc-carousel-utt-2026 .uc-btn-prev::after,
+      #uc-carousel-utt-2026 .uc-btn-next::after {
+        font-size: 13px;
+      }
+    }
+  </style>
+  <style>
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px 40px 0;
+}
+.main-footer .footer-bottom {
+    background: #06201C;
+    padding: 18px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    /* margin-top: 20px; */
+}
+
+
+@media (max-width: 768px) {
+    .main-footer .row {
+        flex-direction: column;
+        gap: 35px !important;
+        padding: 0px 20px !important;
+    }
+}
+    @media (max-width: 768px) {
+    .main-footer .row {
+        flex-direction: column;
+        gap: 35px !important;
+        padding: 0px 20px !important;
+    }
+}
+    </style>
+
+<section id="uc-carousel-utt-2026">
+    <h2 class="uc-headline">Uttarakhand Trips Gallery</h2>
+
+    <div class="uc-shell">
+      <div class="swiper uc-swiper swiper-initialized swiper-horizontal swiper-rtl swiper-backface-hidden" dir="rtl">
+        <div class="swiper-wrapper" id="swiper-wrapper-6f01199657b09ad3" aria-live="off" style="transition-duration: 900ms; transform: translate3d(576.471px, 0px, 0px);">
+          
+          
+          
+          
+          
+          
+        <div class="swiper-slide" role="group" aria-label="5 / 6" style="width: 272.235px; margin-left: 16px;" data-swiper-slide-index="4">
+            <img class="swiper-slide-image" src="https://uttarakhandtrips.com/wp-content/uploads/2025/06/14-4-1.webp" alt="14-4-1.webp">
+            <div class="uc-caption">Hill Landscape</div>
+          </div><div class="swiper-slide swiper-slide-prev" role="group" aria-label="6 / 6" style="width: 272.235px; margin-left: 16px;" data-swiper-slide-index="5">
+            <img class="swiper-slide-image" src="https://uttarakhandtrips.com/wp-content/uploads/2025/06/6-24.webp" alt="6-24.webp">
+            <div class="uc-caption">Travel Moment</div>
+          </div><div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 6" style="width: 272.235px; margin-left: 16px;" data-swiper-slide-index="0">
+            <img class="swiper-slide-image" src="https://uttarakhandtrips.com/wp-content/uploads/2025/06/17-4.webp" alt="17-4.webp">
+            <div class="uc-caption">Mountain View</div>
+          </div><div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 6" style="width: 272.235px; margin-left: 16px;" data-swiper-slide-index="1">
+            <img class="swiper-slide-image" src="https://uttarakhandtrips.com/wp-content/uploads/2025/06/16-4-1.webp" alt="16-4-1.webp">
+            <div class="uc-caption">Scenic Route</div>
+          </div><div class="swiper-slide" role="group" aria-label="3 / 6" style="width: 272.235px; margin-left: 16px;" data-swiper-slide-index="2">
+            <img class="swiper-slide-image" src="https://uttarakhandtrips.com/wp-content/uploads/2025/06/8-18.webp" alt="8-18.webp">
+            <div class="uc-caption">Nature Escape</div>
+          </div><div class="swiper-slide" role="group" aria-label="4 / 6" style="width: 272.235px; margin-left: 16px;" data-swiper-slide-index="3">
+            <img class="swiper-slide-image" src="https://uttarakhandtrips.com/wp-content/uploads/2025/06/15-4-1.webp" alt="15-4-1.webp">
+            <div class="uc-caption">Adventure Spot</div>
+          </div></div>
+
+        <div class="swiper-button-prev uc-btn-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-6f01199657b09ad3"></div>
+        <div class="swiper-button-next uc-btn-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-6f01199657b09ad3"></div>
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span></div>
+      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+    </div>
+  </section>
  <style>
         /* ============================================ */
         /* FOOTER - FULLY RESPONSIVE                   */
@@ -4852,7 +5117,37 @@ $(window).on('load scroll', function(){
 
 
 
-
+<script>
+    new Swiper("#uc-carousel-utt-2026 .uc-swiper", {
+      loop: true,
+      speed: 900,
+      centeredSlides: false,
+      slidesPerView: 1.15,
+      spaceBetween: 10,
+      autoplay: {
+        delay: 2400,
+        disableOnInteraction: false
+      },
+      navigation: {
+        nextEl: "#uc-carousel-utt-2026 .uc-btn-next",
+        prevEl: "#uc-carousel-utt-2026 .uc-btn-prev"
+      },
+      pagination: {
+        el: "#uc-carousel-utt-2026 .swiper-pagination",
+        clickable: true
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2.6,
+          spaceBetween: 14
+        },
+        1024: {
+          slidesPerView: 3.4,
+          spaceBetween: 16
+        }
+      }
+    });
+  </script>
 
 
 				
@@ -4872,7 +5167,7 @@ $(window).on('load scroll', function(){
 				<div class="elementor-widget-container">
 									<p>Picture Perfect Moments</p>								</div>
 				</div>
-		<div class="elementor-element elementor-element-3ffbd220 e-con-full e-flex e-con e-child" data-id="3ffbd220" data-element_type="container" data-e-type="container" data-settings="{&quot;grandtour_ext_is_background_parallax&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_backdrop&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_on_scroll&quot;:&quot;false&quot;,&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}">
+		<!--div class="elementor-element elementor-element-3ffbd220 e-con-full e-flex e-con e-child" data-id="3ffbd220" data-element_type="container" data-e-type="container" data-settings="{&quot;grandtour_ext_is_background_parallax&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_backdrop&quot;:&quot;false&quot;,&quot;grandtour_ext_is_background_on_scroll&quot;:&quot;false&quot;,&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}">
 				<div class="elementor-element elementor-element-7ca6d658 elementor-widget elementor-widget-image-carousel" data-id="7ca6d658" data-element_type="widget" data-e-type="widget" data-settings="{&quot;slides_to_show_mobile&quot;:&quot;2&quot;,&quot;slides_to_scroll_mobile&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;none&quot;,&quot;autoplay_speed&quot;:0,&quot;speed&quot;:5000,&quot;image_spacing_custom_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;slides_to_show&quot;:&quot;4&quot;,&quot;image_spacing_custom&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;autoplay&quot;:&quot;yes&quot;,&quot;infinite&quot;:&quot;yes&quot;,&quot;image_spacing_custom_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}" data-widget_type="image-carousel.default">
 				<div class="elementor-widget-container">
 				<div class="elementor-image-carousel-wrapper swiper" role="region" aria-roledescription="carousel" aria-label="Image Carousel" dir="rtl">
@@ -4881,14 +5176,14 @@ $(window).on('load scroll', function(){
 							
 									</div>
 						</div>
-				</div>
+				</div-->
 				<div class="elementor-element elementor-element-28096bb elementor-widget elementor-widget-shortcode" data-id="28096bb" data-element_type="widget" data-e-type="widget" data-settings="{&quot;grandtour_ext_link_sidemenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_link_closed_fullmenu&quot;:&quot;false&quot;,&quot;grandtour_ext_is_sticky&quot;:&quot;false&quot;,&quot;grandtour_ext_is_scrollme&quot;:&quot;false&quot;,&quot;grandtour_ext_is_smoove&quot;:&quot;false&quot;,&quot;grandtour_ext_is_parallax_mouse&quot;:&quot;false&quot;,&quot;grandtour_ext_is_infinite&quot;:&quot;false&quot;,&quot;grandtour_ext_is_fadeout_animation&quot;:&quot;false&quot;,&quot;grandtour_ext_mobile_static&quot;:&quot;false&quot;}" data-widget_type="shortcode.default">
 				<div class="elementor-widget-container">
-							<div class="elementor-shortcode"><pre class="ti-widget"><template id="trustindex-google-widget-html"><div class=" ti-widget  ti-goog ti-disable-font ti-show-rating-text ti-review-text-mode-readmore ti-text-align-left" data-no-translation="true" data-time-locale="%d %s ago|today|day|days|week|weeks|month|months|year|years" data-layout-id="5" data-layout-category="slider" data-set-id="light-background" data-pid="" data-language="en" data-close-locale="Close" data-review-target-width="275" data-css-version="2" data-reply-by-locale="Owner's reply" data-pager-autoplay-timeout="6"> <div class="ti-widget-container ti-col-4"> <div class="ti-footer ti-footer-grid source-Google"> <div class="ti-fade-container"> <div class="ti-rating-text"> <strong class="ti-rating ti-rating-large"> EXCELLENT </strong> </div> <span class="ti-stars star-lg"><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/h.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image></span> <div class="ti-rating-text"> <span class="nowrap">Based on <strong>117 reviews</strong></span> </div> <div class="ti-large-logo"> <div class="ti-v-center"> <trustindex-image class="ti-logo-fb" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/logo.svg" width="150" height="25" loading="lazy" alt="Google"></trustindex-image> </div> </div> </div> </div> <div class="ti-reviews-container"> <div class="ti-controls"> <div class="ti-next" aria-label="Next review" role="button"></div> <div class="ti-prev" aria-label="Previous review" role="button"></div> </div> <div class="ti-reviews-container-wrapper">  <div data-empty="0" data-time="1752105600" class="ti-review-item source-Google ti-image-layout-thumbnail" data-id="cfcd208495d565ef66e7dff9f98764da"> <div class="ti-inner"> <div class="ti-review-header"> <div class="ti-platform-icon ti-with-tooltip"> <span class="ti-tooltip">Posted on </span> <trustindex-image data-imgurl="https://cdn.trustindex.io/assets/platform/Google/icon.svg" alt="" width="20" height="20" loading="lazy"></trustindex-image> </div> <div class="ti-profile-img"> <trustindex-image data-imgurl="https://lh3.googleusercontent.com/a/ACg8ocLWOiW3IfC7xLV-y90IRGQHz5Gb_yAn-JaBuWSUjTGz6-MBIrc=w40-h40-c-rp-mo-br100" alt="kavita sahu profile picture" loading="lazy"></trustindex-image> </div> <div class="ti-profile-details"> <div class="ti-name"> kavita sahu </div> <div class="ti-date"></div> </div> </div> <span class="ti-stars"><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><span class="ti-verified-review ti-verified-platform"><span class="ti-verified-tooltip">Trustindex verifies that the original source of the review is Google.</span></span></span> <div class="ti-review-text-container ti-review-content"><!-- R-CONTENT -->It was a wonderful experience to avail services of M/s Travel Vaidya Tour,, it was challenging tour but very well managed.
+							<div class="elementor-shortcode"><pre class="ti-widget"><template id="trustindex-google-widget-html"><div class=" ti-widget  ti-goog ti-disable-font ti-show-rating-text ti-review-text-mode-readmore ti-text-align-left" data-no-translation="true" data-time-locale="%d %s ago|today|day|days|week|weeks|month|months|year|years" data-layout-id="5" data-layout-category="slider" data-set-id="light-background" data-pid="" data-language="en" data-close-locale="Close" data-review-target-width="275" data-css-version="2" data-reply-by-locale="Owner's reply" data-pager-autoplay-timeout="6"> <div class="ti-widget-container ti-col-4"> <div class="ti-footer ti-footer-grid source-Google"> <div class="ti-fade-container"> <div class="ti-rating-text"> <strong class="ti-rating ti-rating-large"> EXCELLENT </strong> </div> <span class="ti-stars star-lg"><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/h.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image></span> <div class="ti-rating-text"> <span class="nowrap">Based on <strong>117 reviews</strong></span> </div> <div class="ti-large-logo"> <div class="ti-v-center"> <trustindex-image class="ti-logo-fb" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/logo.svg" width="150" height="25" loading="lazy" alt="Google"></trustindex-image> </div> </div> </div> </div> <div class="ti-reviews-container"> <div class="ti-controls"> <div class="ti-next" aria-label="Next review" role="button"></div> <div class="ti-prev" aria-label="Previous review" role="button"></div> </div> <div class="ti-reviews-container-wrapper">  <div data-empty="0" data-time="1752105600" class="ti-review-item source-Google ti-image-layout-thumbnail" data-id="cfcd208495d565ef66e7dff9f98764da"> <div class="ti-inner"> <div class="ti-review-header"> <div class="ti-platform-icon ti-with-tooltip"> <span class="ti-tooltip">Posted on </span> <trustindex-image data-imgurl="https://cdn.trustindex.io/assets/platform/Google/icon.svg" alt="" width="20" height="20" loading="lazy"></trustindex-image> </div> <div class="ti-profile-img"> <trustindex-image data-imgurl="https://lh3.googleusercontent.com/a/ACg8ocLWOiW3IfC7xLV-y90IRGQHz5Gb_yAn-JaBuWSUjTGz6-MBIrc=w40-h40-c-rp-mo-br100" alt="kavita sahu profile picture" loading="lazy"></trustindex-image> </div> <div class="ti-profile-details"> <div class="ti-name"> kavita sahu </div> <div class="ti-date"></div> </div> </div> <span class="ti-stars"><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><span class="ti-verified-review ti-verified-platform"><span class="ti-verified-tooltip">Trustindex verifies that the original source of the review is Google.</span></span></span> <div class="ti-review-text-container ti-review-content">It was a wonderful experience to avail services of M/s Travel Vaidya Tour,, it was challenging tour but very well managed.
 
 We are happy with the package and services provided..
 
-Thanks 🙏🏻<!-- R-CONTENT --></div> <span class="ti-read-more" data-container=".ti-review-content" data-collapse-text="Hide" data-open-text="Read more"></span> </div> </div>  <div data-empty="0" data-time="1751760000" class="ti-review-item source-Google ti-image-layout-thumbnail" data-id="cfcd208495d565ef66e7dff9f98764da"> <div class="ti-inner"> <div class="ti-review-header"> <div class="ti-platform-icon ti-with-tooltip"> <span class="ti-tooltip">Posted on </span> <trustindex-image data-imgurl="https://cdn.trustindex.io/assets/platform/Google/icon.svg" alt="" width="20" height="20" loading="lazy"></trustindex-image> </div> <div class="ti-profile-img"> <trustindex-image data-imgurl="https://lh3.googleusercontent.com/a-/ALV-UjVzUHhiBMF6-MEb4BLkwuPsrWZhUhjnSqA75ivr9JxRii5vMOFt=w40-h40-c-rp-mo-br100" alt="Ayan Malakar profile picture" loading="lazy"></trustindex-image> </div> <div class="ti-profile-details"> <div class="ti-name"> Ayan Malakar </div> <div class="ti-date"></div> </div> </div> <span class="ti-stars"><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><span class="ti-verified-review ti-verified-platform"><span class="ti-verified-tooltip">Trustindex verifies that the original source of the review is Google.</span></span></span> <div class="ti-review-text-container ti-review-content"><!-- R-CONTENT -->A Seamless and Memorable Char Dham Yatra Experience!
+Thanks 🙏🏻</div> <span class="ti-read-more" data-container=".ti-review-content" data-collapse-text="Hide" data-open-text="Read more"></span> </div> </div>  <div data-empty="0" data-time="1751760000" class="ti-review-item source-Google ti-image-layout-thumbnail" data-id="cfcd208495d565ef66e7dff9f98764da"> <div class="ti-inner"> <div class="ti-review-header"> <div class="ti-platform-icon ti-with-tooltip"> <span class="ti-tooltip">Posted on </span> <trustindex-image data-imgurl="https://cdn.trustindex.io/assets/platform/Google/icon.svg" alt="" width="20" height="20" loading="lazy"></trustindex-image> </div> <div class="ti-profile-img"> <trustindex-image data-imgurl="https://lh3.googleusercontent.com/a-/ALV-UjVzUHhiBMF6-MEb4BLkwuPsrWZhUhjnSqA75ivr9JxRii5vMOFt=w40-h40-c-rp-mo-br100" alt="Ayan Malakar profile picture" loading="lazy"></trustindex-image> </div> <div class="ti-profile-details"> <div class="ti-name"> Ayan Malakar </div> <div class="ti-date"></div> </div> </div> <span class="ti-stars"><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><span class="ti-verified-review ti-verified-platform"><span class="ti-verified-tooltip">Trustindex verifies that the original source of the review is Google.</span></span></span> <div class="ti-review-text-container ti-review-content">A Seamless and Memorable Char Dham Yatra Experience!
 
 My mother and in-laws recently completed the Char Dham Yatra from 18th June to 28th June 2025 through Travel Vaidya, and I cannot express how grateful we are for the exceptional service provided throughout the journey.
 
@@ -4900,16 +5195,16 @@ We would also like to appreciate our driver, Ganga ji, who played a crucial role
 
 Travel Vaidya clearly stands out as a highly professional and reliable tour agency. Their personalized approach, attention to detail, and genuine care for customer satisfaction make them a top choice for pilgrimage tours.
 
-I highly recommend Travel Vaidya to anyone planning a Char Dham Yatra or any religious trip. With them, you can be assured of a safe, smooth, and spiritually fulfilling experience.<!-- R-CONTENT --></div> <span class="ti-read-more" data-container=".ti-review-content" data-collapse-text="Hide" data-open-text="Read more"></span> </div> </div>  <div data-empty="0" data-time="1750550400" class="ti-review-item source-Google ti-image-layout-thumbnail" data-id="cfcd208495d565ef66e7dff9f98764da"> <div class="ti-inner"> <div class="ti-review-header"> <div class="ti-platform-icon ti-with-tooltip"> <span class="ti-tooltip">Posted on </span> <trustindex-image data-imgurl="https://cdn.trustindex.io/assets/platform/Google/icon.svg" alt="" width="20" height="20" loading="lazy"></trustindex-image> </div> <div class="ti-profile-img"> <trustindex-image data-imgurl="https://lh3.googleusercontent.com/a-/ALV-UjUS4wedFl04Qm5FfJCxna2kuh0w8C5ypY70NcLmHL4H0GhUlQ086Q=w40-h40-c-rp-mo-ba4-br100" alt="Ravindra R. Patki profile picture" loading="lazy"></trustindex-image> </div> <div class="ti-profile-details"> <div class="ti-name"> Ravindra R. Patki </div> <div class="ti-date"></div> </div> </div> <span class="ti-stars"><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><span class="ti-verified-review ti-verified-platform"><span class="ti-verified-tooltip">Trustindex verifies that the original source of the review is Google.</span></span></span> <div class="ti-review-text-container ti-review-content"><!-- R-CONTENT -->1) From 11th to 21st June, we availed services of Vaidya Travels for pilgrimage to the Char Dham. Only 2 of us, sr citizens, me and my wife travelled to Char Dham taking their services. 2) Vaidya Travel was responsible for providing us a car on the entire route starting from Dehradun airport to return to Dehradun airport and the hotels including 1 meal, 1 b/f. 3) The arrangements Vaidya Travels did are 100/100, excellent. 4) The car, the driver, the hotels, their locations wrt places of visit, coverage of all the places, the schedule they followed, their guidance and monitoring from time-to-time, everything was superb, they score 100%. 5) The driver Himanshu they provided was a local person &amp; very knowledgeable of the entire route, a safe driver (which is most important in Uttarakhand), took our care enroute so nicely. He was very well mannered, courteous, cordial, punctual and an excellent company, like another family member. 6) We had to extend our stay at Kedarnath top due to bad weather and Mr Upadhyay from Vaidya Travels who was communicator, our coordinators from day 1, solved the change literally in a couple of minutes, which isn't so easy there. 7) Communications with Mr Upadhyay from Vaidya Travels has been a delight, extremely helpful. He is so fast, prompt, takes ownership, very thorough on this route, a store of good advisory and guidance when any query or requirement is placed to him. 8) And all of this came to us at a reasonable "quality to price ratio", compared to the quotes from a few other T&amp;T companies. 9) Considering risks involved due to weather and roads there, we strongly recommend to use Vaidya Travels services if you are planning to visit Char Dham or places in Uttarakhand and nearby states.<!-- R-CONTENT --></div> <span class="ti-read-more" data-container=".ti-review-content" data-collapse-text="Hide" data-open-text="Read more"></span> </div> </div>  <div data-empty="0" data-time="1749427200" class="ti-review-item source-Google ti-image-layout-thumbnail" data-id="cfcd208495d565ef66e7dff9f98764da"> <div class="ti-inner"> <div class="ti-review-header"> <div class="ti-platform-icon ti-with-tooltip"> <span class="ti-tooltip">Posted on </span> <trustindex-image data-imgurl="https://cdn.trustindex.io/assets/platform/Google/icon.svg" alt="" width="20" height="20" loading="lazy"></trustindex-image> </div> <div class="ti-profile-img"> <trustindex-image data-imgurl="https://lh3.googleusercontent.com/a-/ALV-UjVTUj3nwynOxzYjfg7lMk-YKi4UyydMSovF-FaGy3r_lGc5VPKhuw=w40-h40-c-rp-mo-br100" alt="Sharanya Ravva profile picture" loading="lazy"></trustindex-image> </div> <div class="ti-profile-details"> <div class="ti-name"> Sharanya Ravva </div> <div class="ti-date"></div> </div> </div> <span class="ti-stars"><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><span class="ti-verified-review ti-verified-platform"><span class="ti-verified-tooltip">Trustindex verifies that the original source of the review is Google.</span></span></span> <div class="ti-review-text-container ti-review-content"><!-- R-CONTENT -->We wanted to express our heartfelt gratitude for making our Char Dham trip truly memorable. Your excellent hotel arrangements and transportation services ensured a smooth and enjoyable journey. Thank you for your professionalism and dedication. We highly recommend your agency to others.<!-- R-CONTENT --></div> <span class="ti-read-more" data-container=".ti-review-content" data-collapse-text="Hide" data-open-text="Read more"></span> </div> </div>  <div data-empty="0" data-time="1749340800" class="ti-review-item source-Google ti-image-layout-thumbnail" data-id="cfcd208495d565ef66e7dff9f98764da"> <div class="ti-inner"> <div class="ti-review-header"> <div class="ti-platform-icon ti-with-tooltip"> <span class="ti-tooltip">Posted on </span> <trustindex-image data-imgurl="https://cdn.trustindex.io/assets/platform/Google/icon.svg" alt="" width="20" height="20" loading="lazy"></trustindex-image> </div> <div class="ti-profile-img"> <trustindex-image data-imgurl="https://lh3.googleusercontent.com/a-/ALV-UjU6UiAIobHBQH1jL4D-jV2Fhp_T_kEBMetFpLh2GfwMDkeWgGtF=w40-h40-c-rp-mo-ba3-br100" alt="preethi murali profile picture" loading="lazy"></trustindex-image> </div> <div class="ti-profile-details"> <div class="ti-name"> preethi murali </div> <div class="ti-date"></div> </div> </div> <span class="ti-stars"><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><span class="ti-verified-review ti-verified-platform"><span class="ti-verified-tooltip">Trustindex verifies that the original source of the review is Google.</span></span></span> <div class="ti-review-text-container ti-review-content"><!-- R-CONTENT -->Our Char Dham Yatra was excellently planned by Akshay and team. From the choice of stays, to everything, it was a great experience. One must definitely take up Travel Vaidya as their travel partner for a seamless Char Dham Yatra.
+I highly recommend Travel Vaidya to anyone planning a Char Dham Yatra or any religious trip. With them, you can be assured of a safe, smooth, and spiritually fulfilling experience.</div> <span class="ti-read-more" data-container=".ti-review-content" data-collapse-text="Hide" data-open-text="Read more"></span> </div> </div>  <div data-empty="0" data-time="1750550400" class="ti-review-item source-Google ti-image-layout-thumbnail" data-id="cfcd208495d565ef66e7dff9f98764da"> <div class="ti-inner"> <div class="ti-review-header"> <div class="ti-platform-icon ti-with-tooltip"> <span class="ti-tooltip">Posted on </span> <trustindex-image data-imgurl="https://cdn.trustindex.io/assets/platform/Google/icon.svg" alt="" width="20" height="20" loading="lazy"></trustindex-image> </div> <div class="ti-profile-img"> <trustindex-image data-imgurl="https://lh3.googleusercontent.com/a-/ALV-UjUS4wedFl04Qm5FfJCxna2kuh0w8C5ypY70NcLmHL4H0GhUlQ086Q=w40-h40-c-rp-mo-ba4-br100" alt="Ravindra R. Patki profile picture" loading="lazy"></trustindex-image> </div> <div class="ti-profile-details"> <div class="ti-name"> Ravindra R. Patki </div> <div class="ti-date"></div> </div> </div> <span class="ti-stars"><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><span class="ti-verified-review ti-verified-platform"><span class="ti-verified-tooltip">Trustindex verifies that the original source of the review is Google.</span></span></span> <div class="ti-review-text-container ti-review-content">1) From 11th to 21st June, we availed services of Vaidya Travels for pilgrimage to the Char Dham. Only 2 of us, sr citizens, me and my wife travelled to Char Dham taking their services. 2) Vaidya Travel was responsible for providing us a car on the entire route starting from Dehradun airport to return to Dehradun airport and the hotels including 1 meal, 1 b/f. 3) The arrangements Vaidya Travels did are 100/100, excellent. 4) The car, the driver, the hotels, their locations wrt places of visit, coverage of all the places, the schedule they followed, their guidance and monitoring from time-to-time, everything was superb, they score 100%. 5) The driver Himanshu they provided was a local person &amp; very knowledgeable of the entire route, a safe driver (which is most important in Uttarakhand), took our care enroute so nicely. He was very well mannered, courteous, cordial, punctual and an excellent company, like another family member. 6) We had to extend our stay at Kedarnath top due to bad weather and Mr Upadhyay from Vaidya Travels who was communicator, our coordinators from day 1, solved the change literally in a couple of minutes, which isn't so easy there. 7) Communications with Mr Upadhyay from Vaidya Travels has been a delight, extremely helpful. He is so fast, prompt, takes ownership, very thorough on this route, a store of good advisory and guidance when any query or requirement is placed to him. 8) And all of this came to us at a reasonable "quality to price ratio", compared to the quotes from a few other T&amp;T companies. 9) Considering risks involved due to weather and roads there, we strongly recommend to use Vaidya Travels services if you are planning to visit Char Dham or places in Uttarakhand and nearby states.</div> <span class="ti-read-more" data-container=".ti-review-content" data-collapse-text="Hide" data-open-text="Read more"></span> </div> </div>  <div data-empty="0" data-time="1749427200" class="ti-review-item source-Google ti-image-layout-thumbnail" data-id="cfcd208495d565ef66e7dff9f98764da"> <div class="ti-inner"> <div class="ti-review-header"> <div class="ti-platform-icon ti-with-tooltip"> <span class="ti-tooltip">Posted on </span> <trustindex-image data-imgurl="https://cdn.trustindex.io/assets/platform/Google/icon.svg" alt="" width="20" height="20" loading="lazy"></trustindex-image> </div> <div class="ti-profile-img"> <trustindex-image data-imgurl="https://lh3.googleusercontent.com/a-/ALV-UjVTUj3nwynOxzYjfg7lMk-YKi4UyydMSovF-FaGy3r_lGc5VPKhuw=w40-h40-c-rp-mo-br100" alt="Sharanya Ravva profile picture" loading="lazy"></trustindex-image> </div> <div class="ti-profile-details"> <div class="ti-name"> Sharanya Ravva </div> <div class="ti-date"></div> </div> </div> <span class="ti-stars"><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><span class="ti-verified-review ti-verified-platform"><span class="ti-verified-tooltip">Trustindex verifies that the original source of the review is Google.</span></span></span> <div class="ti-review-text-container ti-review-content">We wanted to express our heartfelt gratitude for making our Char Dham trip truly memorable. Your excellent hotel arrangements and transportation services ensured a smooth and enjoyable journey. Thank you for your professionalism and dedication. We highly recommend your agency to others.</div> <span class="ti-read-more" data-container=".ti-review-content" data-collapse-text="Hide" data-open-text="Read more"></span> </div> </div>  <div data-empty="0" data-time="1749340800" class="ti-review-item source-Google ti-image-layout-thumbnail" data-id="cfcd208495d565ef66e7dff9f98764da"> <div class="ti-inner"> <div class="ti-review-header"> <div class="ti-platform-icon ti-with-tooltip"> <span class="ti-tooltip">Posted on </span> <trustindex-image data-imgurl="https://cdn.trustindex.io/assets/platform/Google/icon.svg" alt="" width="20" height="20" loading="lazy"></trustindex-image> </div> <div class="ti-profile-img"> <trustindex-image data-imgurl="https://lh3.googleusercontent.com/a-/ALV-UjU6UiAIobHBQH1jL4D-jV2Fhp_T_kEBMetFpLh2GfwMDkeWgGtF=w40-h40-c-rp-mo-ba3-br100" alt="preethi murali profile picture" loading="lazy"></trustindex-image> </div> <div class="ti-profile-details"> <div class="ti-name"> preethi murali </div> <div class="ti-date"></div> </div> </div> <span class="ti-stars"><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><span class="ti-verified-review ti-verified-platform"><span class="ti-verified-tooltip">Trustindex verifies that the original source of the review is Google.</span></span></span> <div class="ti-review-text-container ti-review-content">Our Char Dham Yatra was excellently planned by Akshay and team. From the choice of stays, to everything, it was a great experience. One must definitely take up Travel Vaidya as their travel partner for a seamless Char Dham Yatra.
 
 Not to forget, Akshay was available over the phone throughout the Yatra to cater to our questions and concerns. The dedication he had was definitely commendable.
 
-Over all, huge thanks to the team for making our Yatra a memorable one.<!-- R-CONTENT --></div> <span class="ti-read-more" data-container=".ti-review-content" data-collapse-text="Hide" data-open-text="Read more"></span> </div> </div>  <div data-empty="0" data-time="1748736000" class="ti-review-item source-Google ti-image-layout-thumbnail" data-id="cfcd208495d565ef66e7dff9f98764da"> <div class="ti-inner"> <div class="ti-review-header"> <div class="ti-platform-icon ti-with-tooltip"> <span class="ti-tooltip">Posted on </span> <trustindex-image data-imgurl="https://cdn.trustindex.io/assets/platform/Google/icon.svg" alt="" width="20" height="20" loading="lazy"></trustindex-image> </div> <div class="ti-profile-img"> <trustindex-image data-imgurl="https://lh3.googleusercontent.com/a/ACg8ocJQFRsyrqU94NTZmxWzIB0xhejajsKPx7D_X6Lby-rQeHCh6w=w40-h40-c-rp-mo-ba2-br100" alt="Naresh Padiyar profile picture" loading="lazy"></trustindex-image> </div> <div class="ti-profile-details"> <div class="ti-name"> Naresh Padiyar </div> <div class="ti-date"></div> </div> </div> <span class="ti-stars"><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><span class="ti-verified-review ti-verified-platform"><span class="ti-verified-tooltip">Trustindex verifies that the original source of the review is Google.</span></span></span> <div class="ti-review-text-container ti-review-content"><!-- R-CONTENT -->Our chardham yatra was exceptionally well organised by Travel vaidhya.The company’s attention to detail and professional service ensured that our journey was comfortable and hassle free.The selection of hotels was superb and enjoyed the breathtaking scenic views from hotels we stayed with tasty hygine food.
-Highly recommended for those seeking a memorable spiritual experience.<!-- R-CONTENT --></div> <span class="ti-read-more" data-container=".ti-review-content" data-collapse-text="Hide" data-open-text="Read more"></span> </div> </div>  <div data-empty="0" data-time="1748476800" class="ti-review-item source-Google ti-image-layout-thumbnail" data-id="cfcd208495d565ef66e7dff9f98764da"> <div class="ti-inner"> <div class="ti-review-header"> <div class="ti-platform-icon ti-with-tooltip"> <span class="ti-tooltip">Posted on </span> <trustindex-image data-imgurl="https://cdn.trustindex.io/assets/platform/Google/icon.svg" alt="" width="20" height="20" loading="lazy"></trustindex-image> </div> <div class="ti-profile-img"> <trustindex-image data-imgurl="https://lh3.googleusercontent.com/a-/ALV-UjXsB-i2Ti1dHwKOcvpzrGQ0E1Exyp2kB3BeW6-hPMQ5GOQJYV-7=w40-h40-c-rp-mo-br100" alt="SHAIL GUPTA profile picture" loading="lazy"></trustindex-image> </div> <div class="ti-profile-details"> <div class="ti-name"> SHAIL GUPTA </div> <div class="ti-date"></div> </div> </div> <span class="ti-stars"><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><span class="ti-verified-review ti-verified-platform"><span class="ti-verified-tooltip">Trustindex verifies that the original source of the review is Google.</span></span></span> <div class="ti-review-text-container ti-review-content"><!-- R-CONTENT -->Hello Mr Akshay
+Over all, huge thanks to the team for making our Yatra a memorable one.</div> <span class="ti-read-more" data-container=".ti-review-content" data-collapse-text="Hide" data-open-text="Read more"></span> </div> </div>  <div data-empty="0" data-time="1748736000" class="ti-review-item source-Google ti-image-layout-thumbnail" data-id="cfcd208495d565ef66e7dff9f98764da"> <div class="ti-inner"> <div class="ti-review-header"> <div class="ti-platform-icon ti-with-tooltip"> <span class="ti-tooltip">Posted on </span> <trustindex-image data-imgurl="https://cdn.trustindex.io/assets/platform/Google/icon.svg" alt="" width="20" height="20" loading="lazy"></trustindex-image> </div> <div class="ti-profile-img"> <trustindex-image data-imgurl="https://lh3.googleusercontent.com/a/ACg8ocJQFRsyrqU94NTZmxWzIB0xhejajsKPx7D_X6Lby-rQeHCh6w=w40-h40-c-rp-mo-ba2-br100" alt="Naresh Padiyar profile picture" loading="lazy"></trustindex-image> </div> <div class="ti-profile-details"> <div class="ti-name"> Naresh Padiyar </div> <div class="ti-date"></div> </div> </div> <span class="ti-stars"><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><span class="ti-verified-review ti-verified-platform"><span class="ti-verified-tooltip">Trustindex verifies that the original source of the review is Google.</span></span></span> <div class="ti-review-text-container ti-review-content">Our chardham yatra was exceptionally well organised by Travel vaidhya.The company’s attention to detail and professional service ensured that our journey was comfortable and hassle free.The selection of hotels was superb and enjoyed the breathtaking scenic views from hotels we stayed with tasty hygine food.
+Highly recommended for those seeking a memorable spiritual experience.</div> <span class="ti-read-more" data-container=".ti-review-content" data-collapse-text="Hide" data-open-text="Read more"></span> </div> </div>  <div data-empty="0" data-time="1748476800" class="ti-review-item source-Google ti-image-layout-thumbnail" data-id="cfcd208495d565ef66e7dff9f98764da"> <div class="ti-inner"> <div class="ti-review-header"> <div class="ti-platform-icon ti-with-tooltip"> <span class="ti-tooltip">Posted on </span> <trustindex-image data-imgurl="https://cdn.trustindex.io/assets/platform/Google/icon.svg" alt="" width="20" height="20" loading="lazy"></trustindex-image> </div> <div class="ti-profile-img"> <trustindex-image data-imgurl="https://lh3.googleusercontent.com/a-/ALV-UjXsB-i2Ti1dHwKOcvpzrGQ0E1Exyp2kB3BeW6-hPMQ5GOQJYV-7=w40-h40-c-rp-mo-br100" alt="SHAIL GUPTA profile picture" loading="lazy"></trustindex-image> </div> <div class="ti-profile-details"> <div class="ti-name"> SHAIL GUPTA </div> <div class="ti-date"></div> </div> </div> <span class="ti-stars"><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><trustindex-image class="ti-star" data-imgurl="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Google" width="17" height="17" loading="lazy"></trustindex-image><span class="ti-verified-review ti-verified-platform"><span class="ti-verified-tooltip">Trustindex verifies that the original source of the review is Google.</span></span></span> <div class="ti-review-text-container ti-review-content">Hello Mr Akshay
 "Excellent Experience with Heli Yatra to Badrinath and Kedarnath! Mr. Akshay from Vaidya Travels was extremely helpful and ensured a smooth journey. The scenic views from the helicopter were breathtaking.
 And Having helpful and supportive staff can make a big difference in your overall experience.
 
-The aviation staff's assistance and guidance l ensured a smooth and safe journey for us. Their professionalism and courtesy can greatly contribute to a positive travel experience.<!-- R-CONTENT --></div> <span class="ti-read-more" data-container=".ti-review-content" data-collapse-text="Hide" data-open-text="Read more"></span> </div> </div>  </div> <div class="ti-controls-line"> <div class="dot"></div> </div>   <div class="ti-verified-by ti-verified-by-row" data-style="2"> <div class="ti-inner"> Verified by Trustindex <span class="ti-info-icon"></span> <div class="ti-disclaimer">Trustindex verified badge is the Universal Symbol of Trust. Only the greatest companies can get the verified badge who has a review score above 4.5, based on customer reviews over the past 12 months. <a href="https://www.trustindex.io/?a=sys&c=wp-verified-badge&url=/the-trustindex-verified-badge/" target="_blank" rel="noopener">Read more</a></div> </div> </div>  </div> </div> </div> </template></pre><div data-src="https://cdn.trustindex.io/loader.js?wp-widget" data-template-id="trustindex-google-widget-html" data-css-url="https://uttarakhandtrips.com/wp-content/uploads/trustindex-google-widget.css?1762337005"></div></div>
+The aviation staff's assistance and guidance l ensured a smooth and safe journey for us. Their professionalism and courtesy can greatly contribute to a positive travel experience.</div> <span class="ti-read-more" data-container=".ti-review-content" data-collapse-text="Hide" data-open-text="Read more"></span> </div> </div>  </div> <div class="ti-controls-line"> <div class="dot"></div> </div>   <div class="ti-verified-by ti-verified-by-row" data-style="2"> <div class="ti-inner"> Verified by Trustindex <span class="ti-info-icon"></span> <div class="ti-disclaimer">Trustindex verified badge is the Universal Symbol of Trust. Only the greatest companies can get the verified badge who has a review score above 4.5, based on customer reviews over the past 12 months. <a href="https://www.trustindex.io/?a=sys&c=wp-verified-badge&url=/the-trustindex-verified-badge/" target="_blank" rel="noopener">Read more</a></div> </div> </div>  </div> </div> </div> </template></pre><div data-src="https://cdn.trustindex.io/loader.js?wp-widget" data-template-id="trustindex-google-widget-html" data-css-url="https://uttarakhandtrips.com/wp-content/uploads/trustindex-google-widget.css?1762337005"></div></div>
 						</div>
 				</div>
 				</div>
@@ -5043,6 +5338,7 @@ The aviation staff's assistance and guidance l ensured a smooth and safe journey
 					</div>
 				</div>
 				</div>
+                
 
 
 				<!-- ===== RESPONSIVE FOOTER ===== -->

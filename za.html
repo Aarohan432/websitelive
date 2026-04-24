@@ -1,0 +1,519 @@
+ <!DOCTYPE html>
+        2 <html lang="en">
+        3 <head>
+        4     <meta charset="UTF-8">
+        5     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        6     <title>NeoCore | Advanced Registration</title>
+        7     <link rel="preconnect" href="https://fonts.googleapis.com">
+        8     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        9     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+       10     <style>
+       11         :root {
+       12             --primary: #2563EB;
+       13             --primary-hover: #1D4ED8;
+       14             --bg-gray: #F9FAFB;
+       15             --border-gray: #E5E7EB;
+       16             --text-main: #111827;
+       17             --text-muted: #6B7280;
+       18             --error: #EF4444;
+       19             --success: #10B981;
+       20             --white: #FFFFFF;
+       21         }
+       22
+       23         * {
+       24             margin: 0;
+       25             padding: 0;
+       26             box-sizing: border-box;
+       27             font-family: 'Inter', -apple-system, sans-serif;
+       28         }
+       29
+       30         body {
+       31             background-color: var(--bg-gray);
+       32             color: var(--text-main);
+       33             display: flex;
+       34             align-items: center;
+       35             justify-content: center;
+       36             min-height: 100vh;
+       37             padding: 20px;
+       38         }
+       39
+       40         .container {
+       41             width: 100%;
+       42             max-width: 500px;
+       43         }
+       44
+       45         .header {
+       46             text-align: center;
+       47             margin-bottom: 40px;
+       48         }
+       49
+       50         .header h1 {
+       51             font-size: 32px;
+       52             font-weight: 600;
+       53             letter-spacing: -0.02em;
+       54             margin-bottom: 8px;
+       55         }
+       56
+       57         .header p {
+       58             color: var(--text-muted);
+       59             font-size: 14px;
+       60         }
+       61
+       62         /* Progress Bar */
+       63         .steps {
+       64             display: flex;
+       65             justify-content: space-between;
+       66             margin-bottom: 32px;
+       67             position: relative;
+       68         }
+       69
+       70         .steps::before {
+       71             content: '';
+       72             position: absolute;
+       73             top: 14px;
+       74             left: 0;
+       75             width: 100%;
+       76             height: 2px;
+       77             background: var(--border-gray);
+       78             z-index: 1;
+       79         }
+       80
+       81         .step {
+       82             position: relative;
+       83             z-index: 2;
+       84             width: 30px;
+       85             height: 30px;
+       86             background: var(--white);
+       87             border: 2px solid var(--border-gray);
+       88             border-radius: 50%;
+       89             display: flex;
+       90             align-items: center;
+       91             justify-content: center;
+       92             font-size: 12px;
+       93             font-weight: 600;
+       94             color: var(--text-muted);
+       95             transition: all 0.3s ease;
+       96         }
+       97
+       98         .step.active {
+       99             border-color: var(--primary);
+      100             color: var(--primary);
+      101             background: var(--white);
+      102         }
+      103
+      104         .step.completed {
+      105             background: var(--primary);
+      106             border-color: var(--primary);
+      107             color: var(--white);
+      108         }
+      109
+      110         /* Form Card */
+      111         .form-card {
+      112             background: var(--white);
+      113             border: 1px solid var(--border-gray);
+      114             border-radius: 12px;
+      115             padding: 32px;
+      116             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      117         }
+      118
+      119         .form-step {
+      120             display: none;
+      121             animation: fadeIn 0.4s ease-out;
+      122         }
+      123
+      124         .form-step.active {
+      125             display: block;
+      126         }
+      127
+      128         @keyframes fadeIn {
+      129             from { opacity: 0; transform: translateY(10px); }
+      130             to { opacity: 1; transform: translateY(0); }
+      131         }
+      132
+      133         .form-group {
+      134             margin-bottom: 20px;
+      135         }
+      136
+      137         .form-group label {
+      138             display: block;
+      139             font-size: 12px;
+      140             font-weight: 500;
+      141             color: var(--text-muted);
+      142             text-transform: uppercase;
+      143             letter-spacing: 0.05em;
+      144             margin-bottom: 8px;
+      145         }
+      146
+      147         .input-wrapper {
+      148             position: relative;
+      149         }
+      150
+      151         input[type="text"],
+      152         input[type="email"],
+      153         input[type="password"],
+      154         select {
+      155             width: 100%;
+      156             padding: 12px 16px;
+      157             border: 1px solid var(--border-gray);
+      158             border-radius: 6px;
+      159             font-size: 14px;
+      160             outline: none;
+      161             transition: all 0.2s ease;
+      162             background: var(--white);
+      163         }
+      164
+      165         input:focus {
+      166             border-color: var(--primary);
+      167             box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+      168         }
+      169
+      170         .error-message {
+      171             color: var(--error);
+      172             font-size: 11px;
+      173             margin-top: 4px;
+      174             display: none;
+      175         }
+      176
+      177         /* Password Strength */
+      178         .strength-meter {
+      179             height: 4px;
+      180             background: var(--border-gray);
+      181             border-radius: 2px;
+      182             margin-top: 8px;
+      183             overflow: hidden;
+      184         }
+      185
+      186         .strength-bar {
+      187             height: 100%;
+      188             width: 0;
+      189             transition: all 0.3s ease;
+      190         }
+      191
+      192         .strength-text {
+      193             font-size: 11px;
+      194             margin-top: 4px;
+      195             font-weight: 500;
+      196         }
+      197
+      198         /* Navigation Buttons */
+      199         .btn-group {
+      200             display: flex;
+      201             gap: 12px;
+      202             margin-top: 32px;
+      203         }
+      204
+      205         button {
+      206             flex: 1;
+      207             padding: 12px 24px;
+      208             border-radius: 6px;
+      209             font-size: 14px;
+      210             font-weight: 600;
+      211             cursor: pointer;
+      212             transition: all 0.2s ease;
+      213         }
+      214
+      215         .btn-primary {
+      216             background: var(--primary);
+      217             color: var(--white);
+      218             border: none;
+      219         }
+      220
+      221         .btn-primary:hover {
+      222             background: var(--primary-hover);
+      223         }
+      224
+      225         .btn-secondary {
+      226             background: var(--white);
+      227             color: var(--text-main);
+      228             border: 1px solid var(--border-gray);
+      229         }
+      230
+      231         .btn-secondary:hover {
+      232             background: var(--bg-gray);
+      233         }
+      234
+      235         button:disabled {
+      236             opacity: 0.5;
+      237             cursor: not-allowed;
+      238         }
+      239
+      240         /* Success State */
+      241         .success-animation {
+      242             text-align: center;
+      243             padding: 20px 0;
+      244         }
+      245
+      246         .success-icon {
+      247             width: 64px;
+      248             height: 64px;
+      249             background: var(--success);
+      250             color: white;
+      251             border-radius: 50%;
+      252             display: flex;
+      253             align-items: center;
+      254             justify-content: center;
+      255             font-size: 32px;
+      256             margin: 0 auto 20px;
+      257         }
+      258
+      259         /* Preferences Layout */
+      260         .preference-grid {
+      261             display: grid;
+      262             grid-template-columns: repeat(2, 1fr);
+      263             gap: 12px;
+      264         }
+      265
+      266         .preference-card {
+      267             border: 1px solid var(--border-gray);
+      268             border-radius: 8px;
+      269             padding: 16px;
+      270             cursor: pointer;
+      271             transition: all 0.2s ease;
+      272             text-align: center;
+      273         }
+      274
+      275         .preference-card.selected {
+      276             border-color: var(--primary);
+      277             background: rgba(37, 99, 235, 0.05);
+      278         }
+      279
+      280         .preference-card h4 {
+      281             font-size: 14px;
+      282             margin-bottom: 4px;
+      283         }
+      284
+      285         .preference-card p {
+      286             font-size: 11px;
+      287             color: var(--text-muted);
+      288         }
+      289     </style>
+      290 </head>
+      291 <body>
+      292
+      293 <div class="container">
+      294     <div class="header">
+      295         <h1>NeoCore</h1>
+      296         <p>Enterprise SaaS Onboarding</p>
+      297     </div>
+      298
+      299     <div class="steps">
+      300         <div class="step active" data-step="1">1</div>
+      301         <div class="step" data-step="2">2</div>
+      302         <div class="step" data-step="3">3</div>
+      303     </div>
+      304
+      305     <div class="form-card">
+      306         <form id="multiStepForm" novalidate>
+      307             <!-- Step 1: Account -->
+      308             <div class="form-step active" id="step1">
+      309                 <div class="form-group">
+      310                     <label for="email">Work Email</label>
+      311                     <input type="email" id="email" placeholder="name@company.com" required>
+      312                     <div class="error-message">Please enter a valid work email</div>
+      313                 </div>
+      314                 <div class="form-group">
+      315                     <label for="password">Security Password</label>
+      316                     <input type="password" id="password" placeholder="••••••••" required>
+      317                     <div class="strength-meter">
+      318                         <div class="strength-bar" id="strengthBar"></div>
+      319                     </div>
+      320                     <div class="strength-text" id="strengthText">Enter password</div>
+      321                     <div class="error-message">Password must be at least 8 characters</div>
+      322                 </div>
+      323             </div>
+      324
+      325             <!-- Step 2: Profile -->
+      326             <div class="form-step" id="step2">
+      327                 <div class="form-group">
+      328                     <label for="fullName">Full Name</label>
+      329                     <input type="text" id="fullName" placeholder="Johnathan Doe" required>
+      330                     <div class="error-message">This field is required</div>
+      331                 </div>
+      332                 <div class="form-group">
+      333                     <label for="role">Organizational Role</label>
+      334                     <select id="role" required>
+      335                         <option value="">Select a role...</option>
+      336                         <option value="dev">Software Engineer</option>
+      337                         <option value="pm">Product Manager</option>
+      338                         <option value="design">Designer</option>
+      339                         <option value="exec">Executive</option>
+      340                     </select>
+      341                     <div class="error-message">Please select your role</div>
+      342                 </div>
+      343             </div>
+      344
+      345             <!-- Step 3: Preferences -->
+      346             <div class="form-step" id="step3">
+      347                 <div class="form-group">
+      348                     <label>Workspace Theme</label>
+      349                     <div class="preference-grid">
+      350                         <div class="preference-card selected" onclick="selectTheme(this, 'light')">
+      351                             <h4>Light</h4>
+      352                             <p>Clean and bright</p>
+      353                         </div>
+      354                         <div class="preference-card" onclick="selectTheme(this, 'dark')">
+      355                             <h4>Dark</h4>
+      356                             <p>Easy on the eyes</p>
+      357                         </div>
+      358                     </div>
+      359                 </div>
+      360                 <div class="form-group">
+      361                     <label>Notifications</label>
+      362                     <div class="preference-grid">
+      363                         <div class="preference-card selected" onclick="toggleOption(this)">
+      364                             <h4>Email</h4>
+      365                             <p>Daily summaries</p>
+      366                         </div>
+      367                         <div class="preference-card" onclick="toggleOption(this)">
+      368                             <h4>Push</h4>
+      369                             <p>Real-time alerts</p>
+      370                         </div>
+      371                     </div>
+      372                 </div>
+      373             </div>
+      374
+      375             <!-- Final Step: Success -->
+      376             <div class="form-step" id="stepSuccess">
+      377                 <div class="success-animation">
+      378                     <div class="success-icon">✓</div>
+      379                     <h3>Account Verified</h3>
+      380                     <p style="color: var(--text-muted); font-size: 14px; margin-top: 8px;">Welcome to the high-fidelity ecosystem. Your dashboard is
+          ready.</p>
+      381                 </div>
+      382                 <button type="button" class="btn-primary" style="margin-top: 24px; width: 100%;" onclick="location.reload()">Return to Console</button>
+      383             </div>
+      384
+      385             <div class="btn-group" id="navigation">
+      386                 <button type="button" class="btn-secondary" id="prevBtn" style="display: none;" onclick="changeStep(-1)">Back</button>
+      387                 <button type="button" class="btn-primary" id="nextBtn" onclick="changeStep(1)">Continue</button>
+      388             </div>
+      389         </form>
+      390     </div>
+      391 </div>
+      392
+      393 <script>
+      394     let currentStep = 1;
+      395     const totalSteps = 3;
+      396
+      397     function changeStep(n) {
+      398         if (n === 1 && !validateStep()) return;
+      399
+      400         const steps = document.querySelectorAll('.form-step');
+      401         const dots = document.querySelectorAll('.step');
+      402
+      403         steps[currentStep - 1].classList.remove('active');
+      404         currentStep += n;
+      405
+      406         if (currentStep > totalSteps) {
+      407             showSuccess();
+      408             return;
+      409         }
+      410
+      411         steps[currentStep - 1].classList.add('active');
+      412
+      413         // Update dots
+      414         dots.forEach((dot, index) => {
+      415             if (index + 1 < currentStep) {
+      416                 dot.classList.add('completed');
+      417                 dot.classList.remove('active');
+      418                 dot.innerHTML = '✓';
+      419             } else if (index + 1 === currentStep) {
+      420                 dot.classList.add('active');
+      421                 dot.classList.remove('completed');
+      422                 dot.innerHTML = index + 1;
+      423             } else {
+      424                 dot.classList.remove('active', 'completed');
+      425                 dot.innerHTML = index + 1;
+      426             }
+      427         });
+      428
+      429         // Update buttons
+      430         document.getElementById('prevBtn').style.display = currentStep === 1 ? 'none' : 'block';
+      431         document.getElementById('nextBtn').innerText = currentStep === totalSteps ? 'Complete Setup' : 'Continue';
+      432     }
+      433
+      434     function validateStep() {
+      435         const activeStep = document.querySelector('.form-step.active');
+      436         const inputs = activeStep.querySelectorAll('input[required], select[required]');
+      437         let valid = true;
+      438
+      439         inputs.forEach(input => {
+      440             if (!input.value) {
+      441                 showError(input);
+      442                 valid = false;
+      443             } else if (input.type === 'email' && !validateEmail(input.value)) {
+      444                 showError(input);
+      445                 valid = false;
+      446             } else {
+      447                 hideError(input);
+      448             }
+      449         });
+      450
+      451         return valid;
+      452     }
+      453
+      454     function validateEmail(email) {
+      455         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      456     }
+      457
+      458     function showError(input) {
+      459         input.style.borderColor = 'var(--error)';
+      460         const error = input.parentElement.querySelector('.error-message');
+      461         if (error) error.style.display = 'block';
+      462     }
+      463
+      464     function hideError(input) {
+      465         input.style.borderColor = 'var(--border-gray)';
+      466         const error = input.parentElement.querySelector('.error-message');
+      467         if (error) error.style.display = 'none';
+      468     }
+      469
+      470     function showSuccess() {
+      471         document.getElementById('navigation').style.display = 'none';
+      472         document.querySelector('.steps').style.display = 'none';
+      473         document.getElementById('stepSuccess').classList.add('active');
+      474     }
+      475
+      476     // Password Strength Logic
+      477     const passwordInput = document.getElementById('password');
+      478     const strengthBar = document.getElementById('strengthBar');
+      479     const strengthText = document.getElementById('strengthText');
+      480
+      481     passwordInput.addEventListener('input', () => {
+      482         const val = passwordInput.value;
+      483         let strength = 0;
+      484         let color = '#E5E7EB';
+      485         let text = 'Too weak';
+      486
+      487         if (val.length > 5) strength += 25;
+      488         if (val.match(/[A-Z]/)) strength += 25;
+      489         if (val.match(/[0-9]/)) strength += 25;
+      490         if (val.match(/[^A-Za-z0-9]/)) strength += 25;
+      491
+      492         if (strength === 0) { text = 'Enter password'; color = '#E5E7EB'; }
+      493         else if (strength <= 25) { text = 'Weak'; color = '#EF4444'; }
+      494         else if (strength <= 50) { text = 'Fair'; color = '#F59E0B'; }
+      495         else if (strength <= 75) { text = 'Good'; color = '#2563EB'; }
+      496         else { text = 'Strong'; color = '#10B981'; }
+      497
+      498         strengthBar.style.width = strength + '%';
+      499         strengthBar.style.background = color;
+      500         strengthText.innerText = text;
+      501         strengthText.style.color = color;
+      502     });
+      503
+      504     // Custom Interaction Logic
+      505     function selectTheme(el, theme) {
+      506         const cards = el.parentElement.querySelectorAll('.preference-card');
+      507         cards.forEach(c => c.classList.remove('selected'));
+      508         el.classList.add('selected');
+      509         console.log('Theme selected:', theme);
+      510     }
+      511
+      512     function toggleOption(el) {
+      513         el.classList.toggle('selected');
+      514     }
+      515 </script>
+      516
+      517 </body>
+      518 </html>
